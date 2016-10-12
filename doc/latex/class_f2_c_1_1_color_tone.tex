@@ -1,0 +1,326 @@
+\hypertarget{class_f2_c_1_1_color_tone}{
+\section{F2C::ColorTone Class Reference}
+\label{class_f2_c_1_1_color_tone}\index{F2C::ColorTone@{F2C::ColorTone}}
+}
+
+
+Colortone (CMY-\/RGB) \par
+ Cyan -\/255-\/0,0-\/255 Red \par
+ Magenta -\/255-\/0,0-\/255 Green \par
+ Yellow -\/255-\/0,0-\/255 Blue \par
+ Grayscale 0-\/255.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_color_tone_a68ba8b0f0a6192d71a488328f4655e33}{
+\hyperlink{class_f2_c_1_1_color_tone_a68ba8b0f0a6192d71a488328f4655e33}{ColorTone} ()}
+\label{class_f2_c_1_1_color_tone_a68ba8b0f0a6192d71a488328f4655e33}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_color_tone_a89d4963f269e7bfb95cd9200407e8cb7}{ColorTone} (\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} red, \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} green, \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} blue, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} \hyperlink{class_f2_c_1_1_color_tone_a563a24af834bcd125e75b69d72b4352d}{grayscale})
+\begin{DoxyCompactList}\small\item\em Sets the color RGB (CMY) and the grayscale value. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_color_tone_a8e73eb2e9c80a299ab7d1f935d33d613}{ColorTone} (\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} red, \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} green, \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} blue)
+\begin{DoxyCompactList}\small\item\em Sets the color RGB (CMY). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_color_tone_afd52bb767904712a68742e770619d7e8}{set} (\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} red, \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} green, \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} blue, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} \hyperlink{class_f2_c_1_1_color_tone_a563a24af834bcd125e75b69d72b4352d}{grayscale})
+\begin{DoxyCompactList}\small\item\em setMedthode: Sets the color RGB (CMY) and the grayscale value. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_color_tone_a687200e3fcb535f53b37e6ed664ac1b9}{set} (\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} red, \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} green, \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} blue)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets the color RGB (CMY). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_color_tone_a22b9b459245bb4606a9562a070dceeae}{set} (const \hyperlink{class_f2_c_1_1_color}{Color} \&color)
+\begin{DoxyCompactList}\small\item\em setMethode: Set the color RGB (not CMY) \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_color_tone_a269d5e83e4db3636641a72cd65763589}{setRed} (\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} red)
+\begin{DoxyCompactList}\small\item\em setMethode: Set Cyan(-\/255 -\/ 0)/Red(0 -\/ 255). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_color_tone_a184ce7d0ea7b172138dea5fc6e5a1cdf}{setGreen} (\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} green)
+\begin{DoxyCompactList}\small\item\em setMethode: Set Magenta(-\/255 -\/ 0)/Green(0 -\/ 255). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_color_tone_a6fb186c7fd68c103669f12ba4ee1fb00}{setBlue} (\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} blue)
+\begin{DoxyCompactList}\small\item\em setMethode: Set Yellow(-\/255 -\/ 0)/Blue(0 -\/ 255). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_color_tone_a7f40ca41a00b8cc9f93b72a28682278c}{
+bool \hyperlink{class_f2_c_1_1_color_tone_a7f40ca41a00b8cc9f93b72a28682278c}{operator==} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&color) const }
+\label{class_f2_c_1_1_color_tone_a7f40ca41a00b8cc9f93b72a28682278c}
+
+\begin{DoxyCompactList}\small\item\em Comparison Operator: ==. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_color_tone_aef6521763ccb2e1cf912497afb8b8648}{
+bool \hyperlink{class_f2_c_1_1_color_tone_aef6521763ccb2e1cf912497afb8b8648}{operator!=} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&color) const }
+\label{class_f2_c_1_1_color_tone_aef6521763ccb2e1cf912497afb8b8648}
+
+\begin{DoxyCompactList}\small\item\em Comparison Operator: !=. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_color_tone_adfe3ce161ef3dc3465e7b3d032a8fa76}{
+const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \& \hyperlink{class_f2_c_1_1_color_tone_adfe3ce161ef3dc3465e7b3d032a8fa76}{operator+=} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&color)}
+\label{class_f2_c_1_1_color_tone_adfe3ce161ef3dc3465e7b3d032a8fa76}
+
+\begin{DoxyCompactList}\small\item\em Combined assignment operator: +=. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_color_tone_a466a1bd70f8cbe071560484347ddc762}{
+const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \& \hyperlink{class_f2_c_1_1_color_tone_a466a1bd70f8cbe071560484347ddc762}{operator-\/=} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&color)}
+\label{class_f2_c_1_1_color_tone_a466a1bd70f8cbe071560484347ddc762}
+
+\begin{DoxyCompactList}\small\item\em Combined assignment operator: -\/=. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_color_tone_a03bc48742b38e1123150a061d7816a0e}{
+\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} \hyperlink{class_f2_c_1_1_color_tone_a03bc48742b38e1123150a061d7816a0e}{getRed} () const }
+\label{class_f2_c_1_1_color_tone_a03bc48742b38e1123150a061d7816a0e}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Cyan/Red \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_color_tone_a357014741cfe8cb1403068c4d6155e1e}{
+\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} \hyperlink{class_f2_c_1_1_color_tone_a357014741cfe8cb1403068c4d6155e1e}{getGreen} () const }
+\label{class_f2_c_1_1_color_tone_a357014741cfe8cb1403068c4d6155e1e}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Magenta/Green \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_color_tone_a2e9e07d9fc2d3c7ac8e880ccee337d4e}{
+\hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16} \hyperlink{class_f2_c_1_1_color_tone_a2e9e07d9fc2d3c7ac8e880ccee337d4e}{getBlue} () const }
+\label{class_f2_c_1_1_color_tone_a2e9e07d9fc2d3c7ac8e880ccee337d4e}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Yellow/Blue \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_f2_c_1_1_color_tone_a888395ee1133ec4e44683d571f719ab0}{ColorTonetoHSV} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&tone, int(\&outHSV)\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convert ColorTone-\/Klasse in HSV. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_color_tone_a55e96167a3106b92bfa8b28bb098b2bc}{ColorTonetoRGB} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&tone, \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte}(\&outRGB)\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convert ColorTone-\/Klasse in RGB. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_color_tone_a563a24af834bcd125e75b69d72b4352d}{
+\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} \hyperlink{class_f2_c_1_1_color_tone_a563a24af834bcd125e75b69d72b4352d}{grayscale}}
+\label{class_f2_c_1_1_color_tone_a563a24af834bcd125e75b69d72b4352d}
+
+\begin{DoxyCompactList}\small\item\em Grayscale value (or the tranzperenz the shader generated image). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{class_f2_c_1_1_color_tone_ac6fd7bc24f09bd1a89d9cdb6643f3b56}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \& \hyperlink{class_f2_c_1_1_color_tone_a1cac8e47aa6784e89ae489d667d7f75b}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_color_tone_aa1ef5327755c9fe9246cc286cac1ca87}{
+\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \hyperlink{class_f2_c_1_1_color_tone_aa1ef5327755c9fe9246cc286cac1ca87}{operator+} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj1, const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj2)}
+\label{class_f2_c_1_1_color_tone_aa1ef5327755c9fe9246cc286cac1ca87}
+
+\begin{DoxyCompactList}\small\item\em operator: + \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_color_tone_a215e91cf5d81e2c7714b6d722138abc3}{
+\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \hyperlink{class_f2_c_1_1_color_tone_a215e91cf5d81e2c7714b6d722138abc3}{operator-\/} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj1, const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj2)}
+\label{class_f2_c_1_1_color_tone_a215e91cf5d81e2c7714b6d722138abc3}
+
+\begin{DoxyCompactList}\small\item\em operator: -\/ \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Colortone (CMY-\/RGB) \par
+ Cyan -\/255-\/0,0-\/255 Red \par
+ Magenta -\/255-\/0,0-\/255 Green \par
+ Yellow -\/255-\/0,0-\/255 Blue \par
+ Grayscale 0-\/255. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_color_tone_a89d4963f269e7bfb95cd9200407e8cb7}{
+\index{F2C::ColorTone@{F2C::ColorTone}!ColorTone@{ColorTone}}
+\index{ColorTone@{ColorTone}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{ColorTone}]{\setlength{\rightskip}{0pt plus 5cm}F2C::ColorTone::ColorTone (
+\begin{DoxyParamCaption}
+\item[{{\bf int16}}]{ red, }
+\item[{{\bf int16}}]{ green, }
+\item[{{\bf int16}}]{ blue, }
+\item[{{\bf uint8}}]{ grayscale}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_color_tone_a89d4963f269e7bfb95cd9200407e8cb7}
+
+
+Sets the color RGB (CMY) and the grayscale value. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em red}]Cyan(-\/255 -\/ 0)/Red(0 -\/ 255). \item[{\em green}]Magenta(-\/255 -\/ 0)/Green(0 -\/ 255). \item[{\em blue}]Yellow(-\/255 -\/ 0)/Blue(0 -\/ 255). \item[{\em grayscale}]Grayscale \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_color_tone_a8e73eb2e9c80a299ab7d1f935d33d613}{
+\index{F2C::ColorTone@{F2C::ColorTone}!ColorTone@{ColorTone}}
+\index{ColorTone@{ColorTone}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{ColorTone}]{\setlength{\rightskip}{0pt plus 5cm}F2C::ColorTone::ColorTone (
+\begin{DoxyParamCaption}
+\item[{{\bf int16}}]{ red, }
+\item[{{\bf int16}}]{ green, }
+\item[{{\bf int16}}]{ blue}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_color_tone_a8e73eb2e9c80a299ab7d1f935d33d613}
+
+
+Sets the color RGB (CMY). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em red}]Cyan(-\/255 -\/ 0)/Red(0 -\/ 255). \item[{\em green}]Magenta(-\/255 -\/ 0)/Green(0 -\/ 255). \item[{\em blue}]Yellow(-\/255 -\/ 0)/Blue(0 -\/ 255). \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_color_tone_a888395ee1133ec4e44683d571f719ab0}{
+\index{F2C::ColorTone@{F2C::ColorTone}!ColorTonetoHSV@{ColorTonetoHSV}}
+\index{ColorTonetoHSV@{ColorTonetoHSV}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{ColorTonetoHSV}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::ColorTone::ColorTonetoHSV (
+\begin{DoxyParamCaption}
+\item[{const {\bf ColorTone} \&}]{ tone, }
+\item[{int(\&)}]{ outHSV\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_color_tone_a888395ee1133ec4e44683d571f719ab0}
+
+
+Convert ColorTone-\/Klasse in HSV. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tone}]\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \item[{\em outHSV}]target referece Varaible \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_color_tone_a55e96167a3106b92bfa8b28bb098b2bc}{
+\index{F2C::ColorTone@{F2C::ColorTone}!ColorTonetoRGB@{ColorTonetoRGB}}
+\index{ColorTonetoRGB@{ColorTonetoRGB}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{ColorTonetoRGB}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::ColorTone::ColorTonetoRGB (
+\begin{DoxyParamCaption}
+\item[{const {\bf ColorTone} \&}]{ tone, }
+\item[{{\bf ubyte}(\&)}]{ outRGB\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_color_tone_a55e96167a3106b92bfa8b28bb098b2bc}
+
+
+Convert ColorTone-\/Klasse in RGB. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tone}]\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \item[{\em outRGB}]target referece Varaible \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_color_tone_a22b9b459245bb4606a9562a070dceeae}{
+\index{F2C::ColorTone@{F2C::ColorTone}!set@{set}}
+\index{set@{set}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ColorTone::set (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color} \&}]{ color}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_color_tone_a22b9b459245bb4606a9562a070dceeae}
+
+
+setMethode: Set the color RGB (not CMY) 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em color}]RGB \hyperlink{class_f2_c_1_1_color}{Color} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_color_tone_a687200e3fcb535f53b37e6ed664ac1b9}{
+\index{F2C::ColorTone@{F2C::ColorTone}!set@{set}}
+\index{set@{set}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ColorTone::set (
+\begin{DoxyParamCaption}
+\item[{{\bf int16}}]{ red, }
+\item[{{\bf int16}}]{ green, }
+\item[{{\bf int16}}]{ blue}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_color_tone_a687200e3fcb535f53b37e6ed664ac1b9}
+
+
+setMethode: Sets the color RGB (CMY). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em red}]Cyan(-\/255 -\/ 0)/Red(0 -\/ 255). \item[{\em green}]Magenta(-\/255 -\/ 0)/Green(0 -\/ 255). \item[{\em blue}]Yellow(-\/255 -\/ 0)/Blue(0 -\/ 255). \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_color_tone_afd52bb767904712a68742e770619d7e8}{
+\index{F2C::ColorTone@{F2C::ColorTone}!set@{set}}
+\index{set@{set}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ColorTone::set (
+\begin{DoxyParamCaption}
+\item[{{\bf int16}}]{ red, }
+\item[{{\bf int16}}]{ green, }
+\item[{{\bf int16}}]{ blue, }
+\item[{{\bf uint8}}]{ grayscale}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_color_tone_afd52bb767904712a68742e770619d7e8}
+
+
+setMedthode: Sets the color RGB (CMY) and the grayscale value. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em red}]Cyan(-\/255 -\/ 0)/Red(0 -\/ 255). \item[{\em green}]Magenta(-\/255 -\/ 0)/Green(0 -\/ 255). \item[{\em blue}]Yellow(-\/255 -\/ 0)/Blue(0 -\/ 255). \item[{\em grayscale}]Grayscale \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_color_tone_a6fb186c7fd68c103669f12ba4ee1fb00}{
+\index{F2C::ColorTone@{F2C::ColorTone}!setBlue@{setBlue}}
+\index{setBlue@{setBlue}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{setBlue}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ColorTone::setBlue (
+\begin{DoxyParamCaption}
+\item[{{\bf int16}}]{ blue}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_color_tone_a6fb186c7fd68c103669f12ba4ee1fb00}
+
+
+setMethode: Set Yellow(-\/255 -\/ 0)/Blue(0 -\/ 255). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em blue}]Yellow/Blau \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_color_tone_a184ce7d0ea7b172138dea5fc6e5a1cdf}{
+\index{F2C::ColorTone@{F2C::ColorTone}!setGreen@{setGreen}}
+\index{setGreen@{setGreen}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{setGreen}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ColorTone::setGreen (
+\begin{DoxyParamCaption}
+\item[{{\bf int16}}]{ green}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_color_tone_a184ce7d0ea7b172138dea5fc6e5a1cdf}
+
+
+setMethode: Set Magenta(-\/255 -\/ 0)/Green(0 -\/ 255). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em green}]Magenta/Gruen \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_color_tone_a269d5e83e4db3636641a72cd65763589}{
+\index{F2C::ColorTone@{F2C::ColorTone}!setRed@{setRed}}
+\index{setRed@{setRed}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{setRed}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ColorTone::setRed (
+\begin{DoxyParamCaption}
+\item[{{\bf int16}}]{ red}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_color_tone_a269d5e83e4db3636641a72cd65763589}
+
+
+setMethode: Set Cyan(-\/255 -\/ 0)/Red(0 -\/ 255). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em red}]Cyan/Rot \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_f2_c_1_1_color_tone_ac6fd7bc24f09bd1a89d9cdb6643f3b56}{
+\index{F2C::ColorTone@{F2C::ColorTone}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const {\bf ColorTone} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_color_tone_ac6fd7bc24f09bd1a89d9cdb6643f3b56}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_color_tone_a1cac8e47aa6784e89ae489d667d7f75b}{
+\index{F2C::ColorTone@{F2C::ColorTone}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C::ColorTone@{F2C::ColorTone}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{{\bf ColorTone} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_color_tone_a1cac8e47aa6784e89ae489d667d7f75b}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}

@@ -1,0 +1,191 @@
+\hypertarget{class_f2_c_1_1_audio_file}{
+\section{F2C::AudioFile Class Reference}
+\label{class_f2_c_1_1_audio_file}\index{F2C::AudioFile@{F2C::AudioFile}}
+}
+
+
+Playing audio files. \par
+.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_audio_file_a2dc6525f4cbcaaebc66a3a4874cefd1f}{
+\hyperlink{class_f2_c_1_1_audio_file_a2dc6525f4cbcaaebc66a3a4874cefd1f}{AudioFile} ()}
+\label{class_f2_c_1_1_audio_file_a2dc6525f4cbcaaebc66a3a4874cefd1f}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_a3420155d514c949628e5220902f84e51}{
+virtual \hyperlink{class_f2_c_1_1_audio_file_a3420155d514c949628e5220902f84e51}{$\sim$AudioFile} ()}
+\label{class_f2_c_1_1_audio_file_a3420155d514c949628e5220902f84e51}
+
+\begin{DoxyCompactList}\small\item\em Stops the sound. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_audio_file_ab577e396b7f73828fe95cf1792f7767a}{AudioFile} (std::string filename)
+\begin{DoxyCompactList}\small\item\em Load a sound file. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_a789f70c02b96a57447d4d71d5b8e4c24}{
+\hyperlink{class_f2_c_1_1_audio_file_a789f70c02b96a57447d4d71d5b8e4c24}{AudioFile} (const \hyperlink{class_f2_c_1_1_audio_file}{AudioFile} \&copy)}
+\label{class_f2_c_1_1_audio_file_a789f70c02b96a57447d4d71d5b8e4c24}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_a32b84772abce2a480a5fcc1180ec71b2}{
+\hyperlink{class_f2_c_1_1_audio_file}{AudioFile} \& \hyperlink{class_f2_c_1_1_audio_file_a32b84772abce2a480a5fcc1180ec71b2}{operator=} (const \hyperlink{class_f2_c_1_1_audio_file}{AudioFile} \&copy)}
+\label{class_f2_c_1_1_audio_file_a32b84772abce2a480a5fcc1180ec71b2}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator with deep copy. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_audio_file_ac366bc555c69c7e6631747cf3b22af1d}{AudioFile} (std::string filename, bool \hyperlink{class_f2_c_1_1_audio_file_a056116d003867cd170543451619ee661}{loop})
+\begin{DoxyCompactList}\small\item\em Load a sound file and set repeat. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_audio_file_af30d1dfd6c5f6d1fbfef9749dcab4122}{loadFile} (std::string filename)
+\begin{DoxyCompactList}\small\item\em Load a sound file. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_audio_file_a4c9c159b5e53f48d5c11e583eabebf3c}{loadFile} (std::string filename, bool \hyperlink{class_f2_c_1_1_audio_file_a056116d003867cd170543451619ee661}{loop})
+\begin{DoxyCompactList}\small\item\em Load a sound file and set repeat. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_a114e5b9929dfcd1ad528d8ff99639b23}{
+void \hyperlink{class_f2_c_1_1_audio_file_a114e5b9929dfcd1ad528d8ff99639b23}{play} ()}
+\label{class_f2_c_1_1_audio_file_a114e5b9929dfcd1ad528d8ff99639b23}
+
+\begin{DoxyCompactList}\small\item\em Play (update Volume,Pitch and Repeat). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_a561e9174955aceab50247cd78a4f4b06}{
+void \hyperlink{class_f2_c_1_1_audio_file_a561e9174955aceab50247cd78a4f4b06}{stop} ()}
+\label{class_f2_c_1_1_audio_file_a561e9174955aceab50247cd78a4f4b06}
+
+\begin{DoxyCompactList}\small\item\em Stop. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_a12916f619b8aec5d7598cb4c0440a586}{
+void \hyperlink{class_f2_c_1_1_audio_file_a12916f619b8aec5d7598cb4c0440a586}{pause} ()}
+\label{class_f2_c_1_1_audio_file_a12916f619b8aec5d7598cb4c0440a586}
+
+\begin{DoxyCompactList}\small\item\em Pause. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_a68c97a63861927e7099bfa87848ef781}{
+bool \hyperlink{class_f2_c_1_1_audio_file_a68c97a63861927e7099bfa87848ef781}{isPlaying} () const }
+\label{class_f2_c_1_1_audio_file_a68c97a63861927e7099bfa87848ef781}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Returns true if the sound is playing, false otherwise. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_a0e1914642d211c376f53d207d6d5ec5b}{
+int \hyperlink{class_f2_c_1_1_audio_file_a0e1914642d211c376f53d207d6d5ec5b}{getPosition} () const }
+\label{class_f2_c_1_1_audio_file_a0e1914642d211c376f53d207d6d5ec5b}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Current position of the sound \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_audio_file_a0883e1dcba9286eba384507752007eed}{setPostion} (int position)
+\begin{DoxyCompactList}\small\item\em setMethode: Set current position of the sound \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_aab2fd2600fd2282972b73b5f5fd60b4b}{
+std::string \hyperlink{class_f2_c_1_1_audio_file_aab2fd2600fd2282972b73b5f5fd60b4b}{getFilename} () const }
+\label{class_f2_c_1_1_audio_file_aab2fd2600fd2282972b73b5f5fd60b4b}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Audio filename \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_audio_file_ad0ce4cee39219b8d70c5a6609d2ca377}{
+float \hyperlink{class_f2_c_1_1_audio_file_ad0ce4cee39219b8d70c5a6609d2ca377}{pitch}}
+\label{class_f2_c_1_1_audio_file_ad0ce4cee39219b8d70c5a6609d2ca377}
+
+\begin{DoxyCompactList}\small\item\em Pitch (0.5f -\/ 2.0f), does not work with midi files. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_a056116d003867cd170543451619ee661}{
+bool \hyperlink{class_f2_c_1_1_audio_file_a056116d003867cd170543451619ee661}{loop}}
+\label{class_f2_c_1_1_audio_file_a056116d003867cd170543451619ee661}
+
+\begin{DoxyCompactList}\small\item\em Repeat On/Off. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_audio_file_afb17d9b8bffe29de4dad2c86919de313}{
+float \hyperlink{class_f2_c_1_1_audio_file_afb17d9b8bffe29de4dad2c86919de313}{volume}}
+\label{class_f2_c_1_1_audio_file_afb17d9b8bffe29de4dad2c86919de313}
+
+\begin{DoxyCompactList}\small\item\em Volume (0.0f -\/ 1.0f), does not work with midi files. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Playing audio files. \par
+. Audiere Supported Formats: \par
+ $\ast$Ogg Vorbis \par
+ $\ast$MP3 \par
+ $\ast$FLAC \par
+ $\ast$Speex \par
+ $\ast$WAV \par
+ $\ast$AIFF \par
+ $\ast$MOD, S3M, XM, IT \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_audio_file_ab577e396b7f73828fe95cf1792f7767a}{
+\index{F2C::AudioFile@{F2C::AudioFile}!AudioFile@{AudioFile}}
+\index{AudioFile@{AudioFile}!F2C::AudioFile@{F2C::AudioFile}}
+\subsubsection[{AudioFile}]{\setlength{\rightskip}{0pt plus 5cm}F2C::AudioFile::AudioFile (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_audio_file_ab577e396b7f73828fe95cf1792f7767a}
+
+
+Load a sound file. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Audio filename \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_audio_file_ac366bc555c69c7e6631747cf3b22af1d}{
+\index{F2C::AudioFile@{F2C::AudioFile}!AudioFile@{AudioFile}}
+\index{AudioFile@{AudioFile}!F2C::AudioFile@{F2C::AudioFile}}
+\subsubsection[{AudioFile}]{\setlength{\rightskip}{0pt plus 5cm}F2C::AudioFile::AudioFile (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename, }
+\item[{bool}]{ loop}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_audio_file_ac366bc555c69c7e6631747cf3b22af1d}
+
+
+Load a sound file and set repeat. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Audio filename \item[{\em loop}]Repeat On/Off \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_audio_file_af30d1dfd6c5f6d1fbfef9749dcab4122}{
+\index{F2C::AudioFile@{F2C::AudioFile}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!F2C::AudioFile@{F2C::AudioFile}}
+\subsubsection[{loadFile}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::AudioFile::loadFile (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_audio_file_af30d1dfd6c5f6d1fbfef9749dcab4122}
+
+
+Load a sound file. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Audio filename \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_audio_file_a4c9c159b5e53f48d5c11e583eabebf3c}{
+\index{F2C::AudioFile@{F2C::AudioFile}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!F2C::AudioFile@{F2C::AudioFile}}
+\subsubsection[{loadFile}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::AudioFile::loadFile (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename, }
+\item[{bool}]{ loop}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_audio_file_a4c9c159b5e53f48d5c11e583eabebf3c}
+
+
+Load a sound file and set repeat. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Audio filename \item[{\em loop}]Repeat On/Off \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_audio_file_a0883e1dcba9286eba384507752007eed}{
+\index{F2C::AudioFile@{F2C::AudioFile}!setPostion@{setPostion}}
+\index{setPostion@{setPostion}!F2C::AudioFile@{F2C::AudioFile}}
+\subsubsection[{setPostion}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::AudioFile::setPostion (
+\begin{DoxyParamCaption}
+\item[{int}]{ position}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_audio_file_a0883e1dcba9286eba384507752007eed}
+
+
+setMethode: Set current position of the sound 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em position}]position of the sound \end{DoxyParams}

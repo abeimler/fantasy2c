@@ -1,0 +1,52 @@
+#!/usr/bin/make
+
+SOURCES		:= $(wildcard $(SRCDIR)/*.$(SRCSUF))
+OBJECTSDEBUG	:= $(patsubst $(SRCDIR)/%.$(SRCSUF), $(DEBUGOBJDIR)/%.$(OBJSUF), $(SOURCES))
+OBJECTSRELEASE	:= $(patsubst $(SRCDIR)/%.$(SRCSUF), $(RELEASEOBJDIR)/%.$(OBJSUF), $(SOURCES))
+
+debugdirs:
+	mkdir -p "$(OBJDIR)"
+	mkdir -p "$(DEBUGOBJDIR)"
+	mkdir -p "$(DEBUGDIR)"
+                
+releasedirs:
+	mkdir -p "$(OBJDIR)"
+	mkdir -p "$(RELEASEOBJDIR)"
+	mkdir -p "$(RELEASEDIR)"
+
+$(OBJECTSDEBUG): $(DEBUGOBJDIR)/%.$(OBJSUF): $(SRCDIR)/%.$(SRCSUF)
+	$(CXX) $(DEBUGFLAGS) $(MACROFLAGS) $(CXXFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)$(HEADERSDIR) $(SRCFLAG) $< $(OUTFLAG) $@
+
+$(OBJECTSRELEASE): $(RELEASEOBJDIR)/%.$(OBJSUF): $(SRCDIR)/%.$(SRCSUF)
+	$(CXX) $(RELEASEFLAGS) $(MACROFLAGS) $(CXXFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)$(HEADERSDIR) $(SRCFLAG) $< $(OUTFLAG) $@
+
+.PHONY: all
+
+all: Debug Release
+
+outDebug: debugdirs $(OBJECTSDEBUG)
+	$(LD) $(DEFAULTFLAGS) $(LDFLAGS) $(SOFLAGS) $(DEBUGLDFLAGS) $(OBJECTSDEBUG) $(OUTFLAG) $(OUTLIBDIR)/$(OUTLIB).$(OUTLIBSUF) $(LIBFLAGS)
+
+ 
+outRelease: releasedirs $(OBJECTSRELEASE)
+	$(LD) $(DEFAULTFLAGS) $(LDFLAGS) $(SOFLAGS) $(RELEASELDFLAGS)  $(OBJECTSRELEASE) $(OUTFLAG) $(OUTLIBDIR)/$(OUTLIB).$(OUTLIBSUF) $(LIBFLAGS)
+
+Debug: outDebug cleanObjDebug
+Release: outRelease cleanObjRelease
+
+.PHONY: clean
+
+cleanObjDebug:
+	rm -r -f "$(DEBUGOBJDIR)"
+	rm -d -r -f "$(DEBUGOBJDIR)"
+	rm -r -f "$(OBJDIR)"
+	rm -d -r -f "$(OBJDIR)"
+cleanObjRelease:
+	rm -r -f "$(RELEASEOBJDIR)"
+	rm -d -r -f "$(RELEASEOBJDIR)"
+	rm -r -f "$(OBJDIR)"
+	rm -d -r -f "$(OBJDIR)"
+
+clean: cleanObjDebug cleanObjRelease
+	rm -r -f "$(OUTLIBDIR)"
+	rm -d -r -f "$(OUTLIBDIR)"

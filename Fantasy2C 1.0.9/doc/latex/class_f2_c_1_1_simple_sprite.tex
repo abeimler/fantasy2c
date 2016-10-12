@@ -1,0 +1,127 @@
+\hypertarget{class_f2_c_1_1_simple_sprite}{
+\section{F2C::SimpleSprite Class Reference}
+\label{class_f2_c_1_1_simple_sprite}\index{F2C::SimpleSprite@{F2C::SimpleSprite}}
+}
+
+
+Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen. This class offers less than the normal \hyperlink{class_f2_c_1_1_sprite}{Sprite} class is but a little faster at rendering.  
+Inheritance diagram for F2C::SimpleSprite::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_f2_c_1_1_simple_sprite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_simple_sprite_ae3616dd933524b2aa481d20e2f954e91}{
+\hyperlink{class_f2_c_1_1_simple_sprite_ae3616dd933524b2aa481d20e2f954e91}{SimpleSprite} ()}
+\label{class_f2_c_1_1_simple_sprite_ae3616dd933524b2aa481d20e2f954e91}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_simple_sprite_a47a25751dcc327438aebf044bafb566d}{SimpleSprite} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} $\ast$bitmap)
+\begin{DoxyCompactList}\small\item\em Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_simple_sprite_a2449ff78a09f748094bc2a75df69eaba}{
+\hyperlink{class_f2_c_1_1_simple_sprite_a2449ff78a09f748094bc2a75df69eaba}{SimpleSprite} (const \hyperlink{class_f2_c_1_1_simple_sprite}{SimpleSprite} \&copy)}
+\label{class_f2_c_1_1_simple_sprite_a2449ff78a09f748094bc2a75df69eaba}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_simple_sprite_aebf2619b56afa24816fdf95f236d5790}{
+\hyperlink{class_f2_c_1_1_simple_sprite}{SimpleSprite} \& \hyperlink{class_f2_c_1_1_simple_sprite_aebf2619b56afa24816fdf95f236d5790}{operator=} (const \hyperlink{class_f2_c_1_1_simple_sprite}{SimpleSprite} \&copy)}
+\label{class_f2_c_1_1_simple_sprite_aebf2619b56afa24816fdf95f236d5790}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator with deep copy. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_simple_sprite_a1aa8944250c186b4a88c7bf7850fbb67}{copyProperties} (const \hyperlink{class_f2_c_1_1_simple_sprite}{SimpleSprite} \&copy)
+\begin{DoxyCompactList}\small\item\em Copies all properties(x,y,z-\/Coord.,vColor,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_simple_sprite_a94d58e6e46796a7352486817d51a1c3f}{render} () const 
+\begin{DoxyCompactList}\small\item\em Render the bitmap on screen. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_simple_sprite_a72871a4bdff954844ebe4243aa859e13}{
+\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} \hyperlink{class_f2_c_1_1_simple_sprite_a72871a4bdff954844ebe4243aa859e13}{grayscale}}
+\label{class_f2_c_1_1_simple_sprite_a72871a4bdff954844ebe4243aa859e13}
+
+\begin{DoxyCompactList}\small\item\em Grayscale value (or the tranzperenz the shader generated image). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_simple_sprite_a99c2e7a0334bc761eb1e2017c3fdf347}{
+static GLhandleARB \hyperlink{class_f2_c_1_1_simple_sprite_a99c2e7a0334bc761eb1e2017c3fdf347}{ShaderProgramObj}}
+\label{class_f2_c_1_1_simple_sprite_a99c2e7a0334bc761eb1e2017c3fdf347}
+
+\begin{DoxyCompactList}\small\item\em Handle by the ARB program object for the \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite}. (Default: NULL) \par
+ The Tranzperenz(Alpha Color) of the generated shader image (with the ARB program object) can be determined by the grayscale. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_simple_sprite_ae4a2a18c63ffab85ef5da18dc0366edc}{
+static \hyperlink{namespace_f2_c_1_1_tex_param_a64299c3972944468af4e8b0394c936c6}{TexParam::Tex\_\-Param} \hyperlink{class_f2_c_1_1_simple_sprite_ae4a2a18c63ffab85ef5da18dc0366edc}{filter}}
+\label{class_f2_c_1_1_simple_sprite_ae4a2a18c63ffab85ef5da18dc0366edc}
+
+\begin{DoxyCompactList}\small\item\em Set the texture filtering of the \hyperlink{class_f2_c_1_1_sprite}{Sprite}. (Default: Linear). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen. This class offers less than the normal \hyperlink{class_f2_c_1_1_sprite}{Sprite} class is but a little faster at rendering. Please note the following OpenGL capability are enabled when rendering and at the end disable: \par
+ GL\_\-TEXTURE\_\-2D \par
+ GL\_\-DEPTH\_\-TEST \par
+ GL\_\-ALPHA\_\-TEST \par
+ GL\_\-BLEND \par
+ and use glShadeModel(GL\_\-SMOOTH) \par
+ \par
+ Dont forget to set the depth and alpha test function, e.g.: \par
+ glAlphaFunc(GL\_\-GREATER, 0.0f) \par
+ glDepthFunc(GL\_\-LEQUAL) \par
+ \par
+ Used OpenGL Buffers \par
+ -\/GL\_\-COLOR\_\-BUFFER\_\-BIT \par
+ -\/GL\_\-DEPTH\_\-BUFFER\_\-BIT \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_simple_sprite_a47a25751dcc327438aebf044bafb566d}{
+\index{F2C::SimpleSprite@{F2C::SimpleSprite}!SimpleSprite@{SimpleSprite}}
+\index{SimpleSprite@{SimpleSprite}!F2C::SimpleSprite@{F2C::SimpleSprite}}
+\subsubsection[{SimpleSprite}]{\setlength{\rightskip}{0pt plus 5cm}F2C::SimpleSprite::SimpleSprite (const {\bf Bitmap} $\ast$ {\em bitmap})}}
+\label{class_f2_c_1_1_simple_sprite_a47a25751dcc327438aebf044bafb566d}
+
+
+Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bitmap}]Pointer of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_simple_sprite_a1aa8944250c186b4a88c7bf7850fbb67}{
+\index{F2C::SimpleSprite@{F2C::SimpleSprite}!copyProperties@{copyProperties}}
+\index{copyProperties@{copyProperties}!F2C::SimpleSprite@{F2C::SimpleSprite}}
+\subsubsection[{copyProperties}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SimpleSprite::copyProperties (const {\bf SimpleSprite} \& {\em copy})}}
+\label{class_f2_c_1_1_simple_sprite_a1aa8944250c186b4a88c7bf7850fbb67}
+
+
+Copies all properties(x,y,z-\/Coord.,vColor,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). 
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]Source copy \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_f2_c_1_1_sprite_base_a8f7ea8a95a07688bfb2e6268a52b9215}{F2C::SpriteBase}.\hypertarget{class_f2_c_1_1_simple_sprite_a94d58e6e46796a7352486817d51a1c3f}{
+\index{F2C::SimpleSprite@{F2C::SimpleSprite}!render@{render}}
+\index{render@{render}!F2C::SimpleSprite@{F2C::SimpleSprite}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::SimpleSprite::render () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_f2_c_1_1_simple_sprite_a94d58e6e46796a7352486817d51a1c3f}
+
+
+Render the bitmap on screen. \begin{DoxyReturn}{Returns}
+-\/1, show is false. 
+
+-\/2, The width or height of the bitmap or the src\_\-rect are 0. 
+
+-\/3, The sprite is outside the display (glViewport). 
+
+-\/4, The alpha color of all 4 Vertices are less than 1. 
+
+-\/5, zoom\_\-x or zoom\_\-y is exactly 0. 
+
+1, \hyperlink{class_f2_c_1_1_sprite}{Sprite} has been successfully rendered. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_f2_c_1_1_sprite_base_af9dfc70083ca5a774d3874b61a6f9abc}{F2C::SpriteBase}.

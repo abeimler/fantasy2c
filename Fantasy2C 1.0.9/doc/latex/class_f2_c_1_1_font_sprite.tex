@@ -1,0 +1,249 @@
+\hypertarget{class_f2_c_1_1_font_sprite}{
+\section{F2C::FontSprite Class Reference}
+\label{class_f2_c_1_1_font_sprite}\index{F2C::FontSprite@{F2C::FontSprite}}
+}
+
+
+Displaying messages on the screen via BitmapFont (bitmap).  
+Inheritance diagram for F2C::FontSprite::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_f2_c_1_1_font_sprite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_f2_c_1_1_font_sprite_ac6af1586ca99fd00365c1393f9a14817}{setViewport} (\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$\hyperlink{class_f2_c_1_1_font_sprite_a4f82be1613af7c8b83e5551ca6c81ed1}{viewport})
+\begin{DoxyCompactList}\small\item\em setMethode: Set the pointer of the viewport and the clip\_\-rect. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_ab8375c3937eed4398ab1cfed98ca127b}{
+\hyperlink{class_f2_c_1_1_font_sprite_ab8375c3937eed4398ab1cfed98ca127b}{FontSprite} ()}
+\label{class_f2_c_1_1_font_sprite_ab8375c3937eed4398ab1cfed98ca127b}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_aa2310c7adcbabacdc4b840b54d8e4969}{
+\hyperlink{class_f2_c_1_1_font_sprite_aa2310c7adcbabacdc4b840b54d8e4969}{FontSprite} (const \hyperlink{class_f2_c_1_1_font_sprite}{FontSprite} \&copy)}
+\label{class_f2_c_1_1_font_sprite_aa2310c7adcbabacdc4b840b54d8e4969}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_font_sprite_a7ce4fb660a3b32e3890807dae9b4e850}{FontSprite} (\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$\hyperlink{class_f2_c_1_1_font_sprite_a4f82be1613af7c8b83e5551ca6c81ed1}{viewport})
+\begin{DoxyCompactList}\small\item\em Set the pointer of the viewport and the clip\_\-rect. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_ac7a37a9ada6207e49f7868dbec562ee5}{
+\hyperlink{class_f2_c_1_1_font_sprite}{FontSprite} \& \hyperlink{class_f2_c_1_1_font_sprite_ac7a37a9ada6207e49f7868dbec562ee5}{operator=} (const \hyperlink{class_f2_c_1_1_font_sprite}{FontSprite} \&copy)}
+\label{class_f2_c_1_1_font_sprite_ac7a37a9ada6207e49f7868dbec562ee5}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator with deep copy. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_font_sprite_a5c7ad536cebfee0660823bef1947e668}{FontSprite} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} $\ast$bitmapfont, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} charsperwidth=\hyperlink{class_f2_c_1_1_font_sprite_a4391313f8fd3a47ae2b9941d8540a098}{FontSprite::defaultCharsperW}, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} charsperheight=\hyperlink{class_f2_c_1_1_font_sprite_a2f7ed6629876bb340c5b3121d0c3a2b0}{FontSprite::defaultCharsperH})
+\begin{DoxyCompactList}\small\item\em Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_font_sprite_a36a224f59737fb06c4d79ee48b7e4068}{copyProperties} (const \hyperlink{class_f2_c_1_1_font_sprite}{FontSprite} \&copy)
+\begin{DoxyCompactList}\small\item\em Copies all properties(x,y,z-\/Coord.,vColor,Texts,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_font_sprite_a2c6fc77162983dc4d750258144410272}{render} () const 
+\begin{DoxyCompactList}\small\item\em Render the text on the screen. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_font_sprite_a067445bcf9a95c276413091161066cb1}{setBitmap} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} $\ast$bitmap, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} charsperwidth=\hyperlink{class_f2_c_1_1_font_sprite_a4391313f8fd3a47ae2b9941d8540a098}{FontSprite::defaultCharsperW}, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} charsperheight=\hyperlink{class_f2_c_1_1_font_sprite_a2f7ed6629876bb340c5b3121d0c3a2b0}{FontSprite::defaultCharsperH})
+\begin{DoxyCompactList}\small\item\em Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_font_sprite_ae1be1c6e70f794e6b8bf56b60528119e}{addText} (int \hyperlink{class_f2_c_1_1_sprite_base_a552f88034a04e6ac41f22519ac53076c}{x}, int \hyperlink{class_f2_c_1_1_sprite_base_a33a3d48628d9a3130c603eaf902f209f}{y}, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, std::string text)
+\begin{DoxyCompactList}\small\item\em Adds a text to a specific position. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_font_sprite_a86138fa37543cdf1c28735b175f55fb8}{addText} (const \hyperlink{class_f2_c_1_1_rect}{Rect} \&rect, std::string text)
+\begin{DoxyCompactList}\small\item\em Adds a text to a specific position. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_ab293fd22588a8dbe63fb264ea8085e09}{
+void \hyperlink{class_f2_c_1_1_font_sprite_ab293fd22588a8dbe63fb264ea8085e09}{clearTexts} ()}
+\label{class_f2_c_1_1_font_sprite_ab293fd22588a8dbe63fb264ea8085e09}
+
+\begin{DoxyCompactList}\small\item\em Clear all Texts. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_a81bce69eb04c048d007d98262e916824}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_font_sprite_a81bce69eb04c048d007d98262e916824}{getCharsperWidth} () const }
+\label{class_f2_c_1_1_font_sprite_a81bce69eb04c048d007d98262e916824}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Characters per column \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_abd03d3df667c51e99608a7e3cb7ba775}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_font_sprite_abd03d3df667c51e99608a7e3cb7ba775}{getCharsperHeight} () const }
+\label{class_f2_c_1_1_font_sprite_abd03d3df667c51e99608a7e3cb7ba775}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Characters per line \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_a3c086bec1f7abf0fc457b2499c69774a}{
+const std::vector$<$ std::string $>$ \& \hyperlink{class_f2_c_1_1_font_sprite_a3c086bec1f7abf0fc457b2499c69774a}{getTexts} () const }
+\label{class_f2_c_1_1_font_sprite_a3c086bec1f7abf0fc457b2499c69774a}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Inserted texts \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_a38b3c9b85b6ec46d903a38b5619255c1}{
+const std::vector$<$ \hyperlink{class_f2_c_1_1_rect}{Rect} $>$ \& \hyperlink{class_f2_c_1_1_font_sprite_a38b3c9b85b6ec46d903a38b5619255c1}{getTextsRect} () const }
+\label{class_f2_c_1_1_font_sprite_a38b3c9b85b6ec46d903a38b5619255c1}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Size(in pixels) of inserted texts. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_a1beebb4264be624bafc96126bde7eeec}{
+const \hyperlink{class_f2_c_1_1_rect}{Rect} $\ast$ \hyperlink{class_f2_c_1_1_font_sprite_a1beebb4264be624bafc96126bde7eeec}{getCharsRect} () const }
+\label{class_f2_c_1_1_font_sprite_a1beebb4264be624bafc96126bde7eeec}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Return the coordinates and the size of all characters (ASCII :0-\/255, Size: 256). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_font_sprite_a23c2acdd3cc212d56fcc9021744211d3}{
+\hyperlink{class_f2_c_1_1_rect}{Rect} $\ast$ \hyperlink{class_f2_c_1_1_font_sprite_a23c2acdd3cc212d56fcc9021744211d3}{clip\_\-rect}}
+\label{class_f2_c_1_1_font_sprite_a23c2acdd3cc212d56fcc9021744211d3}
+
+\begin{DoxyCompactList}\small\item\em Clipping \hyperlink{class_f2_c_1_1_rect}{Rect}, Cutting the sprites on the screen the desired section or window. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_a4f82be1613af7c8b83e5551ca6c81ed1}{
+\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$ \hyperlink{class_f2_c_1_1_font_sprite_a4f82be1613af7c8b83e5551ca6c81ed1}{viewport}}
+\label{class_f2_c_1_1_font_sprite_a4f82be1613af7c8b83e5551ca6c81ed1}
+
+\begin{DoxyCompactList}\small\item\em Additional Z-\/coordinate and \hyperlink{class_f2_c_1_1_color_tone}{ColorTone}. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_aefcc932827b98589b3ed922c1f01e678}{
+\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \hyperlink{class_f2_c_1_1_font_sprite_aefcc932827b98589b3ed922c1f01e678}{tone}}
+\label{class_f2_c_1_1_font_sprite_aefcc932827b98589b3ed922c1f01e678}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_color}{Color} tone. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_abf113caad3e684ea5ed58b6c1557147a}{
+bool \hyperlink{class_f2_c_1_1_font_sprite_abf113caad3e684ea5ed58b6c1557147a}{italic}}
+\label{class_f2_c_1_1_font_sprite_abf113caad3e684ea5ed58b6c1557147a}
+
+\begin{DoxyCompactList}\small\item\em Sets the text to italics On/Off. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_font_sprite_aed3db6661c90a9d48cfd76b0e77c9c98}{
+static GLhandleARB \hyperlink{class_f2_c_1_1_font_sprite_aed3db6661c90a9d48cfd76b0e77c9c98}{ShaderProgramObj}}
+\label{class_f2_c_1_1_font_sprite_aed3db6661c90a9d48cfd76b0e77c9c98}
+
+\begin{DoxyCompactList}\small\item\em Handle by the ARB program object for the \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite}. (Default: NULL) \par
+ The Tranzperenz(Alpha Color) of the generated shader image (with the ARB program object) can be determined by the grayscale. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_aba43429eee849af1fd7466f8a6e5291c}{
+static \hyperlink{namespace_f2_c_1_1_tex_param_a64299c3972944468af4e8b0394c936c6}{TexParam::Tex\_\-Param} \hyperlink{class_f2_c_1_1_font_sprite_aba43429eee849af1fd7466f8a6e5291c}{filter}}
+\label{class_f2_c_1_1_font_sprite_aba43429eee849af1fd7466f8a6e5291c}
+
+\begin{DoxyCompactList}\small\item\em Set the texture filtering of the \hyperlink{class_f2_c_1_1_sprite}{Sprite}. (Default: Linear). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_a69244b901df9ec25c6a96e5a51dedb7e}{
+static \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} \hyperlink{class_f2_c_1_1_font_sprite_a69244b901df9ec25c6a96e5a51dedb7e}{AlphaTolerance}}
+\label{class_f2_c_1_1_font_sprite_a69244b901df9ec25c6a96e5a51dedb7e}
+
+\begin{DoxyCompactList}\small\item\em Transparency (alpha) tolerance, to determine the spacing between the Character (Is tolerance equal to 0: the whole rectangle of the Character. If the alpha value greater than or equal to the tolerance is measured as the distance from) (default: 1). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_a4391313f8fd3a47ae2b9941d8540a098}{
+static \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_font_sprite_a4391313f8fd3a47ae2b9941d8540a098}{defaultCharsperW}}
+\label{class_f2_c_1_1_font_sprite_a4391313f8fd3a47ae2b9941d8540a098}
+
+\begin{DoxyCompactList}\small\item\em Standard characters per column (default: 16). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_font_sprite_a2f7ed6629876bb340c5b3121d0c3a2b0}{
+static \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_font_sprite_a2f7ed6629876bb340c5b3121d0c3a2b0}{defaultCharsperH}}
+\label{class_f2_c_1_1_font_sprite_a2f7ed6629876bb340c5b3121d0c3a2b0}
+
+\begin{DoxyCompactList}\small\item\em Standard characters per line (default: 16). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Displaying messages on the screen via BitmapFont (bitmap). Please note the following OpenGL capability are enabled when rendering and at the end disable: \par
+ GL\_\-SCISSOR\_\-TEST \par
+ GL\_\-STENCIL\_\-TEST \par
+ GL\_\-TEXTURE\_\-2D \par
+ GL\_\-DEPTH\_\-TEST \par
+ GL\_\-ALPHA\_\-TEST \par
+ GL\_\-BLEND \par
+ and use glShadeModel(GL\_\-SMOOTH) \par
+ \par
+ Dont forget to set the depth and alpha test function, e.g.: \par
+ glAlphaFunc(GL\_\-GREATER, 0.0f) \par
+ glDepthFunc(GL\_\-LEQUAL) \par
+ \par
+ Used OpenGL Buffers \par
+ -\/GL\_\-COLOR\_\-BUFFER\_\-BIT \par
+ -\/GL\_\-DEPTH\_\-BUFFER\_\-BIT \par
+ -\/GL\_\-STENCIL\_\-BUFFER\_\-BIT \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_font_sprite_a7ce4fb660a3b32e3890807dae9b4e850}{
+\index{F2C::FontSprite@{F2C::FontSprite}!FontSprite@{FontSprite}}
+\index{FontSprite@{FontSprite}!F2C::FontSprite@{F2C::FontSprite}}
+\subsubsection[{FontSprite}]{\setlength{\rightskip}{0pt plus 5cm}F2C::FontSprite::FontSprite ({\bf Viewport} $\ast$ {\em viewport})}}
+\label{class_f2_c_1_1_font_sprite_a7ce4fb660a3b32e3890807dae9b4e850}
+
+
+Set the pointer of the viewport and the clip\_\-rect. 
+\begin{DoxyParams}{Parameters}
+\item[{\em viewport}]Pointer of \hyperlink{class_f2_c_1_1_viewport}{Viewport} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_font_sprite_a5c7ad536cebfee0660823bef1947e668}{
+\index{F2C::FontSprite@{F2C::FontSprite}!FontSprite@{FontSprite}}
+\index{FontSprite@{FontSprite}!F2C::FontSprite@{F2C::FontSprite}}
+\subsubsection[{FontSprite}]{\setlength{\rightskip}{0pt plus 5cm}F2C::FontSprite::FontSprite (const {\bf Bitmap} $\ast$ {\em bitmapfont}, \/  {\bf uint} {\em charsperwidth} = {\ttfamily {\bf FontSprite::defaultCharsperW}}, \/  {\bf uint} {\em charsperheight} = {\ttfamily {\bf FontSprite::defaultCharsperH}})}}
+\label{class_f2_c_1_1_font_sprite_a5c7ad536cebfee0660823bef1947e668}
+
+
+Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bitmapfont}]Pointer of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \item[{\em charsperwidth}]Characters per column \item[{\em charsperheight}]Characters per line  \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_font_sprite_a86138fa37543cdf1c28735b175f55fb8}{
+\index{F2C::FontSprite@{F2C::FontSprite}!addText@{addText}}
+\index{addText@{addText}!F2C::FontSprite@{F2C::FontSprite}}
+\subsubsection[{addText}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::FontSprite::addText (const {\bf Rect} \& {\em rect}, \/  std::string {\em text})}}
+\label{class_f2_c_1_1_font_sprite_a86138fa37543cdf1c28735b175f55fb8}
+
+
+Adds a text to a specific position. 
+\begin{DoxyParams}{Parameters}
+\item[{\em rect}]Display area \item[{\em text}]Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_font_sprite_ae1be1c6e70f794e6b8bf56b60528119e}{
+\index{F2C::FontSprite@{F2C::FontSprite}!addText@{addText}}
+\index{addText@{addText}!F2C::FontSprite@{F2C::FontSprite}}
+\subsubsection[{addText}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::FontSprite::addText (int {\em x}, \/  int {\em y}, \/  {\bf uint} {\em width}, \/  {\bf uint} {\em height}, \/  std::string {\em text})}}
+\label{class_f2_c_1_1_font_sprite_ae1be1c6e70f794e6b8bf56b60528119e}
+
+
+Adds a text to a specific position. 
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]X coordinate \item[{\em y}]Y coordinate \item[{\em width}]Width of the display area \item[{\em height}]Height of the display area \item[{\em text}]Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_font_sprite_a36a224f59737fb06c4d79ee48b7e4068}{
+\index{F2C::FontSprite@{F2C::FontSprite}!copyProperties@{copyProperties}}
+\index{copyProperties@{copyProperties}!F2C::FontSprite@{F2C::FontSprite}}
+\subsubsection[{copyProperties}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::FontSprite::copyProperties (const {\bf FontSprite} \& {\em copy})}}
+\label{class_f2_c_1_1_font_sprite_a36a224f59737fb06c4d79ee48b7e4068}
+
+
+Copies all properties(x,y,z-\/Coord.,vColor,Texts,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). 
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]Source copy \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_f2_c_1_1_sprite_base_a8f7ea8a95a07688bfb2e6268a52b9215}{F2C::SpriteBase}.\hypertarget{class_f2_c_1_1_font_sprite_a2c6fc77162983dc4d750258144410272}{
+\index{F2C::FontSprite@{F2C::FontSprite}!render@{render}}
+\index{render@{render}!F2C::FontSprite@{F2C::FontSprite}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::FontSprite::render () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_f2_c_1_1_font_sprite_a2c6fc77162983dc4d750258144410272}
+
+
+Render the text on the screen. \begin{DoxyReturn}{Returns}
+-\/1, show is false (or from viewport). 
+
+-\/2, The width or height of the bitmap is 0. 
+
+-\/3, There are no texts to display. 
+
+-\/4, The alpha color of all 4 Vertices are less than 1. 
+
+-\/5, zoom\_\-x or zoom\_\-y is exactly 0. 
+
+1, Texts has been successfully rendered. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_f2_c_1_1_sprite_base_af9dfc70083ca5a774d3874b61a6f9abc}{F2C::SpriteBase}.\hypertarget{class_f2_c_1_1_font_sprite_a067445bcf9a95c276413091161066cb1}{
+\index{F2C::FontSprite@{F2C::FontSprite}!setBitmap@{setBitmap}}
+\index{setBitmap@{setBitmap}!F2C::FontSprite@{F2C::FontSprite}}
+\subsubsection[{setBitmap}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::FontSprite::setBitmap (const {\bf Bitmap} $\ast$ {\em bitmap}, \/  {\bf uint} {\em charsperwidth} = {\ttfamily {\bf FontSprite::defaultCharsperW}}, \/  {\bf uint} {\em charsperheight} = {\ttfamily {\bf FontSprite::defaultCharsperH}})}}
+\label{class_f2_c_1_1_font_sprite_a067445bcf9a95c276413091161066cb1}
+
+
+Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bitmap}]Pointer of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \item[{\em charsperwidth}]Characters per column \item[{\em charsperheight}]Characters per line  \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_font_sprite_ac6af1586ca99fd00365c1393f9a14817}{
+\index{F2C::FontSprite@{F2C::FontSprite}!setViewport@{setViewport}}
+\index{setViewport@{setViewport}!F2C::FontSprite@{F2C::FontSprite}}
+\subsubsection[{setViewport}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::FontSprite::setViewport ({\bf Viewport} $\ast$ {\em viewport})}}
+\label{class_f2_c_1_1_font_sprite_ac6af1586ca99fd00365c1393f9a14817}
+
+
+setMethode: Set the pointer of the viewport and the clip\_\-rect. 
+\begin{DoxyParams}{Parameters}
+\item[{\em viewport}]Pointer of \hyperlink{class_f2_c_1_1_viewport}{Viewport} \end{DoxyParams}

@@ -1,0 +1,38 @@
+#!/usr/bin/make
+
+debugdirs:
+	if not exist "$(DEBUGDIR)/$(OBJDIR)" md "$(DEBUGDIR)/$(OBJDIR)"
+	if not exist "$(DEBUGDIR)/$(OUTDIR)" md "$(DEBUGDIR)/$(OUTDIR)"
+	if not exist "$(DEBUGDIR)/$(OUTBINDIR)" md "$(DEBUGDIR)/$(OUTBINDIR)"
+                
+releasedirs:
+	if not exist "$(RELEASEDIR)/$(OBJDIR)" md "$(RELEASEDIR)/$(OBJDIR)"
+	if not exist "$(RELEASEDIR)/$(OUTDIR)" md "$(RELEASEDIR)/$(OUTDIR)"
+	if not exist "$(RELEASEDIR)/$(OUTBINDIR)" md "$(RELEASEDIR)/$(OUTBINDIR)"
+
+%.tag:
+	if not exist "$(dir $(@))" md "$(dir $(@))"
+
+$(OBJECTSDEBUG): $(DEBUGDIR)/$(OBJDIR)/%.$(OBJSUF): $(SRCDIR)/%.$(SRCSUF) $(DEBUGDIR)/$(OBJDIR)/.tag
+	$(CXX) $(DEBUGFLAGS) $(CXXFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)$(HEADERSDIR) $(SRCFLAG) "$<" $(OUTFLAG)"$@"
+
+
+$(OBJECTSRELEASE): $(RELEASEDIR)/$(OBJDIR)/%.$(OBJSUF): $(SRCDIR)/%.$(SRCSUF) $(RELEASEDIR)/$(OBJDIR)/.tag
+	$(CXX) $(RELEASEFLAGS) $(CXXFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)"$(HEADERSDIR)" $(SRCFLAG) "$<" $(OUTFLAG)"$@"
+
+Debug : debugdirs $(OBJECTSDEBUG)
+	$(LD) $(DEBUGFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)$(HEADERSDIR) $(SOFLAGS) --output-def="$(DEBUGDIR)/$(OUTDIR)/$(OUTDEF)" -Wl,--out-implib="$(DEBUGDIR)/$(OUTDIR)/$(OUTIMPLIB)" -Wl, $(LDFLAGS) $(OBJECTSDEBUG) $(OUTFLAG)"$(DEBUGDIR)/$(OUTBINDIR)/$(OUTLIB).$(OUTLIBSUF)" $(LIBFLAGS)
+ 
+Release : releasedirs $(OBJECTSRELEASE)
+	$(LD) $(RELEASEFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)$(HEADERSDIR) $(SOFLAGS) --output-def="$(RELEASEDIR)/$(OUTDIR)/$(OUTDEF)" -Wl,--out-implib="$(RELEASEDIR)/$(OUTDIR)/$(OUTIMPLIB)" $(LDFLAGS) $(OBJECTSRELEASE) $(OUTFLAG)"$(RELEASEDIR)/$(OUTBINDIR)/$(OUTLIB).$(OUTLIBSUF)" $(LIBFLAGS)
+
+clean: cleanDebug cleanRelease
+
+
+cleanDebug:
+	if exist "$(DEBUGDIR)/$(OBJDIR)" del /F /S /Q "$(DEBUGDIR)/$(OBJDIR)"
+	if exist "$(DEBUGDIR)/$(OBJDIR)" rd /S /Q "$(DEBUGDIR)/$(OBJDIR)"
+
+cleanRelease:
+	if exist "$(RELEASEDIR)/$(OBJDIR)" del /F /S /Q "$(RELEASEDIR)/$(OBJDIR)"
+	if exist "$(DEBUGDIR)/$(OBJDIR)" rd /S /Q "$(DEBUGDIR)/$(OBJDIR)"

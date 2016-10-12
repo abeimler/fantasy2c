@@ -1,0 +1,81 @@
+#!/bin/bash
+
+echo "You need Follow Librarys: 
+GL
+GLU 
+IL
+ILU
+glfw
+audiere
+freetype
+Do you want install it? [Yy]"
+read YES
+
+case $YES in
+  j*|J*|y*|Y*|"") 
+	gksu /bin/bash "./installlibs";
+  ;;
+esac
+
+echo -e "\n"
+echo -e "\n"
+echo "Do you want to compile Fantasy2C and copy files into the /usr-directory (/usr/include and /usr/lib)? [Yy]"
+read INSTALL
+
+case $INSTALL in
+  j*|J*|y*|Y*|"") 
+	ostype=`uname -s`;
+	OS="";
+	arch="";
+
+	case `uname -m` in
+	  i[3456789]86|x86|i86pc)
+	    arch="x86";
+	    ;;
+	  x86_64|amd64|AMD64)
+	    arch="amd64";
+	    ;;
+	  *)
+	    echo "Unknown architecture `uname -m`."
+	esac
+
+	if [ "$ostype" = "HP-UX" ] ; then 
+		OS="HP-UX";
+	elif [ "$ostype" = "IRIX" ] ; then 
+		if ( uname -r | grep '6\.' >/dev/null ) ; then 
+			OS="IRIX6";
+		else
+			OS="IRIX";
+		fi;
+	elif [ "$ostype" = "IRIX64" ] ; then 
+		OS="IRIX6";
+	elif [ "$ostype" = "AIX" ] ; then 
+		OS="AIX";
+	elif [ "$ostype" = "SunOS" ] ; then 
+		release="`uname -r|cut -d . -f 1`"; 
+		if [ "$release" = "5" ] ; then 
+			OS="SunOS5";
+		else 
+			OS="SunOS";
+		fi
+		if [ "$arch" = "x86" ] ; then
+			OS="SunOSx86";
+		fi
+	elif [ "$ostype" = "OSF1" ] ; then 
+		OS="OSF1";
+	elif [ "$ostype" = "FreeBSD" ] ; then
+		OS="FreeBSD";
+	elif [ "$ostype" = "Darwin" ] ; then 
+		OS="Darwin";
+	elif [ "$ostype" = "Linux" ] ; then 
+		OS="Linux";
+	else 
+		OS="Linux";
+		echo "Platform unknown `uname -s`, set default Linux"; 
+	fi
+
+
+	make -f ./Makefile install OS="$OS"
+
+   ;;
+esac

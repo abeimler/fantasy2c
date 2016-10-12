@@ -1,0 +1,15 @@
+uniform sampler2D gTexture;
+
+void main( void )
+{
+    vec4 texelColor = texture2D( gTexture, gl_TexCoord[0].xy );
+
+    float luminance = float(texelColor.r)*0.299 + float(texelColor.g)*0.587 + float(texelColor.b)*0.114;
+    float alpha = 0.0;
+    if (float(texelColor.a) > 0.1f){
+	alpha = float(gl_Color.a);
+    }
+      
+
+    gl_FragColor = vec4( luminance, luminance, luminance, alpha);
+}

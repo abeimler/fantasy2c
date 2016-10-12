@@ -1,0 +1,267 @@
+\hypertarget{class_f2_c_1_1_sprite}{
+\section{F2C::Sprite Class Reference}
+\label{class_f2_c_1_1_sprite}\index{F2C::Sprite@{F2C::Sprite}}
+}
+
+
+Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen.  
+
+
+Inheritance diagram for F2C::Sprite:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_f2_c_1_1_sprite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_sprite_adfbb0aa21734d8e4e24b50dffe00ada4}{
+\hyperlink{class_f2_c_1_1_sprite_adfbb0aa21734d8e4e24b50dffe00ada4}{Sprite} ()}
+\label{class_f2_c_1_1_sprite_adfbb0aa21734d8e4e24b50dffe00ada4}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_sprite_a858b8f2c06e804c19f6c6a5cbe760c1b}{Sprite} (\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$\hyperlink{class_f2_c_1_1_sprite_a66cc8d6922dcbf4331b360800ba47177}{viewport})
+\begin{DoxyCompactList}\small\item\em Set the pointer of the viewport and the clip\_\-rect. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_sprite_a18cd93c504d29dfc9df20dcde1968c45}{Sprite} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} $\ast$bitmap)
+\begin{DoxyCompactList}\small\item\em Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_a7efb0dbc78a120afa45db3b2e4c69e58}{
+\hyperlink{class_f2_c_1_1_sprite_a7efb0dbc78a120afa45db3b2e4c69e58}{Sprite} (const \hyperlink{class_f2_c_1_1_sprite}{Sprite} \&copy)}
+\label{class_f2_c_1_1_sprite_a7efb0dbc78a120afa45db3b2e4c69e58}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_a8bcf707d839630b917e9479bc2380c16}{
+\hyperlink{class_f2_c_1_1_sprite}{Sprite} \& \hyperlink{class_f2_c_1_1_sprite_a8bcf707d839630b917e9479bc2380c16}{operator=} (const \hyperlink{class_f2_c_1_1_sprite}{Sprite} \&copy)}
+\label{class_f2_c_1_1_sprite_a8bcf707d839630b917e9479bc2380c16}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator with deep copy. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_a33d27869102b12705666a1712d9f645d}{copyProperties} (const \hyperlink{class_f2_c_1_1_sprite}{Sprite} \&copy)
+\begin{DoxyCompactList}\small\item\em Copies all properties(x,y,z-\/Coord.,vColor,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_sprite_a53505010baf74857c67c82150802b297}{render} () const 
+\begin{DoxyCompactList}\small\item\em Render the bitmap on screen. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_a8bc4649a6100c8b26c67c94e79497289}{setViewport} (\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$\hyperlink{class_f2_c_1_1_sprite_a66cc8d6922dcbf4331b360800ba47177}{viewport})
+\begin{DoxyCompactList}\small\item\em setMethode: Set the pointer of the viewport and the clip\_\-rect. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_f2_c_1_1_sprite_aa237fe3dca3002ea876865cfde83bfa3}{enableGLDrawArray} (bool enable)
+\begin{DoxyCompactList}\small\item\em if enable then use glDrawArrays,glEnableClientState,... , if disable then use glBegin(),glVertex(),...,glEnd(). \par
+ Is automatically enable when VBO is supported. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_ae5bff6a95dbabc64de9143e59c708ab4}{
+static bool \hyperlink{class_f2_c_1_1_sprite_ae5bff6a95dbabc64de9143e59c708ab4}{isEnableGLDrawArray} ()}
+\label{class_f2_c_1_1_sprite_ae5bff6a95dbabc64de9143e59c708ab4}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Is glDrawArrays,glEnableClientState,... used when rendering. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_sprite_aa03b4a6e204fb24f935d42bf0d40b1bd}{
+\hyperlink{class_f2_c_1_1_rect}{Rect} $\ast$ \hyperlink{class_f2_c_1_1_sprite_aa03b4a6e204fb24f935d42bf0d40b1bd}{clip\_\-rect}}
+\label{class_f2_c_1_1_sprite_aa03b4a6e204fb24f935d42bf0d40b1bd}
+
+\begin{DoxyCompactList}\small\item\em Clipping \hyperlink{class_f2_c_1_1_rect}{Rect}, Cutting the sprites on the screen the desired section or window. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_a66cc8d6922dcbf4331b360800ba47177}{
+\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$ \hyperlink{class_f2_c_1_1_sprite_a66cc8d6922dcbf4331b360800ba47177}{viewport}}
+\label{class_f2_c_1_1_sprite_a66cc8d6922dcbf4331b360800ba47177}
+
+\begin{DoxyCompactList}\small\item\em Additional Z-\/coordinate and \hyperlink{class_f2_c_1_1_color_tone}{ColorTone}. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_aa1b34c2ac3927922793a729b63046b06}{
+\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \hyperlink{class_f2_c_1_1_sprite_aa1b34c2ac3927922793a729b63046b06}{tone}}
+\label{class_f2_c_1_1_sprite_aa1b34c2ac3927922793a729b63046b06}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_color}{Color} tone. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_sprite_adb167a247bc75717c96e587e3b2c8993}{
+static GLhandleARB \hyperlink{class_f2_c_1_1_sprite_adb167a247bc75717c96e587e3b2c8993}{ShaderProgramObj}}
+\label{class_f2_c_1_1_sprite_adb167a247bc75717c96e587e3b2c8993}
+
+\begin{DoxyCompactList}\small\item\em Handle by the ARB program object for the \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite}. (Default: NULL) \par
+ The Tranzperenz(Alpha Color) of the generated shader image (with the ARB program object) can be determined by the grayscale. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_afdc906dcee337188d0a8bc5b054c5e09}{
+static \hyperlink{namespace_f2_c_1_1_tex_param_a64299c3972944468af4e8b0394c936c6}{TexParam::Tex\_\-Param} \hyperlink{class_f2_c_1_1_sprite_afdc906dcee337188d0a8bc5b054c5e09}{filter}}
+\label{class_f2_c_1_1_sprite_afdc906dcee337188d0a8bc5b054c5e09}
+
+\begin{DoxyCompactList}\small\item\em Set the texture filtering of the \hyperlink{class_f2_c_1_1_sprite}{Sprite}. (Default: Linear). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{class_f2_c_1_1_sprite_a0b5b0f19eaf4188e211f3bc41b82673c}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_sprite}{Sprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::istream \& \hyperlink{class_f2_c_1_1_sprite_a591a1f6d79479eca4af4b3d55e85a562}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_sprite}{Sprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen. Please note the following OpenGL capability are enabled when rendering and at the end disable: \par
+ GL\_\-SCISSOR\_\-TEST (if necessary) \par
+ GL\_\-STENCIL\_\-TEST \par
+ GL\_\-TEXTURE\_\-2D \par
+ GL\_\-DEPTH\_\-TEST \par
+ GL\_\-ALPHA\_\-TEST \par
+ GL\_\-BLEND \par
+ and use glShadeModel(GL\_\-SMOOTH) \par
+ \par
+ Dont forget to set the depth and alpha test function, e.g.: \par
+ glAlphaFunc(GL\_\-GREATER, 0.0f) \par
+ glDepthFunc(GL\_\-LEQUAL) \par
+ \par
+ Used OpenGL Buffers \par
+ -\/GL\_\-COLOR\_\-BUFFER\_\-BIT \par
+ -\/GL\_\-DEPTH\_\-BUFFER\_\-BIT \par
+ -\/GL\_\-STENCIL\_\-BUFFER\_\-BIT \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_sprite_a858b8f2c06e804c19f6c6a5cbe760c1b}{
+\index{F2C::Sprite@{F2C::Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!F2C::Sprite@{F2C::Sprite}}
+\subsubsection[{Sprite}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Sprite::Sprite (
+\begin{DoxyParamCaption}
+\item[{{\bf Viewport} $\ast$}]{ viewport}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_a858b8f2c06e804c19f6c6a5cbe760c1b}
+
+
+Set the pointer of the viewport and the clip\_\-rect. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em viewport}]Pointer of \hyperlink{class_f2_c_1_1_viewport}{Viewport} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_a18cd93c504d29dfc9df20dcde1968c45}{
+\index{F2C::Sprite@{F2C::Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!F2C::Sprite@{F2C::Sprite}}
+\subsubsection[{Sprite}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Sprite::Sprite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} $\ast$}]{ bitmap}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_a18cd93c504d29dfc9df20dcde1968c45}
+
+
+Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bitmap}]Pointer of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_sprite_a33d27869102b12705666a1712d9f645d}{
+\index{F2C::Sprite@{F2C::Sprite}!copyProperties@{copyProperties}}
+\index{copyProperties@{copyProperties}!F2C::Sprite@{F2C::Sprite}}
+\subsubsection[{copyProperties}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Sprite::copyProperties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sprite} \&}]{ copy}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_a33d27869102b12705666a1712d9f645d}
+
+
+Copies all properties(x,y,z-\/Coord.,vColor,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]Source copy \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_aa237fe3dca3002ea876865cfde83bfa3}{
+\index{F2C::Sprite@{F2C::Sprite}!enableGLDrawArray@{enableGLDrawArray}}
+\index{enableGLDrawArray@{enableGLDrawArray}!F2C::Sprite@{F2C::Sprite}}
+\subsubsection[{enableGLDrawArray}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::Sprite::enableGLDrawArray (
+\begin{DoxyParamCaption}
+\item[{bool}]{ enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_sprite_aa237fe3dca3002ea876865cfde83bfa3}
+
+
+if enable then use glDrawArrays,glEnableClientState,... , if disable then use glBegin(),glVertex(),...,glEnd(). \par
+ Is automatically enable when VBO is supported. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em enable}]Enable/Disable \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_a53505010baf74857c67c82150802b297}{
+\index{F2C::Sprite@{F2C::Sprite}!render@{render}}
+\index{render@{render}!F2C::Sprite@{F2C::Sprite}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::Sprite::render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_f2_c_1_1_sprite_a53505010baf74857c67c82150802b297}
+
+
+Render the bitmap on screen. 
+
+\begin{DoxyReturn}{Returns}
+-\/1, show is false (or from viewport). 
+
+-\/2, The width or height of the bitmap or the src\_\-rect are 0. 
+
+-\/3, The sprite is outside the display (glViewport). 
+
+-\/4, The alpha color of all 4 Vertices are less than 1. 
+
+-\/5, zoom\_\-x or zoom\_\-y is exactly 0. 
+
+1, \hyperlink{class_f2_c_1_1_sprite}{Sprite} has been successfully rendered. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_f2_c_1_1_sprite_base_af9dfc70083ca5a774d3874b61a6f9abc}{F2C::SpriteBase}.
+
+\hypertarget{class_f2_c_1_1_sprite_a8bc4649a6100c8b26c67c94e79497289}{
+\index{F2C::Sprite@{F2C::Sprite}!setViewport@{setViewport}}
+\index{setViewport@{setViewport}!F2C::Sprite@{F2C::Sprite}}
+\subsubsection[{setViewport}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Sprite::setViewport (
+\begin{DoxyParamCaption}
+\item[{{\bf Viewport} $\ast$}]{ viewport}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_a8bc4649a6100c8b26c67c94e79497289}
+
+
+setMethode: Set the pointer of the viewport and the clip\_\-rect. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em viewport}]Pointer of \hyperlink{class_f2_c_1_1_viewport}{Viewport} \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_f2_c_1_1_sprite_a0b5b0f19eaf4188e211f3bc41b82673c}{
+\index{F2C::Sprite@{F2C::Sprite}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C::Sprite@{F2C::Sprite}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const {\bf Sprite} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_sprite_a0b5b0f19eaf4188e211f3bc41b82673c}
+
+
+Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_a591a1f6d79479eca4af4b3d55e85a562}{
+\index{F2C::Sprite@{F2C::Sprite}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C::Sprite@{F2C::Sprite}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{{\bf Sprite} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_sprite_a591a1f6d79479eca4af4b3d55e85a562}
+
+
+Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}

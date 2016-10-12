@@ -1,0 +1,75 @@
+#include <Fantasy2C/GameError.hpp>
+
+namespace F2C{
+
+#if defined(_ISWINDOWS)
+    std::string LogError::filename = "logfile.txt";
+#else
+    std::string LogError::filename = "logfile";
+#endif
+bool LogError::writelog = true;
+
+void LogError::setError(std::string string){this->error.error = string;}
+void LogError::setErrorCode(ErrorCode::Error_Code code){this->error.code = code;}
+std::string LogError::getError() const {return this->error.error;}
+std::string LogError::getOpenGLError(){
+    GLenum errCode = glGetError();
+    if (errCode != GL_NO_ERROR)
+        return std::string((const char*)gluErrorString(errCode));
+    else
+        return "";
+}
+
+void LogError::ClearLog(){
+   std::ofstream outfile;
+   outfile.open (LogError::filename.c_str());
+   outfile.clear();
+   outfile.close();
+}
+
+LogError::LEError::LEError():
+    line(0),
+	ptr(NULL),
+	code(ErrorCode::NO_ERRORCODE)
+{}
+
+void LogError::writeError(){
+	if (LogError::writelog){
+		std::ofstream outfile;
+		outfile.open (LogError::filename.c_str(),std::ios_base::out | std::ios_base::app);
+		outfile << "Filename: " << this->error.file << std::endl
+				<< "Adress: " << this->error.ptr << std::endl
+				<< "Function: " << this->error.funk << std::endl
+				<< "Line: " << this->error.line << std::endl
+				<< "Log: " << std::endl
+				<< this->error.error << std::endl;
+		outfile.close();
+	}
+}
+
+void LogError::writeString(std::string string){
+	if (!string.empty() && LogError::writelog){
+		std::ofstream outfile;
+		outfile.open (LogError::filename.c_str(),std::ios_base::out | std::ios_base::app);
+		outfile << string;
+		outfile.close();
+	}
+}
+
+void LogError::setError(std::string file,std::string funk,uint line,std::string string){
+	this->error.file = file;
+	this->error.funk = funk;
+	this->error.line = line;
+	this->error.ptr = NULL;
+	this->error.error = string;
+}
+
+void LogError::setError(std::string file,std::string funk,uint line,void* ptr,std::string string){
+	this->error.file = file;
+	this->error.funk = funk;
+	this->error.line = line;
+	this->error.ptr = ptr;
+	this->error.error = string;
+}
+
+};

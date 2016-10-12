@@ -1,0 +1,176 @@
+\hypertarget{namespace_f2_c}{
+\section{F2C Namespace Reference}
+\label{namespace_f2_c}\index{F2C@{F2C}}
+}
+
+
+Fantasy2C Namespace.  
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespace_f2_c_1_1_blend_type}{BlendType}
+
+
+\begin{DoxyCompactList}\small\item\em Blending type. \item\end{DoxyCompactList}\item 
+namespace \hyperlink{namespace_f2_c_1_1_joystick_event}{JoystickEvent}
+
+
+\begin{DoxyCompactList}\small\item\em Joystick \hyperlink{class_f2_c_1_1_input}{Input}. \item\end{DoxyCompactList}\item 
+namespace \hyperlink{namespace_f2_c_1_1_keyboard_event}{KeyboardEvent}
+
+
+\begin{DoxyCompactList}\small\item\em Keyboard \hyperlink{class_f2_c_1_1_input}{Input}. \item\end{DoxyCompactList}\item 
+namespace \hyperlink{namespace_f2_c_1_1_mouse_event}{MouseEvent}
+
+
+\begin{DoxyCompactList}\small\item\em Mouse \hyperlink{class_f2_c_1_1_input}{Input}. \item\end{DoxyCompactList}\item 
+namespace \hyperlink{namespace_f2_c_1_1_tex_param}{TexParam}
+
+
+\begin{DoxyCompactList}\small\item\em Texture filtering \par
+ Nearest: \par
+ glTexParameter: \par
+ MAG\_\-FILTER : GL\_\-NEAREST \par
+ MIN\_\-FILTER : GL\_\-NEAREST \par
+ \par
+ Linear: \par
+ glTexParameter: \par
+ MAG\_\-FILTER : GL\_\-LINEAR \par
+ MIN\_\-FILTER : GL\_\-LINEAR \par
+ \par
+. \item\end{DoxyCompactList}\item 
+namespace \hyperlink{namespace_f2_c_1_1_window_property}{WindowProperty}
+
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_window}{Window} Handle. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_f2_c_1_1_sprite_element}{SpriteElement}
+\begin{DoxyCompactList}\small\item\em Element Type of \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite}. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite}
+\begin{DoxyCompactList}\small\item\em Renders a picture(Bitmap), as an array of different values. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_audio_file}{AudioFile}
+\begin{DoxyCompactList}\small\item\em Playing audio files. \par
+. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}
+\begin{DoxyCompactList}\small\item\em Loading image files. \par
+ Automatically creates a pixel array with a quadratic power of 2 (32x32, 64x64 ,..., 512x512 ,...) \par
+ and paste the loaded image into the pixel array. \par
+ DevIL Supported Formats: \par
+ Load: \par
+. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_color}{Color}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_color}{Color} (RGBA) \par
+ Red 0-\/255 \par
+ Green 0-\/255 \par
+ Blue 0-\/255 \par
+ Alpha 0-\/255 \par
+. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_color_tone}{ColorTone}
+\begin{DoxyCompactList}\small\item\em Colortone (CMY-\/RGB) \par
+ Cyan -\/255-\/0,0-\/255 Red \par
+ Magenta -\/255-\/0,0-\/255 Green \par
+ Yellow -\/255-\/0,0-\/255 Blue \par
+ Grayscale 0-\/255. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_t_t_f_font}{TTFFont}
+\begin{DoxyCompactList}\small\item\em Loading TTF(True Type Font) file and Creates a BitmapFont. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_font_sprite}{FontSprite}
+\begin{DoxyCompactList}\small\item\em Displaying messages on the screen via BitmapFont (bitmap). \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_log_error}{LogError}
+\begin{DoxyCompactList}\small\item\em Writing log files and exception handler. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_input}{Input}
+\begin{DoxyCompactList}\small\item\em Singleton pattern: \hyperlink{class_f2_c_1_1_input}{Input} Handle from the keyboard, mouse, joystick and \hyperlink{class_f2_c_1_1_window}{Window}. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_plane}{Plane}
+\begin{DoxyCompactList}\small\item\em Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen as an infinite Scrollable image. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_rect}{Rect}
+\begin{DoxyCompactList}\small\item\em Rectangle (x, y, width, height). \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_simple_sprite}{SimpleSprite}
+\begin{DoxyCompactList}\small\item\em Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen. This class offers less than the normal \hyperlink{class_f2_c_1_1_sprite}{Sprite} class is but a little faster at rendering. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_sprite}{Sprite}
+\begin{DoxyCompactList}\small\item\em Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase}
+\begin{DoxyCompactList}\small\item\em Basis Class of \hyperlink{class_f2_c_1_1_sprite}{Sprite}. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_viewport}{Viewport}
+\begin{DoxyCompactList}\small\item\em Additional show, Z-\/coordinate, colortone-\/Variable, and a clip\_\-rect. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_window}{Window}
+\begin{DoxyCompactList}\small\item\em Singleton pattern: Create window and loading shader files. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_f2_c_afe0bd5c32b87b6cbd7766ebb2498cf5f}{
+typedef signed char \hyperlink{namespace_f2_c_afe0bd5c32b87b6cbd7766ebb2498cf5f}{int8}}
+\label{namespace_f2_c_afe0bd5c32b87b6cbd7766ebb2498cf5f}
+
+\begin{DoxyCompactList}\small\item\em Interger 8 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{
+typedef unsigned char \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8}}
+\label{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger 8 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a74fad364688add30796d711e5635ac77}{
+typedef unsigned char \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte}}
+\label{namespace_f2_c_a74fad364688add30796d711e5635ac77}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger 8 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{
+typedef short int \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16}}
+\label{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}
+
+\begin{DoxyCompactList}\small\item\em Interger 16 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a2d95c3c3eebf9e41f34363393100d0b4}{
+typedef unsigned short int \hyperlink{namespace_f2_c_a2d95c3c3eebf9e41f34363393100d0b4}{uint16}}
+\label{namespace_f2_c_a2d95c3c3eebf9e41f34363393100d0b4}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger 16 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{
+typedef unsigned int \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint}}
+\label{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_ae125264248542a3a358accdbfd2ec622}{
+typedef long int \hyperlink{namespace_f2_c_ae125264248542a3a358accdbfd2ec622}{int32}}
+\label{namespace_f2_c_ae125264248542a3a358accdbfd2ec622}
+
+\begin{DoxyCompactList}\small\item\em Interger 32 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_ae9a1fcf27e85dd8fb51e9a30db5ad871}{
+typedef unsigned long int \hyperlink{namespace_f2_c_ae9a1fcf27e85dd8fb51e9a30db5ad871}{uint32}}
+\label{namespace_f2_c_ae9a1fcf27e85dd8fb51e9a30db5ad871}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger 32 Bit. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespace_f2_c_a9255a9f561e2a53a172170c17daebccd}{clamp} (T \&x, T min, T max)
+\begin{DoxyCompactList}\small\item\em Pushes x in the range of Min and Max. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{namespace_f2_c_a60c6d5786600a7d7bfb8c4bfafa55419}{nextPowerof2} (T v)
+\begin{DoxyCompactList}\small\item\em Round to the next highest power of 2. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fantasy2C Namespace. 
+
+\subsection{Function Documentation}
+\hypertarget{namespace_f2_c_a9255a9f561e2a53a172170c17daebccd}{
+\index{F2C@{F2C}!clamp@{clamp}}
+\index{clamp@{clamp}!F2C@{F2C}}
+\subsubsection[{clamp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void F2C::clamp (T \& {\em x}, \/  T {\em min}, \/  T {\em max})}}
+\label{namespace_f2_c_a9255a9f561e2a53a172170c17daebccd}
+
+
+Pushes x in the range of Min and Max. 
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]Target reference variable \item[{\em min}]Minimum value \item[{\em max}]Maximum Value \end{DoxyParams}
+\hypertarget{namespace_f2_c_a60c6d5786600a7d7bfb8c4bfafa55419}{
+\index{F2C@{F2C}!nextPowerof2@{nextPowerof2}}
+\index{nextPowerof2@{nextPowerof2}!F2C@{F2C}}
+\subsubsection[{nextPowerof2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T F2C::nextPowerof2 (T {\em v})}}
+\label{namespace_f2_c_a60c6d5786600a7d7bfb8c4bfafa55419}
+
+
+Round to the next highest power of 2. 
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]Value \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Power of 2 
+\end{DoxyReturn}

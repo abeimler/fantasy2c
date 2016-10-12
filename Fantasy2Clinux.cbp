@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Fantasy2Clinux" />
+		<Option makefile="Makefile OS=Linux" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Unix;" />
+				<Option output="bin/Debug/linux/Fantasy2C" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/linux" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="pthread" />
+					<Add library="X11" />
+					<Add library="Xxf86vm" />
+					<Add library="Xrandr" />
+					<Add library="m" />
+					<Add library="IL" />
+					<Add library="ILU" />
+					<Add library="glfw" />
+					<Add library="audiere" />
+					<Add library="freetype" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option platforms="Unix;" />
+				<Option output="bin/Release/linux/Fantasy2C" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/linux" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="pthread" />
+					<Add library="X11" />
+					<Add library="Xxf86vm" />
+					<Add library="Xrandr" />
+					<Add library="m" />
+					<Add library="IL" />
+					<Add library="ILU" />
+					<Add library="glfw" />
+					<Add library="audiere" />
+					<Add library="freetype" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/Fantasy2C/ArraySprite.hpp" />
+		<Unit filename="include/Fantasy2C/Audio.hpp" />
+		<Unit filename="include/Fantasy2C/Basic.hpp" />
+		<Unit filename="include/Fantasy2C/Bitmap.hpp" />
+		<Unit filename="include/Fantasy2C/Color.hpp" />
+		<Unit filename="include/Fantasy2C/ColorTone.hpp" />
+		<Unit filename="include/Fantasy2C/Font.hpp" />
+		<Unit filename="include/Fantasy2C/FontSprite.hpp" />
+		<Unit filename="include/Fantasy2C/GameError.hpp" />
+		<Unit filename="include/Fantasy2C/Input.hpp" />
+		<Unit filename="include/Fantasy2C/Plane.hpp" />
+		<Unit filename="include/Fantasy2C/Rect.hpp" />
+		<Unit filename="include/Fantasy2C/RenderManager.hpp" />
+		<Unit filename="include/Fantasy2C/ShaderGL.hpp" />
+		<Unit filename="include/Fantasy2C/SimpleSprite.hpp" />
+		<Unit filename="include/Fantasy2C/Sprite.hpp" />
+		<Unit filename="include/Fantasy2C/SpriteBase.hpp" />
+		<Unit filename="include/Fantasy2C/Viewport.hpp" />
+		<Unit filename="include/Fantasy2C/Window.hpp" />
+		<Unit filename="include/Fantasy2C/glext.h" />
+		<Unit filename="include/Fantasy2C/glxext.h" />
+		<Unit filename="include/Fantasy2C/wglext.h" />
+		<Unit filename="lib/ArraySprite.cpp" />
+		<Unit filename="lib/Audio.cpp" />
+		<Unit filename="lib/Basic.cpp" />
+		<Unit filename="lib/Bitmap.cpp" />
+		<Unit filename="lib/Bitmap2.cpp" />
+		<Unit filename="lib/Bitmap_Constructor.cpp" />
+		<Unit filename="lib/Bitmap_Constructor2.cpp" />
+		<Unit filename="lib/Color.cpp" />
+		<Unit filename="lib/ColorTone.cpp" />
+		<Unit filename="lib/Font.cpp" />
+		<Unit filename="lib/FontSprite.cpp" />
+		<Unit filename="lib/GameError.cpp" />
+		<Unit filename="lib/Input.cpp" />
+		<Unit filename="lib/Plane.cpp" />
+		<Unit filename="lib/Rect.cpp" />
+		<Unit filename="lib/RenderManager.cpp" />
+		<Unit filename="lib/ShaderGL.cpp" />
+		<Unit filename="lib/SimpleSprite.cpp" />
+		<Unit filename="lib/Sprite.cpp" />
+		<Unit filename="lib/SpriteBase.cpp" />
+		<Unit filename="lib/Viewport.cpp" />
+		<Unit filename="lib/Window.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

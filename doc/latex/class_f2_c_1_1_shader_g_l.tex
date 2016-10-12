@@ -1,0 +1,374 @@
+\hypertarget{class_f2_c_1_1_shader_g_l}{
+\section{F2C::ShaderGL Class Reference}
+\label{class_f2_c_1_1_shader_g_l}\index{F2C::ShaderGL@{F2C::ShaderGL}}
+}
+
+
+Loading Fragment and Vertex Shader Files into GLhandleARB Program Object. \par
+ \par
+ Thanks at Alex V. Boreskoff.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a199175c733789ae58dc412cd717f2656}{
+\hyperlink{class_f2_c_1_1_shader_g_l_a199175c733789ae58dc412cd717f2656}{ShaderGL} ()}
+\label{class_f2_c_1_1_shader_g_l_a199175c733789ae58dc412cd717f2656}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_ac45578d727ac4383bc3bc84804d99323}{
+\hyperlink{class_f2_c_1_1_shader_g_l_ac45578d727ac4383bc3bc84804d99323}{$\sim$ShaderGL} ()}
+\label{class_f2_c_1_1_shader_g_l_ac45578d727ac4383bc3bc84804d99323}
+
+\begin{DoxyCompactList}\small\item\em Delete program,fragment and vertex object. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a309b6e62636d137bf14c35f0903f1502}{
+\hyperlink{class_f2_c_1_1_shader_g_l_a309b6e62636d137bf14c35f0903f1502}{ShaderGL} (const \hyperlink{class_f2_c_1_1_shader_g_l}{ShaderGL} \&copy)}
+\label{class_f2_c_1_1_shader_g_l_a309b6e62636d137bf14c35f0903f1502}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_ad14b6395e0733923590fa80baa74fae3}{
+\hyperlink{class_f2_c_1_1_shader_g_l}{ShaderGL} \& \hyperlink{class_f2_c_1_1_shader_g_l_ad14b6395e0733923590fa80baa74fae3}{operator=} (const \hyperlink{class_f2_c_1_1_shader_g_l}{ShaderGL} \&copy)}
+\label{class_f2_c_1_1_shader_g_l_ad14b6395e0733923590fa80baa74fae3}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator with deep copy. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_shader_g_l_a5c19c8364464a6a1e5d4d897a20160bf}{LoadGLFragmentShader} (std::string shaderfilename, std::string $\ast$error=NULL)
+\begin{DoxyCompactList}\small\item\em Load the fragment shader file and creates the ARB fragment object. The build log of the ARB fragment object is writing in the \char`\"{}error\char`\"{} variable. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_shader_g_l_a3b03b241623c5df2d5dd1083fc568608}{LoadGLVertexShader} (std::string shaderfilename, std::string $\ast$error=NULL)
+\begin{DoxyCompactList}\small\item\em Load the fragment shader file and creates the ARB vertex object. The build log of the ARB vertexc object is writing in the \char`\"{}error\char`\"{} variable. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_shader_g_l_a01f179b663f415a273245fdbfb91cff7}{CreateShaderProgram} (std::string $\ast$error=NULL)
+\begin{DoxyCompactList}\small\item\em Creates the ARB shader program object loaded by the ARB and ARB fragment object Vertex object. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_aa9aff7055483876e757ec410d526c80f}{
+GLhandleARB \hyperlink{class_f2_c_1_1_shader_g_l_aa9aff7055483876e757ec410d526c80f}{getProgramObj} () const }
+\label{class_f2_c_1_1_shader_g_l_aa9aff7055483876e757ec410d526c80f}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Handle of ARB program object. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a347bdd4be7e4f63d63cad93127eef9ef}{
+GLhandleARB \hyperlink{class_f2_c_1_1_shader_g_l_a347bdd4be7e4f63d63cad93127eef9ef}{getFragmentShader} () const }
+\label{class_f2_c_1_1_shader_g_l_a347bdd4be7e4f63d63cad93127eef9ef}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Handle of ARB fragment object. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a33c91072f429093f54ef24dbee4b9a14}{
+GLhandleARB \hyperlink{class_f2_c_1_1_shader_g_l_a33c91072f429093f54ef24dbee4b9a14}{getVertexShader} () const }
+\label{class_f2_c_1_1_shader_g_l_a33c91072f429093f54ef24dbee4b9a14}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Handle of ARB vertex object. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_shader_g_l_a8304c74c8510dc66983d57d85011f64d}{getUniformi} (std::string name) const 
+\begin{DoxyCompactList}\small\item\em getMethode: Value of Uniform Variable \item\end{DoxyCompactList}\item 
+float \hyperlink{class_f2_c_1_1_shader_g_l_a3989aba1ff0ff23ec7f096e503f22f31}{getUniformf} (std::string name) const 
+\begin{DoxyCompactList}\small\item\em getMethode: Value of Uniform Variable \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_shader_g_l_a9e063f0f5dcf576d19b345e2adae4fbd}{setUniformi} (std::string name, int value)
+\begin{DoxyCompactList}\small\item\em setMethode: Value of Uniform Variable \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_shader_g_l_a0f960a4016258aa3d701bcef9821137b}{setUniformf} (std::string name, float value)
+\begin{DoxyCompactList}\small\item\em setMethode: Value of Uniform Variable \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a5909c91100cd3797a4b1998ca4bee4cd}{
+std::string \hyperlink{class_f2_c_1_1_shader_g_l_a5909c91100cd3797a4b1998ca4bee4cd}{getFragmentCode} () const }
+\label{class_f2_c_1_1_shader_g_l_a5909c91100cd3797a4b1998ca4bee4cd}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Fragment shader sourcecode \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a3c44d43812f1308eee2ffef5500bba93}{
+std::string \hyperlink{class_f2_c_1_1_shader_g_l_a3c44d43812f1308eee2ffef5500bba93}{getVertexCode} () const }
+\label{class_f2_c_1_1_shader_g_l_a3c44d43812f1308eee2ffef5500bba93}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Vertex shader sourcecode \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_f2_c_1_1_shader_g_l_a2ac17352f8c2e12a812871ce45e280c4}{InitGLShader} ()
+\begin{DoxyCompactList}\small\item\em Initializes the ARB shader functions. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_aa2a774dfadfab1546caa25f245adb5ff}{
+static bool \hyperlink{class_f2_c_1_1_shader_g_l_aa2a774dfadfab1546caa25f245adb5ff}{getSupportedShader} ()}
+\label{class_f2_c_1_1_shader_g_l_aa2a774dfadfab1546caa25f245adb5ff}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Shader supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_aec2dd652bc0bb2374ae969456e0f98d5}{
+static bool \hyperlink{class_f2_c_1_1_shader_g_l_aec2dd652bc0bb2374ae969456e0f98d5}{getSupportedVBO} ()}
+\label{class_f2_c_1_1_shader_g_l_aec2dd652bc0bb2374ae969456e0f98d5}
+
+\begin{DoxyCompactList}\small\item\em getMethode: VBO(Vertex Buffer Object) supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a3becfda95f67a1af56ae53abe213779f}{
+static bool \hyperlink{class_f2_c_1_1_shader_g_l_a3becfda95f67a1af56ae53abe213779f}{getSupportedMultiTexel} ()}
+\label{class_f2_c_1_1_shader_g_l_a3becfda95f67a1af56ae53abe213779f}
+
+\begin{DoxyCompactList}\small\item\em getMethode: MultiTexturing supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a61cd927d89966c42eae04d5fab870573}{
+static bool \hyperlink{class_f2_c_1_1_shader_g_l_a61cd927d89966c42eae04d5fab870573}{getSupportedWGL} ()}
+\label{class_f2_c_1_1_shader_g_l_a61cd927d89966c42eae04d5fab870573}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Windows and WGL supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a634e417f6f4511cbecf65fe077e6e740}{
+static bool \hyperlink{class_f2_c_1_1_shader_g_l_a634e417f6f4511cbecf65fe077e6e740}{getSupportedGLX} ()}
+\label{class_f2_c_1_1_shader_g_l_a634e417f6f4511cbecf65fe077e6e740}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Linux and GLX System supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a429e826879c55f962e4e1553862b581e}{
+static bool \hyperlink{class_f2_c_1_1_shader_g_l_a429e826879c55f962e4e1553862b581e}{getSupportedNVOcclusionQuery} ()}
+\label{class_f2_c_1_1_shader_g_l_a429e826879c55f962e4e1553862b581e}
+
+\begin{DoxyCompactList}\small\item\em getMethode: GL\_\-NV\_\-occlusion\_\-query extension supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a76fce9d744e8ba46e6e8430caa0b07f4}{
+static bool \hyperlink{class_f2_c_1_1_shader_g_l_a76fce9d744e8ba46e6e8430caa0b07f4}{getSupportedSGISGenerateMipmap} ()}
+\label{class_f2_c_1_1_shader_g_l_a76fce9d744e8ba46e6e8430caa0b07f4}
+
+\begin{DoxyCompactList}\small\item\em getMethode: GL\_\-SGIS\_\-generate\_\-mipmap extension supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_ab9f99c35299c767279edd40170b54df4}{
+static bool \hyperlink{class_f2_c_1_1_shader_g_l_ab9f99c35299c767279edd40170b54df4}{getSupportedNVRegisterCombiners} ()}
+\label{class_f2_c_1_1_shader_g_l_ab9f99c35299c767279edd40170b54df4}
+
+\begin{DoxyCompactList}\small\item\em getMethode: GL\_\-NV\_\-register\_\-combiners extension supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_aafaf0c4fd8e004487143e2d6138ca256}{
+static int \hyperlink{class_f2_c_1_1_shader_g_l_aafaf0c4fd8e004487143e2d6138ca256}{getMaxNVCombiners} ()}
+\label{class_f2_c_1_1_shader_g_l_aafaf0c4fd8e004487143e2d6138ca256}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Maximum general NV combiners. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a969a13fd7e87ce416cf243cf49a44034}{
+static int \hyperlink{class_f2_c_1_1_shader_g_l_a969a13fd7e87ce416cf243cf49a44034}{getMaxTexelUnits} ()}
+\label{class_f2_c_1_1_shader_g_l_a969a13fd7e87ce416cf243cf49a44034}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Maximum number of texel pipelines. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a643f74a22c4f910c9a1d6a84c7b67ee0}{
+static std::string \hyperlink{class_f2_c_1_1_shader_g_l_a643f74a22c4f910c9a1d6a84c7b67ee0}{getGLVendor} ()}
+\label{class_f2_c_1_1_shader_g_l_a643f74a22c4f910c9a1d6a84c7b67ee0}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Company responsible for this GL implementation. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a7a41ad95bf3c0ae86152ecf1fea9b7b6}{
+static std::string \hyperlink{class_f2_c_1_1_shader_g_l_a7a41ad95bf3c0ae86152ecf1fea9b7b6}{getGLRenderer} ()}
+\label{class_f2_c_1_1_shader_g_l_a7a41ad95bf3c0ae86152ecf1fea9b7b6}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Particular configuration of a hardware platform. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_abbde9db82c97e347fdb71a6f0439478c}{
+static std::string \hyperlink{class_f2_c_1_1_shader_g_l_abbde9db82c97e347fdb71a6f0439478c}{getGLVersion} ()}
+\label{class_f2_c_1_1_shader_g_l_abbde9db82c97e347fdb71a6f0439478c}
+
+\begin{DoxyCompactList}\small\item\em getMethode:OpenGL version or release number. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a1fd0395e7ad7b6a270fc0dbd6285ecdd}{
+static bool \hyperlink{class_f2_c_1_1_shader_g_l_a1fd0395e7ad7b6a270fc0dbd6285ecdd}{glExtensionSupported} (std::string extName)}
+\label{class_f2_c_1_1_shader_g_l_a1fd0395e7ad7b6a270fc0dbd6285ecdd}
+
+\begin{DoxyCompactList}\small\item\em getMethode: OpenGL(or WGL or GLX) Extensions Supported Yes / No. \item\end{DoxyCompactList}\item 
+static void $\ast$ \hyperlink{class_f2_c_1_1_shader_g_l_aa8b528886b357ab98089f0307aeb1e6c}{getProcAddress} (std::string proc)
+\begin{DoxyCompactList}\small\item\em Returns the pointer to the specified OpenGL function, if it is not supported returned NULL. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a70387912b59c00f9e8292564106f872c}{
+static std::string \hyperlink{class_f2_c_1_1_shader_g_l_a70387912b59c00f9e8292564106f872c}{getGLExtensions} ()}
+\label{class_f2_c_1_1_shader_g_l_a70387912b59c00f9e8292564106f872c}
+
+\begin{DoxyCompactList}\small\item\em getMethode: OpenGL Extensions \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_shader_g_l_a660433d56dee5f022f1a6a02aae167ce}{
+static std::string \hyperlink{class_f2_c_1_1_shader_g_l_a660433d56dee5f022f1a6a02aae167ce}{getPlatformExtensions} ()}
+\label{class_f2_c_1_1_shader_g_l_a660433d56dee5f022f1a6a02aae167ce}
+
+\begin{DoxyCompactList}\small\item\em getMethode: WGL or GLX Extensions, else return empty string \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{class_f2_c_1_1_shader_g_l_a31a917801ab6846d9e32790acc308dd4}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_shader_g_l}{ShaderGL} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write the Shader Obj.,only shadercode). \item\end{DoxyCompactList}\item 
+std::istream \& \hyperlink{class_f2_c_1_1_shader_g_l_a62b3e6afa6414d311cbd58a12455264c}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_shader_g_l}{ShaderGL} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (use old(or create new) Shader Obj.,compile shadercode). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loading Fragment and Vertex Shader Files into GLhandleARB Program Object. \par
+ \par
+ Thanks at Alex V. Boreskoff. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_shader_g_l_a01f179b663f415a273245fdbfb91cff7}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!CreateShaderProgram@{CreateShaderProgram}}
+\index{CreateShaderProgram@{CreateShaderProgram}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{CreateShaderProgram}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ShaderGL::CreateShaderProgram (
+\begin{DoxyParamCaption}
+\item[{std::string $\ast$}]{ error = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_shader_g_l_a01f179b663f415a273245fdbfb91cff7}
+
+
+Creates the ARB shader program object loaded by the ARB and ARB fragment object Vertex object. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]Target reference varaible: Log text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_shader_g_l_aa8b528886b357ab98089f0307aeb1e6c}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!getProcAddress@{getProcAddress}}
+\index{getProcAddress@{getProcAddress}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{getProcAddress}]{\setlength{\rightskip}{0pt plus 5cm}static void$\ast$ F2C::ShaderGL::getProcAddress (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ proc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_shader_g_l_aa8b528886b357ab98089f0307aeb1e6c}
+
+
+Returns the pointer to the specified OpenGL function, if it is not supported returned NULL. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em proc}]Name of an OpenGL extension function getMethode: Pointer to the specified OpenGL function. \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_shader_g_l_a3989aba1ff0ff23ec7f096e503f22f31}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!getUniformf@{getUniformf}}
+\index{getUniformf@{getUniformf}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{getUniformf}]{\setlength{\rightskip}{0pt plus 5cm}float F2C::ShaderGL::getUniformf (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ name}
+\end{DoxyParamCaption}
+) const}}
+\label{class_f2_c_1_1_shader_g_l_a3989aba1ff0ff23ec7f096e503f22f31}
+
+
+getMethode: Value of Uniform Variable 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Uniform Variable Name (in Shader Program) \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_shader_g_l_a8304c74c8510dc66983d57d85011f64d}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!getUniformi@{getUniformi}}
+\index{getUniformi@{getUniformi}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{getUniformi}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::ShaderGL::getUniformi (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ name}
+\end{DoxyParamCaption}
+) const}}
+\label{class_f2_c_1_1_shader_g_l_a8304c74c8510dc66983d57d85011f64d}
+
+
+getMethode: Value of Uniform Variable 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Uniform Variable Name (in Shader Program) \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_shader_g_l_a2ac17352f8c2e12a812871ce45e280c4}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!InitGLShader@{InitGLShader}}
+\index{InitGLShader@{InitGLShader}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{InitGLShader}]{\setlength{\rightskip}{0pt plus 5cm}static int F2C::ShaderGL::InitGLShader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_shader_g_l_a2ac17352f8c2e12a812871ce45e280c4}
+
+
+Initializes the ARB shader functions. 
+
+\begin{DoxyReturn}{Returns}
+-\/1, This extension string indicates that the OpenGL Shading Language,version 1.00,not is supported. 
+
+-\/2, GL\_\-ARB\_\-shader\_\-objects extension was not found. 
+
+-\/3, not support shader. 
+\end{DoxyReturn}
+\hypertarget{class_f2_c_1_1_shader_g_l_a5c19c8364464a6a1e5d4d897a20160bf}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!LoadGLFragmentShader@{LoadGLFragmentShader}}
+\index{LoadGLFragmentShader@{LoadGLFragmentShader}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{LoadGLFragmentShader}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::ShaderGL::LoadGLFragmentShader (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ shaderfilename, }
+\item[{std::string $\ast$}]{ error = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_shader_g_l_a5c19c8364464a6a1e5d4d897a20160bf}
+
+
+Load the fragment shader file and creates the ARB fragment object. The build log of the ARB fragment object is writing in the \char`\"{}error\char`\"{} variable. 
+
+\begin{DoxyReturn}{Returns}
+-\/1, Can't open the Shaderfile. 
+
+-\/2, The Shaderfile is empty. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em shaderfilename}]Filename \item[{\em error}]Target-\/Varaible: Log Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_shader_g_l_a3b03b241623c5df2d5dd1083fc568608}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!LoadGLVertexShader@{LoadGLVertexShader}}
+\index{LoadGLVertexShader@{LoadGLVertexShader}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{LoadGLVertexShader}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::ShaderGL::LoadGLVertexShader (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ shaderfilename, }
+\item[{std::string $\ast$}]{ error = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_shader_g_l_a3b03b241623c5df2d5dd1083fc568608}
+
+
+Load the fragment shader file and creates the ARB vertex object. The build log of the ARB vertexc object is writing in the \char`\"{}error\char`\"{} variable. 
+
+\begin{DoxyReturn}{Returns}
+-\/1, Can't open the Shaderfile. 
+
+-\/2, The Shaderfile is empty. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em shaderfilename}]Filename \item[{\em error}]Target-\/Varaible: Log Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_shader_g_l_a0f960a4016258aa3d701bcef9821137b}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!setUniformf@{setUniformf}}
+\index{setUniformf@{setUniformf}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{setUniformf}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ShaderGL::setUniformf (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ name, }
+\item[{float}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_shader_g_l_a0f960a4016258aa3d701bcef9821137b}
+
+
+setMethode: Value of Uniform Variable 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Uniform Variable Name (in Shader Program) \item[{\em value}]new Value of Uniform Variable \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_shader_g_l_a9e063f0f5dcf576d19b345e2adae4fbd}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!setUniformi@{setUniformi}}
+\index{setUniformi@{setUniformi}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{setUniformi}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ShaderGL::setUniformi (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ name, }
+\item[{int}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_shader_g_l_a9e063f0f5dcf576d19b345e2adae4fbd}
+
+
+setMethode: Value of Uniform Variable 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Uniform Variable Name (in Shader Program) \item[{\em value}]new Value of Uniform Variable \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_f2_c_1_1_shader_g_l_a31a917801ab6846d9e32790acc308dd4}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const {\bf ShaderGL} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_shader_g_l_a31a917801ab6846d9e32790acc308dd4}
+
+
+Write the Object into output stream. (dont write the Shader Obj.,only shadercode). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_shader_g_l_a62b3e6afa6414d311cbd58a12455264c}{
+\index{F2C::ShaderGL@{F2C::ShaderGL}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C::ShaderGL@{F2C::ShaderGL}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{{\bf ShaderGL} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_shader_g_l_a62b3e6afa6414d311cbd58a12455264c}
+
+
+Read the Object from input stream. (use old(or create new) Shader Obj.,compile shadercode). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}

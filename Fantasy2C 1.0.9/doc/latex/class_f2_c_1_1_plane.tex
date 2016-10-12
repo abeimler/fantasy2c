@@ -1,0 +1,163 @@
+\hypertarget{class_f2_c_1_1_plane}{
+\section{F2C::Plane Class Reference}
+\label{class_f2_c_1_1_plane}\index{F2C::Plane@{F2C::Plane}}
+}
+
+
+Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen as an infinite Scrollable image.  
+Inheritance diagram for F2C::Plane::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_f2_c_1_1_plane}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_plane_ae964dce807d325a229b2b0483d04bac0}{
+\hyperlink{class_f2_c_1_1_plane_ae964dce807d325a229b2b0483d04bac0}{Plane} ()}
+\label{class_f2_c_1_1_plane_ae964dce807d325a229b2b0483d04bac0}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_plane_a257596b463548284ec5699e5290b4a9d}{Plane} (\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$\hyperlink{class_f2_c_1_1_plane_a755aaa0644174adc1574d04a1378c22f}{viewport})
+\begin{DoxyCompactList}\small\item\em Set the pointer of the viewport and the clip\_\-rect. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_plane_a2d6c6add986f779ce1879a4ac4ad5458}{Plane} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} $\ast$bitmap)
+\begin{DoxyCompactList}\small\item\em Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_plane_a6d692311afad34bbd0407ecffa8fda6e}{
+\hyperlink{class_f2_c_1_1_plane_a6d692311afad34bbd0407ecffa8fda6e}{Plane} (const \hyperlink{class_f2_c_1_1_plane}{Plane} \&copy)}
+\label{class_f2_c_1_1_plane_a6d692311afad34bbd0407ecffa8fda6e}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_plane_afb63aaf92522d735b7614d2ccbda4e99}{
+\hyperlink{class_f2_c_1_1_plane}{Plane} \& \hyperlink{class_f2_c_1_1_plane_afb63aaf92522d735b7614d2ccbda4e99}{operator=} (const \hyperlink{class_f2_c_1_1_plane}{Plane} \&copy)}
+\label{class_f2_c_1_1_plane_afb63aaf92522d735b7614d2ccbda4e99}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator with deep copy. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_plane_ac3ee4529b515cc641b6e9b27d76fc2ef}{copyProperties} (const \hyperlink{class_f2_c_1_1_plane}{Plane} \&copy)
+\begin{DoxyCompactList}\small\item\em Copies all properties(x,y,z-\/Coord.,vColor,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_plane_ace8103ddb3071c72aa40fff492c23135}{render} () const 
+\begin{DoxyCompactList}\small\item\em Render the bitmap on screen. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_plane_a22fe65ae565a11384d5ea1d44d705b1a}{setViewport} (\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$\hyperlink{class_f2_c_1_1_plane_a755aaa0644174adc1574d04a1378c22f}{viewport})
+\begin{DoxyCompactList}\small\item\em setMethode: Set the pointer of the viewport and the clip\_\-rect. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_plane_aa7db34e6fb3376737a7fad29b6204953}{
+\hyperlink{class_f2_c_1_1_rect}{Rect} $\ast$ \hyperlink{class_f2_c_1_1_plane_aa7db34e6fb3376737a7fad29b6204953}{clip\_\-rect}}
+\label{class_f2_c_1_1_plane_aa7db34e6fb3376737a7fad29b6204953}
+
+\begin{DoxyCompactList}\small\item\em Clipping \hyperlink{class_f2_c_1_1_rect}{Rect}, Cutting the sprites on the screen the desired section or window. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_plane_a755aaa0644174adc1574d04a1378c22f}{
+\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$ \hyperlink{class_f2_c_1_1_plane_a755aaa0644174adc1574d04a1378c22f}{viewport}}
+\label{class_f2_c_1_1_plane_a755aaa0644174adc1574d04a1378c22f}
+
+\begin{DoxyCompactList}\small\item\em Additional Z-\/coordinate and \hyperlink{class_f2_c_1_1_color_tone}{ColorTone}. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_plane_a77b2e8f8a0d3364d3328b553608d63e7}{
+\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \hyperlink{class_f2_c_1_1_plane_a77b2e8f8a0d3364d3328b553608d63e7}{tone}}
+\label{class_f2_c_1_1_plane_a77b2e8f8a0d3364d3328b553608d63e7}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_color}{Color} tone. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_plane_a42c74f548209280e9028dbcb4d570dc8}{
+static GLhandleARB \hyperlink{class_f2_c_1_1_plane_a42c74f548209280e9028dbcb4d570dc8}{ShaderProgramObj}}
+\label{class_f2_c_1_1_plane_a42c74f548209280e9028dbcb4d570dc8}
+
+\begin{DoxyCompactList}\small\item\em Handle by the ARB program object for the \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite}. (Default: NULL) \par
+ The Tranzperenz(Alpha Color) of the generated shader image (with the ARB program object) can be determined by the grayscale. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_plane_aeab80456a34ccc98197171fe20173eec}{
+static \hyperlink{namespace_f2_c_1_1_tex_param_a64299c3972944468af4e8b0394c936c6}{TexParam::Tex\_\-Param} \hyperlink{class_f2_c_1_1_plane_aeab80456a34ccc98197171fe20173eec}{filter}}
+\label{class_f2_c_1_1_plane_aeab80456a34ccc98197171fe20173eec}
+
+\begin{DoxyCompactList}\small\item\em Set the texture filtering of the \hyperlink{class_f2_c_1_1_sprite}{Sprite}. (Default: Linear). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen as an infinite Scrollable image. Please note the following OpenGL capability are enabled when rendering and at the end disable: \par
+ GL\_\-SCISSOR\_\-TEST (if necessary) \par
+ GL\_\-STENCIL\_\-TEST \par
+ GL\_\-TEXTURE\_\-2D \par
+ GL\_\-DEPTH\_\-TEST \par
+ GL\_\-ALPHA\_\-TEST \par
+ GL\_\-BLEND \par
+ and use glShadeModel(GL\_\-SMOOTH) \par
+ \par
+ Dont forget to set the depth and alpha test function, e.g.: \par
+ glAlphaFunc(GL\_\-GREATER, 0.0f) \par
+ glDepthFunc(GL\_\-LEQUAL) \par
+ \par
+ Used OpenGL Buffers \par
+ -\/GL\_\-COLOR\_\-BUFFER\_\-BIT \par
+ -\/GL\_\-DEPTH\_\-BUFFER\_\-BIT \par
+ -\/GL\_\-STENCIL\_\-BUFFER\_\-BIT \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_plane_a257596b463548284ec5699e5290b4a9d}{
+\index{F2C::Plane@{F2C::Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!F2C::Plane@{F2C::Plane}}
+\subsubsection[{Plane}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Plane::Plane ({\bf Viewport} $\ast$ {\em viewport})}}
+\label{class_f2_c_1_1_plane_a257596b463548284ec5699e5290b4a9d}
+
+
+Set the pointer of the viewport and the clip\_\-rect. 
+\begin{DoxyParams}{Parameters}
+\item[{\em viewport}]Pointer of \hyperlink{class_f2_c_1_1_viewport}{Viewport} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_plane_a2d6c6add986f779ce1879a4ac4ad5458}{
+\index{F2C::Plane@{F2C::Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!F2C::Plane@{F2C::Plane}}
+\subsubsection[{Plane}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Plane::Plane (const {\bf Bitmap} $\ast$ {\em bitmap})}}
+\label{class_f2_c_1_1_plane_a2d6c6add986f779ce1879a4ac4ad5458}
+
+
+Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bitmap}]Pointer of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_plane_ac3ee4529b515cc641b6e9b27d76fc2ef}{
+\index{F2C::Plane@{F2C::Plane}!copyProperties@{copyProperties}}
+\index{copyProperties@{copyProperties}!F2C::Plane@{F2C::Plane}}
+\subsubsection[{copyProperties}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Plane::copyProperties (const {\bf Plane} \& {\em copy})}}
+\label{class_f2_c_1_1_plane_ac3ee4529b515cc641b6e9b27d76fc2ef}
+
+
+Copies all properties(x,y,z-\/Coord.,vColor,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). 
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]Source copy \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_f2_c_1_1_sprite_base_a8f7ea8a95a07688bfb2e6268a52b9215}{F2C::SpriteBase}.\hypertarget{class_f2_c_1_1_plane_ace8103ddb3071c72aa40fff492c23135}{
+\index{F2C::Plane@{F2C::Plane}!render@{render}}
+\index{render@{render}!F2C::Plane@{F2C::Plane}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::Plane::render () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_f2_c_1_1_plane_ace8103ddb3071c72aa40fff492c23135}
+
+
+Render the bitmap on screen. \begin{DoxyReturn}{Returns}
+-\/1, show is false (or from viewport). 
+
+-\/2, The width or height of the bitmap or the src\_\-rect are 0. 
+
+-\/3, The sprite is outside the display (glViewport). 
+
+-\/4, The alpha color of all 4 Vertices are less than 1. 
+
+-\/5, zoom\_\-x or zoom\_\-y is exactly 0. 
+
+1, \hyperlink{class_f2_c_1_1_sprite}{Sprite} has been successfully rendered. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_f2_c_1_1_sprite_base_af9dfc70083ca5a774d3874b61a6f9abc}{F2C::SpriteBase}.\hypertarget{class_f2_c_1_1_plane_a22fe65ae565a11384d5ea1d44d705b1a}{
+\index{F2C::Plane@{F2C::Plane}!setViewport@{setViewport}}
+\index{setViewport@{setViewport}!F2C::Plane@{F2C::Plane}}
+\subsubsection[{setViewport}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Plane::setViewport ({\bf Viewport} $\ast$ {\em viewport})}}
+\label{class_f2_c_1_1_plane_a22fe65ae565a11384d5ea1d44d705b1a}
+
+
+setMethode: Set the pointer of the viewport and the clip\_\-rect. 
+\begin{DoxyParams}{Parameters}
+\item[{\em viewport}]Pointer of \hyperlink{class_f2_c_1_1_viewport}{Viewport} \end{DoxyParams}

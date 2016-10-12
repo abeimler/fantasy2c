@@ -1,0 +1,359 @@
+# depslib dependency file v1.0
+1263489116 source:/media/Volume/Projects/Fantasy2C/Audio.cpp
+	"Audio.hpp"
+
+1245535769 /media/Volume/Projects/Fantasy2C/Audio.h
+	"Basic.h"
+	"GameError.h"
+
+1245536302 /media/Volume/Projects/Fantasy2C/Basic.h
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<cstdarg>
+	<cstring>
+	<ctime>
+	<algorithm>
+	<string>
+	<iostream>
+	<fstream>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<IL/il.h>
+	<IL/ilu.h>
+	<audiere.h>
+	<ft2build.h>
+	<GL/glfw.h>
+	<OpenGL/glu.h>
+	"glext.h"
+	<GL/glx.h>
+	"glxext.h"
+	<OpenGL/glu.h>
+	"glext.h"
+	"glext.h"
+
+1229175138 /media/Volume/Projects/Fantasy2C/glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1229175126 /media/Volume/Projects/Fantasy2C/glxext.h
+	<windows.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1245536457 /media/Volume/Projects/Fantasy2C/GameError.h
+	"Basic.h"
+	<string>
+	<iostream>
+	<fstream>
+
+1245535769 source:/media/Volume/Projects/Fantasy2C/Background.cpp
+	"Background.h"
+
+1242563163 /media/Volume/Projects/Fantasy2C/Background.h
+	"Basic.h"
+	"Bitmap.h"
+	"Rect.h"
+	"Color.h"
+	"ColorTone.h"
+	"Viewport.h"
+
+1245535769 /media/Volume/Projects/Fantasy2C/Bitmap.h
+	"Basic.h"
+	"Rect.h"
+	"Color.h"
+	"GameError.h"
+
+1233503414 /media/Volume/Projects/Fantasy2C/Rect.h
+	"Basic.h"
+
+1245535769 /media/Volume/Projects/Fantasy2C/Color.h
+	"Basic.h"
+
+1245535769 /media/Volume/Projects/Fantasy2C/ColorTone.h
+	"Basic.h"
+	"Color.h"
+
+1233522625 /media/Volume/Projects/Fantasy2C/Viewport.h
+	"Basic.h"
+	"Rect.h"
+	"Color.h"
+	"ColorTone.h"
+
+1253350842 source:/media/Volume/Projects/Fantasy2C/Bitmap.cpp
+	"Bitmap.hpp"
+
+1252674980 source:/media/Volume/Projects/Fantasy2C/Bitmap2.cpp
+	"Bitmap.hpp"
+
+1265036588 source:/media/Volume/Projects/Fantasy2C/Bitmap_Constructor.cpp
+	"Bitmap.hpp"
+
+1259761324 source:/media/Volume/Projects/Fantasy2C/Bitmap_Constructor2.cpp
+	"Bitmap.hpp"
+
+1252677490 source:/media/Volume/Projects/Fantasy2C/Color.cpp
+	"Color.hpp"
+
+1258559988 source:/media/Volume/Projects/Fantasy2C/ColorTone.cpp
+	"ColorTone.hpp"
+
+1263488604 source:/media/Volume/Projects/Fantasy2C/Font.cpp
+	"Font.hpp"
+
+1245535769 /media/Volume/Projects/Fantasy2C/Font.h
+	"Basic.h"
+	"Color.h"
+	"Bitmap.h"
+
+1265117538 source:/media/Volume/Projects/Fantasy2C/FontSprite.cpp
+	"FontSprite.hpp"
+
+1244723109 /media/Volume/Projects/Fantasy2C/FontSprite.h
+	"Basic.h"
+	"Bitmap.h"
+	"Rect.h"
+	"Color.h"
+	"ColorTone.h"
+	"Viewport.h"
+	<string>
+	<vector>
+
+1262048406 source:/media/Volume/Projects/Fantasy2C/GameError.cpp
+	"GameError.hpp"
+
+1260618126 source:/media/Volume/Projects/Fantasy2C/Input.cpp
+	"Input.hpp"
+
+1245535769 /media/Volume/Projects/Fantasy2C/Input.h
+	"Basic.h"
+
+1249840080 source:/media/Volume/Projects/Fantasy2C/Rect.cpp
+	"Rect.hpp"
+
+1265117538 source:/media/Volume/Projects/Fantasy2C/Sprite.cpp
+	"Sprite.hpp"
+
+1245535770 /media/Volume/Projects/Fantasy2C/Sprite.h
+	"Basic.h"
+	"Bitmap.h"
+	"Rect.h"
+	"Color.h"
+	"ColorTone.h"
+	"Viewport.h"
+
+1249840080 source:/media/Volume/Projects/Fantasy2C/Viewport.cpp
+	"Viewport.hpp"
+
+1265104943 source:/media/Volume/Projects/Fantasy2C/Window.cpp
+	"Window.hpp"
+
+1245535770 /media/Volume/Projects/Fantasy2C/Window.h
+	"Basic.h"
+	<fstream>
+	<string>
+
+1264097552 /media/Volume/Projects/Fantasy2C/Input.hpp
+	"Basic.hpp"
+
+1265203894 /media/Volume/Projects/Fantasy2C/Basic.hpp
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<cstdarg>
+	<cstring>
+	<ctime>
+	<algorithm>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<sstream>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<IL/il.h>
+	<IL/ilu.h>
+	<audiere.h>
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+	<freetype/ftoutln.h>
+	<freetype/fttrigon.h>
+	<GL/glfw.h>
+	<OpenGL/glu.h>
+	"glext.h"
+	"glext.h"
+
+1240005535 /media/Volume/Projects/Fantasy2C/linux/include/GL/gl.h
+	"gl_mangle.h"
+	<stdlib.h>
+	<windows.h>
+	<GL/mesa_wgl.h>
+	<GL/glext.h>
+
+1240005535 /media/Volume/Projects/Fantasy2C/linux/include/GL/gl_mangle.h
+
+1240005535 /media/Volume/Projects/Fantasy2C/linux/include/GL/glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1240005535 /media/Volume/Projects/Fantasy2C/linux/include/GL/glu.h
+	"glu_mangle.h"
+	<GL/gl.h>
+
+1240005535 /media/Volume/Projects/Fantasy2C/linux/include/GL/glu_mangle.h
+
+1234430755 /media/Volume/Projects/Fantasy2C/linux/include/IL/il.h
+	<stdio.h>
+	<limits.h>
+	<wchar.h>
+
+1234430755 /media/Volume/Projects/Fantasy2C/linux/include/IL/ilu.h
+	<IL/il.h>
+
+1210263458 /media/Volume/Projects/Fantasy2C/linux/include/audiere.h
+	<vector>
+	<string>
+	<cstring>
+	<cstdlib>
+
+1210214936 /media/Volume/Projects/Fantasy2C/linux/include/GL/glfw.h
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1240005535 /media/Volume/Projects/Fantasy2C/linux/include/GL/glx.h
+	<GL/vms_x_fix.h>
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<GL/gl.h>
+	"glx_mangle.h"
+	<GL/glxext.h>
+
+1240005535 /media/Volume/Projects/Fantasy2C/linux/include/GL/glx_mangle.h
+
+1240005535 /media/Volume/Projects/Fantasy2C/linux/include/GL/glxext.h
+	<windows.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1264097552 /media/Volume/Projects/Fantasy2C/Rect.hpp
+	"Basic.hpp"
+
+1264097552 /media/Volume/Projects/Fantasy2C/Viewport.hpp
+	"Basic.hpp"
+	"Rect.hpp"
+	"Color.hpp"
+	"ColorTone.hpp"
+
+1264097552 /media/Volume/Projects/Fantasy2C/Color.hpp
+	"Basic.hpp"
+
+1264097552 /media/Volume/Projects/Fantasy2C/ColorTone.hpp
+	"Basic.hpp"
+	"Color.hpp"
+
+1265117538 source:/media/Volume/Projects/Fantasy2C/ArraySprite.cpp
+	"ArraySprite.hpp"
+
+1265468177 /media/Volume/Projects/Fantasy2C/ArraySprite.hpp
+	"Basic.hpp"
+	"Bitmap.hpp"
+	"Rect.hpp"
+	"Color.hpp"
+	"ColorTone.hpp"
+	"Viewport.hpp"
+
+1265126344 /media/Volume/Projects/Fantasy2C/Bitmap.hpp
+	"Basic.hpp"
+	"Rect.hpp"
+	"Color.hpp"
+	"GameError.hpp"
+
+1264097552 /media/Volume/Projects/Fantasy2C/GameError.hpp
+	"Basic.hpp"
+	<string>
+	<iostream>
+	<fstream>
+
+1265126368 /media/Volume/Projects/Fantasy2C/Audio.hpp
+	"Basic.hpp"
+	"GameError.hpp"
+
+1265126402 /media/Volume/Projects/Fantasy2C/Font.hpp
+	"Basic.hpp"
+	"Color.hpp"
+	"Bitmap.hpp"
+
+1265126415 /media/Volume/Projects/Fantasy2C/FontSprite.hpp
+	"Basic.hpp"
+	"SpriteBase.hpp"
+	<string>
+	<vector>
+
+1265054995 source:/media/Volume/Projects/Fantasy2C/Plane.cpp
+	"Plane.hpp"
+
+1264097552 /media/Volume/Projects/Fantasy2C/Plane.hpp
+	"Basic.hpp"
+	"SpriteBase.hpp"
+
+1265117538 source:/media/Volume/Projects/Fantasy2C/SimpleSprite.cpp
+	"SimpleSprite.hpp"
+
+1265117647 /media/Volume/Projects/Fantasy2C/SimpleSprite.hpp
+	"Basic.hpp"
+	"SpriteBase.hpp"
+
+1265117647 /media/Volume/Projects/Fantasy2C/Sprite.hpp
+	"Basic.hpp"
+	"SpriteBase.hpp"
+
+1264097552 /media/Volume/Projects/Fantasy2C/Window.hpp
+	"Basic.hpp"
+	<fstream>
+	<string>
+
+1258308578 source:/media/Volume/Projects/Fantasy2C/SpriteBase.cpp
+	"SpriteBase.hpp"
+
+1264097552 /media/Volume/Projects/Fantasy2C/SpriteBase.hpp
+	"Basic.hpp"
+	"Bitmap.hpp"
+	"Rect.hpp"
+	"Color.hpp"
+	"ColorTone.hpp"
+	"Viewport.hpp"
+
+1265127182 source:/media/Volume/Projects/Fantasy2C/basic.cpp
+	"Basic.hpp"
+
+1265130210 source:/media/Volume/Projects/Fantasy2C/Basic.cpp
+	"Basic.hpp"
+

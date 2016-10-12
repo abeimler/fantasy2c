@@ -1,0 +1,1443 @@
+EXPORTS
+    _ZN3F2C10FontSprite10clearTextsEv @1
+    _ZN3F2C10FontSprite11VertexArrayE @2 DATA
+    _ZN3F2C10FontSprite11setViewportEPNS_8ViewportE @3
+    _ZN3F2C10FontSprite14AlphaToleranceE @4 DATA
+    _ZN3F2C10FontSprite14copyPropertiesERKS0_ @5
+    _ZN3F2C10FontSprite16ShaderProgramObjE @6 DATA
+    _ZN3F2C10FontSprite16checkVertexArrayE @7 DATA
+    _ZN3F2C10FontSprite16defaultCharsperHE @8 DATA
+    _ZN3F2C10FontSprite16defaultCharsperWE @9 DATA
+    _ZN3F2C10FontSprite17enableGLDrawArrayEb @10
+    _ZN3F2C10FontSprite19isEnableGLDrawArrayEv @11
+    _ZN3F2C10FontSprite6filterE @12 DATA
+    _ZN3F2C10FontSprite7addTextERKNS_4RectESs @13
+    _ZN3F2C10FontSprite7addTextEiiSs @14
+    _ZN3F2C10FontSprite7addTextEiijjSs @15
+    _ZN3F2C10FontSprite9setBitmapEPKNS_6BitmapEjj @16
+    _ZN3F2C10FontSprite9setBitmapEPKNS_7TTFFontE @17
+    _ZN3F2C10FontSpriteC1EPKNS_6BitmapEjj @18
+    _ZN3F2C10FontSpriteC1EPNS_8ViewportE @19
+    _ZN3F2C10FontSpriteC1ERKS0_ @20
+    _ZN3F2C10FontSpriteC1Ev @21
+    _ZN3F2C10FontSpriteC2EPKNS_6BitmapEjj @22
+    _ZN3F2C10FontSpriteC2EPNS_8ViewportE @23
+    _ZN3F2C10FontSpriteC2ERKS0_ @24
+    _ZN3F2C10FontSpriteC2Ev @25
+    _ZN3F2C10FontSpriteaSERKS0_ @26
+    _ZN3F2C10SpriteBase14copyPropertiesERKS0_ @27
+    _ZN3F2C10SpriteBase6setRedEh @28
+    _ZN3F2C10SpriteBase7setBlueEh @29
+    _ZN3F2C10SpriteBase8setAlphaEh @30
+    _ZN3F2C10SpriteBase8setColorERKNS_5ColorE @31
+    _ZN3F2C10SpriteBase8setColorEhhh @32
+    _ZN3F2C10SpriteBase8setColorEhhhh @33
+    _ZN3F2C10SpriteBase8setGreenEh @34
+    _ZN3F2C10SpriteBase9setBitmapEPKNS_6BitmapE @35
+    _ZN3F2C10SpriteBaseC1EPKNS_6BitmapE @36
+    _ZN3F2C10SpriteBaseC1ERKS0_ @37
+    _ZN3F2C10SpriteBaseC1Ev @38
+    _ZN3F2C10SpriteBaseC2EPKNS_6BitmapE @39
+    _ZN3F2C10SpriteBaseC2ERKS0_ @40
+    _ZN3F2C10SpriteBaseC2Ev @41
+    _ZN3F2C10SpriteBaseD0Ev @42
+    _ZN3F2C10SpriteBaseD1Ev @43
+    _ZN3F2C10SpriteBaseD2Ev @44
+    _ZN3F2C10SpriteBaseaSERKS0_ @45
+    _ZN3F2C11ArraySprite11VertexArrayE @46 DATA
+    _ZN3F2C11ArraySprite11setViewportEPNS_8ViewportE @47
+    _ZN3F2C11ArraySprite16ShaderProgramObjE @48 DATA
+    _ZN3F2C11ArraySprite16checkVertexArrayE @49 DATA
+    _ZN3F2C11ArraySprite17enableGLDrawArrayEb @50
+    _ZN3F2C11ArraySprite19isEnableGLDrawArrayEv @51
+    _ZN3F2C11ArraySprite6filterE @52 DATA
+    _ZN3F2C11ArraySprite9setBitmapEPKNS_6BitmapE @53
+    _ZN3F2C11ArraySpriteC1EPKNS_6BitmapE @54
+    _ZN3F2C11ArraySpriteC1EPNS_8ViewportE @55
+    _ZN3F2C11ArraySpriteC1ERKS0_ @56
+    _ZN3F2C11ArraySpriteC1Ev @57
+    _ZN3F2C11ArraySpriteC2EPKNS_6BitmapE @58
+    _ZN3F2C11ArraySpriteC2EPNS_8ViewportE @59
+    _ZN3F2C11ArraySpriteC2ERKS0_ @60
+    _ZN3F2C11ArraySpriteC2Ev @61
+    _ZN3F2C11ArraySpriteD0Ev @62
+    _ZN3F2C11ArraySpriteD1Ev @63
+    _ZN3F2C11ArraySpriteD2Ev @64
+    _ZN3F2C11ArraySpriteaSERKS0_ @65
+    _ZN3F2C12SimpleSprite11VertexArrayE @66 DATA
+    _ZN3F2C12SimpleSprite14copyPropertiesERKS0_ @67
+    _ZN3F2C12SimpleSprite16ShaderProgramObjE @68 DATA
+    _ZN3F2C12SimpleSprite16checkVertexArrayE @69 DATA
+    _ZN3F2C12SimpleSprite17enableGLDrawArrayEb @70
+    _ZN3F2C12SimpleSprite19isEnableGLDrawArrayEv @71
+    _ZN3F2C12SimpleSprite6filterE @72 DATA
+    _ZN3F2C12SimpleSpriteC1EPKNS_6BitmapE @73
+    _ZN3F2C12SimpleSpriteC1ERKS0_ @74
+    _ZN3F2C12SimpleSpriteC1Ev @75
+    _ZN3F2C12SimpleSpriteC2EPKNS_6BitmapE @76
+    _ZN3F2C12SimpleSpriteC2ERKS0_ @77
+    _ZN3F2C12SimpleSpriteC2Ev @78
+    _ZN3F2C12SimpleSpriteaSERKS0_ @79
+    _ZN3F2C13RenderManager10endStencilEv @80
+    _ZN3F2C13RenderManager11bindTextureEj @81
+    _ZN3F2C13RenderManager11setTexParamENS_8TexParam9Tex_ParamE @82
+    _ZN3F2C13RenderManager12clearStencilEv @83
+    _ZN3F2C13RenderManager12setBlendFuncENS_9BlendType10Blend_TypeE @84
+    _ZN3F2C13RenderManager12startStencilEv @85
+    _ZN3F2C13RenderManager13enableScissorEb @86
+    _ZN3F2C13RenderManager13enableStencilEb @87
+    _ZN3F2C13RenderManager13renderingQuadEPdS1_Phiiijb @88
+    _ZN3F2C13RenderManager14getColorArray3EPhPKNS_5ColorEjj @89
+    _ZN3F2C13RenderManager14getColorArray4EPhPKNS_5ColorEjj @90
+    _ZN3F2C13RenderManager15enable2DTextureEb @91
+    _ZN3F2C13RenderManager15iscollisionRectENS_4RectES1_ @92
+    _ZN3F2C13RenderManager15iscollisionRectEiijjiijj @93
+    _ZN3F2C13RenderManager17flippedHTexCoord8EPd @94
+    _ZN3F2C13RenderManager17flippedVTexCoord8EPd @95
+    _ZN3F2C13RenderManager17getTexCoordArray8EPdNS_4RectEdd @96
+    _ZN3F2C13RenderManager17getTexCoordArray8EPddddddd @97
+    _ZN3F2C13RenderManager17getVerticesArray8EPdNS_4RectE @98
+    _ZN3F2C13RenderManager17getVerticesArray8EPddddd @99
+    _ZN3F2C13RenderManager17isInViewportRangeENS_4RectE @100
+    _ZN3F2C13RenderManager17isInViewportRangeEiijj @101
+    _ZN3F2C13RenderManager18getColorArrayQuad3EPhPKNS_5ColorEjj @102
+    _ZN3F2C13RenderManager18getColorArrayQuad4EPhPKNS_5ColorEjj @103
+    _ZN3F2C13RenderManager18getVerticesArray12EPdddddd @104
+    _ZN3F2C13RenderManager23setScissorInTopLeftModeENS_4RectE @105
+    _ZN3F2C13RenderManager23setScissorInTopLeftModeEiijj @106
+    _ZN3F2C13RenderManager8setCoordEdddjjddddd @107
+    _ZN3F2C13SpriteElement6setRedEh @108
+    _ZN3F2C13SpriteElement7setBlueEh @109
+    _ZN3F2C13SpriteElement8setAlphaEh @110
+    _ZN3F2C13SpriteElement8setColorERKNS_5ColorE @111
+    _ZN3F2C13SpriteElement8setColorEhhh @112
+    _ZN3F2C13SpriteElement8setColorEhhhh @113
+    _ZN3F2C13SpriteElement8setGreenEh @114
+    _ZN3F2C13SpriteElementC1Ev @115
+    _ZN3F2C13SpriteElementC2Ev @116
+    _ZN3F2C17SoftwareRendering10clearColorEffff @117
+    _ZN3F2C17SoftwareRendering10clearDepthEd @118
+    _ZN3F2C17SoftwareRendering10curTextureE @119 DATA
+    _ZN3F2C17SoftwareRendering10getImage2DEjijjPv @120
+    _ZN3F2C17SoftwareRendering10loadMatrixEPKf @121
+    _ZN3F2C17SoftwareRendering10loadMatrixERKNS_7Matrix4IfEE @122
+    _ZN3F2C17SoftwareRendering10screenSizeE @123 DATA
+    _ZN3F2C17SoftwareRendering10shadeModelEj @124
+    _ZN3F2C17SoftwareRendering10texCoord2fEff @125
+    _ZN3F2C17SoftwareRendering10texCoord2iEii @126
+    _ZN3F2C17SoftwareRendering10texImage2DEjiiijjPKv @127
+    _ZN3F2C17SoftwareRendering11bindTextureEj @128
+    _ZN3F2C17SoftwareRendering11colorBufferE @129 DATA
+    _ZN3F2C17SoftwareRendering11depthBufferE @130 DATA
+    _ZN3F2C17SoftwareRendering11fieldOfViewE @131 DATA
+    _ZN3F2C17SoftwareRendering11genTexturesEPj @132
+    _ZN3F2C17SoftwareRendering11perspectiveEfff @133
+    _ZN3F2C17SoftwareRendering11scissorRectE @134 DATA
+    _ZN3F2C17SoftwareRendering11setPixelRGBEjhhh @135
+    _ZN3F2C17SoftwareRendering11stencilFuncEjij @136
+    _ZN3F2C17SoftwareRendering11swapBuffersEv @137
+    _ZN3F2C17SoftwareRendering11texDeviceIDE @138 DATA
+    _ZN3F2C17SoftwareRendering12blendDstModeE @139 DATA
+    _ZN3F2C17SoftwareRendering12blendSrcModeE @140 DATA
+    _ZN3F2C17SoftwareRendering12clearStencilEi @141
+    _ZN3F2C17SoftwareRendering12createDeviceEjj @142
+    _ZN3F2C17SoftwareRendering12curAlphaFuncE @143 DATA
+    _ZN3F2C17SoftwareRendering12curDepthFuncE @144 DATA
+    _ZN3F2C17SoftwareRendering12curLineWidthE @145 DATA
+    _ZN3F2C17SoftwareRendering12curMemVertexE @146 DATA
+    _ZN3F2C17SoftwareRendering12curPointSizeE @147 DATA
+    _ZN3F2C17SoftwareRendering12deleteDeviceEv @148
+    _ZN3F2C17SoftwareRendering12loadIdentityEv @149
+    _ZN3F2C17SoftwareRendering12renderMatrixE @150 DATA
+    _ZN3F2C17SoftwareRendering12setPixelRGBAEjhhhh @151
+    _ZN3F2C17SoftwareRendering12textureLayerE @152 DATA
+    _ZN3F2C17SoftwareRendering12viewportRectE @153 DATA
+    _ZN3F2C17SoftwareRendering13Project2Dto3DIfEENS_7Vector3IT_EERKNS_7Vector2IS3_EE @154
+    _ZN3F2C17SoftwareRendering13curClearColorE @155 DATA
+    _ZN3F2C17SoftwareRendering13curClearDepthE @156 DATA
+    _ZN3F2C17SoftwareRendering13curMatrixModeE @157 DATA
+    _ZN3F2C17SoftwareRendering13curShadeModelE @158 DATA
+    _ZN3F2C17SoftwareRendering13getCurTextureEv @159
+    _ZN3F2C17SoftwareRendering13setFrameAlphaEjfhhhh @160
+    _ZN3F2C17SoftwareRendering13stencilBufferE @161 DATA
+    _ZN3F2C17SoftwareRendering13texSubImage2DEjiiiiijjPKv @162
+    _ZN3F2C17SoftwareRendering13unbindTextureEv @163
+    _ZN3F2C17SoftwareRendering14blendFuncPixelEjPhPKhS3_RKNS_7Color4fE @164
+    _ZN3F2C17SoftwareRendering14blendFuncPixelEjPiPKiS3_RKNS_7Color4fE @165
+    _ZN3F2C17SoftwareRendering14copyTexImage2DEjiiiiiii @166
+    _ZN3F2C17SoftwareRendering14curStencilFailE @167 DATA
+    _ZN3F2C17SoftwareRendering14curStencilFuncE @168 DATA
+    _ZN3F2C17SoftwareRendering14deleteTexturesEPj @169
+    _ZN3F2C17SoftwareRendering14genMipMapLevelEv @170
+    _ZN3F2C17SoftwareRendering14mappingGenTypeE @171 DATA
+    _ZN3F2C17SoftwareRendering15blendFuncPixelsEjPhPKhS3_jjjRKNS_7Color4fE @172
+    _ZN3F2C17SoftwareRendering15blendFuncPixelsEjPiPKiS3_jjjRKNS_7Color4fE @173
+    _ZN3F2C17SoftwareRendering15colorBufferSizeE @174 DATA
+    _ZN3F2C17SoftwareRendering15constBlendColorE @175 DATA
+    _ZN3F2C17SoftwareRendering15curAlphaFuncRefE @176 DATA
+    _ZN3F2C17SoftwareRendering15curClearStencilE @177 DATA
+    _ZN3F2C17SoftwareRendering15curStencilZFailE @178 DATA
+    _ZN3F2C17SoftwareRendering15curStencilZPassE @179 DATA
+    _ZN3F2C17SoftwareRendering15depthBufferSizeE @180 DATA
+    _ZN3F2C17SoftwareRendering15maxTextureLayerE @181 DATA
+    _ZN3F2C17SoftwareRendering15updatePixelRectEv @182
+    _ZN3F2C17SoftwareRendering15useTextureLayerEj @183
+    _ZN3F2C17SoftwareRendering16InterpolateColorERKNS_7Color4dES3_d @184
+    _ZN3F2C17SoftwareRendering16MAX_MIPMAPLEVELSE @185 DATA
+    _ZN3F2C17SoftwareRendering16getCurTexelColorERNS_5ColorEj @186
+    _ZN3F2C17SoftwareRendering16getCurTexelColorERNS_7Color4iEj @187
+    _ZN3F2C17SoftwareRendering16renderPointColorEv @188
+    _ZN3F2C17SoftwareRendering16updateMappingGenERfjff @189
+    _ZN3F2C17SoftwareRendering17copyTexSubImage2DEjiiiiiii @190
+    _ZN3F2C17SoftwareRendering17curStencilFuncRefE @191 DATA
+    _ZN3F2C17SoftwareRendering17stencilBufferSizeE @192 DATA
+    _ZN3F2C17SoftwareRendering18TEXTURE_LAYER_SIZEE @193 DATA
+    _ZN3F2C17SoftwareRendering18curStencilFuncMaskE @194 DATA
+    _ZN3F2C17SoftwareRendering18setMaxTextureLayerEj @195
+    _ZN3F2C17SoftwareRendering18textureMipMapLevelE @196 DATA
+    _ZN3F2C17SoftwareRendering18updateNormalMatrixEv @197
+    _ZN3F2C17SoftwareRendering19getTriangleFaceSizeIfEEfRKNS_7Vector2IT_EES6_S6_ @198
+    _ZN3F2C17SoftwareRendering19getTriangleFaceSizeIfEEfRKNS_7Vector4IT_EES6_S6_ @199
+    _ZN3F2C17SoftwareRendering19isInsidePixelBufferEii @200
+    _ZN3F2C17SoftwareRendering19isInsidePixelBufferEiiij @201
+    _ZN3F2C17SoftwareRendering20RENDER_PIPELINE_SIZEE @202 DATA
+    _ZN3F2C17SoftwareRendering20updateVerticesMatrixE @203 DATA
+    _ZN3F2C17SoftwareRendering22getVertexClippingPlaneERNS_6VertexERKS1_S4_ @204
+    _ZN3F2C17SoftwareRendering26getFreeVisibleVertexIndexAEiRNS_7Vector2IiEE @205
+    _ZN3F2C17SoftwareRendering26getFreeVisibleVertexIndexBEii @206
+    _ZN3F2C17SoftwareRendering5clearEj @207
+    _ZN3F2C17SoftwareRendering5texIDE @208 DATA
+    _ZN3F2C17SoftwareRendering6enableEj @209
+    _ZN3F2C17SoftwareRendering6texGenEjj @210
+    _ZN3F2C17SoftwareRendering7PLIndexE @211 DATA
+    _ZN3F2C17SoftwareRendering7color3fEfff @212
+    _ZN3F2C17SoftwareRendering7color3iEhhh @213
+    _ZN3F2C17SoftwareRendering7color4fEffff @214
+    _ZN3F2C17SoftwareRendering7color4iEhhhh @215
+    _ZN3F2C17SoftwareRendering7disableEj @216
+    _ZN3F2C17SoftwareRendering7scissorEiijj @217
+    _ZN3F2C17SoftwareRendering8getErrorEv @218
+    _ZN3F2C17SoftwareRendering8getFloatEjPf @219
+    _ZN3F2C17SoftwareRendering8isEnableEj @220
+    _ZN3F2C17SoftwareRendering8normal3fEfff @221
+    _ZN3F2C17SoftwareRendering8normal3iEiii @222
+    _ZN3F2C17SoftwareRendering8planeFarE @223 DATA
+    _ZN3F2C17SoftwareRendering8rangeFarE @224 DATA
+    _ZN3F2C17SoftwareRendering8setFrameEiifhhhh @225
+    _ZN3F2C17SoftwareRendering8setFrameEjfhhhh @226
+    _ZN3F2C17SoftwareRendering8vertex2fEff @227
+    _ZN3F2C17SoftwareRendering8vertex2iEii @228
+    _ZN3F2C17SoftwareRendering8vertex3fEfff @229
+    _ZN3F2C17SoftwareRendering8vertex3iEiii @230
+    _ZN3F2C17SoftwareRendering8vertex4fEffff @231
+    _ZN3F2C17SoftwareRendering8vertex4iEiiii @232
+    _ZN3F2C17SoftwareRendering8viewportEiijj @233
+    _ZN3F2C17SoftwareRendering9alphaFuncEjf @234
+    _ZN3F2C17SoftwareRendering9blendFuncEjj @235
+    _ZN3F2C17SoftwareRendering9curVertexE @236 DATA
+    _ZN3F2C17SoftwareRendering9depthFuncEj @237
+    _ZN3F2C17SoftwareRendering9enableSSCE @238 DATA
+    _ZN3F2C17SoftwareRendering9endisableEjh @239
+    _ZN3F2C17SoftwareRendering9getStringEj @240
+    _ZN3F2C17SoftwareRendering9lastErrorE @241 DATA
+    _ZN3F2C17SoftwareRendering9lineWidthEj @242
+    _ZN3F2C17SoftwareRendering9pixelRectE @243 DATA
+    _ZN3F2C17SoftwareRendering9planeNearE @244 DATA
+    _ZN3F2C17SoftwareRendering9pointSizeEj @245
+    _ZN3F2C17SoftwareRendering9rangeNearE @246 DATA
+    _ZN3F2C17SoftwareRendering9stencilOpEjjj @247
+    _ZN3F2C17SoftwareRendering9testDepthEji @248
+    _ZN3F2C4Rect3setEiijj @249
+    _ZN3F2C4RectC1Eiijj @250
+    _ZN3F2C4RectC1Ev @251
+    _ZN3F2C4RectC2Eiijj @252
+    _ZN3F2C4RectC2Ev @253
+    _ZN3F2C5Color3setEhhh @254
+    _ZN3F2C5Color3setEhhhh @255
+    _ZN3F2C5Color8CMYtoRGBEiiiPh @256
+    _ZN3F2C5Color8HSVtoRGBEihhPh @257
+    _ZN3F2C5Color8RGBtoHSVEhhhPi @258
+    _ZN3F2C5ColorC1Ehhh @259
+    _ZN3F2C5ColorC1Ehhhh @260
+    _ZN3F2C5ColorC1Em @261
+    _ZN3F2C5ColorC1Ev @262
+    _ZN3F2C5ColorC2Ehhh @263
+    _ZN3F2C5ColorC2Ehhhh @264
+    _ZN3F2C5ColorC2Em @265
+    _ZN3F2C5ColorC2Ev @266
+    _ZN3F2C5ColordVERKS0_ @267
+    _ZN3F2C5ColordVEd @268
+    _ZN3F2C5ColordVEf @269
+    _ZN3F2C5ColordVEh @270
+    _ZN3F2C5ColormIERKS0_ @271
+    _ZN3F2C5ColormIEh @272
+    _ZN3F2C5ColormLERKS0_ @273
+    _ZN3F2C5ColormLEd @274
+    _ZN3F2C5ColormLEf @275
+    _ZN3F2C5ColormLEh @276
+    _ZN3F2C5ColorpLERKS0_ @277
+    _ZN3F2C5ColorpLEh @278
+    _ZN3F2C5Coord3setEiii @279
+    _ZN3F2C5CoordC1Eiii @280
+    _ZN3F2C5CoordC1Ev @281
+    _ZN3F2C5CoordC2Eiii @282
+    _ZN3F2C5CoordC2Ev @283
+    _ZN3F2C5Input11getMousePosEPiS1_ @284
+    _ZN3F2C5Input11getPressKeyENS_13KeyboardEvent8KeyboardE @285
+    _ZN3F2C5Input11getPressKeyEc @286
+    _ZN3F2C5Input11setMousePosEii @287
+    _ZN3F2C5Input11updatePressEv @288
+    _ZN3F2C5Input12getRepeatKeyENS_13KeyboardEvent8KeyboardE @289
+    _ZN3F2C5Input12getRepeatKeyEc @290
+    _ZN3F2C5Input12updateRepeatEi @291
+    _ZN3F2C5Input12updateRepeatEv @292
+    _ZN3F2C5Input13getMouseWheelEv @293
+    _ZN3F2C5Input13getPressMouseENS_10MouseEvent5MouseE @294
+    _ZN3F2C5Input13setMouseWheelEi @295
+    _ZN3F2C5Input14getJoystickPosENS_13JoystickEvent8JoystickEPfi @296
+    _ZN3F2C5Input14getRepeatMouseENS_10MouseEvent5MouseE @297
+    _ZN3F2C5Input15getMouseWheelUpEv @298
+    _ZN3F2C5Input15getSizeKeyArrayEv @299
+    _ZN3F2C5Input16getJoystickParamENS_13JoystickEvent8JoystickENS1_13ParamJoystickE @300
+    _ZN3F2C5Input16getPressKeyArrayEv @301
+    _ZN3F2C5Input17getMouseWheelDownEv @302
+    _ZN3F2C5Input17getRepeatKeyArrayEv @303
+    _ZN3F2C5Input17getSizeMouseArrayEv @304
+    _ZN3F2C5Input18getJoystickButtonsENS_13JoystickEvent8JoystickEPhi @305
+    _ZN3F2C5Input18getPressMouseArrayEv @306
+    _ZN3F2C5Input19getRepeatMouseArrayEv @307
+    _ZN3F2C5Input6updateEi @308
+    _ZN3F2C5Input6updateEv @309
+    _ZN3F2C5InputC1Ev @310
+    _ZN3F2C5InputC2Ev @311
+    _ZN3F2C5Plane11VertexArrayE @312 DATA
+    _ZN3F2C5Plane11setViewportEPNS_8ViewportE @313
+    _ZN3F2C5Plane14copyPropertiesERKS0_ @314
+    _ZN3F2C5Plane16ShaderProgramObjE @315 DATA
+    _ZN3F2C5Plane16checkVertexArrayE @316 DATA
+    _ZN3F2C5Plane17enableGLDrawArrayEb @317
+    _ZN3F2C5Plane19isEnableGLDrawArrayEv @318
+    _ZN3F2C5Plane6filterE @319 DATA
+    _ZN3F2C5PlaneC1EPKNS_6BitmapE @320
+    _ZN3F2C5PlaneC1EPNS_8ViewportE @321
+    _ZN3F2C5PlaneC1ERKS0_ @322
+    _ZN3F2C5PlaneC1Ev @323
+    _ZN3F2C5PlaneC2EPKNS_6BitmapE @324
+    _ZN3F2C5PlaneC2EPNS_8ViewportE @325
+    _ZN3F2C5PlaneC2ERKS0_ @326
+    _ZN3F2C5PlaneC2Ev @327
+    _ZN3F2C5PlaneaSERKS0_ @328
+    _ZN3F2C5Timer4stopEv @329
+    _ZN3F2C5Timer5pauseEv @330
+    _ZN3F2C5Timer5resetEv @331
+    _ZN3F2C5Timer5startEv @332
+    _ZN3F2C5Timer7unpauseEv @333
+    _ZN3F2C5TimerC1Ev @334
+    _ZN3F2C5TimerC2Ev @335
+    _ZN3F2C6Bitmap10make_imageEPjNS_5Image10DataFormatE @336
+    _ZN3F2C6Bitmap10make_imageEPjNS_5Image10DataFormatEjj @337
+    _ZN3F2C6Bitmap10make_imageEPjNS_5Image10DataFormatEjjhhhh @338
+    _ZN3F2C6Bitmap13setSaturationEh @339
+    _ZN3F2C6Bitmap14loadPixelArrayEPKhjjjNS_5Image10DataFormatE @340
+    _ZN3F2C6Bitmap14loadPixelArrayERKSt6vectorIhSaIhEEjjjNS_5Image10DataFormatE @341
+    _ZN3F2C6Bitmap18loadFileintoBitmapEjP6_iobufNS_5Image9ImageTypeEPNS_8LogErrorE @342
+    _ZN3F2C6Bitmap18loadFileintoBitmapEjRSiNS_5Image9ImageTypeEPNS_8LogErrorE @343
+    _ZN3F2C6Bitmap19loadImageintoBitmapEjSsNS_5Image9ImageTypeEPNS_8LogErrorE @344
+    _ZN3F2C6Bitmap3bltERKS0_iiiijj @345
+    _ZN3F2C6Bitmap3bltERKS0_iiiijjh @346
+    _ZN3F2C6Bitmap5clearEv @347
+    _ZN3F2C6Bitmap5scaleEjj @348
+    _ZN3F2C6Bitmap6initilE @349 DATA
+    _ZN3F2C6Bitmap6setHueEj @350
+    _ZN3F2C6Bitmap7bltFullERKS0_ii @351
+    _ZN3F2C6Bitmap7bltFullERKS0_iih @352
+    _ZN3F2C6Bitmap8fillRectERKNS_4RectERKNS_5ColorE @353
+    _ZN3F2C6Bitmap8fillRectEiijjhhhh @354
+    _ZN3F2C6Bitmap8loadFileEP6_iobuf @355
+    _ZN3F2C6Bitmap8loadFileEP6_iobufNS_5Image9ImageTypeE @356
+    _ZN3F2C6Bitmap8loadFileERSi @357
+    _ZN3F2C6Bitmap8loadFileERSiNS_5Image9ImageTypeE @358
+    _ZN3F2C6Bitmap8loadFileESs @359
+    _ZN3F2C6Bitmap8loadFileESsNS_5Image9ImageTypeE @360
+    _ZN3F2C6Bitmap8setPixelEjjNS_5ColorE @361
+    _ZN3F2C6Bitmap8setPixelEjjhhhh @362
+    _ZN3F2C6Bitmap8setValueEh @363
+    _ZN3F2C6Bitmap9BuildFontEPNS_4RectEjRKS0_jjh @364
+    _ZN3F2C6Bitmap9bltPixelsEPKhiijjjPhiijjjjjbh @365
+    _ZN3F2C6Bitmap9blt_imageEPKhiijjjjPhiijjjjjjbh @366
+    _ZN3F2C6Bitmap9clearRectERKNS_4RectERKNS_5ColorE @367
+    _ZN3F2C6Bitmap9clearRectEiijjhhhh @368
+    _ZN3F2C6Bitmap9getPixelsEv @369
+    _ZN3F2C6Bitmap9initDevILEv @370
+    _ZN3F2C6Bitmap9newBitmapEjj @371
+    _ZN3F2C6BitmapC1EP6_iobuf @372
+    _ZN3F2C6BitmapC1EP6_iobufNS_5Image9ImageTypeE @373
+    _ZN3F2C6BitmapC1EPKhjjjNS_5Image10DataFormatE @374
+    _ZN3F2C6BitmapC1ERKS0_ @375
+    _ZN3F2C6BitmapC1ERKSt6vectorIhSaIhEEjjjNS_5Image10DataFormatE @376
+    _ZN3F2C6BitmapC1ERSi @377
+    _ZN3F2C6BitmapC1ERSiNS_5Image9ImageTypeE @378
+    _ZN3F2C6BitmapC1ESs @379
+    _ZN3F2C6BitmapC1ESsNS_5Image9ImageTypeE @380
+    _ZN3F2C6BitmapC1Ejj @381
+    _ZN3F2C6BitmapC1Ev @382
+    _ZN3F2C6BitmapC2EP6_iobuf @383
+    _ZN3F2C6BitmapC2EP6_iobufNS_5Image9ImageTypeE @384
+    _ZN3F2C6BitmapC2EPKhjjjNS_5Image10DataFormatE @385
+    _ZN3F2C6BitmapC2ERKS0_ @386
+    _ZN3F2C6BitmapC2ERKSt6vectorIhSaIhEEjjjNS_5Image10DataFormatE @387
+    _ZN3F2C6BitmapC2ERSi @388
+    _ZN3F2C6BitmapC2ERSiNS_5Image9ImageTypeE @389
+    _ZN3F2C6BitmapC2ESs @390
+    _ZN3F2C6BitmapC2ESsNS_5Image9ImageTypeE @391
+    _ZN3F2C6BitmapC2Ejj @392
+    _ZN3F2C6BitmapC2Ev @393
+    _ZN3F2C6BitmapD0Ev @394
+    _ZN3F2C6BitmapD1Ev @395
+    _ZN3F2C6BitmapD2Ev @396
+    _ZN3F2C6BitmapaSERKS0_ @397
+    _ZN3F2C6Sprite11VertexArrayE @398 DATA
+    _ZN3F2C6Sprite11setViewportEPNS_8ViewportE @399
+    _ZN3F2C6Sprite14copyPropertiesERKS0_ @400
+    _ZN3F2C6Sprite16ShaderProgramObjE @401 DATA
+    _ZN3F2C6Sprite16checkVertexArrayE @402 DATA
+    _ZN3F2C6Sprite17enableGLDrawArrayEb @403
+    _ZN3F2C6Sprite19isEnableGLDrawArrayEv @404
+    _ZN3F2C6Sprite6filterE @405 DATA
+    _ZN3F2C6SpriteC1EPKNS_6BitmapE @406
+    _ZN3F2C6SpriteC1EPNS_8ViewportE @407
+    _ZN3F2C6SpriteC1ERKS0_ @408
+    _ZN3F2C6SpriteC1Ev @409
+    _ZN3F2C6SpriteC2EPKNS_6BitmapE @410
+    _ZN3F2C6SpriteC2EPNS_8ViewportE @411
+    _ZN3F2C6SpriteC2ERKS0_ @412
+    _ZN3F2C6SpriteC2Ev @413
+    _ZN3F2C6SpriteaSERKS0_ @414
+    _ZN3F2C6Window10startTicksEv @415
+    _ZN3F2C6Window12ClearGLSceneEv @416
+    _ZN3F2C6Window13getScreenSizeEPjS1_ @417
+    _ZN3F2C6Window13getScreenSizeEv @418
+    _ZN3F2C6Window13getWindowSizeEPiS1_ @419
+    _ZN3F2C6Window13getWindowSizeEv @420
+    _ZN3F2C6Window13setWindowHintENS_14WindowProperty11ParamWindowEi @421
+    _ZN3F2C6Window13setWindowSizeEjj @422
+    _ZN3F2C6Window14CreateGLWindowESsjjib @423
+    _ZN3F2C6Window14UpdateGLScreenEv @424
+    _ZN3F2C6Window14getWindowParamENS_14WindowProperty11ParamWindowE @425
+    _ZN3F2C6Window14setWindowTitleESs @426
+    _ZN3F2C6Window15showMouseCursorEb @427
+    _ZN3F2C6Window16ShutdownGLWindowEv @428
+    _ZN3F2C6Window17setWindowPositionEii @429
+    _ZN3F2C6Window18getShowMouseCursorEv @430
+    _ZN3F2C6Window5SleepEd @431
+    _ZN3F2C6Window6InitGLEv @432
+    _ZN3F2C6Window6ReSizeEjjjj @433
+    _ZN3F2C6Window6getFPSEv @434
+    _ZN3F2C6Window7getSizeEPiS1_PjS2_ @435
+    _ZN3F2C6Window7getTimeEv @436
+    _ZN3F2C6Window7setTimeEd @437
+    _ZN3F2C6Window8getFrameEv @438
+    _ZN3F2C6Window8getTicksEv @439
+    _ZN3F2C6WindowC1ESsjjib @440
+    _ZN3F2C6WindowC1Ev @441
+    _ZN3F2C6WindowC2ESsjjib @442
+    _ZN3F2C6WindowC2Ev @443
+    _ZN3F2C7Color3dC1ERKNS_5ColorE @444
+    _ZN3F2C7Color3dC1ERKNS_7Color3fE @445
+    _ZN3F2C7Color3dC1Eddd @446
+    _ZN3F2C7Color3dC1Ev @447
+    _ZN3F2C7Color3dC2ERKNS_5ColorE @448
+    _ZN3F2C7Color3dC2ERKNS_7Color3fE @449
+    _ZN3F2C7Color3dC2Eddd @450
+    _ZN3F2C7Color3dC2Ev @451
+    _ZN3F2C7Color3ddVERKS0_ @452
+    _ZN3F2C7Color3ddVERKd @453
+    _ZN3F2C7Color3dmIERKS0_ @454
+    _ZN3F2C7Color3dmIERKd @455
+    _ZN3F2C7Color3dmLERKS0_ @456
+    _ZN3F2C7Color3dmLERKd @457
+    _ZN3F2C7Color3dpLERKS0_ @458
+    _ZN3F2C7Color3dpLERKd @459
+    _ZN3F2C7Color3fC1ERKNS_5ColorE @460
+    _ZN3F2C7Color3fC1Efff @461
+    _ZN3F2C7Color3fC1Ev @462
+    _ZN3F2C7Color3fC2ERKNS_5ColorE @463
+    _ZN3F2C7Color3fC2Efff @464
+    _ZN3F2C7Color3fC2Ev @465
+    _ZN3F2C7Color3fdVERKS0_ @466
+    _ZN3F2C7Color3fdVERKf @467
+    _ZN3F2C7Color3fmIERKS0_ @468
+    _ZN3F2C7Color3fmIERKf @469
+    _ZN3F2C7Color3fmLERKS0_ @470
+    _ZN3F2C7Color3fmLERKf @471
+    _ZN3F2C7Color3fpLERKS0_ @472
+    _ZN3F2C7Color3fpLERKf @473
+    _ZN3F2C7Color3iC1ERKNS_5ColorE @474
+    _ZN3F2C7Color3iC1Eiii @475
+    _ZN3F2C7Color3iC1Ev @476
+    _ZN3F2C7Color3iC2ERKNS_5ColorE @477
+    _ZN3F2C7Color3iC2Eiii @478
+    _ZN3F2C7Color3iC2Ev @479
+    _ZN3F2C7Color3idVERKS0_ @480
+    _ZN3F2C7Color3idVERKi @481
+    _ZN3F2C7Color3imIERKS0_ @482
+    _ZN3F2C7Color3imIERKi @483
+    _ZN3F2C7Color3imLERKS0_ @484
+    _ZN3F2C7Color3imLERKi @485
+    _ZN3F2C7Color3ipLERKS0_ @486
+    _ZN3F2C7Color3ipLERKi @487
+    _ZN3F2C7TTFFont10defaultdirE @488 DATA
+    _ZN3F2C7TTFFont10loadBitmapERKNS_6BitmapEjj @489
+    _ZN3F2C7TTFFont11defaultNameE @490 DATA
+    _ZN3F2C7TTFFont11defaultSizeE @491 DATA
+    _ZN3F2C7TTFFont12defaultColorE @492 DATA
+    _ZN3F2C7TTFFont16defaultCharsperHE @493 DATA
+    _ZN3F2C7TTFFont16defaultCharsperWE @494 DATA
+    _ZN3F2C7TTFFont21defaultAlphaToleranceE @495 DATA
+    _ZN3F2C7TTFFont4openERNS_6BitmapESsjNS_5ColorEjj @496
+    _ZN3F2C7TTFFont7libraryE @497 DATA
+    _ZN3F2C7TTFFont8loadFileESsjRKNS_5ColorEjjb @498
+    _ZN3F2C7TTFFont8loadFileESsjb @499
+    _ZN3F2C7TTFFont9BuildFontEPNS_4RectEjRKNS_6BitmapEjjh @500
+    _ZN3F2C7TTFFontC1ESsjRKNS_5ColorEjjb @501
+    _ZN3F2C7TTFFontC1Ev @502
+    _ZN3F2C7TTFFontC2ESsjRKNS_5ColorEjjb @503
+    _ZN3F2C7TTFFontC2Ev @504
+    _ZN3F2C8LogError10writeErrorEv @505
+    _ZN3F2C8LogError11writeStringESs @506
+    _ZN3F2C8LogError12setErrorCodeENS_9ErrorCode10Error_CodeE @507
+    _ZN3F2C8LogError14getOpenGLErrorEv @508
+    _ZN3F2C8LogError7LEErrorC1Ev @509
+    _ZN3F2C8LogError7LEErrorC2Ev @510
+    _ZN3F2C8LogError8ClearLogEv @511
+    _ZN3F2C8LogError8filenameE @512 DATA
+    _ZN3F2C8LogError8setErrorESs @513
+    _ZN3F2C8LogError8setErrorESsSsjPvSs @514
+    _ZN3F2C8LogError8setErrorESsSsjSs @515
+    _ZN3F2C8LogError8writelogE @516 DATA
+    _ZN3F2C8LogErrorC1Ev @517
+    _ZN3F2C8ShaderGL10findStringESsSs @518
+    _ZN3F2C8ShaderGL10loadshaderESsRSs @519
+    _ZN3F2C8ShaderGL11getGLVendorEv @520
+    _ZN3F2C8ShaderGL11glx_enabledE @521 DATA
+    _ZN3F2C8ShaderGL11setUniformfESsf @522
+    _ZN3F2C8ShaderGL11setUniformiESsi @523
+    _ZN3F2C8ShaderGL11vbo_enabledE @524 DATA
+    _ZN3F2C8ShaderGL11vendor_infoE @525 DATA
+    _ZN3F2C8ShaderGL11wgl_enabledE @526 DATA
+    _ZN3F2C8ShaderGL12InitGLShaderEv @527
+    _ZN3F2C8ShaderGL12getGLVersionEv @528
+    _ZN3F2C8ShaderGL12loadFromCodeEv @529
+    _ZN3F2C8ShaderGL12version_infoE @530 DATA
+    _ZN3F2C8ShaderGL13getGLRendererEv @531
+    _ZN3F2C8ShaderGL13maxTexelUnitsE @532 DATA
+    _ZN3F2C8ShaderGL13renderer_infoE @533 DATA
+    _ZN3F2C8ShaderGL14getProcAddressESs @534
+    _ZN3F2C8ShaderGL15getGLExtensionsEv @535
+    _ZN3F2C8ShaderGL15getSupportedGLXEv @536
+    _ZN3F2C8ShaderGL15getSupportedVBOEv @537
+    _ZN3F2C8ShaderGL15getSupportedWGLEv @538
+    _ZN3F2C8ShaderGL15shading_enabledE @539 DATA
+    _ZN3F2C8ShaderGL16getMaxTexelUnitsEv @540
+    _ZN3F2C8ShaderGL17getMaxNVCombinersEv @541
+    _ZN3F2C8ShaderGL18GL_NV_maxCombinersE @542 DATA
+    _ZN3F2C8ShaderGL18LoadGLVertexShaderESsPSs @543
+    _ZN3F2C8ShaderGL18getSupportedShaderEv @544
+    _ZN3F2C8ShaderGL18multitexel_enabledE @545 DATA
+    _ZN3F2C8ShaderGL18setupExtensionsVBOEv @546
+    _ZN3F2C8ShaderGL19CreateShaderProgramEPSs @547
+    _ZN3F2C8ShaderGL19initSetupExtensionsE @548 DATA
+    _ZN3F2C8ShaderGL20LoadGLFragmentShaderESsPSs @549
+    _ZN3F2C8ShaderGL20glExtensionSupportedESs @550
+    _ZN3F2C8ShaderGL21getPlatformExtensionsEv @551
+    _ZN3F2C8ShaderGL21setupExtensionsShaderEv @552
+    _ZN3F2C8ShaderGL22getSupportedMultiTexelEv @553
+    _ZN3F2C8ShaderGL23setupExtensionsPlatformEv @554
+    _ZN3F2C8ShaderGL25setupExtensionsMultiTexelEv @555
+    _ZN3F2C8ShaderGL28getSupportedNVOcclusionQueryEv @556
+    _ZN3F2C8ShaderGL29GL_NV_occlusion_query_enabledE @557 DATA
+    _ZN3F2C8ShaderGL30getSupportedSGISGenerateMipmapEv @558
+    _ZN3F2C8ShaderGL31GL_SGIS_generate_mipmap_enabledE @559 DATA
+    _ZN3F2C8ShaderGL31getSupportedNVRegisterCombinersEv @560
+    _ZN3F2C8ShaderGL32GL_NV_register_combiners_enabledE @561 DATA
+    _ZN3F2C8ShaderGL8initInfoEv @562
+    _ZN3F2C8ShaderGL8printLogEjPSs @563
+    _ZN3F2C8ShaderGLC1ERKS0_ @564
+    _ZN3F2C8ShaderGLC1Ev @565
+    _ZN3F2C8ShaderGLC2ERKS0_ @566
+    _ZN3F2C8ShaderGLC2Ev @567
+    _ZN3F2C8ShaderGLD1Ev @568
+    _ZN3F2C8ShaderGLD2Ev @569
+    _ZN3F2C8ShaderGLaSERKS0_ @570
+    _ZN3F2C8ViewportC1ERKNS_4RectE @571
+    _ZN3F2C8ViewportC1Eiijj @572
+    _ZN3F2C8ViewportC1Ev @573
+    _ZN3F2C8ViewportC2ERKNS_4RectE @574
+    _ZN3F2C8ViewportC2Eiijj @575
+    _ZN3F2C8ViewportC2Ev @576
+    _ZN3F2C9AudioFile10loadDeviceEb @577
+    _ZN3F2C9AudioFile10setPostionEi @578
+    _ZN3F2C9AudioFile13getDeviceNameEv @579
+    _ZN3F2C9AudioFile17getMIDIDeviceNameEv @580
+    _ZN3F2C9AudioFile17getSupportDevicesEv @581
+    _ZN3F2C9AudioFile4playEv @582
+    _ZN3F2C9AudioFile4stopEv @583
+    _ZN3F2C9AudioFile5pauseEv @584
+    _ZN3F2C9AudioFile8loadFileESs @585
+    _ZN3F2C9AudioFile8loadFileESsb @586
+    _ZN3F2C9AudioFileC1ERKS0_ @587
+    _ZN3F2C9AudioFileC1ESs @588
+    _ZN3F2C9AudioFileC1ESsb @589
+    _ZN3F2C9AudioFileC1Ev @590
+    _ZN3F2C9AudioFileC2ERKS0_ @591
+    _ZN3F2C9AudioFileC2ESs @592
+    _ZN3F2C9AudioFileC2ESsb @593
+    _ZN3F2C9AudioFileC2Ev @594
+    _ZN3F2C9AudioFileD0Ev @595
+    _ZN3F2C9AudioFileD1Ev @596
+    _ZN3F2C9AudioFileD2Ev @597
+    _ZN3F2C9AudioFileaSERKS0_ @598
+    _ZN3F2C9ColorTone14ColorTonetoHSVERKS0_RA3_i @599
+    _ZN3F2C9ColorTone14ColorTonetoRGBERKS0_RA3_h @600
+    _ZN3F2C9ColorTone3setERKNS_5ColorE @601
+    _ZN3F2C9ColorTone3setEsss @602
+    _ZN3F2C9ColorTone3setEsssh @603
+    _ZN3F2C9ColorTone6setRedEs @604
+    _ZN3F2C9ColorTone7setBlueEs @605
+    _ZN3F2C9ColorTone8setGreenEs @606
+    _ZN3F2C9ColorToneC1Esss @607
+    _ZN3F2C9ColorToneC1Esssh @608
+    _ZN3F2C9ColorToneC1Ev @609
+    _ZN3F2C9ColorToneC2Esss @610
+    _ZN3F2C9ColorToneC2Esssh @611
+    _ZN3F2C9ColorToneC2Ev @612
+    _ZN3F2C9ColorTonemIERKS0_ @613
+    _ZN3F2C9ColorTonepLERKS0_ @614
+    _ZN3F2C9Texture2D10getImage2DEijjPv @615
+    _ZN3F2C9Texture2D10texImage2DEiiijjPKv @616
+    _ZN3F2C9Texture2D13texSubImage2DEiiiiijjPKv @617
+    _ZN3F2C9Texture2D14copyTexImage2DEPKhiiiiiiiii @618
+    _ZN3F2C9Texture2D16clampTextureSizeEj @619
+    _ZN3F2C9Texture2D17copyTexSubImage2DEPKhiiiiiiiii @620
+    _ZN3F2C9Texture2D18convertImageinRGBAIPKaEEvPhPKvjjjj @621
+    _ZN3F2C9Texture2D18convertImageinRGBAIPKhEEvPhPKvjjjj @622
+    _ZN3F2C9Texture2D18convertImageinRGBAIPKiEEvPhPKvjjjj @623
+    _ZN3F2C9Texture2D18convertImageinRGBAIPKjEEvPhPKvjjjj @624
+    _ZN3F2C9Texture2D18convertImageinRGBAIPKsEEvPhPKvjjjj @625
+    _ZN3F2C9Texture2D18convertImageinRGBAIPKtEEvPhPKvjjjj @626
+    _ZN3F2C9Texture2D18convertRGBAinImageIPaEEvPKhPvjjjj @627
+    _ZN3F2C9Texture2D18convertRGBAinImageIPhEEvPKhPvjjjj @628
+    _ZN3F2C9Texture2D18convertRGBAinImageIPiEEvPKhPvjjjj @629
+    _ZN3F2C9Texture2D18convertRGBAinImageIPjEEvPKhPvjjjj @630
+    _ZN3F2C9Texture2D18convertRGBAinImageIPsEEvPKhPvjjjj @631
+    _ZN3F2C9Texture2D18convertRGBAinImageIPtEEvPKhPvjjjj @632
+    _ZN3F2C9Texture2D23convertImageinRGBAFloatEPhPKvjjjj @633
+    _ZN3F2C9Texture2D23convertRGBAinImageFloatEPKhPvjjjj @634
+    _ZN3F2C9Texture2D6resizeEj @635
+    _ZN3F2C9Texture2D8getImageEj @636
+    _ZN3F2C9Texture2DC1Ej @637
+    _ZN3F2C9Texture2DC2Ej @638
+    _ZN3F2C9Texture2DD1Ev @639
+    _ZN3F2C9Texture2DD2Ev @640
+    _ZN3F2C9Texture2DixEj @641
+    _ZN3F2CdvERKNS_5ColorES2_ @642
+    _ZN3F2CdvERKNS_5ColorEd @643
+    _ZN3F2CdvERKNS_5ColorEf @644
+    _ZN3F2CdvERKNS_5ColorEh @645
+    _ZN3F2CdvERKNS_7Color3dES2_ @646
+    _ZN3F2CdvERKNS_7Color3dEd @647
+    _ZN3F2CdvERKNS_7Color3fES2_ @648
+    _ZN3F2CdvERKNS_7Color3fEf @649
+    _ZN3F2CdvERKNS_7Color3iES2_ @650
+    _ZN3F2CdvERKNS_7Color3iEi @651
+    _ZN3F2CdvERKNS_7Color4dES2_ @652
+    _ZN3F2CdvERKNS_7Color4dEd @653
+    _ZN3F2CdvERKNS_7Color4fES2_ @654
+    _ZN3F2CdvERKNS_7Color4fEf @655
+    _ZN3F2CdvERKNS_7Color4iES2_ @656
+    _ZN3F2CdvERKNS_7Color4iEi @657
+    _ZN3F2CdvEdRKNS_7Color3dE @658
+    _ZN3F2CdvEdRKNS_7Color4dE @659
+    _ZN3F2CdvEfRKNS_7Color3fE @660
+    _ZN3F2CdvEfRKNS_7Color4fE @661
+    _ZN3F2CdvEiRKNS_7Color3iE @662
+    _ZN3F2CdvEiRKNS_7Color4iE @663
+    _ZN3F2ClsERSoRKNS_10FontSpriteE @664
+    _ZN3F2ClsERSoRKNS_10SpriteBaseE @665
+    _ZN3F2ClsERSoRKNS_12SimpleSpriteE @666
+    _ZN3F2ClsERSoRKNS_4RectE @667
+    _ZN3F2ClsERSoRKNS_5ColorE @668
+    _ZN3F2ClsERSoRKNS_5CoordE @669
+    _ZN3F2ClsERSoRKNS_5PlaneE @670
+    _ZN3F2ClsERSoRKNS_6BitmapE @671
+    _ZN3F2ClsERSoRKNS_6SpriteE @672
+    _ZN3F2ClsERSoRKNS_7TTFFontE @673
+    _ZN3F2ClsERSoRKNS_8ShaderGLE @674
+    _ZN3F2ClsERSoRKNS_9ColorToneE @675
+    _ZN3F2CmiERKNS_5ColorES2_ @676
+    _ZN3F2CmiERKNS_5ColorEh @677
+    _ZN3F2CmiERKNS_7Color3dES2_ @678
+    _ZN3F2CmiERKNS_7Color3dEd @679
+    _ZN3F2CmiERKNS_7Color3fES2_ @680
+    _ZN3F2CmiERKNS_7Color3fEf @681
+    _ZN3F2CmiERKNS_7Color3iES2_ @682
+    _ZN3F2CmiERKNS_7Color3iEi @683
+    _ZN3F2CmiERKNS_7Color4dES2_ @684
+    _ZN3F2CmiERKNS_7Color4dEd @685
+    _ZN3F2CmiERKNS_7Color4fES2_ @686
+    _ZN3F2CmiERKNS_7Color4fEf @687
+    _ZN3F2CmiERKNS_7Color4iES2_ @688
+    _ZN3F2CmiERKNS_7Color4iEi @689
+    _ZN3F2CmiERKNS_9ColorToneES2_ @690
+    _ZN3F2CmiEdRKNS_7Color3dE @691
+    _ZN3F2CmiEdRKNS_7Color4dE @692
+    _ZN3F2CmiEfRKNS_7Color3fE @693
+    _ZN3F2CmiEfRKNS_7Color4fE @694
+    _ZN3F2CmiEiRKNS_7Color3iE @695
+    _ZN3F2CmiEiRKNS_7Color4iE @696
+    _ZN3F2CmlERKNS_5ColorES2_ @697
+    _ZN3F2CmlERKNS_5ColorEd @698
+    _ZN3F2CmlERKNS_5ColorEf @699
+    _ZN3F2CmlERKNS_5ColorEh @700
+    _ZN3F2CmlERKNS_7Color3dES2_ @701
+    _ZN3F2CmlERKNS_7Color3dEd @702
+    _ZN3F2CmlERKNS_7Color3fES2_ @703
+    _ZN3F2CmlERKNS_7Color3fEf @704
+    _ZN3F2CmlERKNS_7Color3iES2_ @705
+    _ZN3F2CmlERKNS_7Color3iEi @706
+    _ZN3F2CmlERKNS_7Color4dES2_ @707
+    _ZN3F2CmlERKNS_7Color4dEd @708
+    _ZN3F2CmlERKNS_7Color4fES2_ @709
+    _ZN3F2CmlERKNS_7Color4fEf @710
+    _ZN3F2CmlERKNS_7Color4iES2_ @711
+    _ZN3F2CmlERKNS_7Color4iEi @712
+    _ZN3F2CmlEdRKNS_7Color3dE @713
+    _ZN3F2CmlEdRKNS_7Color4dE @714
+    _ZN3F2CmlEfRKNS_7Color3fE @715
+    _ZN3F2CmlEfRKNS_7Color4fE @716
+    _ZN3F2CmlEiRKNS_7Color3iE @717
+    _ZN3F2CmlEiRKNS_7Color4iE @718
+    _ZN3F2CplERKNS_5ColorES2_ @719
+    _ZN3F2CplERKNS_5ColorEh @720
+    _ZN3F2CplERKNS_7Color3dES2_ @721
+    _ZN3F2CplERKNS_7Color3dEd @722
+    _ZN3F2CplERKNS_7Color3fES2_ @723
+    _ZN3F2CplERKNS_7Color3fEf @724
+    _ZN3F2CplERKNS_7Color3iES2_ @725
+    _ZN3F2CplERKNS_7Color3iEi @726
+    _ZN3F2CplERKNS_7Color4dES2_ @727
+    _ZN3F2CplERKNS_7Color4dEd @728
+    _ZN3F2CplERKNS_7Color4fES2_ @729
+    _ZN3F2CplERKNS_7Color4fEf @730
+    _ZN3F2CplERKNS_7Color4iES2_ @731
+    _ZN3F2CplERKNS_7Color4iEi @732
+    _ZN3F2CplERKNS_9ColorToneES2_ @733
+    _ZN3F2CplEdRKNS_7Color3dE @734
+    _ZN3F2CplEdRKNS_7Color4dE @735
+    _ZN3F2CplEfRKNS_7Color3fE @736
+    _ZN3F2CplEfRKNS_7Color4fE @737
+    _ZN3F2CplEiRKNS_7Color3iE @738
+    _ZN3F2CplEiRKNS_7Color4iE @739
+    _ZN3F2CrsERSiRNS_10FontSpriteE @740
+    _ZN3F2CrsERSiRNS_10SpriteBaseE @741
+    _ZN3F2CrsERSiRNS_12SimpleSpriteE @742
+    _ZN3F2CrsERSiRNS_4RectE @743
+    _ZN3F2CrsERSiRNS_5ColorE @744
+    _ZN3F2CrsERSiRNS_5CoordE @745
+    _ZN3F2CrsERSiRNS_5PlaneE @746
+    _ZN3F2CrsERSiRNS_6BitmapE @747
+    _ZN3F2CrsERSiRNS_6SpriteE @748
+    _ZN3F2CrsERSiRNS_7TTFFontE @749
+    _ZN3F2CrsERSiRNS_8ShaderGLE @750
+    _ZN3F2CrsERSiRNS_8ViewportE @751
+    _ZN3F2CrsERSiRNS_9ColorToneE @752
+    _ZN7audiere6RefPtrINS_10MIDIDeviceEEC1EPS1_ @753
+    _ZN7audiere6RefPtrINS_10MIDIDeviceEEC1ERKS2_ @754
+    _ZN7audiere6RefPtrINS_10MIDIDeviceEEC2EPS1_ @755
+    _ZN7audiere6RefPtrINS_10MIDIDeviceEEC2ERKS2_ @756
+    _ZN7audiere6RefPtrINS_10MIDIDeviceEED1Ev @757
+    _ZN7audiere6RefPtrINS_10MIDIDeviceEED2Ev @758
+    _ZN7audiere6RefPtrINS_10MIDIDeviceEEaSEPS1_ @759
+    _ZN7audiere6RefPtrINS_10MIDIDeviceEEaSERKS2_ @760
+    _ZN7audiere6RefPtrINS_10MIDIStreamEEC1EPS1_ @761
+    _ZN7audiere6RefPtrINS_10MIDIStreamEEC1ERKS2_ @762
+    _ZN7audiere6RefPtrINS_10MIDIStreamEEC2EPS1_ @763
+    _ZN7audiere6RefPtrINS_10MIDIStreamEEC2ERKS2_ @764
+    _ZN7audiere6RefPtrINS_10MIDIStreamEED1Ev @765
+    _ZN7audiere6RefPtrINS_10MIDIStreamEED2Ev @766
+    _ZN7audiere6RefPtrINS_10MIDIStreamEEaSEPS1_ @767
+    _ZN7audiere6RefPtrINS_10MIDIStreamEEaSERKS2_ @768
+    _ZN7audiere6RefPtrINS_12OutputStreamEEC1EPS1_ @769
+    _ZN7audiere6RefPtrINS_12OutputStreamEEC1ERKS2_ @770
+    _ZN7audiere6RefPtrINS_12OutputStreamEEC2EPS1_ @771
+    _ZN7audiere6RefPtrINS_12OutputStreamEEC2ERKS2_ @772
+    _ZN7audiere6RefPtrINS_12OutputStreamEED1Ev @773
+    _ZN7audiere6RefPtrINS_12OutputStreamEED2Ev @774
+    _ZN7audiere6RefPtrINS_12OutputStreamEEaSEPS1_ @775
+    _ZN7audiere6RefPtrINS_12OutputStreamEEaSERKS2_ @776
+    _ZNK3F2C10FontSprite12getCharsRectEv @777
+    _ZNK3F2C10FontSprite12getTextsRectEv @778
+    _ZNK3F2C10FontSprite13getStringSizeESs @779
+    _ZNK3F2C10FontSprite16getCharsperWidthEv @780
+    _ZNK3F2C10FontSprite17getCharsperHeightEv @781
+    _ZNK3F2C10FontSprite6renderEv @782
+    _ZNK3F2C10FontSprite8getTextsEv @783
+    _ZNK3F2C10SpriteBase10getTexBitsEv @784
+    _ZNK3F2C10SpriteBase10getTextureEv @785
+    _ZNK3F2C10SpriteBase11getTexWidthEv @786
+    _ZNK3F2C10SpriteBase12getTexHeightEv @787
+    _ZNK3F2C10SpriteBase16getTexDataFormatEv @788
+    _ZNK3F2C11ArraySprite10getTexBitsEv @789
+    _ZNK3F2C11ArraySprite10getTextureEv @790
+    _ZNK3F2C11ArraySprite11getTexWidthEv @791
+    _ZNK3F2C11ArraySprite12getTexHeightEv @792
+    _ZNK3F2C11ArraySprite16getTexDataFormatEv @793
+    _ZNK3F2C11ArraySprite6renderEj @794
+    _ZNK3F2C11ArraySprite6renderEjj @795
+    _ZNK3F2C11ArraySprite6renderEv @796
+    _ZNK3F2C12SimpleSprite6renderEv @797
+    _ZNK3F2C4Rect9collisionERKS0_ @798
+    _ZNK3F2C5Color9getUint32Ev @799
+    _ZNK3F2C5ColorcvmEv @800
+    _ZNK3F2C5ColoreqERKS0_ @801
+    _ZNK3F2C5ColorltERKS0_ @802
+    _ZNK3F2C5ColorneERKS0_ @803
+    _ZNK3F2C5Coord9collisionERKS0_ @804
+    _ZNK3F2C5Plane6renderEv @805
+    _ZNK3F2C5Timer14getTimeMilisecEv @806
+    _ZNK3F2C5Timer7getTimeEv @807
+    _ZNK3F2C5Timer8isPausedEv @808
+    _ZNK3F2C5Timer9isStartedEv @809
+    _ZNK3F2C6Bitmap11getFilenameEv @810
+    _ZNK3F2C6Bitmap12getImageTypeEv @811
+    _ZNK3F2C6Bitmap13getDataFormatEv @812
+    _ZNK3F2C6Bitmap13getPixelsSizeEv @813
+    _ZNK3F2C6Bitmap14getCreateWidthEv @814
+    _ZNK3F2C6Bitmap14getPixelsWidthEv @815
+    _ZNK3F2C6Bitmap15getCreateHeightEv @816
+    _ZNK3F2C6Bitmap4saveESs @817
+    _ZNK3F2C6Bitmap4saveESsNS_5Image9ImageTypeE @818
+    _ZNK3F2C6Bitmap7getBitsEv @819
+    _ZNK3F2C6Bitmap7getRectEv @820
+    _ZNK3F2C6Bitmap8getBytesEv @821
+    _ZNK3F2C6Bitmap8getPixelEjj @822
+    _ZNK3F2C6Bitmap8getWidthEv @823
+    _ZNK3F2C6Bitmap9getHeightEv @824
+    _ZNK3F2C6Bitmap9getPixelsEv @825
+    _ZNK3F2C6Bitmap9isChangedEv @826
+    _ZNK3F2C6Sprite6renderEv @827
+    _ZNK3F2C7TTFFont10copyBitmapERNS_6BitmapE @828
+    _ZNK3F2C7TTFFont11getCharSizeEh @829
+    _ZNK3F2C7TTFFont11getFilenameEv @830
+    _ZNK3F2C7TTFFont12getCharsSizeEv @831
+    _ZNK3F2C7TTFFont16getCharsperWidthEv @832
+    _ZNK3F2C7TTFFont17getCharsperHeightEv @833
+    _ZNK3F2C7TTFFont7getSizeEv @834
+    _ZNK3F2C7TTFFont8getColorEv @835
+    _ZNK3F2C7TTFFont9getBitmapEv @836
+    _ZNK3F2C8LogError8getErrorEv @837
+    _ZNK3F2C8ShaderGL11getUniformfESs @838
+    _ZNK3F2C8ShaderGL11getUniformiESs @839
+    _ZNK3F2C8ShaderGL13getProgramObjEv @840
+    _ZNK3F2C8ShaderGL13getVertexCodeEv @841
+    _ZNK3F2C8ShaderGL15getFragmentCodeEv @842
+    _ZNK3F2C8ShaderGL15getVertexShaderEv @843
+    _ZNK3F2C8ShaderGL17getFragmentShaderEv @844
+    _ZNK3F2C9AudioFile11getFilenameEv @845
+    _ZNK3F2C9AudioFile11getPositionEv @846
+    _ZNK3F2C9AudioFile9isPlayingEv @847
+    _ZNK3F2C9ColorTone6getRedEv @848
+    _ZNK3F2C9ColorTone7getBlueEv @849
+    _ZNK3F2C9ColorTone8getGreenEv @850
+    _ZNK3F2C9ColorToneeqERKS0_ @851
+    _ZNK3F2C9ColorToneneERKS0_ @852
+    _ZNK3F2C9Texture2D11getMipCountEv @853
+    _ZNK3F2C9Texture2D16isCreateTexImageEv @854
+    _ZNK3F2C9Texture2D8getImageEj @855
+    _ZNK3F2C9Texture2D8getWidthEv @856
+    _ZNK3F2C9Texture2D9getHeightEv @857
+    _ZNK3F2C9Texture2DixEj @858
+    _ZNK7audiere6RefPtrINS_10MIDIDeviceEE3getEv @859
+    _ZNK7audiere6RefPtrINS_10MIDIDeviceEEcvbEv @860
+    _ZNK7audiere6RefPtrINS_10MIDIDeviceEEdeEv @861
+    _ZNK7audiere6RefPtrINS_10MIDIDeviceEEptEv @862
+    _ZNK7audiere6RefPtrINS_10MIDIStreamEE3getEv @863
+    _ZNK7audiere6RefPtrINS_10MIDIStreamEEcvbEv @864
+    _ZNK7audiere6RefPtrINS_10MIDIStreamEEdeEv @865
+    _ZNK7audiere6RefPtrINS_10MIDIStreamEEptEv @866
+    _ZNK7audiere6RefPtrINS_12OutputStreamEE3getEv @867
+    _ZNK7audiere6RefPtrINS_12OutputStreamEEcvbEv @868
+    _ZNK7audiere6RefPtrINS_12OutputStreamEEdeEv @869
+    _ZNK7audiere6RefPtrINS_12OutputStreamEEptEv @870
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE12_M_check_lenEjPKc @871
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE14_M_range_checkEj @872
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE2atEj @873
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE3endEv @874
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE4backEv @875
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE4dataEv @876
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE4rendEv @877
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE4sizeEv @878
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE5beginEv @879
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE5emptyEv @880
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE5frontEv @881
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE6rbeginEv @882
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE8capacityEv @883
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EE8max_sizeEv @884
+    _ZNKSt6vectorIN3F2C13SpriteElementESaIS1_EEixEj @885
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE12_M_check_lenEjPKc @886
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE14_M_range_checkEj @887
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE2atEj @888
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE3endEv @889
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE4backEv @890
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE4dataEv @891
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE4rendEv @892
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE4sizeEv @893
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE5beginEv @894
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE5emptyEv @895
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE5frontEv @896
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE6rbeginEv @897
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE8capacityEv @898
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EE8max_sizeEv @899
+    _ZNKSt6vectorIN3F2C4RectESaIS1_EEixEj @900
+    _ZNKSt6vectorIPhSaIS0_EE12_M_check_lenEjPKc @901
+    _ZNKSt6vectorIPhSaIS0_EE14_M_range_checkEj @902
+    _ZNKSt6vectorIPhSaIS0_EE2atEj @903
+    _ZNKSt6vectorIPhSaIS0_EE3endEv @904
+    _ZNKSt6vectorIPhSaIS0_EE4backEv @905
+    _ZNKSt6vectorIPhSaIS0_EE4dataEv @906
+    _ZNKSt6vectorIPhSaIS0_EE4rendEv @907
+    _ZNKSt6vectorIPhSaIS0_EE4sizeEv @908
+    _ZNKSt6vectorIPhSaIS0_EE5beginEv @909
+    _ZNKSt6vectorIPhSaIS0_EE5emptyEv @910
+    _ZNKSt6vectorIPhSaIS0_EE5frontEv @911
+    _ZNKSt6vectorIPhSaIS0_EE6rbeginEv @912
+    _ZNKSt6vectorIPhSaIS0_EE8capacityEv @913
+    _ZNKSt6vectorIPhSaIS0_EE8max_sizeEv @914
+    _ZNKSt6vectorIPhSaIS0_EEixEj @915
+    _ZNKSt6vectorISsSaISsEE12_M_check_lenEjPKc @916
+    _ZNKSt6vectorISsSaISsEE14_M_range_checkEj @917
+    _ZNKSt6vectorISsSaISsEE2atEj @918
+    _ZNKSt6vectorISsSaISsEE3endEv @919
+    _ZNKSt6vectorISsSaISsEE4backEv @920
+    _ZNKSt6vectorISsSaISsEE4dataEv @921
+    _ZNKSt6vectorISsSaISsEE4rendEv @922
+    _ZNKSt6vectorISsSaISsEE4sizeEv @923
+    _ZNKSt6vectorISsSaISsEE5beginEv @924
+    _ZNKSt6vectorISsSaISsEE5emptyEv @925
+    _ZNKSt6vectorISsSaISsEE5frontEv @926
+    _ZNKSt6vectorISsSaISsEE6rbeginEv @927
+    _ZNKSt6vectorISsSaISsEE8capacityEv @928
+    _ZNKSt6vectorISsSaISsEE8max_sizeEv @929
+    _ZNKSt6vectorISsSaISsEEixEj @930
+    _ZNKSt6vectorIhSaIhEE12_M_check_lenEjPKc @931
+    _ZNKSt6vectorIhSaIhEE14_M_range_checkEj @932
+    _ZNKSt6vectorIhSaIhEE2atEj @933
+    _ZNKSt6vectorIhSaIhEE3endEv @934
+    _ZNKSt6vectorIhSaIhEE4backEv @935
+    _ZNKSt6vectorIhSaIhEE4dataEv @936
+    _ZNKSt6vectorIhSaIhEE4rendEv @937
+    _ZNKSt6vectorIhSaIhEE4sizeEv @938
+    _ZNKSt6vectorIhSaIhEE5beginEv @939
+    _ZNKSt6vectorIhSaIhEE5emptyEv @940
+    _ZNKSt6vectorIhSaIhEE5frontEv @941
+    _ZNKSt6vectorIhSaIhEE6rbeginEv @942
+    _ZNKSt6vectorIhSaIhEE8capacityEv @943
+    _ZNKSt6vectorIhSaIhEE8max_sizeEv @944
+    _ZNKSt6vectorIhSaIhEEixEj @945
+    _ZNKSt6vectorIjSaIjEE12_M_check_lenEjPKc @946
+    _ZNKSt6vectorIjSaIjEE14_M_range_checkEj @947
+    _ZNKSt6vectorIjSaIjEE2atEj @948
+    _ZNKSt6vectorIjSaIjEE3endEv @949
+    _ZNKSt6vectorIjSaIjEE4backEv @950
+    _ZNKSt6vectorIjSaIjEE4dataEv @951
+    _ZNKSt6vectorIjSaIjEE4rendEv @952
+    _ZNKSt6vectorIjSaIjEE4sizeEv @953
+    _ZNKSt6vectorIjSaIjEE5beginEv @954
+    _ZNKSt6vectorIjSaIjEE5emptyEv @955
+    _ZNKSt6vectorIjSaIjEE5frontEv @956
+    _ZNKSt6vectorIjSaIjEE6rbeginEv @957
+    _ZNKSt6vectorIjSaIjEE8capacityEv @958
+    _ZNKSt6vectorIjSaIjEE8max_sizeEv @959
+    _ZNKSt6vectorIjSaIjEEixEj @960
+    _ZNSaIN3F2C13SpriteElementEEC1ERKS1_ @961
+    _ZNSaIN3F2C13SpriteElementEEC1Ev @962
+    _ZNSaIN3F2C13SpriteElementEEC2ERKS1_ @963
+    _ZNSaIN3F2C13SpriteElementEEC2Ev @964
+    _ZNSaIN3F2C13SpriteElementEED1Ev @965
+    _ZNSaIN3F2C13SpriteElementEED2Ev @966
+    _ZNSaIN3F2C4RectEEC1ERKS1_ @967
+    _ZNSaIN3F2C4RectEEC1Ev @968
+    _ZNSaIN3F2C4RectEEC2ERKS1_ @969
+    _ZNSaIN3F2C4RectEEC2Ev @970
+    _ZNSaIN3F2C4RectEED1Ev @971
+    _ZNSaIN3F2C4RectEED2Ev @972
+    _ZNSaIPhEC1ERKS0_ @973
+    _ZNSaIPhEC1Ev @974
+    _ZNSaIPhEC2ERKS0_ @975
+    _ZNSaIPhEC2Ev @976
+    _ZNSaIPhED1Ev @977
+    _ZNSaIPhED2Ev @978
+    _ZNSaISsEC1ERKS_ @979
+    _ZNSaISsEC1Ev @980
+    _ZNSaISsEC2ERKS_ @981
+    _ZNSaISsEC2Ev @982
+    _ZNSaISsED1Ev @983
+    _ZNSaISsED2Ev @984
+    _ZNSaIhEC1ERKS_ @985
+    _ZNSaIhEC1Ev @986
+    _ZNSaIhEC2ERKS_ @987
+    _ZNSaIhEC2Ev @988
+    _ZNSaIhED1Ev @989
+    _ZNSaIhED2Ev @990
+    _ZNSaIiEC1ERKS_ @991
+    _ZNSaIiEC1Ev @992
+    _ZNSaIiEC2ERKS_ @993
+    _ZNSaIiEC2Ev @994
+    _ZNSaIiED1Ev @995
+    _ZNSaIiED2Ev @996
+    _ZNSaIjEC1ERKS_ @997
+    _ZNSaIjEC1Ev @998
+    _ZNSaIjEC2ERKS_ @999
+    _ZNSaIjEC2Ev @1000
+    _ZNSaIjED1Ev @1001
+    _ZNSaIjED2Ev @1002
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_ @1003
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE14_M_fill_assignEjRKS1_ @1004
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EEjRKS1_ @1005
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE15_M_erase_at_endEPS1_ @1006
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE18_M_fill_initializeEjRKS1_ @1007
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_ @1008
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE20_M_allocate_and_copyIPS1_EES5_jT_S6_ @1009
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE2atEj @1010
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE3endEv @1011
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE4backEv @1012
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE4dataEv @1013
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE4rendEv @1014
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE4swapERS3_ @1015
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE5beginEv @1016
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE5clearEv @1017
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS1_S3_EE @1018
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS1_S3_EES7_ @1019
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE5frontEv @1020
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE6assignEjRKS1_ @1021
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE6insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_ @1022
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE6insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EEjRKS1_ @1023
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE6rbeginEv @1024
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE6resizeEjS1_ @1025
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE7reserveEj @1026
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE8pop_backEv @1027
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EE9push_backERKS1_ @1028
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEC1ERKS2_ @1029
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEC1ERKS3_ @1030
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEC1EjRKS1_RKS2_ @1031
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEC1Ev @1032
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEC2ERKS2_ @1033
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEC2ERKS3_ @1034
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEC2EjRKS1_RKS2_ @1035
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEC2Ev @1036
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EED1Ev @1037
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EED2Ev @1038
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEaSERKS3_ @1039
+    _ZNSt6vectorIN3F2C13SpriteElementESaIS1_EEixEj @1040
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_ @1041
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE14_M_fill_assignEjRKS1_ @1042
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EEjRKS1_ @1043
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE15_M_erase_at_endEPS1_ @1044
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE18_M_fill_initializeEjRKS1_ @1045
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_ @1046
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE20_M_allocate_and_copyIPS1_EES5_jT_S6_ @1047
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE2atEj @1048
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE3endEv @1049
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE4backEv @1050
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE4dataEv @1051
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE4rendEv @1052
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE4swapERS3_ @1053
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE5beginEv @1054
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE5clearEv @1055
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS1_S3_EE @1056
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS1_S3_EES7_ @1057
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE5frontEv @1058
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE6assignEjRKS1_ @1059
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE6insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_ @1060
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE6insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EEjRKS1_ @1061
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE6rbeginEv @1062
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE6resizeEjS1_ @1063
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE7reserveEj @1064
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE8pop_backEv @1065
+    _ZNSt6vectorIN3F2C4RectESaIS1_EE9push_backERKS1_ @1066
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEC1ERKS2_ @1067
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEC1ERKS3_ @1068
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEC1EjRKS1_RKS2_ @1069
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEC1Ev @1070
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEC2ERKS2_ @1071
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEC2ERKS3_ @1072
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEC2EjRKS1_RKS2_ @1073
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEC2Ev @1074
+    _ZNSt6vectorIN3F2C4RectESaIS1_EED1Ev @1075
+    _ZNSt6vectorIN3F2C4RectESaIS1_EED2Ev @1076
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEaSERKS3_ @1077
+    _ZNSt6vectorIN3F2C4RectESaIS1_EEixEj @1078
+    _ZNSt6vectorIPhSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_ @1079
+    _ZNSt6vectorIPhSaIS0_EE14_M_fill_assignEjRKS0_ @1080
+    _ZNSt6vectorIPhSaIS0_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS0_S2_EEjRKS0_ @1081
+    _ZNSt6vectorIPhSaIS0_EE15_M_erase_at_endEPS0_ @1082
+    _ZNSt6vectorIPhSaIS0_EE18_M_fill_initializeEjRKS0_ @1083
+    _ZNSt6vectorIPhSaIS0_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS0_S2_EEEEPS0_jT_SA_ @1084
+    _ZNSt6vectorIPhSaIS0_EE20_M_allocate_and_copyIPS0_EES4_jT_S5_ @1085
+    _ZNSt6vectorIPhSaIS0_EE2atEj @1086
+    _ZNSt6vectorIPhSaIS0_EE3endEv @1087
+    _ZNSt6vectorIPhSaIS0_EE4backEv @1088
+    _ZNSt6vectorIPhSaIS0_EE4dataEv @1089
+    _ZNSt6vectorIPhSaIS0_EE4rendEv @1090
+    _ZNSt6vectorIPhSaIS0_EE4swapERS2_ @1091
+    _ZNSt6vectorIPhSaIS0_EE5beginEv @1092
+    _ZNSt6vectorIPhSaIS0_EE5clearEv @1093
+    _ZNSt6vectorIPhSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EE @1094
+    _ZNSt6vectorIPhSaIS0_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS0_S2_EES6_ @1095
+    _ZNSt6vectorIPhSaIS0_EE5frontEv @1096
+    _ZNSt6vectorIPhSaIS0_EE6assignEjRKS0_ @1097
+    _ZNSt6vectorIPhSaIS0_EE6insertEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_ @1098
+    _ZNSt6vectorIPhSaIS0_EE6insertEN9__gnu_cxx17__normal_iteratorIPS0_S2_EEjRKS0_ @1099
+    _ZNSt6vectorIPhSaIS0_EE6rbeginEv @1100
+    _ZNSt6vectorIPhSaIS0_EE6resizeEjS0_ @1101
+    _ZNSt6vectorIPhSaIS0_EE7reserveEj @1102
+    _ZNSt6vectorIPhSaIS0_EE8pop_backEv @1103
+    _ZNSt6vectorIPhSaIS0_EE9push_backERKS0_ @1104
+    _ZNSt6vectorIPhSaIS0_EEC1ERKS1_ @1105
+    _ZNSt6vectorIPhSaIS0_EEC1ERKS2_ @1106
+    _ZNSt6vectorIPhSaIS0_EEC1EjRKS0_RKS1_ @1107
+    _ZNSt6vectorIPhSaIS0_EEC1Ev @1108
+    _ZNSt6vectorIPhSaIS0_EEC2ERKS1_ @1109
+    _ZNSt6vectorIPhSaIS0_EEC2ERKS2_ @1110
+    _ZNSt6vectorIPhSaIS0_EEC2EjRKS0_RKS1_ @1111
+    _ZNSt6vectorIPhSaIS0_EEC2Ev @1112
+    _ZNSt6vectorIPhSaIS0_EED1Ev @1113
+    _ZNSt6vectorIPhSaIS0_EED2Ev @1114
+    _ZNSt6vectorIPhSaIS0_EEaSERKS2_ @1115
+    _ZNSt6vectorIPhSaIS0_EEixEj @1116
+    _ZNSt6vectorISsSaISsEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPSsS1_EERKSs @1117
+    _ZNSt6vectorISsSaISsEE14_M_fill_assignEjRKSs @1118
+    _ZNSt6vectorISsSaISsEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPSsS1_EEjRKSs @1119
+    _ZNSt6vectorISsSaISsEE15_M_erase_at_endEPSs @1120
+    _ZNSt6vectorISsSaISsEE18_M_fill_initializeEjRKSs @1121
+    _ZNSt6vectorISsSaISsEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKSsS1_EEEEPSsjT_S9_ @1122
+    _ZNSt6vectorISsSaISsEE20_M_allocate_and_copyIPSsEES3_jT_S4_ @1123
+    _ZNSt6vectorISsSaISsEE2atEj @1124
+    _ZNSt6vectorISsSaISsEE3endEv @1125
+    _ZNSt6vectorISsSaISsEE4backEv @1126
+    _ZNSt6vectorISsSaISsEE4dataEv @1127
+    _ZNSt6vectorISsSaISsEE4rendEv @1128
+    _ZNSt6vectorISsSaISsEE4swapERS1_ @1129
+    _ZNSt6vectorISsSaISsEE5beginEv @1130
+    _ZNSt6vectorISsSaISsEE5clearEv @1131
+    _ZNSt6vectorISsSaISsEE5eraseEN9__gnu_cxx17__normal_iteratorIPSsS1_EE @1132
+    _ZNSt6vectorISsSaISsEE5eraseEN9__gnu_cxx17__normal_iteratorIPSsS1_EES5_ @1133
+    _ZNSt6vectorISsSaISsEE5frontEv @1134
+    _ZNSt6vectorISsSaISsEE6assignEjRKSs @1135
+    _ZNSt6vectorISsSaISsEE6insertEN9__gnu_cxx17__normal_iteratorIPSsS1_EERKSs @1136
+    _ZNSt6vectorISsSaISsEE6insertEN9__gnu_cxx17__normal_iteratorIPSsS1_EEjRKSs @1137
+    _ZNSt6vectorISsSaISsEE6rbeginEv @1138
+    _ZNSt6vectorISsSaISsEE6resizeEjSs @1139
+    _ZNSt6vectorISsSaISsEE7reserveEj @1140
+    _ZNSt6vectorISsSaISsEE8pop_backEv @1141
+    _ZNSt6vectorISsSaISsEE9push_backERKSs @1142
+    _ZNSt6vectorISsSaISsEEC1ERKS0_ @1143
+    _ZNSt6vectorISsSaISsEEC1ERKS1_ @1144
+    _ZNSt6vectorISsSaISsEEC1EjRKSsRKS0_ @1145
+    _ZNSt6vectorISsSaISsEEC1Ev @1146
+    _ZNSt6vectorISsSaISsEEC2ERKS0_ @1147
+    _ZNSt6vectorISsSaISsEEC2ERKS1_ @1148
+    _ZNSt6vectorISsSaISsEEC2EjRKSsRKS0_ @1149
+    _ZNSt6vectorISsSaISsEEC2Ev @1150
+    _ZNSt6vectorISsSaISsEED1Ev @1151
+    _ZNSt6vectorISsSaISsEED2Ev @1152
+    _ZNSt6vectorISsSaISsEEaSERKS1_ @1153
+    _ZNSt6vectorISsSaISsEEixEj @1154
+    _ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh @1155
+    _ZNSt6vectorIhSaIhEE14_M_fill_assignEjRKh @1156
+    _ZNSt6vectorIhSaIhEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPhS1_EEjRKh @1157
+    _ZNSt6vectorIhSaIhEE15_M_erase_at_endEPh @1158
+    _ZNSt6vectorIhSaIhEE18_M_fill_initializeEjRKh @1159
+    _ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_ @1160
+    _ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIPhEES3_jT_S4_ @1161
+    _ZNSt6vectorIhSaIhEE2atEj @1162
+    _ZNSt6vectorIhSaIhEE3endEv @1163
+    _ZNSt6vectorIhSaIhEE4backEv @1164
+    _ZNSt6vectorIhSaIhEE4dataEv @1165
+    _ZNSt6vectorIhSaIhEE4rendEv @1166
+    _ZNSt6vectorIhSaIhEE4swapERS1_ @1167
+    _ZNSt6vectorIhSaIhEE5beginEv @1168
+    _ZNSt6vectorIhSaIhEE5clearEv @1169
+    _ZNSt6vectorIhSaIhEE5eraseEN9__gnu_cxx17__normal_iteratorIPhS1_EE @1170
+    _ZNSt6vectorIhSaIhEE5eraseEN9__gnu_cxx17__normal_iteratorIPhS1_EES5_ @1171
+    _ZNSt6vectorIhSaIhEE5frontEv @1172
+    _ZNSt6vectorIhSaIhEE6assignEjRKh @1173
+    _ZNSt6vectorIhSaIhEE6insertEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh @1174
+    _ZNSt6vectorIhSaIhEE6insertEN9__gnu_cxx17__normal_iteratorIPhS1_EEjRKh @1175
+    _ZNSt6vectorIhSaIhEE6rbeginEv @1176
+    _ZNSt6vectorIhSaIhEE6resizeEjh @1177
+    _ZNSt6vectorIhSaIhEE7reserveEj @1178
+    _ZNSt6vectorIhSaIhEE8pop_backEv @1179
+    _ZNSt6vectorIhSaIhEE9push_backERKh @1180
+    _ZNSt6vectorIhSaIhEEC1ERKS0_ @1181
+    _ZNSt6vectorIhSaIhEEC1ERKS1_ @1182
+    _ZNSt6vectorIhSaIhEEC1EjRKhRKS0_ @1183
+    _ZNSt6vectorIhSaIhEEC1Ev @1184
+    _ZNSt6vectorIhSaIhEEC2ERKS0_ @1185
+    _ZNSt6vectorIhSaIhEEC2ERKS1_ @1186
+    _ZNSt6vectorIhSaIhEEC2EjRKhRKS0_ @1187
+    _ZNSt6vectorIhSaIhEEC2Ev @1188
+    _ZNSt6vectorIhSaIhEED1Ev @1189
+    _ZNSt6vectorIhSaIhEED2Ev @1190
+    _ZNSt6vectorIhSaIhEEaSERKS1_ @1191
+    _ZNSt6vectorIhSaIhEEixEj @1192
+    _ZNSt6vectorIjSaIjEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj @1193
+    _ZNSt6vectorIjSaIjEE14_M_fill_assignEjRKj @1194
+    _ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EEjRKj @1195
+    _ZNSt6vectorIjSaIjEE15_M_erase_at_endEPj @1196
+    _ZNSt6vectorIjSaIjEE18_M_fill_initializeEjRKj @1197
+    _ZNSt6vectorIjSaIjEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKjS1_EEEEPjjT_S9_ @1198
+    _ZNSt6vectorIjSaIjEE20_M_allocate_and_copyIPjEES3_jT_S4_ @1199
+    _ZNSt6vectorIjSaIjEE2atEj @1200
+    _ZNSt6vectorIjSaIjEE3endEv @1201
+    _ZNSt6vectorIjSaIjEE4backEv @1202
+    _ZNSt6vectorIjSaIjEE4dataEv @1203
+    _ZNSt6vectorIjSaIjEE4rendEv @1204
+    _ZNSt6vectorIjSaIjEE4swapERS1_ @1205
+    _ZNSt6vectorIjSaIjEE5beginEv @1206
+    _ZNSt6vectorIjSaIjEE5clearEv @1207
+    _ZNSt6vectorIjSaIjEE5eraseEN9__gnu_cxx17__normal_iteratorIPjS1_EE @1208
+    _ZNSt6vectorIjSaIjEE5eraseEN9__gnu_cxx17__normal_iteratorIPjS1_EES5_ @1209
+    _ZNSt6vectorIjSaIjEE5frontEv @1210
+    _ZNSt6vectorIjSaIjEE6assignEjRKj @1211
+    _ZNSt6vectorIjSaIjEE6insertEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj @1212
+    _ZNSt6vectorIjSaIjEE6insertEN9__gnu_cxx17__normal_iteratorIPjS1_EEjRKj @1213
+    _ZNSt6vectorIjSaIjEE6rbeginEv @1214
+    _ZNSt6vectorIjSaIjEE6resizeEjj @1215
+    _ZNSt6vectorIjSaIjEE7reserveEj @1216
+    _ZNSt6vectorIjSaIjEE8pop_backEv @1217
+    _ZNSt6vectorIjSaIjEE9push_backERKj @1218
+    _ZNSt6vectorIjSaIjEEC1ERKS0_ @1219
+    _ZNSt6vectorIjSaIjEEC1ERKS1_ @1220
+    _ZNSt6vectorIjSaIjEEC1EjRKjRKS0_ @1221
+    _ZNSt6vectorIjSaIjEEC1Ev @1222
+    _ZNSt6vectorIjSaIjEEC2ERKS0_ @1223
+    _ZNSt6vectorIjSaIjEEC2ERKS1_ @1224
+    _ZNSt6vectorIjSaIjEEC2EjRKjRKS0_ @1225
+    _ZNSt6vectorIjSaIjEEC2Ev @1226
+    _ZNSt6vectorIjSaIjEED1Ev @1227
+    _ZNSt6vectorIjSaIjEED2Ev @1228
+    _ZNSt6vectorIjSaIjEEaSERKS1_ @1229
+    _ZNSt6vectorIjSaIjEEixEj @1230
+    _ZTVN3F2C10FontSpriteE @1231 DATA
+    _ZTVN3F2C10SpriteBaseE @1232 DATA
+    _ZTVN3F2C11ArraySpriteE @1233 DATA
+    _ZTVN3F2C12SimpleSpriteE @1234 DATA
+    _ZTVN3F2C5PlaneE @1235 DATA
+    _ZTVN3F2C6BitmapE @1236 DATA
+    _ZTVN3F2C6SpriteE @1237 DATA
+    _ZTVN3F2C9AudioFileE @1238 DATA
+    glActiveStencilFaceEXT @1239 DATA
+    glActiveTextureARB @1240 DATA
+    glAttachObjectARB @1241 DATA
+    glBeginOcclusionQueryNV @1242 DATA
+    glBeginQueryARB @1243 DATA
+    glBindAttribLocationARB @1244 DATA
+    glBindBufferARB @1245 DATA
+    glBindFragDataLocationEXT @1246 DATA
+    glBindFramebufferEXT @1247 DATA
+    glBindProgramARB @1248 DATA
+    glBindRenderbufferEXT @1249 DATA
+    glBlendColor @1250 DATA
+    glBlendEquation @1251 DATA
+    glBlendEquationSeparate @1252 DATA
+    glBlendFuncSeparate @1253 DATA
+    glBufferDataARB @1254 DATA
+    glBufferSubDataARB @1255 DATA
+    glCheckFramebufferStatusEXT @1256 DATA
+    glClampColorARB @1257 DATA
+    glClearColorIiEXT @1258 DATA
+    glClearColorIuiEXT @1259 DATA
+    glClientActiveTextureARB @1260 DATA
+    glCombinerInputNV @1261 DATA
+    glCombinerOutputNV @1262 DATA
+    glCombinerParameterfNV @1263 DATA
+    glCombinerParameterfvNV @1264 DATA
+    glCombinerParameteriNV @1265 DATA
+    glCombinerParameterivNV @1266 DATA
+    glCompileShaderARB @1267 DATA
+    glCompressedTexImage1DARB @1268 DATA
+    glCompressedTexImage2DARB @1269 DATA
+    glCompressedTexImage3DARB @1270 DATA
+    glCompressedTexSubImage1DARB @1271 DATA
+    glCompressedTexSubImage2DARB @1272 DATA
+    glCompressedTexSubImage3DARB @1273 DATA
+    glCreateProgramObjectARB @1274 DATA
+    glCreateShaderObjectARB @1275 DATA
+    glDeleteBuffersARB @1276 DATA
+    glDeleteFramebuffersEXT @1277 DATA
+    glDeleteObjectARB @1278 DATA
+    glDeleteProgramsARB @1279 DATA
+    glDeleteQueriesARB @1280 DATA
+    glDeleteRenderbuffersEXT @1281 DATA
+    glDepthBoundsEXT @1282 DATA
+    glDetachObjectARB @1283 DATA
+    glDisableVertexAttribArrayARB @1284 DATA
+    glDrawArraysInstancedEXT @1285 DATA
+    glDrawBuffers @1286 DATA
+    glDrawBuffersATI @1287 DATA
+    glDrawElementsInstancedEXT @1288 DATA
+    glEnableVertexAttribArrayARB @1289 DATA
+    glEndOcclusionQueryNV @1290 DATA
+    glEndQueryARB @1291 DATA
+    glFinalCombinerInputNV @1292 DATA
+    glFogCoordf @1293 DATA
+    glFramebufferRenderbufferEXT @1294 DATA
+    glFramebufferTexture1DEXT @1295 DATA
+    glFramebufferTexture2DEXT @1296 DATA
+    glFramebufferTexture3DEXT @1297 DATA
+    glFramebufferTextureEXT @1298 DATA
+    glFramebufferTextureFaceEXT @1299 DATA
+    glFramebufferTextureLayerEXT @1300 DATA
+    glGenBuffersARB @1301 DATA
+    glGenFramebuffersEXT @1302 DATA
+    glGenOcclusionQueriesNV @1303 DATA
+    glGenProgramsARB @1304 DATA
+    glGenQueriesARB @1305 DATA
+    glGenRenderbuffersEXT @1306 DATA
+    glGenerateMipmapEXT @1307 DATA
+    glGetActiveAttribARB @1308 DATA
+    glGetActiveUniformARB @1309 DATA
+    glGetAttachedObjectsARB @1310 DATA
+    glGetAttribLocationARB @1311 DATA
+    glGetBufferParameterivARB @1312 DATA
+    glGetBufferPointervARB @1313 DATA
+    glGetBufferSubDataARB @1314 DATA
+    glGetCompressedTexImageARB @1315 DATA
+    glGetFragDataLocationEXT @1316 DATA
+    glGetFramebufferAttachmentParameterivEXT @1317 DATA
+    glGetHandleARB @1318 DATA
+    glGetInfoLogARB @1319 DATA
+    glGetObjectParameterfvARB @1320 DATA
+    glGetObjectParameterivARB @1321 DATA
+    glGetOcclusionQueryivNV @1322 DATA
+    glGetProgramEnvParameterfvARB @1323 DATA
+    glGetProgramLocalParameterfvARB @1324 DATA
+    glGetProgramivARB @1325 DATA
+    glGetQueryObjectivARB @1326 DATA
+    glGetQueryObjectuivARB @1327 DATA
+    glGetQueryivARB @1328 DATA
+    glGetRenderbufferParameterivEXT @1329 DATA
+    glGetShaderSourceARB @1330 DATA
+    glGetTexParameterIivEXT @1331 DATA
+    glGetTexParameterIuivEXT @1332 DATA
+    glGetUniformLocationARB @1333 DATA
+    glGetUniformfvARB @1334 DATA
+    glGetUniformivARB @1335 DATA
+    glGetUniformuivEXT @1336 DATA
+    glGetVertexAttribIivEXT @1337 DATA
+    glGetVertexAttribIuivEXT @1338 DATA
+    glGetVertexAttribfvARB @1339 DATA
+    glIsBufferARB @1340 DATA
+    glIsFramebufferEXT @1341 DATA
+    glIsProgramARB @1342 DATA
+    glIsQueryARB @1343 DATA
+    glIsRenderbufferEXT @1344 DATA
+    glLinkProgramARB @1345 DATA
+    glMapBufferARB @1346 DATA
+    glMultiTexCoord1f @1347 DATA
+    glMultiTexCoord1fv @1348 DATA
+    glMultiTexCoord2f @1349 DATA
+    glMultiTexCoord2fv @1350 DATA
+    glMultiTexCoord3f @1351 DATA
+    glMultiTexCoord3fv @1352 DATA
+    glMultiTexCoord4f @1353 DATA
+    glMultiTexCoord4fv @1354 DATA
+    glPointParameterfARB @1355 DATA
+    glPointParameterfvARB @1356 DATA
+    glProgramEnvParameter4fARB @1357 DATA
+    glProgramEnvParameter4fvARB @1358 DATA
+    glProgramLocalParameter4fARB @1359 DATA
+    glProgramLocalParameter4fvARB @1360 DATA
+    glProgramParameteriEXT @1361 DATA
+    glProgramStringARB @1362 DATA
+    glRenderbufferStorageEXT @1363 DATA
+    glSecondaryColor3f @1364 DATA
+    glSecondaryColor3fv @1365 DATA
+    glSecondaryColorPointer @1366 DATA
+    glShaderSourceARB @1367 DATA
+    glStencilFuncSeparate @1368 DATA
+    glStencilMaskSeparate @1369 DATA
+    glStencilOpSeparate @1370 DATA
+    glTexBufferEXT @1371 DATA
+    glTexImage3DEXT @1372 DATA
+    glTexParameterIivEXT @1373 DATA
+    glTexParameterIuivEXT @1374 DATA
+    glUniform1fARB @1375 DATA
+    glUniform1fvARB @1376 DATA
+    glUniform1iARB @1377 DATA
+    glUniform1ivARB @1378 DATA
+    glUniform1uiEXT @1379 DATA
+    glUniform1uivEXT @1380 DATA
+    glUniform2fARB @1381 DATA
+    glUniform2fvARB @1382 DATA
+    glUniform2iARB @1383 DATA
+    glUniform2ivARB @1384 DATA
+    glUniform2uiEXT @1385 DATA
+    glUniform2uivEXT @1386 DATA
+    glUniform3fARB @1387 DATA
+    glUniform3fvARB @1388 DATA
+    glUniform3iARB @1389 DATA
+    glUniform3ivARB @1390 DATA
+    glUniform3uiEXT @1391 DATA
+    glUniform3uivEXT @1392 DATA
+    glUniform4fARB @1393 DATA
+    glUniform4fvARB @1394 DATA
+    glUniform4iARB @1395 DATA
+    glUniform4ivARB @1396 DATA
+    glUniform4uiEXT @1397 DATA
+    glUniform4uivEXT @1398 DATA
+    glUniformMatrix2fvARB @1399 DATA
+    glUniformMatrix3fvARB @1400 DATA
+    glUniformMatrix4fvARB @1401 DATA
+    glUnmapBufferARB @1402 DATA
+    glUseProgramObjectARB @1403 DATA
+    glValidateProgramARB @1404 DATA
+    glVertexAttrib3fARB @1405 DATA
+    glVertexAttrib3fvARB @1406 DATA
+    glVertexAttrib4fARB @1407 DATA
+    glVertexAttrib4fvARB @1408 DATA
+    glVertexAttribI1iEXT @1409 DATA
+    glVertexAttribI1ivEXT @1410 DATA
+    glVertexAttribI1uiEXT @1411 DATA
+    glVertexAttribI1uivEXT @1412 DATA
+    glVertexAttribI2iEXT @1413 DATA
+    glVertexAttribI2ivEXT @1414 DATA
+    glVertexAttribI2uiEXT @1415 DATA
+    glVertexAttribI2uivEXT @1416 DATA
+    glVertexAttribI3iEXT @1417 DATA
+    glVertexAttribI3ivEXT @1418 DATA
+    glVertexAttribI3uiEXT @1419 DATA
+    glVertexAttribI3uivEXT @1420 DATA
+    glVertexAttribI4bvEXT @1421 DATA
+    glVertexAttribI4iEXT @1422 DATA
+    glVertexAttribI4ivEXT @1423 DATA
+    glVertexAttribI4svEXT @1424 DATA
+    glVertexAttribI4ubvEXT @1425 DATA
+    glVertexAttribI4uiEXT @1426 DATA
+    glVertexAttribI4uivEXT @1427 DATA
+    glVertexAttribI4usvEXT @1428 DATA
+    glVertexAttribIPointerEXT @1429 DATA
+    glVertexAttribPointerARB @1430 DATA
+    wglBindTexImageARB @1431 DATA
+    wglChoosePixelFormatARB @1432 DATA
+    wglCreatePbufferARB @1433 DATA
+    wglDestroyPbufferARB @1434 DATA
+    wglGetExtensionsStringARB @1435 DATA
+    wglGetPbufferDCARB @1436 DATA
+    wglGetSwapIntervalEXT @1437 DATA
+    wglQueryPbufferARB @1438 DATA
+    wglReleasePbufferDCARB @1439 DATA
+    wglReleaseTexImageARB @1440 DATA
+    wglSetPbufferAttribARB @1441 DATA
+    wglSwapIntervalEXT @1442 DATA

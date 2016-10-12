@@ -1,0 +1,489 @@
+\hypertarget{class_f2_c_1_1_render_manager}{
+\section{F2C::RenderManager Class Reference}
+\label{class_f2_c_1_1_render_manager}\index{F2C::RenderManager@{F2C::RenderManager}}
+}
+
+
+Some usefull Rendering functions. (OpenGL Functions).  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a519be68246884dc808b978f431dd4302}{enable2DTexture} (bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/Disable GL\_\-TEXTURE\_\-2D (glEn/Disable(GL\_\-TEXTURE\_\-2D)). \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_aedad387e3578d59bf64cc0804f90e666}{bindTexture} (GLuint texture)
+\begin{DoxyCompactList}\small\item\em Bind a named texture. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a4d0a75735f91eff680102b1f655893f2}{setTexParam} (\hyperlink{namespace_f2_c_1_1_tex_param_a64299c3972944468af4e8b0394c936c6}{TexParam::Tex\_\-Param} param)
+\begin{DoxyCompactList}\small\item\em Set texture parameter (glTexParameter). \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_ae00bc75438b61d38e1203c1eb8e97507}{setBlendFunc} (\hyperlink{namespace_f2_c_1_1_blend_type_a582fe2d83fb813041785794568e5a414}{BlendType::Blend\_\-Type} type)
+\begin{DoxyCompactList}\small\item\em set Blend Function (glBlendFunc) \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a7ce51f53fa958590be6f11ec812c16a2}{setCoord} (GLdouble x, GLdouble y, GLdouble z, GLuint width, GLuint height, GLdouble angle\_\-x, GLdouble angle\_\-y, GLdouble angle\_\-z, GLdouble zoom\_\-x, GLdouble zoom\_\-y)
+\begin{DoxyCompactList}\small\item\em Set coordinate,rotation and scaling the matrix. (glTranslate,glRotate,glScale). \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a607fca637e3541cb7b6ce06186c1bd14}{getTexCoordArray8} (GLdouble $\ast$texcoords, GLdouble tcx, GLdouble tcy, GLdouble tcwidth, GLdouble tcheight, GLdouble texturewidth, GLdouble textureheight)
+\begin{DoxyCompactList}\small\item\em Set texture coordinate of array. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a0c21150eafaeb5d9f9c09263a217422f}{getTexCoordArray8} (GLdouble $\ast$texcoords, \hyperlink{class_f2_c_1_1_rect}{Rect} coord, GLdouble texturewidth, GLdouble textureheight)
+\begin{DoxyCompactList}\small\item\em Set texture coordinate of array. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a0b1798096cef10e39a84ae51cff1941d}{getVerticesArray8} (GLdouble $\ast$vertices, GLdouble x, GLdouble y, GLdouble width, GLdouble height)
+\begin{DoxyCompactList}\small\item\em Set vertices of array. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a95065314a2d5255c72d26c00f08baa19}{getVerticesArray8} (GLdouble $\ast$vertices, \hyperlink{class_f2_c_1_1_rect}{Rect} vertex)
+\begin{DoxyCompactList}\small\item\em Set vertices of array. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_ad231a8a7a0c58a06a4d98b832d87b64c}{getVerticesArray12} (GLdouble $\ast$vertices, GLdouble x, GLdouble y, GLdouble z, GLdouble width, GLdouble height)
+\begin{DoxyCompactList}\small\item\em Set vertices of array. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a0ec54810926dfe8ed7513353b9f7952a}{flippedHTexCoord8} (GLdouble $\ast$texcoords)
+\begin{DoxyCompactList}\small\item\em flipped Flipped texture horizontal \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a264f42f88b777c961b02e25691e3b79e}{flippedVTexCoord8} (GLdouble $\ast$texcoords)
+\begin{DoxyCompactList}\small\item\em flipped Flipped texture vertical \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a43c2b6fd192ac33b7533686e43abb8f7}{getColorArray3} (GLubyte $\ast$colors, const \hyperlink{class_f2_c_1_1_color}{Color} $\ast$srccolors, size\_\-t colorsize, size\_\-t srccolorsize)
+\begin{DoxyCompactList}\small\item\em Set color of array (copy from Source Colors). \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a97058b816ab219b1f79fcb7a56833218}{getColorArray4} (GLubyte $\ast$colors, const \hyperlink{class_f2_c_1_1_color}{Color} $\ast$srccolors, size\_\-t colorsize, size\_\-t srccolorsize)
+\begin{DoxyCompactList}\small\item\em Set color of array (copy from Source Colors). \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a68202074c6474b0c750d74907aa7ea9c}{getColorArrayQuad4} (GLubyte $\ast$colors, const \hyperlink{class_f2_c_1_1_color}{Color} $\ast$srccolors, size\_\-t quadnumbers, size\_\-t srccolorsize)
+\begin{DoxyCompactList}\small\item\em Set color of array (copy from Source Colors). \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a45a751d1c5fb65d5651e3044f79474b6}{getColorArrayQuad3} (GLubyte $\ast$colors, const \hyperlink{class_f2_c_1_1_color}{Color} $\ast$srccolors, size\_\-t quadnumbers, size\_\-t srccolorsize)
+\begin{DoxyCompactList}\small\item\em Set color of array (copy from Source Colors). \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_aa43c34d80179016ae3be4d58fb69bff9}{renderingQuad} (GLdouble $\ast$texcoords, GLdouble $\ast$vertices, GLubyte $\ast$colors, GLint tcsize, GLint vexsize, GLint colsize, GLuint numbersofquads, bool usedrawarray=false)
+\item 
+static bool \hyperlink{class_f2_c_1_1_render_manager_a2432cc5d6aa39929cf20ad8090d6680b}{isInViewportRange} (GLint x, GLint y, GLuint width, GLuint height)
+\begin{DoxyCompactList}\small\item\em Is rect in viewport range (glGetIntegerv(GL\_\-VIEWPORT, ...)). \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_f2_c_1_1_render_manager_abd7cf1932179642dc139b0eed35245e0}{isInViewportRange} (\hyperlink{class_f2_c_1_1_rect}{Rect} rect)
+\begin{DoxyCompactList}\small\item\em Is rect in viewport range (glGetIntegerv(GL\_\-VIEWPORT, ...)). \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_aefa9e4facd6c4f397106cc841b271f51}{setScissorInTopLeftMode} (GLint x, GLint y, GLuint width, GLuint height)
+\begin{DoxyCompactList}\small\item\em Set scissor in top left coordinate system (glScissor). \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_render_manager_a93215c1dd778a3f3d481d4020b38d6aa}{setScissorInTopLeftMode} (\hyperlink{class_f2_c_1_1_rect}{Rect} rect)
+\begin{DoxyCompactList}\small\item\em Set scissor in top left coordinate system (glScissor). \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_f2_c_1_1_render_manager_a8d0b08daa7cf59294095f58adb55434c}{iscollisionRect} (\hyperlink{class_f2_c_1_1_rect}{Rect} rect1, \hyperlink{class_f2_c_1_1_rect}{Rect} rect2)
+\begin{DoxyCompactList}\small\item\em Is true if both rectangles collide. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_f2_c_1_1_render_manager_a4f07b27c4e79a56ba0b81177a325dd24}{iscollisionRect} (GLint x1, GLint y1, GLuint width1, GLuint height1, GLint x2, GLint y2, GLuint width2, GLuint height2)
+\begin{DoxyCompactList}\small\item\em Is true if both rectangles collide. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Some usefull Rendering functions. (OpenGL Functions). 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_render_manager_aedad387e3578d59bf64cc0804f90e666}{
+\index{F2C::RenderManager@{F2C::RenderManager}!bindTexture@{bindTexture}}
+\index{bindTexture@{bindTexture}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{bindTexture}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::bindTexture (
+\begin{DoxyParamCaption}
+\item[{GLuint}]{ texture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_aedad387e3578d59bf64cc0804f90e666}
+
+
+Bind a named texture. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em texture}]Texture Name \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a519be68246884dc808b978f431dd4302}{
+\index{F2C::RenderManager@{F2C::RenderManager}!enable2DTexture@{enable2DTexture}}
+\index{enable2DTexture@{enable2DTexture}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{enable2DTexture}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::enable2DTexture (
+\begin{DoxyParamCaption}
+\item[{bool}]{ enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a519be68246884dc808b978f431dd4302}
+
+
+Enable/Disable GL\_\-TEXTURE\_\-2D (glEn/Disable(GL\_\-TEXTURE\_\-2D)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em enable}]Enable/Disable \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a0ec54810926dfe8ed7513353b9f7952a}{
+\index{F2C::RenderManager@{F2C::RenderManager}!flippedHTexCoord8@{flippedHTexCoord8}}
+\index{flippedHTexCoord8@{flippedHTexCoord8}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{flippedHTexCoord8}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::flippedHTexCoord8 (
+\begin{DoxyParamCaption}
+\item[{GLdouble $\ast$}]{ texcoords}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a0ec54810926dfe8ed7513353b9f7952a}
+
+
+flipped Flipped texture horizontal 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em texcoords}]Array of texcoords (Size: 8) \{x1,y1, x2,y2, x3,y3, x4,y4\} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a264f42f88b777c961b02e25691e3b79e}{
+\index{F2C::RenderManager@{F2C::RenderManager}!flippedVTexCoord8@{flippedVTexCoord8}}
+\index{flippedVTexCoord8@{flippedVTexCoord8}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{flippedVTexCoord8}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::flippedVTexCoord8 (
+\begin{DoxyParamCaption}
+\item[{GLdouble $\ast$}]{ texcoords}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a264f42f88b777c961b02e25691e3b79e}
+
+
+flipped Flipped texture vertical 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em texcoords}]Array of texcoords (Size: 8) \{x1,y1, x2,y2, x3,y3, x4,y4\} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a43c2b6fd192ac33b7533686e43abb8f7}{
+\index{F2C::RenderManager@{F2C::RenderManager}!getColorArray3@{getColorArray3}}
+\index{getColorArray3@{getColorArray3}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{getColorArray3}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::getColorArray3 (
+\begin{DoxyParamCaption}
+\item[{GLubyte $\ast$}]{ colors, }
+\item[{const {\bf Color} $\ast$}]{ srccolors, }
+\item[{size\_\-t}]{ colorsize, }
+\item[{size\_\-t}]{ srccolorsize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a43c2b6fd192ac33b7533686e43abb8f7}
+
+
+Set color of array (copy from Source Colors). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em colors}]Array of colors(RGB) (Size: 3$\ast$srccolorsize) \{r,g,b, r,g,b, r,g,b, ...\} \item[{\em srccolors}]Source \hyperlink{class_f2_c_1_1_color}{Color} \item[{\em colorsize}]Numbers of Colors in colors Array \item[{\em srccolorsize}]Numbers of Source Colors \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a97058b816ab219b1f79fcb7a56833218}{
+\index{F2C::RenderManager@{F2C::RenderManager}!getColorArray4@{getColorArray4}}
+\index{getColorArray4@{getColorArray4}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{getColorArray4}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::getColorArray4 (
+\begin{DoxyParamCaption}
+\item[{GLubyte $\ast$}]{ colors, }
+\item[{const {\bf Color} $\ast$}]{ srccolors, }
+\item[{size\_\-t}]{ colorsize, }
+\item[{size\_\-t}]{ srccolorsize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a97058b816ab219b1f79fcb7a56833218}
+
+
+Set color of array (copy from Source Colors). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em colors}]Array of colors(RGBA) (Size: 4$\ast$colorsize) \{r,g,b,a, r,g,b,a, r,g,b,a, ...\} \item[{\em srccolors}]Source \hyperlink{class_f2_c_1_1_color}{Color} \item[{\em colorsize}]Numbers of Colors in colors Array \item[{\em srccolorsize}]Numbers of Source Colors \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a45a751d1c5fb65d5651e3044f79474b6}{
+\index{F2C::RenderManager@{F2C::RenderManager}!getColorArrayQuad3@{getColorArrayQuad3}}
+\index{getColorArrayQuad3@{getColorArrayQuad3}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{getColorArrayQuad3}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::getColorArrayQuad3 (
+\begin{DoxyParamCaption}
+\item[{GLubyte $\ast$}]{ colors, }
+\item[{const {\bf Color} $\ast$}]{ srccolors, }
+\item[{size\_\-t}]{ quadnumbers, }
+\item[{size\_\-t}]{ srccolorsize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a45a751d1c5fb65d5651e3044f79474b6}
+
+
+Set color of array (copy from Source Colors). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em colors}]4 Array of colors(RGB) (Size: 4$\ast$3$\ast$quadnumbers) \{ \{r,g,b, r,g,b, r,g,b, r,g,b\}, \{r,g,b, r,g,b, r,g,b, r,g,b\}, ...\} \item[{\em srccolors}]Source \hyperlink{class_f2_c_1_1_color}{Color} \item[{\em srccolorsize}]Numbers of Source Colors \item[{\em quadnumbers}]Numbers of Quads \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a68202074c6474b0c750d74907aa7ea9c}{
+\index{F2C::RenderManager@{F2C::RenderManager}!getColorArrayQuad4@{getColorArrayQuad4}}
+\index{getColorArrayQuad4@{getColorArrayQuad4}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{getColorArrayQuad4}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::getColorArrayQuad4 (
+\begin{DoxyParamCaption}
+\item[{GLubyte $\ast$}]{ colors, }
+\item[{const {\bf Color} $\ast$}]{ srccolors, }
+\item[{size\_\-t}]{ quadnumbers, }
+\item[{size\_\-t}]{ srccolorsize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a68202074c6474b0c750d74907aa7ea9c}
+
+
+Set color of array (copy from Source Colors). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em colors}]4 Array of colors(RGBA) (Size: 4$\ast$4$\ast$quadnumbers) \{ \{r,g,b,a, r,g,b,a, r,g,b,a, r,g,b,a\}, \{r,g,b,a, r,g,b,a, r,g,b,a, r,g,b,a\}, ...\} \item[{\em srccolors}]Source \hyperlink{class_f2_c_1_1_color}{Color} \item[{\em srccolorsize}]Numbers of Source Colors \item[{\em quadnumbers}]Numbers of Quads \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a607fca637e3541cb7b6ce06186c1bd14}{
+\index{F2C::RenderManager@{F2C::RenderManager}!getTexCoordArray8@{getTexCoordArray8}}
+\index{getTexCoordArray8@{getTexCoordArray8}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{getTexCoordArray8}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::getTexCoordArray8 (
+\begin{DoxyParamCaption}
+\item[{GLdouble $\ast$}]{ texcoords, }
+\item[{GLdouble}]{ tcx, }
+\item[{GLdouble}]{ tcy, }
+\item[{GLdouble}]{ tcwidth, }
+\item[{GLdouble}]{ tcheight, }
+\item[{GLdouble}]{ texturewidth, }
+\item[{GLdouble}]{ textureheight}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a607fca637e3541cb7b6ce06186c1bd14}
+
+
+Set texture coordinate of array. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em texcoords}]Array of texcoords (Size: 8) \{x1,y1, x2,y2, x3,y3, x4,y4\} \item[{\em tcx}]texture coordinate: x \item[{\em tcy}]texture coordinate: y \item[{\em tcwidth}]texture coordinate: width \item[{\em tcheight}]texture coordinate: height \item[{\em texturewidth}]Width of texture (in pixels) \item[{\em textureheight}]Height of texture (in pixels) \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a0c21150eafaeb5d9f9c09263a217422f}{
+\index{F2C::RenderManager@{F2C::RenderManager}!getTexCoordArray8@{getTexCoordArray8}}
+\index{getTexCoordArray8@{getTexCoordArray8}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{getTexCoordArray8}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::getTexCoordArray8 (
+\begin{DoxyParamCaption}
+\item[{GLdouble $\ast$}]{ texcoords, }
+\item[{{\bf Rect}}]{ coord, }
+\item[{GLdouble}]{ texturewidth, }
+\item[{GLdouble}]{ textureheight}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a0c21150eafaeb5d9f9c09263a217422f}
+
+
+Set texture coordinate of array. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em texcoords}]Array of texcoords (Size: 8) \{x1,y1, x2,y2, x3,y3, x4,y4\} \item[{\em coord}]texture coordinate \item[{\em texturewidth}]Width of texture (in pixels) \item[{\em textureheight}]Height of texture (in pixels) \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_ad231a8a7a0c58a06a4d98b832d87b64c}{
+\index{F2C::RenderManager@{F2C::RenderManager}!getVerticesArray12@{getVerticesArray12}}
+\index{getVerticesArray12@{getVerticesArray12}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{getVerticesArray12}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::getVerticesArray12 (
+\begin{DoxyParamCaption}
+\item[{GLdouble $\ast$}]{ vertices, }
+\item[{GLdouble}]{ x, }
+\item[{GLdouble}]{ y, }
+\item[{GLdouble}]{ z, }
+\item[{GLdouble}]{ width, }
+\item[{GLdouble}]{ height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_ad231a8a7a0c58a06a4d98b832d87b64c}
+
+
+Set vertices of array. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em vertices}]Array of vertices (Size: 12) \{x1,y1,z1, x2,y2,z2, x3,y3,z3, x4,y4,z4\} \item[{\em x}]vertex coordinate: x \item[{\em y}]vertex coordinate: y \item[{\em z}]vertex coordinate: z \item[{\em width}]vertex width \item[{\em height}]vertex height \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a0b1798096cef10e39a84ae51cff1941d}{
+\index{F2C::RenderManager@{F2C::RenderManager}!getVerticesArray8@{getVerticesArray8}}
+\index{getVerticesArray8@{getVerticesArray8}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{getVerticesArray8}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::getVerticesArray8 (
+\begin{DoxyParamCaption}
+\item[{GLdouble $\ast$}]{ vertices, }
+\item[{GLdouble}]{ x, }
+\item[{GLdouble}]{ y, }
+\item[{GLdouble}]{ width, }
+\item[{GLdouble}]{ height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a0b1798096cef10e39a84ae51cff1941d}
+
+
+Set vertices of array. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em vertices}]Array of vertices (Size: 12) \{x1,y1, x2,y2, x3,y3, x4,y4\} \item[{\em x}]vertex coordinate: x \item[{\em y}]vertex coordinate: y \item[{\em width}]vertex width \item[{\em height}]vertex height \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a95065314a2d5255c72d26c00f08baa19}{
+\index{F2C::RenderManager@{F2C::RenderManager}!getVerticesArray8@{getVerticesArray8}}
+\index{getVerticesArray8@{getVerticesArray8}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{getVerticesArray8}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::getVerticesArray8 (
+\begin{DoxyParamCaption}
+\item[{GLdouble $\ast$}]{ vertices, }
+\item[{{\bf Rect}}]{ vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a95065314a2d5255c72d26c00f08baa19}
+
+
+Set vertices of array. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em vertices}]Array of vertices (Size: 12) \{x1,y1, x2,y2, x3,y3, x4,y4\} \item[{\em vertex}]vertex coordinate \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a8d0b08daa7cf59294095f58adb55434c}{
+\index{F2C::RenderManager@{F2C::RenderManager}!iscollisionRect@{iscollisionRect}}
+\index{iscollisionRect@{iscollisionRect}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{iscollisionRect}]{\setlength{\rightskip}{0pt plus 5cm}static bool F2C::RenderManager::iscollisionRect (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect}}]{ rect1, }
+\item[{{\bf Rect}}]{ rect2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a8d0b08daa7cf59294095f58adb55434c}
+
+
+Is true if both rectangles collide. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rect1}]1st \hyperlink{class_f2_c_1_1_rect}{Rect} \item[{\em rect2}]2nd \hyperlink{class_f2_c_1_1_rect}{Rect} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a4f07b27c4e79a56ba0b81177a325dd24}{
+\index{F2C::RenderManager@{F2C::RenderManager}!iscollisionRect@{iscollisionRect}}
+\index{iscollisionRect@{iscollisionRect}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{iscollisionRect}]{\setlength{\rightskip}{0pt plus 5cm}static bool F2C::RenderManager::iscollisionRect (
+\begin{DoxyParamCaption}
+\item[{GLint}]{ x1, }
+\item[{GLint}]{ y1, }
+\item[{GLuint}]{ width1, }
+\item[{GLuint}]{ height1, }
+\item[{GLint}]{ x2, }
+\item[{GLint}]{ y2, }
+\item[{GLuint}]{ width2, }
+\item[{GLuint}]{ height2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a4f07b27c4e79a56ba0b81177a325dd24}
+
+
+Is true if both rectangles collide. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x1}]x-\/Coordinate of 1st \hyperlink{class_f2_c_1_1_rect}{Rect} \item[{\em y1}]y-\/Coordinate of 1st \hyperlink{class_f2_c_1_1_rect}{Rect} \item[{\em width1}]Width of 1st \hyperlink{class_f2_c_1_1_rect}{Rect} \item[{\em height1}]Height of 1st \hyperlink{class_f2_c_1_1_rect}{Rect} \item[{\em x2}]x-\/Coordinate of 2nd \hyperlink{class_f2_c_1_1_rect}{Rect} \item[{\em y2}]y-\/Coordinate of 2nd \hyperlink{class_f2_c_1_1_rect}{Rect} \item[{\em width2}]Width of 2nd \hyperlink{class_f2_c_1_1_rect}{Rect} \item[{\em height2}]Height of 2nd \hyperlink{class_f2_c_1_1_rect}{Rect} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a2432cc5d6aa39929cf20ad8090d6680b}{
+\index{F2C::RenderManager@{F2C::RenderManager}!isInViewportRange@{isInViewportRange}}
+\index{isInViewportRange@{isInViewportRange}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{isInViewportRange}]{\setlength{\rightskip}{0pt plus 5cm}static bool F2C::RenderManager::isInViewportRange (
+\begin{DoxyParamCaption}
+\item[{GLint}]{ x, }
+\item[{GLint}]{ y, }
+\item[{GLuint}]{ width, }
+\item[{GLuint}]{ height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a2432cc5d6aa39929cf20ad8090d6680b}
+
+
+Is rect in viewport range (glGetIntegerv(GL\_\-VIEWPORT, ...)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]x-\/Coordinate of rect \item[{\em y}]y-\/Coordinate of rect \item[{\em width}]Width of rect \item[{\em height}]Height of rect \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_abd7cf1932179642dc139b0eed35245e0}{
+\index{F2C::RenderManager@{F2C::RenderManager}!isInViewportRange@{isInViewportRange}}
+\index{isInViewportRange@{isInViewportRange}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{isInViewportRange}]{\setlength{\rightskip}{0pt plus 5cm}static bool F2C::RenderManager::isInViewportRange (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect}}]{ rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_abd7cf1932179642dc139b0eed35245e0}
+
+
+Is rect in viewport range (glGetIntegerv(GL\_\-VIEWPORT, ...)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rect}]\hyperlink{class_f2_c_1_1_rect}{Rect} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_aa43c34d80179016ae3be4d58fb69bff9}{
+\index{F2C::RenderManager@{F2C::RenderManager}!renderingQuad@{renderingQuad}}
+\index{renderingQuad@{renderingQuad}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{renderingQuad}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::renderingQuad (
+\begin{DoxyParamCaption}
+\item[{GLdouble $\ast$}]{ texcoords, }
+\item[{GLdouble $\ast$}]{ vertices, }
+\item[{GLubyte $\ast$}]{ colors, }
+\item[{GLint}]{ tcsize, }
+\item[{GLint}]{ vexsize, }
+\item[{GLint}]{ colsize, }
+\item[{GLuint}]{ numbersofquads, }
+\item[{bool}]{ usedrawarray = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_aa43c34d80179016ae3be4d58fb69bff9}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em texcoords}]Array of texture coordinates \item[{\em vertices}]Array of vertices \item[{\em colors}]Array of colors \item[{\em tcsize}]Number of texture coordinates per vertex (1,2,3,4) \item[{\em vexsize}]Number of vertices per vertex (2,3,4) \item[{\em colsize}]Number of color per vertex (2,3) \item[{\em numbersofquads}]Numbers of Quads \item[{\em usedrawarray}]Use glDrawArrays Function, else use glVertexv,glTexCoordv,glColorv Functions \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_ae00bc75438b61d38e1203c1eb8e97507}{
+\index{F2C::RenderManager@{F2C::RenderManager}!setBlendFunc@{setBlendFunc}}
+\index{setBlendFunc@{setBlendFunc}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{setBlendFunc}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::setBlendFunc (
+\begin{DoxyParamCaption}
+\item[{{\bf BlendType::Blend\_\-Type}}]{ type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_ae00bc75438b61d38e1203c1eb8e97507}
+
+
+set Blend Function (glBlendFunc) 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]Blending Function Type \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a7ce51f53fa958590be6f11ec812c16a2}{
+\index{F2C::RenderManager@{F2C::RenderManager}!setCoord@{setCoord}}
+\index{setCoord@{setCoord}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{setCoord}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::setCoord (
+\begin{DoxyParamCaption}
+\item[{GLdouble}]{ x, }
+\item[{GLdouble}]{ y, }
+\item[{GLdouble}]{ z, }
+\item[{GLuint}]{ width, }
+\item[{GLuint}]{ height, }
+\item[{GLdouble}]{ angle\_\-x, }
+\item[{GLdouble}]{ angle\_\-y, }
+\item[{GLdouble}]{ angle\_\-z, }
+\item[{GLdouble}]{ zoom\_\-x, }
+\item[{GLdouble}]{ zoom\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a7ce51f53fa958590be6f11ec812c16a2}
+
+
+Set coordinate,rotation and scaling the matrix. (glTranslate,glRotate,glScale). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]x-\/Coordinate \item[{\em y}]y-\/Coordinate \item[{\em z}]z-\/Coordinate \item[{\em width}]Width of texture (in pixels) \item[{\em height}]Height of texture (in pixels) \item[{\em angle\_\-x}]x-\/axes rotation, angle in degrees \item[{\em angle\_\-y}]y-\/axes rotation, angle in degrees \item[{\em angle\_\-z}]z-\/axes rotation, angle in degrees \item[{\em zoom\_\-x}]scale factors along the x-\/axes \item[{\em zoom\_\-y}]scale factors along the y-\/axes \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a93215c1dd778a3f3d481d4020b38d6aa}{
+\index{F2C::RenderManager@{F2C::RenderManager}!setScissorInTopLeftMode@{setScissorInTopLeftMode}}
+\index{setScissorInTopLeftMode@{setScissorInTopLeftMode}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{setScissorInTopLeftMode}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::setScissorInTopLeftMode (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect}}]{ rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a93215c1dd778a3f3d481d4020b38d6aa}
+
+
+Set scissor in top left coordinate system (glScissor). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rect}]\hyperlink{class_f2_c_1_1_rect}{Rect} of scissor \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_aefa9e4facd6c4f397106cc841b271f51}{
+\index{F2C::RenderManager@{F2C::RenderManager}!setScissorInTopLeftMode@{setScissorInTopLeftMode}}
+\index{setScissorInTopLeftMode@{setScissorInTopLeftMode}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{setScissorInTopLeftMode}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::setScissorInTopLeftMode (
+\begin{DoxyParamCaption}
+\item[{GLint}]{ x, }
+\item[{GLint}]{ y, }
+\item[{GLuint}]{ width, }
+\item[{GLuint}]{ height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_aefa9e4facd6c4f397106cc841b271f51}
+
+
+Set scissor in top left coordinate system (glScissor). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]x-\/Coordinate of scissor \item[{\em y}]y-\/Coordinate of scissor \item[{\em width}]Width of scissor \item[{\em height}]Height of scissor \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_render_manager_a4d0a75735f91eff680102b1f655893f2}{
+\index{F2C::RenderManager@{F2C::RenderManager}!setTexParam@{setTexParam}}
+\index{setTexParam@{setTexParam}!F2C::RenderManager@{F2C::RenderManager}}
+\subsubsection[{setTexParam}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::RenderManager::setTexParam (
+\begin{DoxyParamCaption}
+\item[{{\bf TexParam::Tex\_\-Param}}]{ param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_render_manager_a4d0a75735f91eff680102b1f655893f2}
+
+
+Set texture parameter (glTexParameter). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em param}]Texture parameter \end{DoxyParams}

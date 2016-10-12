@@ -1,0 +1,771 @@
+\hypertarget{namespace_f2_c}{
+\section{F2C Namespace Reference}
+\label{namespace_f2_c}\index{F2C@{F2C}}
+}
+
+
+Fantasy2C Namespace.  
+
+
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespace_f2_c_1_1_blend_type}{BlendType}
+
+
+\begin{DoxyCompactList}\small\item\em Blending type. \item\end{DoxyCompactList}
+
+\item 
+namespace \hyperlink{namespace_f2_c_1_1_joystick_event}{JoystickEvent}
+
+
+\begin{DoxyCompactList}\small\item\em Joystick \hyperlink{class_f2_c_1_1_input}{Input}. \item\end{DoxyCompactList}
+
+\item 
+namespace \hyperlink{namespace_f2_c_1_1_keyboard_event}{KeyboardEvent}
+
+
+\begin{DoxyCompactList}\small\item\em Keyboard \hyperlink{class_f2_c_1_1_input}{Input}. \item\end{DoxyCompactList}
+
+\item 
+namespace \hyperlink{namespace_f2_c_1_1_mouse_event}{MouseEvent}
+
+
+\begin{DoxyCompactList}\small\item\em Mouse \hyperlink{class_f2_c_1_1_input}{Input}. \item\end{DoxyCompactList}
+
+\item 
+namespace \hyperlink{namespace_f2_c_1_1_tex_param}{TexParam}
+
+
+\begin{DoxyCompactList}\small\item\em Texture filtering \par
+ Nearest: \par
+ glTexParameter: \par
+ MAG\_\-FILTER : GL\_\-NEAREST \par
+ MIN\_\-FILTER : GL\_\-NEAREST \par
+ \par
+ Linear: \par
+ glTexParameter: \par
+ MAG\_\-FILTER : GL\_\-LINEAR \par
+ MIN\_\-FILTER : GL\_\-LINEAR \par
+ \par
+. \item\end{DoxyCompactList}
+
+\item 
+namespace \hyperlink{namespace_f2_c_1_1_window_property}{WindowProperty}
+
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_window}{Window} Handle. \item\end{DoxyCompactList}
+
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_f2_c_1_1_sprite_element}{SpriteElement}
+\begin{DoxyCompactList}\small\item\em Element Type of \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite}. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite}
+\begin{DoxyCompactList}\small\item\em Renders a picture(Bitmap), as an array of different values. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_audio_file}{AudioFile}
+\begin{DoxyCompactList}\small\item\em Playing audio files. \par
+. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}
+\begin{DoxyCompactList}\small\item\em Loading image files. \par
+ Automatically creates a pixel array with a quadratic power of 2 (32x32, 64x64 ,..., 512x512 ,...) \par
+ and paste the loaded image into the pixel array. \par
+ DevIL Supported Formats: \par
+ Load: \par
+. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_color}{Color}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_color}{Color} (RGBA) \par
+ Red 0-\/255 \par
+ Green 0-\/255 \par
+ Blue 0-\/255 \par
+ Alpha 0-\/255 \par
+. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_color_tone}{ColorTone}
+\begin{DoxyCompactList}\small\item\em Colortone (CMY-\/RGB) \par
+ Cyan -\/255-\/0,0-\/255 Red \par
+ Magenta -\/255-\/0,0-\/255 Green \par
+ Yellow -\/255-\/0,0-\/255 Blue \par
+ Grayscale 0-\/255. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_t_t_f_font}{TTFFont}
+\begin{DoxyCompactList}\small\item\em Loading TTF(True Type Font) file and Creates a BitmapFont. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_font_sprite}{FontSprite}
+\begin{DoxyCompactList}\small\item\em Displaying messages on the screen via BitmapFont (bitmap). \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_log_error}{LogError}
+\begin{DoxyCompactList}\small\item\em Writing log files and exception handler. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_input}{Input}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_input}{Input} Handle from the keyboard, mouse, joystick and \hyperlink{class_f2_c_1_1_window}{Window}. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_plane}{Plane}
+\begin{DoxyCompactList}\small\item\em Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen as an infinite Scrollable image. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_rect}{Rect}
+\begin{DoxyCompactList}\small\item\em Rectangle (x, y, width, height). \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_shader_g_l}{ShaderGL}
+\begin{DoxyCompactList}\small\item\em Loading Fragment and Vertex Shader Files into GLhandleARB Program Object. \par
+ \par
+ Thanks at Alex V. Boreskoff. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_simple_sprite}{SimpleSprite}
+\begin{DoxyCompactList}\small\item\em Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen. This class offers less than the normal \hyperlink{class_f2_c_1_1_sprite}{Sprite} class is but a little faster at rendering. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_sprite}{Sprite}
+\begin{DoxyCompactList}\small\item\em Renders an image (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} class) on the screen. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase}
+\begin{DoxyCompactList}\small\item\em Basis Class of \hyperlink{class_f2_c_1_1_sprite}{Sprite}. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_viewport}{Viewport}
+\begin{DoxyCompactList}\small\item\em Additional show, Z-\/coordinate, colortone-\/Variable, and a clip\_\-rect. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_window}{Window}
+\begin{DoxyCompactList}\small\item\em Create window and loading shader files. You can create only one window, the current window is overwritten. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_timer}{Timer}
+\begin{DoxyCompactList}\small\item\em Simple \hyperlink{class_f2_c_1_1_timer}{Timer}. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_f2_c_1_1_render_manager}{RenderManager}
+\begin{DoxyCompactList}\small\item\em Some usefull Rendering functions. (OpenGL Functions). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_f2_c_afe0bd5c32b87b6cbd7766ebb2498cf5f}{
+typedef signed char \hyperlink{namespace_f2_c_afe0bd5c32b87b6cbd7766ebb2498cf5f}{int8}}
+\label{namespace_f2_c_afe0bd5c32b87b6cbd7766ebb2498cf5f}
+
+\begin{DoxyCompactList}\small\item\em Interger 8 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{
+typedef unsigned char \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8}}
+\label{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger 8 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a74fad364688add30796d711e5635ac77}{
+typedef unsigned char \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte}}
+\label{namespace_f2_c_a74fad364688add30796d711e5635ac77}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger 8 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{
+typedef short int \hyperlink{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}{int16}}
+\label{namespace_f2_c_ab83c1e14d784a7d520d770ca6fa8fd8e}
+
+\begin{DoxyCompactList}\small\item\em Interger 16 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a2d95c3c3eebf9e41f34363393100d0b4}{
+typedef unsigned short int \hyperlink{namespace_f2_c_a2d95c3c3eebf9e41f34363393100d0b4}{uint16}}
+\label{namespace_f2_c_a2d95c3c3eebf9e41f34363393100d0b4}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger 16 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{
+typedef unsigned int \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint}}
+\label{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_ae125264248542a3a358accdbfd2ec622}{
+typedef long int \hyperlink{namespace_f2_c_ae125264248542a3a358accdbfd2ec622}{int32}}
+\label{namespace_f2_c_ae125264248542a3a358accdbfd2ec622}
+
+\begin{DoxyCompactList}\small\item\em Interger 32 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_ae9a1fcf27e85dd8fb51e9a30db5ad871}{
+typedef unsigned long int \hyperlink{namespace_f2_c_ae9a1fcf27e85dd8fb51e9a30db5ad871}{uint32}}
+\label{namespace_f2_c_ae9a1fcf27e85dd8fb51e9a30db5ad871}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger 32 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_affe55f5e807808ec6780f981396045b9}{
+typedef long long int \hyperlink{namespace_f2_c_affe55f5e807808ec6780f981396045b9}{int64}}
+\label{namespace_f2_c_affe55f5e807808ec6780f981396045b9}
+
+\begin{DoxyCompactList}\small\item\em Interger 64 Bit. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a569e63783a7f4abd693eba9bc32070e6}{
+typedef unsigned long long int \hyperlink{namespace_f2_c_a569e63783a7f4abd693eba9bc32070e6}{uint64}}
+\label{namespace_f2_c_a569e63783a7f4abd693eba9bc32070e6}
+
+\begin{DoxyCompactList}\small\item\em Unsigned Interger 64 Bit. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a185179f67ee35305376ccdef2e148abb}{operator$<$$<$} (std::ostream \&out, \hyperlink{class_f2_c_1_1_sprite_element}{SpriteElement} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_aa45d16c526828f2dfbdb567c2ab858a5}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_sprite_element}{SpriteElement} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a57872d9344e576ede8e43847b2384326}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write the Texture Name). \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_acec53a1cdcc68d7d5d77e7884b51c923}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (use old(or create new) Texture Name). \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_aeb8b225cd1a6cb0d632da0a4cf97dfef}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_a08fbe6620774ad5f203a8602049f7beb}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a5f7f27346e2a0a1782cdc314c3882c2d}{
+\hyperlink{class_f2_c_1_1_color}{Color} DLL \hyperlink{namespace_f2_c_a5f7f27346e2a0a1782cdc314c3882c2d}{operator+} (const \hyperlink{class_f2_c_1_1_color}{Color} \&obj1, const \hyperlink{class_f2_c_1_1_color}{Color} \&obj2)}
+\label{namespace_f2_c_a5f7f27346e2a0a1782cdc314c3882c2d}
+
+\begin{DoxyCompactList}\small\item\em operator: + \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_abf2a0fe00839e11c20ed5650d801a72a}{
+\hyperlink{class_f2_c_1_1_color}{Color} DLL \hyperlink{namespace_f2_c_abf2a0fe00839e11c20ed5650d801a72a}{operator-\/} (const \hyperlink{class_f2_c_1_1_color}{Color} \&obj1, const \hyperlink{class_f2_c_1_1_color}{Color} \&obj2)}
+\label{namespace_f2_c_abf2a0fe00839e11c20ed5650d801a72a}
+
+\begin{DoxyCompactList}\small\item\em operator: -\/ \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a88ade2ba40100d1fb40d571da7ca6297}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_color}{Color} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_af54a39901858a2eb792213aea0cf773b}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_color}{Color} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_a30787062940f856f19105f1e39416263}{
+\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} DLL \hyperlink{namespace_f2_c_a30787062940f856f19105f1e39416263}{operator+} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj1, const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj2)}
+\label{namespace_f2_c_a30787062940f856f19105f1e39416263}
+
+\begin{DoxyCompactList}\small\item\em operator: + \item\end{DoxyCompactList}\item 
+\hypertarget{namespace_f2_c_af3bc25e0402758c3b3a1a64d1c80052d}{
+\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} DLL \hyperlink{namespace_f2_c_af3bc25e0402758c3b3a1a64d1c80052d}{operator-\/} (const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj1, const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj2)}
+\label{namespace_f2_c_af3bc25e0402758c3b3a1a64d1c80052d}
+
+\begin{DoxyCompactList}\small\item\em operator: -\/ \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a0c34714cdd5cc2ce9a63adc7d6ecaa6b}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_a444abf1cb3e73da3e5d74e1f924a88ca}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a26c99e85a655966a34141b0ea3b4a305}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_t_t_f_font}{TTFFont} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_ad165b93a684dfe4ae3f8583a1a036163}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_t_t_f_font}{TTFFont} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a1e443bfd91754c8b4bb57352fe90321d}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_font_sprite}{FontSprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_abc3146c5521af4e054bc4fd35da2c959}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_font_sprite}{FontSprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a267c518052694773ad15076bdf73c006}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_log_error}{LogError} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_af2a0fbba37af3caf4c9ec3947425e013}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_log_error}{LogError} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a16eb879878bd2384be0b44f3b8f51a22}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_plane}{Plane} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_a139e98cb80847efff13230483d8cb882}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_plane}{Plane} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a27f9afc7d11634019d6d787b1cb4e8ac}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_rect}{Rect} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_a247b440871b117a3e3375f2687d76197}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_rect}{Rect} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_aeda54e2dc7edab2a8530bc9cc2ef544d}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_shader_g_l}{ShaderGL} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write the Shader Obj.,only shadercode). \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_ad61f5b4d14aedf2086d01c681182582a}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_shader_g_l}{ShaderGL} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (use old(or create new) Shader Obj.,compile shadercode). \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a897c7619870a9d8aa78fe93deea683c3}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_simple_sprite}{SimpleSprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_adc01c049f9bcc3513fc783439f0aaabf}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_simple_sprite}{SimpleSprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a065c5287041960b09d010526bb222148}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_sprite}{Sprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_a1dd141584e11ee13c4454bfa3afbafcb}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_sprite}{Sprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a5349567ddf35cf232e24cf4e03b7e921}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write the Texture Name). \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_a695d1b5ed57a637204209ba325fa3a8f}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (use old(or create new) Texture Name). \item\end{DoxyCompactList}\item 
+std::ostream \&DLL \hyperlink{namespace_f2_c_a12f3d90139bde6a9798576e42b9b3d23}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_viewport}{Viewport} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \&DLL \hyperlink{namespace_f2_c_a96adf0f87bb266192ccea2ba3a55e993}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_viewport}{Viewport} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fantasy2C Namespace. 
+
+\subsection{Function Documentation}
+\hypertarget{namespace_f2_c_a26c99e85a655966a34141b0ea3b4a305}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const TTFFont \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a26c99e85a655966a34141b0ea3b4a305}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a065c5287041960b09d010526bb222148}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const Sprite \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a065c5287041960b09d010526bb222148}
+
+
+Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a5349567ddf35cf232e24cf4e03b7e921}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const SpriteBase \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a5349567ddf35cf232e24cf4e03b7e921}
+
+
+Write the Object into output stream. (dont write the Texture Name). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a12f3d90139bde6a9798576e42b9b3d23}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const Viewport \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a12f3d90139bde6a9798576e42b9b3d23}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a1e443bfd91754c8b4bb57352fe90321d}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const FontSprite \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a1e443bfd91754c8b4bb57352fe90321d}
+
+
+Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a185179f67ee35305376ccdef2e148abb}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{SpriteElement \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a185179f67ee35305376ccdef2e148abb}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a267c518052694773ad15076bdf73c006}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const LogError \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a267c518052694773ad15076bdf73c006}
+
+
+Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a88ade2ba40100d1fb40d571da7ca6297}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const Color \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a88ade2ba40100d1fb40d571da7ca6297}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a16eb879878bd2384be0b44f3b8f51a22}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const Plane \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a16eb879878bd2384be0b44f3b8f51a22}
+
+
+Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a57872d9344e576ede8e43847b2384326}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const ArraySprite \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a57872d9344e576ede8e43847b2384326}
+
+
+Write the Object into output stream. (dont write the Texture Name). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a27f9afc7d11634019d6d787b1cb4e8ac}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const Rect \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a27f9afc7d11634019d6d787b1cb4e8ac}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_aeda54e2dc7edab2a8530bc9cc2ef544d}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const ShaderGL \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_aeda54e2dc7edab2a8530bc9cc2ef544d}
+
+
+Write the Object into output stream. (dont write the Shader Obj.,only shadercode). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_aeb8b225cd1a6cb0d632da0a4cf97dfef}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const Bitmap \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_aeb8b225cd1a6cb0d632da0a4cf97dfef}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a897c7619870a9d8aa78fe93deea683c3}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const SimpleSprite \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a897c7619870a9d8aa78fe93deea683c3}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a0c34714cdd5cc2ce9a63adc7d6ecaa6b}{
+\index{F2C@{F2C}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C@{F2C}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& DLL F2C::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const ColorTone \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a0c34714cdd5cc2ce9a63adc7d6ecaa6b}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a444abf1cb3e73da3e5d74e1f924a88ca}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{ColorTone \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a444abf1cb3e73da3e5d74e1f924a88ca}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a08fbe6620774ad5f203a8602049f7beb}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{Bitmap \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a08fbe6620774ad5f203a8602049f7beb}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_abc3146c5521af4e054bc4fd35da2c959}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{FontSprite \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_abc3146c5521af4e054bc4fd35da2c959}
+
+
+Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_aa45d16c526828f2dfbdb567c2ab858a5}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{SpriteElement \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_aa45d16c526828f2dfbdb567c2ab858a5}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a695d1b5ed57a637204209ba325fa3a8f}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{SpriteBase \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a695d1b5ed57a637204209ba325fa3a8f}
+
+
+Read the Object from input stream. (use old(or create new) Texture Name). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a247b440871b117a3e3375f2687d76197}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{Rect \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a247b440871b117a3e3375f2687d76197}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_ad61f5b4d14aedf2086d01c681182582a}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{ShaderGL \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_ad61f5b4d14aedf2086d01c681182582a}
+
+
+Read the Object from input stream. (use old(or create new) Shader Obj.,compile shadercode). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_adc01c049f9bcc3513fc783439f0aaabf}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{SimpleSprite \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_adc01c049f9bcc3513fc783439f0aaabf}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a1dd141584e11ee13c4454bfa3afbafcb}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{Sprite \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a1dd141584e11ee13c4454bfa3afbafcb}
+
+
+Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_acec53a1cdcc68d7d5d77e7884b51c923}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{ArraySprite \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_acec53a1cdcc68d7d5d77e7884b51c923}
+
+
+Read the Object from input stream. (use old(or create new) Texture Name). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_af2a0fbba37af3caf4c9ec3947425e013}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{LogError \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_af2a0fbba37af3caf4c9ec3947425e013}
+
+
+Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_af54a39901858a2eb792213aea0cf773b}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{Color \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_af54a39901858a2eb792213aea0cf773b}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a96adf0f87bb266192ccea2ba3a55e993}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{Viewport \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a96adf0f87bb266192ccea2ba3a55e993}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_ad165b93a684dfe4ae3f8583a1a036163}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{TTFFont \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_ad165b93a684dfe4ae3f8583a1a036163}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{namespace_f2_c_a139e98cb80847efff13230483d8cb882}{
+\index{F2C@{F2C}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C@{F2C}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& DLL F2C::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{Plane \&}]{ obj}
+\end{DoxyParamCaption}
+)}}
+\label{namespace_f2_c_a139e98cb80847efff13230483d8cb882}
+
+
+Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}

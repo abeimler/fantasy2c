@@ -1,0 +1,376 @@
+#!/usr/bin/make
+#Makefile for Fantasy2C
+#
+#@author Alex Beimler (alias kiba)
+#@date 28.2.2010
+#
+#Copyright (C) 2009 Alex Beimler
+#
+#This library is free software
+#you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License
+#as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
+#This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+#without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#See the GNU Lesser General Public License for more details.
+#
+#You should have received a copy of the GNU Lesser General Public License along with this library;
+#if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110, USA 
+
+#Please Setting OS macro
+#	Linux		: Linux (g++ comp.) (default)
+#	Linuxkcc	: Linux (kcc comp.)
+#	MkLinux		: MkLinux (g++ libc5 comp.)
+#	HP-UX 		: HP-UX (CC comp.)
+#	HP-UXacc 	: HP-UX 10.x (aCC comp.)
+#	HP-UXg++ 	: HP-UX 10.x (g++ comp.)
+#	AIX		: IBM AIX 
+#	AIXg++		: IBM AIX (g++ comp.)
+#	SunOS	 	: SunOS
+#	SunOS5		: Solaris 5.0
+#	SunOSg++	: Solaris (g++ comp.)
+#	SunOSkcc	: Solaris (kcc comp.)
+#	SunOSx86	: Solaris in Intel
+#	IRIX		: SGI
+#	IRIX6		: SGI 6.x
+#	IRIXn32		: SGI 6.x for n32 ABI
+#	IRIXg++		: SGI (g++ comp.)
+#	IRIXkcc		: SGI (kcc comp.)
+#	OSF1		: Alpha/OSF
+#	OSF1cxx		: Alpha/OSF (cxx6 comp.)
+#	FreeBSD		: FreeBSD
+#	win32		: Windows (mingw comp.)
+#	win32vc++	: Windows (VC++ comp.)
+
+ifeq ($(OS),)
+	OS		:= Linux
+endif
+
+#Source Code Dir
+SRCDIR 			:= ./lib
+
+#Headers Dir
+HEADERSDIR 		:= ./include
+
+#Project Settings
+EXPORTMACRO 		:= FANTASY2C_EXPORTS
+OUTDLL		        := Fantasy2C
+OUTLIB		        := libFantasy2C
+OUTDEF		        := libFantasy2C.def
+OUTIMPLIB	        := libFantasy2C.a
+
+#Debug and Release Setting
+DEBUGFLAGS		:= -g -D"_DEBUG"
+RELEASEFLAGS		:= -O2 -s
+
+#Out Dirs
+OUTBINDIR		:= bin
+OUTDIR		        := lib
+OBJDIR		        := obj
+BUILDDIR 	        := ./$(OS)
+
+#Compiler and linker
+CXX      	        := g++
+LD			:= g++
+
+#Linux include and lib  dirs
+INCLUDEDIR	        := /usr/include -I/usr/include/freetype2
+LIBDIR		        := /usr/lib
+
+#File type
+SRCSUF      	        := cpp
+OBJSUF			:= o 
+OUTLIBSUF		:= so
+
+#Librarys Flags
+LIBFLAGS	        := -lGL -lGLU -lX11 -lpthread -lXxf86vm -lXrandr -lm -lIL -lILU -lglfw -laudiere -lfreetype
+
+#Comp. Flags
+CXXFLAGS 	        := -fPIC
+#Linker Flags
+LDFLAGS         	:= 
+
+#Linker Falgs for Shared (dynamic library)
+SOFLAGS			:= -shared
+
+#Sourcecode,include,lib,Macros,out and warning Flag
+SRCFLAG			:= -c
+INCLUDEDIRFLAG		:= -I
+LIBDIRFLAG		:= -L
+MACROFLAG		:= -D
+OUTFLAG			:= -o
+WARNINGFLAG		:= -Wall
+
+ifeq ($(OS),Linux)
+#Linux (default)
+SRCDIR 			:= ./lib
+HEADERSDIR 		:= ./include
+INCLUDEDIR	        := /usr/include -I/usr/include/freetype2
+LIBDIR		        := /usr/lib
+BUILDDIR 	        := ./$(OS)
+
+CXX      	        := g++
+CXXFLAGS 	        := -fPIC
+LD			:= g++
+LDFLAGS         	:= 
+SOFLAGS			:= -shared
+OUTLIBSUF		:= so
+LIBFLAGS	        := -lGL -lGLU -lX11 -lpthread -lXxf86vm -lXrandr -lm -lIL -lILU -lglfw -laudiere -lfreetype
+endif
+
+ifeq ($(OS),win32)
+# Windows with mingw32
+SRCDIR 		:= lib
+HEADERSDIR 	:= include
+INCLUDEDIR    	:= windows/include
+LIBDIR		:= windows/lib
+BUILDDIR 	:= $(OS)
+OUTLIB		:= $(OUTDLL)
+
+CXX           	:= mingw32-g++.exe
+CXXFLAGS      	:= 
+LD            	:= mingw32-g++.exe
+LDFLAGS       	:= --dll
+SOFLAGS       	:= -shared -Wl,
+OUTLIBSUF     	:= dll
+LIBFLAGS	:= -lopengl32 -lglu32 -lDevIL -lILU -lglfw -lglfwdll -laudiere -lfreetype.dll -lfreetype
+EXPORTMACRO 	:= $(EXPORTMACRO) -D"_WIN32" -D"_Windows"
+endif
+
+ifeq ($(OS),win32vc++)
+# Windows with Visual Studio c++
+SRCDIR 		:= lib
+HEADERSDIR 	:= include
+INCLUDEDIR    	:= windows/include
+LIBDIR	  	:= windows/lib
+BUILDDIR 	:= $(OS)
+OUTLIB		:= $(OUTDLL)
+
+SRCFLAG		:= /c
+INCLUDEDIRFLAG	:= /I
+LIBDIRFLAG	:= /LIBPATH:
+MACROFLAG	:= /D
+OUTFLAG		:= /OUT:
+WARNINGFLAG	:= /W3
+
+CXX           	:= cl.exe
+CXXFLAGS      	:= /NOLOGO /EHsc /ZI /TP
+LD            	:= link.exe
+LDFLAGS       	:= /INCREMENTAL /NOLOGO /MANIFEST:NO /DYNAMICBASE /NXCOMPAT
+SOFLAGS       	:= /DLL
+SRCSUF      	:= cpp
+OBJSUF		:= obj 
+OUTLIBSUF	:= dll
+LIBFLAGS	:= opengl32 glu32 DevIL.lib ILU.lib libglfw.a libglfwdll.a audiere.lib libfreetype.dll.a freetype.lib
+DEBUGFLAGS	:= /Od /Oi /MDd /D"_DEBUG" /DEBUG /RTC1
+RELEASEFLAGS	:= /O2 /MD /D"NDEBUG" /FD /Gy
+EXPORTMACRO 	:= $(EXPORTMACRO) -D"_WIN32" -D"_Windows"
+endif
+
+ifeq ($(OS),HP-UX)
+# HP-UX with CC
+CXX           := CC
+CXXFLAGS      := +Z
+LD            := CC
+LDFLAGS       := +a1 -z
+SOFLAGS       := -b
+OUTLIBSUF     := sl
+endif
+
+ifeq ($(OS),HP-UXacc)
+# HP-UX 10.x with aCC
+CXX           := aCC
+CXXFLAGS      := +Z
+LD            := aCC
+LDFLAGS       := -z
+SOFLAGS       := -b
+endif
+
+ifeq ($(OS),HP-UXg++)
+# HP-UX 10.x with g++
+CXXFLAGS      := -fPIC
+CXX           := g++
+LD            := g++
+LDFLAGS       := 
+SOFLAGS       := -fPIC -shared
+endif
+
+ifeq ($(OS),AIX)
+# IBM AIX
+CXX           := xlC
+CXXFLAGS      := 
+LD            := xlC
+LDFLAGS       := 
+SOFLAGS       :=
+endif
+
+ifeq ($(OS),AIXg++)
+# IBM AIX with GCC
+CXX           := g++
+CXXFLAGS      := 
+LD            := g++
+LDFLAGS       := 
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),SunOS)
+# Solaris CC
+CXX           := /opt/SUNWspro/bin/CC
+CXXFLAGS      := -KPIC
+CXXFLAGS      := -KPIC -compat=4
+LD            := /opt/SUNWspro/bin/CC
+LDFLAGS       := 
+LDFLAGS       := -compat=4
+SOFLAGS       := 
+endif
+
+ifeq ($(OS),SunOS5)
+# Solaris CC 5.0
+CXX           := CC
+CXXFLAGS      := -KPIC -D__SunOS_5_6 -library=iostream,no%Cstd
+LD            := CC
+LDFLAGS       := -library=iostream,no%Cstd -o
+SOFLAGS       := 
+endif
+
+ifeq ($(OS),SunOSg++)
+# Solaris g++
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := 
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),SunOSkcc)
+# Solaris kcc
+CXX           := KCC
+CXXFLAGS      := -KPIC
+LD            := KCC
+LDFLAGS       := 
+SOFLAGS       :=
+RELEASEFLAGS  := -O4 -s
+endif
+
+ifeq ($(OS),SunOSx86)
+# Solaris CC on Intel
+CXX           := CC
+CXXFLAGS      := -KPIC
+LD            := CC
+LDFLAGS       := 
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),IRIX)
+# SGI
+CXX           := CC -n32  -I/usr/include/CC.sgi
+CXXFLAGS      := 
+LD            := CC -n32  -I/usr/include/CC.sgi
+LDFLAGS       := 
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),IRIX6)
+# SGI 6.x with g++
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := -Wl,-u,__builtin_new -Wl,-u,__builtin_delete -Wl,-u,__nw__FUiPv
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),IRIXn32)
+# SGI 6.x with g++ for n32 ABI
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := -L/usr/lib32 -Wl,-woff,134
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),IRIXg++)
+# SGI with g++
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := -Wl,-u,__builtin_new -Wl,-u,__builtin_delete -Wl,-u,__nw__FUiPv
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),IRIXkcc)
+# SGI with KCC
+CXX           := KCC -n32 --no_exceptions
+CXXFLAGS      := 
+LD            := KCC -n32 --no_exceptions
+LDFLAGS       := 
+SOFLAGS       =
+endif
+
+ifeq ($(OS),OSF1)
+# Alpha/OSF with g++
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := 
+SOFLAGS       := -Wl,-expect_unresolved,* -shared
+endif
+
+ifeq ($(OS),OSF1cxx6)
+# Alpha/OSF with cxx6
+CXX           := cxx
+CXXFLAGS      := 
+LD            := cxx
+LDFLAGS       := 
+SOFLAGS       := -Wl,-expect_unresolved,* -shared
+endif
+
+ifeq ($(OS),OSF1cxx)
+# Alpha/OSF with cxx5
+CXX           := cxx
+CXXFLAGS      := 
+LD            := cxx
+LDFLAGS       := 
+SOFLAGS       := -Wl,-expect_unresolved,* -call_shared
+endif
+
+ifeq ($(OS),Linuxkcc)
+# Linux with the KAI compiler
+CXX           = KCC
+CXXFLAGS      = -fPIC +K0
+LD            = KCC
+LDFLAGS       = -O
+SOFLAGS       =
+endif
+
+ifeq ($(OS),MkLinux)
+# MkLinux with libc5
+CXX           = g++
+CXXFLAGS      = -O -Wall -fPIC
+LD            = g++
+LDFLAGS       = -O
+SOFLAGS       = -shared -Wl,-soname,
+endif
+
+ifeq ($(OS),FreeBSD)
+# FreeBSD with libc5
+CXX           = g++
+CXXFLAGS      = -O -pipe -W -Wall -fPIC
+LD            = g++
+LDFLAGS       = -O
+SOFLAGS       = -shared -Wl,-x
+endif
+
+ifeq ($(OS),Darwin)
+# Darwin (Mac OS)
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := 
+SOFLAGS       := -shared
+endif
+
+#Debug and Release Dir
+DEBUGDIR	        := $(BUILDDIR)/Debug
+RELEASEDIR	        := $(BUILDDIR)/Release
+
+#Default Flags
+DEFAULTFLAGS		:= $(WARNINGFLAG) $(MACROFLAG)$(EXPORTMACRO) $(INCLUDEDIRFLAG)$(INCLUDEDIR) $(LIBDIRFLAG)$(LIBDIR)

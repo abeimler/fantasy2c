@@ -1,0 +1,21 @@
+#!/usr/bin/make
+
+releasedirs:
+	if not exist "$(RELEASEDIR)/$(OBJDIR)" md "$(RELEASEDIR)/$(OBJDIR)"
+	if not exist "$(RELEASEDIR)/$(OUTDIR)" md "$(RELEASEDIR)/$(OUTDIR)"
+	if not exist "$(RELEASEDIR)/$(OUTBINDIR)" md "$(RELEASEDIR)/$(OUTBINDIR)"
+
+%.tag:
+	if not exist "$(dir $(@))" md "$(dir $(@))"
+
+$(OBJECTSRELEASE): $(RELEASEDIR)/$(OBJDIR)/%.$(OBJSUF): $(SRCDIR)/%.$(SRCSUF) $(RELEASEDIR)/$(OBJDIR)/.tag
+	$(CXX) $(RELEASEFLAGS) $(CXXFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)"$(HEADERSDIR)" $(SRCFLAG) "$<" $(OUTFLAG)"$@"
+ 
+Release : releasedirs $(OBJECTSRELEASE)
+	$(LD) $(RELEASEFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)"$(HEADERSDIR)" $(OBJECTSRELEASE) $(OUTFLAG)"$(RELEASEDIR)/$(OUTDIR)/$(OUTAPP)$(OUTSUF)" $(LIBFLAGS)
+
+clean: cleanRelease
+
+
+cleanRelease:
+	if exist "$(RELEASEDIR)/$(OBJDIR)" del /F /S /Q "$(RELEASEDIR)/$(OBJDIR)"

@@ -1,0 +1,68 @@
+Fantasy2C
+Version: 1.2.52
+
+TODO/BUGS:
+-MIDI Device has Memory Leak
+-Software Rendering
+
+Version History:
+
+2 Februar 2011 released version 1.2.52 of Fantasy2C
+Change log:
+	-Fixed: Operator != Color,ColorTone, returns false value
+	-Added: Function Timer::pause(),start(), pause,stop and start functions  
+	-Fixed: Function AudioFile::loadDevice(...), Memory Leak in static Member
+	-Added: BlendType, light and mask for LightMap and Masking Effect
+	-Update: Function Bitmap/AudioFile,Font::loadFile(...) throw a LogError with an ErrorCode
+	-New: LogError Class, Error Code Makros like NO_ERROR, NO_SUCH_FILE_OR_DIR,....
+	-Fixed: Function FontSprite::getStringSize(...), add factor zoom_x and zoom_y
+	-Updated: GLFW DLL
+	-New: Software Rendering Engine
+	-New: Vector2,3,4 Class, Vector with x,y,z,w
+	-New: Matrix3,4 Class, 3x3 and 4x4  Matrix
+	-New: Color3,4 Class, Color with RGBA
+	-New: Texture2D Class, Managment 2D texturen with mipmap level. 
+
+30 July 2010 released version 1.2.15 of Fantasy2C
+Change log:
+	-Added: Function Rect::collision(...),get collision of rect
+	-New: Timer class, simple Timer
+	-Fixed: ColorTone::ColorTonetoRGB(...), convert CMY in RGB
+	-Fixed: RenderManager::setScissorInBottomLeftMode(...),convert BottomLeft to TopLeft Mode
+	-Updated: Bitmap::fillRect(...) function optimized
+	-Added: Function Bitmap::clearRect(...), Clear an area (Set pixels on 0).
+	-Fixed: Spacing of the letters adapted (FontSprite)
+	-Added: Function Window::getScreen/WindowSize(...), get Window/Screen Size as F2C::Rect
+	-Fixed: Remove glGenTexture in (Default) Constructors (Sprite,Plane,...)
+	-New: RenderManager class, Some usefull Rendering functions. (for Sprite classes)
+	-Added: Function Bitmap::isChanged(), Is Bitmap changed, like setPixel,scale,blt,fillRect
+	-Added: Function Sprite::enableGLDrawArray(), Enable/Disable use glDrawArray in (Simple)Sprite,Plane,FontSprite and AraySprite
+	-Added: Function FontSprite::getStringSize(...), get size(in pixel) of a string
+	-Added: Function TTFFTont::loadBitmap(...), load Font from BitmapFont
+	-Added: Function Bitmap::blt(...), normal blt-function for pixel arrays (not Bitmap class)
+	-Updated: Bitmap::blt(...) function optimized
+	-New: stream-Operator(<<,>>) to write/read F2C classes(Sprite,Bitmap,Color,Rect,...) into/from stream
+
+
+1.1.1
+[Bugfix]	Memory Leak in Plane Class (sizex and sizey have negative values)
+[Bugfix]	zoom_x/y in Plane Class
+[Buffix]	src_rect in Plane Class
+[Bugfix]	Blt function(Bitmap) Alpha blending 
+[ShaderGL]	Add copy constructor and assignment operator with deep copy.
+[Sprite]	Add flipped horizontal and flipped vertical Variable
+[ShaderGL]	Add getSupported[WGL,GLX,Shader,VBO,...] and getGL[Version,Renderer,Vendor] function
+[Basic]		More OpenGL extensions added
+[Bugfix]	AudioFile Copy constructor memory leak
+[TTFFont]	Add defaultdir Varaible, Default System Font directory
+
+1.1.0
+[Basic]		Change #include "..." in #include<Fantasy2C/...>
+[New]		Class ShaderGL, load shaderfiles and create ARB handles
+[Window]	Remove shader management
+[Input]		Add mouse repeat function
+[Input]		Add getMouseWheelUp and getMouseWheelDown function
+[Input]		Remove singleton pattern
+[Window]	Remove singleton pattern
+[Bugfix]	Input repeat function
+

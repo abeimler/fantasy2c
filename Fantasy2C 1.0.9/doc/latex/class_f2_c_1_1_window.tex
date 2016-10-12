@@ -1,0 +1,323 @@
+\hypertarget{class_f2_c_1_1_window}{
+\section{F2C::Window Class Reference}
+\label{class_f2_c_1_1_window}\index{F2C::Window@{F2C::Window}}
+}
+
+
+Singleton pattern: Create window and loading shader files.  
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_window_a54df9471759b05ade2b6331bcbc01d2e}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_window_a54df9471759b05ade2b6331bcbc01d2e}{getFrame} ()}
+\label{class_f2_c_1_1_window_a54df9471759b05ade2b6331bcbc01d2e}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Current Frame. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a7c5e369664f3268c5d284c8d6991f8a1}{
+void \hyperlink{class_f2_c_1_1_window_a7c5e369664f3268c5d284c8d6991f8a1}{UpdateGLScreen} ()}
+\label{class_f2_c_1_1_window_a7c5e369664f3268c5d284c8d6991f8a1}
+
+\begin{DoxyCompactList}\small\item\em Updates the window. (Buffer Swapping). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_a018c40b68699cc3202cb6e29b2c22747}{ReSize} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} wndwidth, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} wndheight, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} screenwidth, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} screenheight)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets the size of the window and the resolution. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_ab3c3289418b453e215486ed6fb611f5a}{
+void \hyperlink{class_f2_c_1_1_window_ab3c3289418b453e215486ed6fb611f5a}{InitGL} ()}
+\label{class_f2_c_1_1_window_ab3c3289418b453e215486ed6fb611f5a}
+
+\begin{DoxyCompactList}\small\item\em Initializes the OpenGL functions. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_window_a085055cbf85676cd03f38b1105afb669}{InitGLShader} ()
+\begin{DoxyCompactList}\small\item\em Initialisiert die ARB Shader Funktionen. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_window_a017173888582ad09c18f85ceedaee593}{LoadGLFragmentShader} (std::string shaderfilename, std::string $\ast$error)
+\begin{DoxyCompactList}\small\item\em Ladet die Fragmentshader Datei und erstellt das ARB Fragmentobjekt. Der Build Log beim erstellen des ARB Fragmentobjekt wird in der \char`\"{}error\char`\"{} Variable gespeichert. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_window_aa2b637446b9c4e8e9e93001e32945ae4}{LoadGLVertexShader} (std::string shaderfilename, std::string $\ast$error)
+\begin{DoxyCompactList}\small\item\em Ladet die Vertexshader Datei und erstellt das ARB Vertexobjekt. Der Build Log beim erstellen des ARB Vertexobjekt wird in der \char`\"{}error\char`\"{} Variable gespeichert. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_adad7a68be0de8516ae26ca4af18a2bdf}{CreateShaderProgram} (std::string $\ast$error)
+\begin{DoxyCompactList}\small\item\em Creates the ARB shader program object loaded by the ARB and ARB fragment object Vertex object. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a0aefe1654782a8f3105ef6a46867e280}{
+void \hyperlink{class_f2_c_1_1_window_a0aefe1654782a8f3105ef6a46867e280}{ClearGLScene} ()}
+\label{class_f2_c_1_1_window_a0aefe1654782a8f3105ef6a46867e280}
+
+\begin{DoxyCompactList}\small\item\em Clear \hyperlink{class_f2_c_1_1_window}{Window}. (glClear). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a7d92448d55b3608df74ed6be97bdeef9}{
+void \hyperlink{class_f2_c_1_1_window_a7d92448d55b3608df74ed6be97bdeef9}{ShutdownGLWindow} ()}
+\label{class_f2_c_1_1_window_a7d92448d55b3608df74ed6be97bdeef9}
+
+\begin{DoxyCompactList}\small\item\em Exits the window, and deletes it from memory. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_f2_c_1_1_window_aaf0f8a2b7bf33c732dc32ca862fc8dac}{CreateGLWindow} (std::string title, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, int bits, bool fullscreen)
+\begin{DoxyCompactList}\small\item\em Creates the window. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_a1386414654c4e87f67f31076a8b34aa5}{setWindowPosition} (int x, int y)
+\begin{DoxyCompactList}\small\item\em setMethode: Set window position. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_a31ea5cf746375e50bbc3d547eb249155}{setWindowSize} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} wndwidth, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} wndheight)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets size of window. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_a7d8c67d945748f4a2c2effcf4a29022d}{setWindowTitle} (std::string title)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets \hyperlink{class_f2_c_1_1_window}{Window} Title \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_a8d5436c04afd4ea15ea541ff90d77138}{setWindowHint} (\hyperlink{namespace_f2_c_1_1_window_property_a89ec69d0a86f9d0063dfb69a3ebf3fbe}{WindowProperty::ParamWindow} paramwindow, int value)
+\begin{DoxyCompactList}\small\item\em setMethode: Value of the \hyperlink{class_f2_c_1_1_window}{Window} Param (1 = true 0 = false) Note: Before the window is created, will have to set the \hyperlink{class_f2_c_1_1_window}{Window} Param. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_window_add95e367e862fa5b4e71892920204bc3}{getWindowParam} (\hyperlink{namespace_f2_c_1_1_window_property_a89ec69d0a86f9d0063dfb69a3ebf3fbe}{WindowProperty::ParamWindow} param)
+\begin{DoxyCompactList}\small\item\em getMethode: Value of the \hyperlink{class_f2_c_1_1_window}{Window} Param (1 = true 0 = false) \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_ad522ef19b23fc5e75a3194c8edbf618d}{getWindowSize} (int $\ast$width, int $\ast$height)
+\begin{DoxyCompactList}\small\item\em getMethode: Size of \hyperlink{class_f2_c_1_1_window}{Window}. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_a907540c263f7a326ca72e498f36aaddd}{getSize} (int $\ast$wndwidth, int $\ast$wndheight, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} $\ast$screenwidth, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} $\ast$screenheight)
+\begin{DoxyCompactList}\small\item\em setMethode: Size of the window and the resolution. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_a89e19f862d823bd9d9093022f5ebe314}{getScreenSize} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} $\ast$screenwidth, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} $\ast$screenheight)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets the size of resolution. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a0e50551a924c0c13757b892e5b17fdce}{
+void \hyperlink{class_f2_c_1_1_window_a0e50551a924c0c13757b892e5b17fdce}{startTicks} ()}
+\label{class_f2_c_1_1_window_a0e50551a924c0c13757b892e5b17fdce}
+
+\begin{DoxyCompactList}\small\item\em Starts ticks. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a40e7bde6336371496cf95cac06fb02c6}{
+double \hyperlink{class_f2_c_1_1_window_a40e7bde6336371496cf95cac06fb02c6}{getTicks} ()}
+\label{class_f2_c_1_1_window_a40e7bde6336371496cf95cac06fb02c6}
+
+\begin{DoxyCompactList}\small\item\em Returns the current ticks (in seconds). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a1ea7f6ad0371c7b7a40196c3e16fff55}{
+void \hyperlink{class_f2_c_1_1_window_a1ea7f6ad0371c7b7a40196c3e16fff55}{setTime} (double time)}
+\label{class_f2_c_1_1_window_a1ea7f6ad0371c7b7a40196c3e16fff55}
+
+\begin{DoxyCompactList}\small\item\em setMethode: Sets the time (in seconds) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_afcc4b6bc63531041421463538f1af179}{
+double \hyperlink{class_f2_c_1_1_window_afcc4b6bc63531041421463538f1af179}{getTime} ()}
+\label{class_f2_c_1_1_window_afcc4b6bc63531041421463538f1af179}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Current time (in seconds) \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_a1ee9014047dc994e2b32de4910ad6c49}{Sleep} (double time)
+\begin{DoxyCompactList}\small\item\em Sometimes it can be useful to put a program to sleep for a short time. It can be used to reduce the CPU load in various situations. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_aa6fe96cb49214cf71e822d7d7493e648}{
+double \hyperlink{class_f2_c_1_1_window_aa6fe96cb49214cf71e822d7d7493e648}{getFPS} ()}
+\label{class_f2_c_1_1_window_aa6fe96cb49214cf71e822d7d7493e648}
+
+\begin{DoxyCompactList}\small\item\em getMethode: FPS (Frames per second) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a934f936cbcc889d76f819aa43cbb5309}{
+bool \hyperlink{class_f2_c_1_1_window_a934f936cbcc889d76f819aa43cbb5309}{getSupportedShader} ()}
+\label{class_f2_c_1_1_window_a934f936cbcc889d76f819aa43cbb5309}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Shader supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_ad702341dc3a8245fc5bd0d5579c5424b}{
+bool \hyperlink{class_f2_c_1_1_window_ad702341dc3a8245fc5bd0d5579c5424b}{getSupportedVBO} ()}
+\label{class_f2_c_1_1_window_ad702341dc3a8245fc5bd0d5579c5424b}
+
+\begin{DoxyCompactList}\small\item\em getMethode: VBO(Vertex Buffer Object) supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a930c473b6416815b98e9e90206119968}{
+bool \hyperlink{class_f2_c_1_1_window_a930c473b6416815b98e9e90206119968}{getSupportedMultiTexel} ()}
+\label{class_f2_c_1_1_window_a930c473b6416815b98e9e90206119968}
+
+\begin{DoxyCompactList}\small\item\em getMethode: MultiTexturing supported Yes / No. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a16ac41a8c7fcbff1532b1c3106d4f5cd}{
+int \hyperlink{class_f2_c_1_1_window_a16ac41a8c7fcbff1532b1c3106d4f5cd}{getMaxTexelUnits} ()}
+\label{class_f2_c_1_1_window_a16ac41a8c7fcbff1532b1c3106d4f5cd}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Maximum number of texel pipelines. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_window_af37f6f9549c2fc79b3421bccbb1c5bcd}{showMouseCursor} (bool show)
+\begin{DoxyCompactList}\small\item\em Hides the mouse cursor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a0a85fa333c5a74f37fb98d302ee157b1}{
+bool \hyperlink{class_f2_c_1_1_window_a0a85fa333c5a74f37fb98d302ee157b1}{getShowMouseCursor} ()}
+\label{class_f2_c_1_1_window_a0a85fa333c5a74f37fb98d302ee157b1}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Hides mouse cursor \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_window_adc900b123525bb6a454ef0d44b5d65d4}{
+static \hyperlink{class_f2_c_1_1_window}{Window} $\ast$ \hyperlink{class_f2_c_1_1_window_adc900b123525bb6a454ef0d44b5d65d4}{getInstance} ()}
+\label{class_f2_c_1_1_window_adc900b123525bb6a454ef0d44b5d65d4}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Instance \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_window_a42eeb484184d4baf3bc7fe3c74ecb493}{
+GLhandleARB \hyperlink{class_f2_c_1_1_window_a42eeb484184d4baf3bc7fe3c74ecb493}{programObj}}
+\label{class_f2_c_1_1_window_a42eeb484184d4baf3bc7fe3c74ecb493}
+
+\begin{DoxyCompactList}\small\item\em Handle of ARB program object. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_af149e31ade5f6fc7385413a83b2176d9}{
+GLhandleARB \hyperlink{class_f2_c_1_1_window_af149e31ade5f6fc7385413a83b2176d9}{fragmentShader}}
+\label{class_f2_c_1_1_window_af149e31ade5f6fc7385413a83b2176d9}
+
+\begin{DoxyCompactList}\small\item\em Handle of ARB fragment object. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_window_a6a3ae907d3bc427bb2535d8189e747cf}{
+GLhandleARB \hyperlink{class_f2_c_1_1_window_a6a3ae907d3bc427bb2535d8189e747cf}{vertexShader}}
+\label{class_f2_c_1_1_window_a6a3ae907d3bc427bb2535d8189e747cf}
+
+\begin{DoxyCompactList}\small\item\em Handle of ARB vertex object. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton pattern: Create window and loading shader files. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_window_aaf0f8a2b7bf33c732dc32ca862fc8dac}{
+\index{F2C::Window@{F2C::Window}!CreateGLWindow@{CreateGLWindow}}
+\index{CreateGLWindow@{CreateGLWindow}!F2C::Window@{F2C::Window}}
+\subsubsection[{CreateGLWindow}]{\setlength{\rightskip}{0pt plus 5cm}bool F2C::Window::CreateGLWindow (std::string {\em title}, \/  {\bf uint} {\em width}, \/  {\bf uint} {\em height}, \/  int {\em bits}, \/  bool {\em fullscreen})}}
+\label{class_f2_c_1_1_window_aaf0f8a2b7bf33c732dc32ca862fc8dac}
+
+
+Creates the window. 
+\begin{DoxyParams}{Parameters}
+\item[{\em title}]\hyperlink{class_f2_c_1_1_window}{Window} Title \item[{\em width}]Width of the window and the resolution. \item[{\em height}]Height of the window and the resolution. \item[{\em bits}]\hyperlink{class_f2_c_1_1_color}{Color} depth (8,12,16,24 or 32) \item[{\em fullscreen}]In full-\/screen Start On / Off. \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_adad7a68be0de8516ae26ca4af18a2bdf}{
+\index{F2C::Window@{F2C::Window}!CreateShaderProgram@{CreateShaderProgram}}
+\index{CreateShaderProgram@{CreateShaderProgram}!F2C::Window@{F2C::Window}}
+\subsubsection[{CreateShaderProgram}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::CreateShaderProgram (std::string $\ast$ {\em error})}}
+\label{class_f2_c_1_1_window_adad7a68be0de8516ae26ca4af18a2bdf}
+
+
+Creates the ARB shader program object loaded by the ARB and ARB fragment object Vertex object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]Target reference varaible: Log text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_a89e19f862d823bd9d9093022f5ebe314}{
+\index{F2C::Window@{F2C::Window}!getScreenSize@{getScreenSize}}
+\index{getScreenSize@{getScreenSize}!F2C::Window@{F2C::Window}}
+\subsubsection[{getScreenSize}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::getScreenSize ({\bf uint} $\ast$ {\em screenwidth}, \/  {\bf uint} $\ast$ {\em screenheight})}}
+\label{class_f2_c_1_1_window_a89e19f862d823bd9d9093022f5ebe314}
+
+
+setMethode: Sets the size of resolution. 
+\begin{DoxyParams}{Parameters}
+\item[{\em screenwidth}]Width of the resolution \item[{\em screenheight}]Height of the resolution \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_a907540c263f7a326ca72e498f36aaddd}{
+\index{F2C::Window@{F2C::Window}!getSize@{getSize}}
+\index{getSize@{getSize}!F2C::Window@{F2C::Window}}
+\subsubsection[{getSize}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::getSize (int $\ast$ {\em wndwidth}, \/  int $\ast$ {\em wndheight}, \/  {\bf uint} $\ast$ {\em screenwidth}, \/  {\bf uint} $\ast$ {\em screenheight})}}
+\label{class_f2_c_1_1_window_a907540c263f7a326ca72e498f36aaddd}
+
+
+setMethode: Size of the window and the resolution. 
+\begin{DoxyParams}{Parameters}
+\item[{\em wndwidth}]Target reference varaible: Width of window \item[{\em wndheight}]Target reference varaible: Height of window \item[{\em screenwidth}]Target reference varaible: Width of the resolution \item[{\em screenheight}]Target reference varaible: Height of the resolution \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_add95e367e862fa5b4e71892920204bc3}{
+\index{F2C::Window@{F2C::Window}!getWindowParam@{getWindowParam}}
+\index{getWindowParam@{getWindowParam}!F2C::Window@{F2C::Window}}
+\subsubsection[{getWindowParam}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::Window::getWindowParam ({\bf WindowProperty::ParamWindow} {\em param})}}
+\label{class_f2_c_1_1_window_add95e367e862fa5b4e71892920204bc3}
+
+
+getMethode: Value of the \hyperlink{class_f2_c_1_1_window}{Window} Param (1 = true 0 = false) 
+\begin{DoxyParams}{Parameters}
+\item[{\em param}]Window-\/Param \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_ad522ef19b23fc5e75a3194c8edbf618d}{
+\index{F2C::Window@{F2C::Window}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!F2C::Window@{F2C::Window}}
+\subsubsection[{getWindowSize}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::getWindowSize (int $\ast$ {\em width}, \/  int $\ast$ {\em height})}}
+\label{class_f2_c_1_1_window_ad522ef19b23fc5e75a3194c8edbf618d}
+
+
+getMethode: Size of \hyperlink{class_f2_c_1_1_window}{Window}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em width}]Target reference varaible: Width of window \item[{\em height}]Target reference varaible: Height of window \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_a085055cbf85676cd03f38b1105afb669}{
+\index{F2C::Window@{F2C::Window}!InitGLShader@{InitGLShader}}
+\index{InitGLShader@{InitGLShader}!F2C::Window@{F2C::Window}}
+\subsubsection[{InitGLShader}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::Window::InitGLShader ()}}
+\label{class_f2_c_1_1_window_a085055cbf85676cd03f38b1105afb669}
+
+
+Initialisiert die ARB Shader Funktionen. \begin{DoxyReturn}{Returns}
+-\/1, This extension string indicates that the OpenGL Shading Language,version 1.00, is supported. 
+
+-\/2, GL\_\-ARB\_\-shader\_\-objects extension was not found. 
+
+-\/3, not support shader. 
+\end{DoxyReturn}
+\hypertarget{class_f2_c_1_1_window_a017173888582ad09c18f85ceedaee593}{
+\index{F2C::Window@{F2C::Window}!LoadGLFragmentShader@{LoadGLFragmentShader}}
+\index{LoadGLFragmentShader@{LoadGLFragmentShader}!F2C::Window@{F2C::Window}}
+\subsubsection[{LoadGLFragmentShader}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::Window::LoadGLFragmentShader (std::string {\em shaderfilename}, \/  std::string $\ast$ {\em error})}}
+\label{class_f2_c_1_1_window_a017173888582ad09c18f85ceedaee593}
+
+
+Ladet die Fragmentshader Datei und erstellt das ARB Fragmentobjekt. Der Build Log beim erstellen des ARB Fragmentobjekt wird in der \char`\"{}error\char`\"{} Variable gespeichert. \begin{DoxyReturn}{Returns}
+-\/1, Can't open the Shaderfile. 
+
+-\/2, The Shaderfile is empty. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em shaderfilename}]Dateiname \item[{\em error}]Ziehl-\/Varaible: Log Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_aa2b637446b9c4e8e9e93001e32945ae4}{
+\index{F2C::Window@{F2C::Window}!LoadGLVertexShader@{LoadGLVertexShader}}
+\index{LoadGLVertexShader@{LoadGLVertexShader}!F2C::Window@{F2C::Window}}
+\subsubsection[{LoadGLVertexShader}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::Window::LoadGLVertexShader (std::string {\em shaderfilename}, \/  std::string $\ast$ {\em error})}}
+\label{class_f2_c_1_1_window_aa2b637446b9c4e8e9e93001e32945ae4}
+
+
+Ladet die Vertexshader Datei und erstellt das ARB Vertexobjekt. Der Build Log beim erstellen des ARB Vertexobjekt wird in der \char`\"{}error\char`\"{} Variable gespeichert. \begin{DoxyReturn}{Returns}
+-\/1, Can't open the Shaderfile. 
+
+-\/2, The Shaderfile is empty. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em shaderfilename}]Dateiname \item[{\em error}]Ziehl-\/Varaible: Log Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_a018c40b68699cc3202cb6e29b2c22747}{
+\index{F2C::Window@{F2C::Window}!ReSize@{ReSize}}
+\index{ReSize@{ReSize}!F2C::Window@{F2C::Window}}
+\subsubsection[{ReSize}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::ReSize ({\bf uint} {\em wndwidth}, \/  {\bf uint} {\em wndheight}, \/  {\bf uint} {\em screenwidth}, \/  {\bf uint} {\em screenheight})}}
+\label{class_f2_c_1_1_window_a018c40b68699cc3202cb6e29b2c22747}
+
+
+setMethode: Sets the size of the window and the resolution. 
+\begin{DoxyParams}{Parameters}
+\item[{\em wndwidth}]Width of window \item[{\em wndheight}]height of window \item[{\em screenwidth}]Width of the resolution \item[{\em screenheight}]Height of the resolution \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_a8d5436c04afd4ea15ea541ff90d77138}{
+\index{F2C::Window@{F2C::Window}!setWindowHint@{setWindowHint}}
+\index{setWindowHint@{setWindowHint}!F2C::Window@{F2C::Window}}
+\subsubsection[{setWindowHint}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::setWindowHint ({\bf WindowProperty::ParamWindow} {\em paramwindow}, \/  int {\em value})}}
+\label{class_f2_c_1_1_window_a8d5436c04afd4ea15ea541ff90d77138}
+
+
+setMethode: Value of the \hyperlink{class_f2_c_1_1_window}{Window} Param (1 = true 0 = false) Note: Before the window is created, will have to set the \hyperlink{class_f2_c_1_1_window}{Window} Param. 
+\begin{DoxyParams}{Parameters}
+\item[{\em paramwindow}]Window-\/Param \item[{\em value}]Value \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_a1386414654c4e87f67f31076a8b34aa5}{
+\index{F2C::Window@{F2C::Window}!setWindowPosition@{setWindowPosition}}
+\index{setWindowPosition@{setWindowPosition}!F2C::Window@{F2C::Window}}
+\subsubsection[{setWindowPosition}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::setWindowPosition (int {\em x}, \/  int {\em y})}}
+\label{class_f2_c_1_1_window_a1386414654c4e87f67f31076a8b34aa5}
+
+
+setMethode: Set window position. 
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]X coordinate \item[{\em y}]Y coordinate \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_a31ea5cf746375e50bbc3d547eb249155}{
+\index{F2C::Window@{F2C::Window}!setWindowSize@{setWindowSize}}
+\index{setWindowSize@{setWindowSize}!F2C::Window@{F2C::Window}}
+\subsubsection[{setWindowSize}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::setWindowSize ({\bf uint} {\em wndwidth}, \/  {\bf uint} {\em wndheight})}}
+\label{class_f2_c_1_1_window_a31ea5cf746375e50bbc3d547eb249155}
+
+
+setMethode: Sets size of window. 
+\begin{DoxyParams}{Parameters}
+\item[{\em wndwidth}]Width of window \item[{\em wndheight}]Height of window \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_a7d8c67d945748f4a2c2effcf4a29022d}{
+\index{F2C::Window@{F2C::Window}!setWindowTitle@{setWindowTitle}}
+\index{setWindowTitle@{setWindowTitle}!F2C::Window@{F2C::Window}}
+\subsubsection[{setWindowTitle}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::setWindowTitle (std::string {\em title})}}
+\label{class_f2_c_1_1_window_a7d8c67d945748f4a2c2effcf4a29022d}
+
+
+setMethode: Sets \hyperlink{class_f2_c_1_1_window}{Window} Title 
+\begin{DoxyParams}{Parameters}
+\item[{\em title}]\hyperlink{class_f2_c_1_1_window}{Window} Title \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_af37f6f9549c2fc79b3421bccbb1c5bcd}{
+\index{F2C::Window@{F2C::Window}!showMouseCursor@{showMouseCursor}}
+\index{showMouseCursor@{showMouseCursor}!F2C::Window@{F2C::Window}}
+\subsubsection[{showMouseCursor}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::showMouseCursor (bool {\em show})}}
+\label{class_f2_c_1_1_window_af37f6f9549c2fc79b3421bccbb1c5bcd}
+
+
+Hides the mouse cursor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em show}]Hides mouse cursor \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_window_a1ee9014047dc994e2b32de4910ad6c49}{
+\index{F2C::Window@{F2C::Window}!Sleep@{Sleep}}
+\index{Sleep@{Sleep}!F2C::Window@{F2C::Window}}
+\subsubsection[{Sleep}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Window::Sleep (double {\em time})}}
+\label{class_f2_c_1_1_window_a1ee9014047dc994e2b32de4910ad6c49}
+
+
+Sometimes it can be useful to put a program to sleep for a short time. It can be used to reduce the CPU load in various situations. 
+\begin{DoxyParams}{Parameters}
+\item[{\em time}]Time (in seconds) \end{DoxyParams}

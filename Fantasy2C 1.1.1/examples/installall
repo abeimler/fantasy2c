@@ -1,0 +1,66 @@
+#!bin/bash
+
+ostype=`uname -s`;
+OS="";
+arch="";
+
+case `uname -m` in
+  i[3456789]86|x86|i86pc)
+    arch="x86";
+    ;;
+  x86_64|amd64|AMD64)
+    arch="amd64";
+    ;;
+  *)
+    echo "Unknown architecture `uname -m`."
+esac
+
+if [ "$ostype" = "HP-UX" ] ; then 
+	OS="HP-UX";
+elif [ "$ostype" = "IRIX" ] ; then 
+	if ( uname -r | grep '6\.' >/dev/null ) ; then 
+		OS="IRIX6";
+	else
+		OS="IRIX";
+	fi;
+elif [ "$ostype" = "IRIX64" ] ; then 
+	OS="IRIX6";
+elif [ "$ostype" = "AIX" ] ; then 
+	OS="AIX";
+elif [ "$ostype" = "SunOS" ] ; then 
+	release="`uname -r|cut -d . -f 1`"; 
+	if [ "$release" = "5" ] ; then 
+		OS="SunOS5";
+	else 
+		OS="SunOS";
+	fi
+	if [ "$arch" = "x86" ] ; then
+		OS="SunOSx86";
+	fi
+elif [ "$ostype" = "OSF1" ] ; then 
+	OS="OSF1";
+elif [ "$ostype" = "FreeBSD" ] ; then
+	OS="FreeBSD";
+elif [ "$ostype" = "Darwin" ] ; then 
+	OS="Darwin";
+elif [ "$ostype" = "Linux" ] ; then 
+	OS="Linux";
+else 
+	OS="Linux";
+	echo "Platform unknown `uname -s`, set default Linux"; 
+fi
+
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Animation"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Audio"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Bitmap_and_SimpleSprite"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Bitmap_and_Sprite"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Bitmapfont_and_FontSprite"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Extras_and_GameState_Manager"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Input"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Max_FPS"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Plane"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./SDL_and_Fantasy2C" SDL="1"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Shader_and_Grayscale"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./Tilemap"
+make -f ./Makefile install OS="$OS" EXAMPLEDIR="./TTFFont_and_FontSprite"
+

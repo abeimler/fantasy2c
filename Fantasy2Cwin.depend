@@ -1,0 +1,1236 @@
+# depslib dependency file v1.0
+1265820783 source:d:\projects\fantasy2c\arraysprite.cpp
+	"ArraySprite.hpp"
+
+1265468177 d:\projects\fantasy2c\arraysprite.hpp
+	"Basic.hpp"
+	"Bitmap.hpp"
+	"Rect.hpp"
+	"Color.hpp"
+	"ColorTone.hpp"
+	"Viewport.hpp"
+
+1266935995 d:\projects\fantasy2c\basic.hpp
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<cstdarg>
+	<cstring>
+	<ctime>
+	<algorithm>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<sstream>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<IL/il.h>
+	<IL/ilu.h>
+	<audiere.h>
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+	<freetype/ftoutln.h>
+	<freetype/fttrigon.h>
+	<GL/glfw.h>
+	<OpenGL/glu.h>
+	"glext.h"
+	"glext.h"
+
+1198764450 d:\projects\fantasy2c\windows\include\gl\gl.h
+
+1198764450 d:\projects\fantasy2c\windows\include\gl\glu.h
+	<stddef.h>
+	<GL/gl.h>
+
+1236474206 d:\projects\fantasy2c\windows\include\il\il.h
+	<stdio.h>
+	<limits.h>
+	<wchar.h>
+
+1236474206 d:\projects\fantasy2c\windows\include\il\ilu.h
+	<IL/il.h>
+
+1265114534 d:\projects\fantasy2c\windows\include\audiere.h
+	<vector>
+	<string>
+
+1143199508 d:\projects\fantasy2c\windows\include\ft2build.h
+	<freetype/config/ftheader.h>
+
+1168334456 d:\projects\fantasy2c\windows\include\freetype\config\ftheader.h
+
+1183410360 d:\projects\fantasy2c\windows\include\freetype\freetype.h
+	<ft2build.h>
+
+1147443190 d:\projects\fantasy2c\windows\include\freetype\ftglyph.h
+	<ft2build.h>
+
+1170078516 d:\projects\fantasy2c\windows\include\freetype\ftoutln.h
+	<ft2build.h>
+
+1170145632 d:\projects\fantasy2c\windows\include\freetype\fttrigon.h
+
+1188671556 d:\projects\fantasy2c\windows\include\gl\glfw.h
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1229175138 d:\projects\fantasy2c\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1265126344 d:\projects\fantasy2c\bitmap.hpp
+	"Basic.hpp"
+	"Rect.hpp"
+	"Color.hpp"
+	"GameError.hpp"
+
+1264097552 d:\projects\fantasy2c\rect.hpp
+	"Basic.hpp"
+
+1264097552 d:\projects\fantasy2c\color.hpp
+	"Basic.hpp"
+
+1264097552 d:\projects\fantasy2c\gameerror.hpp
+	"Basic.hpp"
+	<string>
+	<iostream>
+	<fstream>
+
+1264097552 d:\projects\fantasy2c\colortone.hpp
+	"Basic.hpp"
+	"Color.hpp"
+
+1264097552 d:\projects\fantasy2c\viewport.hpp
+	"Basic.hpp"
+	"Rect.hpp"
+	"Color.hpp"
+	"ColorTone.hpp"
+
+1265991197 source:d:\projects\fantasy2c\audio.cpp
+	"Audio.hpp"
+
+1265990460 d:\projects\fantasy2c\audio.hpp
+	"Basic.hpp"
+	"GameError.hpp"
+
+1265130210 source:d:\projects\fantasy2c\basic.cpp
+	"Basic.hpp"
+
+1253347242 source:d:\projects\fantasy2c\bitmap.cpp
+	"Bitmap.hpp"
+
+1252671380 source:d:\projects\fantasy2c\bitmap2.cpp
+	"Bitmap.hpp"
+
+1265036588 source:d:\projects\fantasy2c\bitmap_constructor.cpp
+	"Bitmap.hpp"
+
+1259761324 source:d:\projects\fantasy2c\bitmap_constructor2.cpp
+	"Bitmap.hpp"
+
+1252673890 source:d:\projects\fantasy2c\color.cpp
+	"Color.hpp"
+
+1258559988 source:d:\projects\fantasy2c\colortone.cpp
+	"ColorTone.hpp"
+
+1265735443 source:d:\projects\fantasy2c\font.cpp
+	"Font.hpp"
+
+1265126402 d:\projects\fantasy2c\font.hpp
+	"Basic.hpp"
+	"Color.hpp"
+	"Bitmap.hpp"
+
+1265735443 source:d:\projects\fantasy2c\fontsprite.cpp
+	"FontSprite.hpp"
+
+1265468177 d:\projects\fantasy2c\fontsprite.hpp
+	"Basic.hpp"
+	"SpriteBase.hpp"
+	<string>
+	<vector>
+
+1265202805 d:\projects\fantasy2c\spritebase.hpp
+	"Basic.hpp"
+	"Bitmap.hpp"
+	"Rect.hpp"
+	"Color.hpp"
+	"ColorTone.hpp"
+	"Viewport.hpp"
+
+1262048406 source:d:\projects\fantasy2c\gameerror.cpp
+	"GameError.hpp"
+
+1267133778 source:d:\projects\fantasy2c\input.cpp
+	"Input.hpp"
+
+1267134620 d:\projects\fantasy2c\input.hpp
+	"Basic.hpp"
+
+1265233742 source:d:\projects\fantasy2c\plane.cpp
+	"Plane.hpp"
+
+1265468177 d:\projects\fantasy2c\plane.hpp
+	"Basic.hpp"
+	"SpriteBase.hpp"
+
+1249836480 source:d:\projects\fantasy2c\rect.cpp
+	"Rect.hpp"
+
+1265203168 source:d:\projects\fantasy2c\simplesprite.cpp
+	"SimpleSprite.hpp"
+
+1265468177 d:\projects\fantasy2c\simplesprite.hpp
+	"Basic.hpp"
+	"SpriteBase.hpp"
+
+1265203183 source:d:\projects\fantasy2c\sprite.cpp
+	"Sprite.hpp"
+
+1265468177 d:\projects\fantasy2c\sprite.hpp
+	"Basic.hpp"
+	"SpriteBase.hpp"
+
+1265202805 source:d:\projects\fantasy2c\spritebase.cpp
+	"SpriteBase.hpp"
+
+1249836480 source:d:\projects\fantasy2c\viewport.cpp
+	"Viewport.hpp"
+
+1267127802 source:d:\projects\fantasy2c\window.cpp
+	"Window.hpp"
+
+1267127802 d:\projects\fantasy2c\window.hpp
+	"Basic.hpp"
+	<fstream>
+	<string>
+
+1269875827 source:d:\projects\fantasy2c\lib\arraysprite.cpp
+	<Fantasy2C/ArraySprite.hpp>
+
+1269875773 d:\projects\fantasy2c\include\fantasy2c\arraysprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Bitmap.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+	<Fantasy2C/Viewport.hpp>
+
+1269877454 d:\projects\fantasy2c\include\fantasy2c\basic.hpp
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<cstdarg>
+	<cstring>
+	<ctime>
+	<algorithm>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<sstream>
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<IL/il.h>
+	<IL/ilu.h>
+	<audiere.h>
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+	<freetype/ftoutln.h>
+	<freetype/fttrigon.h>
+	<GL/glfw.h>
+	"glext.h"
+	"wglext.h"
+	"glext.h"
+	<GL/glx.h>
+	<GL/glxext.h>
+
+1269021653 d:\projects\fantasy2c\include\fantasy2c\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1267470136 d:\projects\fantasy2c\include\fantasy2c\bitmap.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/GameError.hpp>
+
+1267470136 d:\projects\fantasy2c\include\fantasy2c\rect.hpp
+	<Fantasy2C/Basic.hpp>
+
+1267470136 d:\projects\fantasy2c\include\fantasy2c\color.hpp
+	<Fantasy2C/Basic.hpp>
+
+1267985020 d:\projects\fantasy2c\include\fantasy2c\gameerror.hpp
+	<Fantasy2C/Basic.hpp>
+	<string>
+	<iostream>
+	<fstream>
+
+1267470136 d:\projects\fantasy2c\include\fantasy2c\colortone.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+
+1267470136 d:\projects\fantasy2c\include\fantasy2c\viewport.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+
+1268153362 source:d:\projects\fantasy2c\lib\audio.cpp
+	<Fantasy2C/Audio.hpp>
+
+1268677934 d:\projects\fantasy2c\include\fantasy2c\audio.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/GameError.hpp>
+
+1269357276 source:d:\projects\fantasy2c\lib\basic.cpp
+	<Fantasy2C/Basic.hpp>
+
+1267465916 source:d:\projects\fantasy2c\lib\bitmap.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1267465974 source:d:\projects\fantasy2c\lib\bitmap2.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1267465146 source:d:\projects\fantasy2c\lib\bitmap_constructor.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1267466686 source:d:\projects\fantasy2c\lib\bitmap_constructor2.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1267466588 source:d:\projects\fantasy2c\lib\color.cpp
+	<Fantasy2C/Color.hpp>
+
+1267465146 source:d:\projects\fantasy2c\lib\colortone.cpp
+	<Fantasy2C/ColorTone.hpp>
+
+1267983096 source:d:\projects\fantasy2c\lib\font.cpp
+	<Fantasy2C/Font.hpp>
+
+1267984682 d:\projects\fantasy2c\include\fantasy2c\font.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/Bitmap.hpp>
+
+1269869933 source:d:\projects\fantasy2c\lib\fontsprite.cpp
+	<Fantasy2C/FontSprite.hpp>
+
+1268782928 d:\projects\fantasy2c\include\fantasy2c\fontsprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+	<string>
+	<vector>
+
+1269870453 d:\projects\fantasy2c\include\fantasy2c\spritebase.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Bitmap.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+	<Fantasy2C/Viewport.hpp>
+
+1267982550 source:d:\projects\fantasy2c\lib\gameerror.cpp
+	<Fantasy2C/GameError.hpp>
+
+1268678178 source:d:\projects\fantasy2c\lib\input.cpp
+	<Fantasy2C/Input.hpp>
+
+1268783328 d:\projects\fantasy2c\include\fantasy2c\input.hpp
+	<Fantasy2C/Basic.hpp>
+
+1269869933 source:d:\projects\fantasy2c\lib\plane.cpp
+	<Fantasy2C/Plane.hpp>
+
+1267470136 d:\projects\fantasy2c\include\fantasy2c\plane.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1267465144 source:d:\projects\fantasy2c\lib\rect.cpp
+	<Fantasy2C/Rect.hpp>
+
+1269869933 source:d:\projects\fantasy2c\lib\simplesprite.cpp
+	<Fantasy2C/SimpleSprite.hpp>
+
+1269875679 d:\projects\fantasy2c\include\fantasy2c\simplesprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1269869933 source:d:\projects\fantasy2c\lib\sprite.cpp
+	<Fantasy2C/Sprite.hpp>
+
+1267470136 d:\projects\fantasy2c\include\fantasy2c\sprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1269875773 source:d:\projects\fantasy2c\lib\spritebase.cpp
+	<Fantasy2C/SpriteBase.hpp>
+
+1267465142 source:d:\projects\fantasy2c\lib\viewport.cpp
+	<Fantasy2C/Viewport.hpp>
+
+1269441156 source:d:\projects\fantasy2c\lib\window.cpp
+	<Fantasy2C/Window.hpp>
+
+1268783328 d:\projects\fantasy2c\include\fantasy2c\window.hpp
+	<Fantasy2C/Basic.hpp>
+	<fstream>
+	<string>
+
+1269877592 source:d:\projects\fantasy2c\lib\shadergl.cpp
+	<Fantasy2C/ShaderGL.hpp>
+
+1269877642 d:\projects\fantasy2c\include\fantasy2c\shadergl.hpp
+	<Fantasy2C/Basic.hpp>
+
+1269021598 d:\projects\fantasy2c\include\fantasy2c\wglext.h
+	<windows.h>
+
+1269018023 d:\projects\fantasy2c\include\fantasy2c\glxext.h
+	<windows.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1281263252 source:c:\users\kiba\projects\fantasy2c\lib\arraysprite.cpp
+	<Fantasy2C/ArraySprite.hpp>
+
+1281263180 c:\users\kiba\projects\fantasy2c\include\fantasy2c\arraysprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Bitmap.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+	<Fantasy2C/Viewport.hpp>
+	<Fantasy2C/RenderManager.hpp>
+
+1281264344 c:\users\kiba\projects\fantasy2c\include\fantasy2c\basic.hpp
+	<cmath>
+	<cstdio>
+	<cstddef>
+	<cstdlib>
+	<cstdarg>
+	<cstring>
+	<ctime>
+	<algorithm>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<sstream>
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<IL/il.h>
+	<IL/ilu.h>
+	<audiere.h>
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+	<freetype/ftoutln.h>
+	<freetype/fttrigon.h>
+	<GL/glfw.h>
+	"glext.h"
+	"wglext.h"
+	"glext.h"
+	<GL/glx.h>
+	<GL/glxext.h>
+
+1236467006 c:\users\kiba\projects\fantasy2c\windows\include\il\il.h
+	<stdio.h>
+	<limits.h>
+	<wchar.h>
+
+1236467006 c:\users\kiba\projects\fantasy2c\windows\include\il\ilu.h
+	<IL/il.h>
+
+1265107334 c:\users\kiba\projects\fantasy2c\windows\include\audiere.h
+	<vector>
+	<string>
+
+1143192308 c:\users\kiba\projects\fantasy2c\windows\include\ft2build.h
+	<freetype/config/ftheader.h>
+
+1168327256 c:\users\kiba\projects\fantasy2c\windows\include\freetype\config\ftheader.h
+
+1183403160 c:\users\kiba\projects\fantasy2c\windows\include\freetype\freetype.h
+	<ft2build.h>
+
+1147435990 c:\users\kiba\projects\fantasy2c\windows\include\freetype\ftglyph.h
+	<ft2build.h>
+
+1170071316 c:\users\kiba\projects\fantasy2c\windows\include\freetype\ftoutln.h
+	<ft2build.h>
+
+1170138432 c:\users\kiba\projects\fantasy2c\windows\include\freetype\fttrigon.h
+
+1188664356 c:\users\kiba\projects\fantasy2c\windows\include\gl\glfw.h
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1269014454 c:\users\kiba\projects\fantasy2c\include\fantasy2c\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1269014400 c:\users\kiba\projects\fantasy2c\include\fantasy2c\wglext.h
+	<windows.h>
+
+1281253380 c:\users\kiba\projects\fantasy2c\include\fantasy2c\bitmap.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/GameError.hpp>
+
+1281768527 c:\users\kiba\projects\fantasy2c\include\fantasy2c\rect.hpp
+	<Fantasy2C/Basic.hpp>
+
+1281253380 c:\users\kiba\projects\fantasy2c\include\fantasy2c\color.hpp
+	<Fantasy2C/Basic.hpp>
+
+1281253381 c:\users\kiba\projects\fantasy2c\include\fantasy2c\gameerror.hpp
+	<Fantasy2C/Basic.hpp>
+	<string>
+	<iostream>
+	<fstream>
+
+1281253381 c:\users\kiba\projects\fantasy2c\include\fantasy2c\colortone.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+
+1281253238 c:\users\kiba\projects\fantasy2c\include\fantasy2c\viewport.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+
+1279788610 c:\users\kiba\projects\fantasy2c\include\fantasy2c\rendermanager.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Bitmap.hpp>
+
+1278508618 source:c:\users\kiba\projects\fantasy2c\lib\audio.cpp
+	<Fantasy2C/Audio.hpp>
+
+1278506902 c:\users\kiba\projects\fantasy2c\include\fantasy2c\audio.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/GameError.hpp>
+
+1278062040 source:c:\users\kiba\projects\fantasy2c\lib\basic.cpp
+	<Fantasy2C/Basic.hpp>
+
+1280075834 source:c:\users\kiba\projects\fantasy2c\lib\bitmap.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1277786690 source:c:\users\kiba\projects\fantasy2c\lib\bitmap2.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1280247181 source:c:\users\kiba\projects\fantasy2c\lib\bitmap_constructor.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1280246683 source:c:\users\kiba\projects\fantasy2c\lib\bitmap_constructor2.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1280994101 source:c:\users\kiba\projects\fantasy2c\lib\color.cpp
+	<Fantasy2C/Color.hpp>
+
+1280994250 source:c:\users\kiba\projects\fantasy2c\lib\colortone.cpp
+	<Fantasy2C/ColorTone.hpp>
+
+1280246391 source:c:\users\kiba\projects\fantasy2c\lib\font.cpp
+	<Fantasy2C/Font.hpp>
+
+1281253381 c:\users\kiba\projects\fantasy2c\include\fantasy2c\font.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/Bitmap.hpp>
+
+1281263301 source:c:\users\kiba\projects\fantasy2c\lib\fontsprite.cpp
+	<Fantasy2C/FontSprite.hpp>
+
+1281263180 c:\users\kiba\projects\fantasy2c\include\fantasy2c\fontsprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+	<Fantasy2C/Font.hpp>
+	<string>
+	<vector>
+
+1281263180 c:\users\kiba\projects\fantasy2c\include\fantasy2c\spritebase.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Bitmap.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+	<Fantasy2C/Viewport.hpp>
+	<Fantasy2C/RenderManager.hpp>
+
+1277584002 source:c:\users\kiba\projects\fantasy2c\lib\gameerror.cpp
+	<Fantasy2C/GameError.hpp>
+
+1268670978 source:c:\users\kiba\projects\fantasy2c\lib\input.cpp
+	<Fantasy2C/Input.hpp>
+
+1280994804 c:\users\kiba\projects\fantasy2c\include\fantasy2c\input.hpp
+	<Fantasy2C/Basic.hpp>
+
+1281263366 source:c:\users\kiba\projects\fantasy2c\lib\plane.cpp
+	<Fantasy2C/Plane.hpp>
+
+1281263180 c:\users\kiba\projects\fantasy2c\include\fantasy2c\plane.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1281527615 source:c:\users\kiba\projects\fantasy2c\lib\rect.cpp
+	<Fantasy2C/Rect.hpp>
+
+1279789320 source:c:\users\kiba\projects\fantasy2c\lib\rendermanager.cpp
+	<Fantasy2C/RenderManager.hpp>
+
+1281263457 source:c:\users\kiba\projects\fantasy2c\lib\shadergl.cpp
+	<Fantasy2C/ShaderGL.hpp>
+
+1281263180 c:\users\kiba\projects\fantasy2c\include\fantasy2c\shadergl.hpp
+	<Fantasy2C/Basic.hpp>
+
+1281263549 source:c:\users\kiba\projects\fantasy2c\lib\simplesprite.cpp
+	<Fantasy2C/SimpleSprite.hpp>
+
+1281263180 c:\users\kiba\projects\fantasy2c\include\fantasy2c\simplesprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1281263549 source:c:\users\kiba\projects\fantasy2c\lib\sprite.cpp
+	<Fantasy2C/Sprite.hpp>
+
+1281263180 c:\users\kiba\projects\fantasy2c\include\fantasy2c\sprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1280246391 source:c:\users\kiba\projects\fantasy2c\lib\spritebase.cpp
+	<Fantasy2C/SpriteBase.hpp>
+
+1278270536 source:c:\users\kiba\projects\fantasy2c\lib\viewport.cpp
+	<Fantasy2C/Viewport.hpp>
+
+1281273411 source:c:\users\kiba\projects\fantasy2c\lib\window.cpp
+	<Fantasy2C/Window.hpp>
+
+1281633346 c:\users\kiba\projects\fantasy2c\include\fantasy2c\window.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<fstream>
+	<string>
+
+1281263254 source:i:\projects\fantasy2c\lib\arraysprite.cpp
+	<Fantasy2C/ArraySprite.hpp>
+
+1281263182 i:\projects\fantasy2c\include\fantasy2c\arraysprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Bitmap.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+	<Fantasy2C/Viewport.hpp>
+	<Fantasy2C/RenderManager.hpp>
+
+1281264346 i:\projects\fantasy2c\include\fantasy2c\basic.hpp
+	<cmath>
+	<cstdio>
+	<cstddef>
+	<cstdlib>
+	<cstdarg>
+	<cstring>
+	<ctime>
+	<algorithm>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<sstream>
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<IL/il.h>
+	<IL/ilu.h>
+	<audiere.h>
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+	<freetype/ftoutln.h>
+	<freetype/fttrigon.h>
+	<GL/glfw.h>
+	"glext.h"
+	"wglext.h"
+	"glext.h"
+	<GL/glx.h>
+	<GL/glxext.h>
+
+1236467006 i:\projects\fantasy2c\windows\include\il\il.h
+	<stdio.h>
+	<limits.h>
+	<wchar.h>
+
+1236467006 i:\projects\fantasy2c\windows\include\il\ilu.h
+	<IL/il.h>
+
+1265107334 i:\projects\fantasy2c\windows\include\audiere.h
+	<vector>
+	<string>
+
+1143192308 i:\projects\fantasy2c\windows\include\ft2build.h
+	<freetype/config/ftheader.h>
+
+1168327256 i:\projects\fantasy2c\windows\include\freetype\config\ftheader.h
+
+1183403160 i:\projects\fantasy2c\windows\include\freetype\freetype.h
+	<ft2build.h>
+
+1147435990 i:\projects\fantasy2c\windows\include\freetype\ftglyph.h
+	<ft2build.h>
+
+1170071316 i:\projects\fantasy2c\windows\include\freetype\ftoutln.h
+	<ft2build.h>
+
+1170138432 i:\projects\fantasy2c\windows\include\freetype\fttrigon.h
+
+1188664356 i:\projects\fantasy2c\windows\include\gl\glfw.h
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1269014454 i:\projects\fantasy2c\include\fantasy2c\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1269014400 i:\projects\fantasy2c\include\fantasy2c\wglext.h
+	<windows.h>
+
+1281253382 i:\projects\fantasy2c\include\fantasy2c\bitmap.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/GameError.hpp>
+
+1281768528 i:\projects\fantasy2c\include\fantasy2c\rect.hpp
+	<Fantasy2C/Basic.hpp>
+
+1281253382 i:\projects\fantasy2c\include\fantasy2c\color.hpp
+	<Fantasy2C/Basic.hpp>
+
+1281253382 i:\projects\fantasy2c\include\fantasy2c\gameerror.hpp
+	<Fantasy2C/Basic.hpp>
+	<string>
+	<iostream>
+	<fstream>
+
+1281253382 i:\projects\fantasy2c\include\fantasy2c\colortone.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+
+1281253240 i:\projects\fantasy2c\include\fantasy2c\viewport.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+
+1279788610 i:\projects\fantasy2c\include\fantasy2c\rendermanager.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Bitmap.hpp>
+
+1278062040 source:i:\projects\fantasy2c\lib\basic.cpp
+	<Fantasy2C/Basic.hpp>
+
+1280075836 source:i:\projects\fantasy2c\lib\bitmap.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1277786690 source:i:\projects\fantasy2c\lib\bitmap2.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1280247182 source:i:\projects\fantasy2c\lib\bitmap_constructor.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1280246684 source:i:\projects\fantasy2c\lib\bitmap_constructor2.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1280994102 source:i:\projects\fantasy2c\lib\color.cpp
+	<Fantasy2C/Color.hpp>
+
+1280994252 source:i:\projects\fantasy2c\lib\colortone.cpp
+	<Fantasy2C/ColorTone.hpp>
+
+1280246392 source:i:\projects\fantasy2c\lib\font.cpp
+	<Fantasy2C/Font.hpp>
+
+1281253382 i:\projects\fantasy2c\include\fantasy2c\font.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/Bitmap.hpp>
+
+1281263302 source:i:\projects\fantasy2c\lib\fontsprite.cpp
+	<Fantasy2C/FontSprite.hpp>
+
+1281263182 i:\projects\fantasy2c\include\fantasy2c\fontsprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+	<Fantasy2C/Font.hpp>
+	<string>
+	<vector>
+
+1281263182 i:\projects\fantasy2c\include\fantasy2c\spritebase.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Bitmap.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+	<Fantasy2C/Viewport.hpp>
+	<Fantasy2C/RenderManager.hpp>
+
+1277584002 source:i:\projects\fantasy2c\lib\gameerror.cpp
+	<Fantasy2C/GameError.hpp>
+
+1268670978 source:i:\projects\fantasy2c\lib\input.cpp
+	<Fantasy2C/Input.hpp>
+
+1280994806 i:\projects\fantasy2c\include\fantasy2c\input.hpp
+	<Fantasy2C/Basic.hpp>
+
+1281263368 source:i:\projects\fantasy2c\lib\plane.cpp
+	<Fantasy2C/Plane.hpp>
+
+1281263182 i:\projects\fantasy2c\include\fantasy2c\plane.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1281768528 source:i:\projects\fantasy2c\lib\rect.cpp
+	<Fantasy2C/Rect.hpp>
+
+1279789320 source:i:\projects\fantasy2c\lib\rendermanager.cpp
+	<Fantasy2C/RenderManager.hpp>
+
+1281263458 source:i:\projects\fantasy2c\lib\shadergl.cpp
+	<Fantasy2C/ShaderGL.hpp>
+
+1281263182 i:\projects\fantasy2c\include\fantasy2c\shadergl.hpp
+	<Fantasy2C/Basic.hpp>
+
+1281263550 source:i:\projects\fantasy2c\lib\simplesprite.cpp
+	<Fantasy2C/SimpleSprite.hpp>
+
+1281263182 i:\projects\fantasy2c\include\fantasy2c\simplesprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1281263550 source:i:\projects\fantasy2c\lib\sprite.cpp
+	<Fantasy2C/Sprite.hpp>
+
+1281263182 i:\projects\fantasy2c\include\fantasy2c\sprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1280246392 source:i:\projects\fantasy2c\lib\spritebase.cpp
+	<Fantasy2C/SpriteBase.hpp>
+
+1278270536 source:i:\projects\fantasy2c\lib\viewport.cpp
+	<Fantasy2C/Viewport.hpp>
+
+1281273412 source:i:\projects\fantasy2c\lib\window.cpp
+	<Fantasy2C/Window.hpp>
+
+1281633348 i:\projects\fantasy2c\include\fantasy2c\window.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<fstream>
+	<string>
+
+1281770200 source:i:\projects\fantasy2c\lib\audio.cpp
+	<Fantasy2C/Audio.hpp>
+
+1278506902 i:\projects\fantasy2c\include\fantasy2c\audio.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/GameError.hpp>
+
+1282767484 source:f:\projects\fantasy2c\src\arraysprite.cpp
+	<Fantasy2C/ArraySprite.hpp>
+
+1281263182 f:\projects\fantasy2c\include\fantasy2c\arraysprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Bitmap.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+	<Fantasy2C/Viewport.hpp>
+	<Fantasy2C/RenderManager.hpp>
+
+1290907250 f:\projects\fantasy2c\include\fantasy2c\basic.hpp
+	<cmath>
+	<cstdio>
+	<cstddef>
+	<cstdlib>
+	<cstdarg>
+	<cstring>
+	<ctime>
+	<algorithm>
+	<iostream>
+	<fstream>
+	<vector>
+	<map>
+	<string>
+	<sstream>
+	<limits>
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<IL/il.h>
+	<IL/ilu.h>
+	<audiere.h>
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+	<freetype/ftoutln.h>
+	<freetype/fttrigon.h>
+	<GL/glfw.h>
+	"glext.h"
+	"wglext.h"
+	"glext.h"
+	<GL/glx.h>
+	<GL/glxext.h>
+
+1236467006 f:\projects\fantasy2c\windows\include\il\il.h
+	<stdio.h>
+	<limits.h>
+	<wchar.h>
+
+1236467006 f:\projects\fantasy2c\windows\include\il\ilu.h
+	<IL/il.h>
+
+1290425768 f:\projects\fantasy2c\windows\include\audiere.h
+	<vector>
+	<string>
+
+1143199508 f:\projects\fantasy2c\windows\include\ft2build.h
+	<freetype/config/ftheader.h>
+
+1237038326 f:\projects\fantasy2c\windows\include\freetype\config\ftheader.h
+
+1281120718 f:\projects\fantasy2c\windows\include\freetype\freetype.h
+	<ft2build.h>
+
+1255848464 f:\projects\fantasy2c\windows\include\freetype\ftglyph.h
+	<ft2build.h>
+
+1262524138 f:\projects\fantasy2c\windows\include\freetype\ftoutln.h
+	<ft2build.h>
+
+1237038326 f:\projects\fantasy2c\windows\include\freetype\fttrigon.h
+
+1281281824 f:\projects\fantasy2c\windows\include\gl\glfw.h
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1269014454 f:\projects\fantasy2c\include\fantasy2c\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1269014400 f:\projects\fantasy2c\include\fantasy2c\wglext.h
+	<windows.h>
+
+1290888668 f:\projects\fantasy2c\include\fantasy2c\bitmap.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/GameError.hpp>
+
+1281768528 f:\projects\fantasy2c\include\fantasy2c\rect.hpp
+	<Fantasy2C/Basic.hpp>
+
+1285087692 f:\projects\fantasy2c\include\fantasy2c\color.hpp
+	<Fantasy2C/operatorMacros.hpp>
+	<Fantasy2C/Basic.hpp>
+
+1287319014 f:\projects\fantasy2c\include\fantasy2c\operatormacros.hpp
+
+1290898892 f:\projects\fantasy2c\include\fantasy2c\gameerror.hpp
+	<Fantasy2C/Basic.hpp>
+	<string>
+	<iostream>
+	<fstream>
+
+1281253382 f:\projects\fantasy2c\include\fantasy2c\colortone.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+
+1281253240 f:\projects\fantasy2c\include\fantasy2c\viewport.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+
+1290356614 f:\projects\fantasy2c\include\fantasy2c\rendermanager.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Bitmap.hpp>
+
+1283343460 source:f:\projects\fantasy2c\src\arraysprite_render.cpp
+	<Fantasy2C/ArraySprite.hpp>
+
+1290898996 source:f:\projects\fantasy2c\src\audio.cpp
+	<Fantasy2C/Audio.hpp>
+
+1290437464 f:\projects\fantasy2c\include\fantasy2c\audio.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/GameError.hpp>
+
+1278062040 source:f:\projects\fantasy2c\src\basic.cpp
+	<Fantasy2C/Basic.hpp>
+
+1290895950 source:f:\projects\fantasy2c\src\bitmap.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1290895952 source:f:\projects\fantasy2c\src\bitmap_constructor.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1290895952 source:f:\projects\fantasy2c\src\bitmap_hsv.cpp
+	<Fantasy2C/Bitmap.hpp>
+
+1290895954 source:f:\projects\fantasy2c\src\color.cpp
+	<Fantasy2C/Color.hpp>
+
+1287316896 source:f:\projects\fantasy2c\src\color3.cpp
+	<Fantasy2C/Color3.hpp>
+
+1287316896 f:\projects\fantasy2c\include\fantasy2c\color3.hpp
+	<Fantasy2C/operatorMacros.hpp>
+	<Fantasy2C/Color.hpp>
+
+1287317012 source:f:\projects\fantasy2c\src\color4.cpp
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/Color4.hpp>
+
+1287316898 f:\projects\fantasy2c\include\fantasy2c\color4.hpp
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/Color3.hpp>
+
+1287315930 source:f:\projects\fantasy2c\src\colortone.cpp
+	<Fantasy2C/ColorTone.hpp>
+
+1290897344 source:f:\projects\fantasy2c\src\font.cpp
+	<Fantasy2C/Font.hpp>
+
+1281253382 f:\projects\fantasy2c\include\fantasy2c\font.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/Bitmap.hpp>
+
+1290361096 source:f:\projects\fantasy2c\src\fontsprite.cpp
+	<Fantasy2C/FontSprite.hpp>
+
+1290893642 f:\projects\fantasy2c\include\fantasy2c\fontsprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+	<Fantasy2C/Font.hpp>
+	<Fantasy2C/GameError.hpp>
+	<string>
+	<vector>
+
+1281263182 f:\projects\fantasy2c\include\fantasy2c\spritebase.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Bitmap.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Color.hpp>
+	<Fantasy2C/ColorTone.hpp>
+	<Fantasy2C/Viewport.hpp>
+	<Fantasy2C/RenderManager.hpp>
+
+1283173350 source:f:\projects\fantasy2c\src\fontsprite_render.cpp
+	<Fantasy2C/FontSprite.hpp>
+
+1290899358 source:f:\projects\fantasy2c\src\gameerror.cpp
+	<Fantasy2C/GameError.hpp>
+
+1268670978 source:f:\projects\fantasy2c\src\input.cpp
+	<Fantasy2C/Input.hpp>
+
+1280994806 f:\projects\fantasy2c\include\fantasy2c\input.hpp
+	<Fantasy2C/Basic.hpp>
+
+1283027778 source:f:\projects\fantasy2c\src\plane.cpp
+	<Fantasy2C/Plane.hpp>
+
+1281263182 f:\projects\fantasy2c\include\fantasy2c\plane.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1283173350 source:f:\projects\fantasy2c\src\plane_render.cpp
+	<Fantasy2C/Plane.hpp>
+
+1281768528 source:f:\projects\fantasy2c\src\rect.cpp
+	<Fantasy2C/Rect.hpp>
+
+1283173348 source:f:\projects\fantasy2c\src\rendermanager.cpp
+	<Fantasy2C/RenderManager.hpp>
+
+1281263458 source:f:\projects\fantasy2c\src\shadergl.cpp
+	<Fantasy2C/ShaderGL.hpp>
+
+1281263182 f:\projects\fantasy2c\include\fantasy2c\shadergl.hpp
+	<Fantasy2C/Basic.hpp>
+
+1283027778 source:f:\projects\fantasy2c\src\simplesprite.cpp
+	<Fantasy2C/SimpleSprite.hpp>
+
+1281263182 f:\projects\fantasy2c\include\fantasy2c\simplesprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1283027778 source:f:\projects\fantasy2c\src\simplesprite_render.cpp
+	<Fantasy2C/SimpleSprite.hpp>
+
+1290426220 source:f:\projects\fantasy2c\src\softwarerendering.cpp
+	<Fantasy2C/SoftwareRendering.hpp>
+
+1290900534 f:\projects\fantasy2c\include\fantasy2c\softwarerendering.hpp
+	<Fantasy2C/SoftwareRenderingBasic.hpp>
+
+1290121930 f:\projects\fantasy2c\include\fantasy2c\softwarerenderingbasic.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Color4.hpp>
+	<Fantasy2C/Rect.hpp>
+	<Fantasy2C/Vector4.hpp>
+	<Fantasy2C/Matrix3.hpp>
+	<Fantasy2C/Matrix4.hpp>
+	<Fantasy2C/Texture2D.hpp>
+
+1284737736 f:\projects\fantasy2c\include\fantasy2c\vector4.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Vector2.hpp>
+	<Fantasy2C/Vector3.hpp>
+
+1284737736 f:\projects\fantasy2c\include\fantasy2c\vector2.hpp
+	<Fantasy2C/Basic.hpp>
+
+1284737738 f:\projects\fantasy2c\include\fantasy2c\vector3.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Vector2.hpp>
+
+1289857290 f:\projects\fantasy2c\include\fantasy2c\matrix3.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Vector4.hpp>
+
+1289857292 f:\projects\fantasy2c\include\fantasy2c\matrix4.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Vector4.hpp>
+
+1289861394 f:\projects\fantasy2c\include\fantasy2c\texture2d.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Bitmap.hpp>
+
+1290013130 source:f:\projects\fantasy2c\src\softwarerendering2.cpp
+	<Fantasy2C/SoftwareRendering.hpp>
+
+1290426264 source:f:\projects\fantasy2c\src\softwarerendering_blend.cpp
+	<Fantasy2C/SoftwareRendering.hpp>
+
+1290012194 source:f:\projects\fantasy2c\src\softwarerendering_get.cpp
+	<Fantasy2C/SoftwareRendering.hpp>
+
+1290005988 source:f:\projects\fantasy2c\src\softwarerendering_matrix.cpp
+	<Fantasy2C/SoftwareRendering.hpp>
+
+1290881676 source:f:\projects\fantasy2c\src\softwarerendering_render.cpp
+	<Fantasy2C/SoftwareRendering.hpp>
+
+1290012520 source:f:\projects\fantasy2c\src\softwarerendering_set.cpp
+	<Fantasy2C/SoftwareRendering.hpp>
+
+1290901222 source:f:\projects\fantasy2c\src\softwarerendering_texture.cpp
+	<Fantasy2C/SoftwareRendering.hpp>
+
+1283027902 source:f:\projects\fantasy2c\src\sprite.cpp
+	<Fantasy2C/Sprite.hpp>
+
+1281263182 f:\projects\fantasy2c\include\fantasy2c\sprite.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/SpriteBase.hpp>
+
+1280246392 source:f:\projects\fantasy2c\src\spritebase.cpp
+	<Fantasy2C/SpriteBase.hpp>
+
+1283173350 source:f:\projects\fantasy2c\src\sprite_render.cpp
+	<Fantasy2C/Sprite.hpp>
+
+1289949398 source:f:\projects\fantasy2c\src\texture2d.cpp
+	<Fantasy2C/Texture2D.hpp>
+
+1278270536 source:f:\projects\fantasy2c\src\viewport.cpp
+	<Fantasy2C/Viewport.hpp>
+
+1281273412 source:f:\projects\fantasy2c\src\window.cpp
+	<Fantasy2C/Window.hpp>
+
+1281633348 f:\projects\fantasy2c\include\fantasy2c\window.hpp
+	<Fantasy2C/Basic.hpp>
+	<Fantasy2C/Rect.hpp>
+	<fstream>
+	<string>
+
+1290907556 source:f:\projects\fantasy2c\src\bitmap_image.cpp
+	<Fantasy2C/Bitmap.hpp>
+

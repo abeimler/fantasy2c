@@ -1,0 +1,281 @@
+#Makefile for Fantasy2C
+#
+#@author Alex Beimler (alias kiba)
+#@date 19.2.2010
+#
+#Copyright (C) 2009 Alex Beimler
+#
+#This library is free software
+#you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License
+#as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
+#This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+#without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#See the GNU Lesser General Public License for more details.
+#
+#You should have received a copy of the GNU Lesser General Public License along with this library;
+#if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110, USA 
+
+#Please Setting OS macro
+#	linux		: Linux (g++ comp.) (default)
+#	linuxkcc	: Linux (kcc comp.)
+#	mklinux		: MkLinux (g++ libc5 comp.)
+#	hpux 		: HP-UX (CC comp.)
+#	hpuxacc 	: HP-UX 10.x (aCC comp.)
+#	hpuxg++ 	: HP-UX 10.x (g++ comp.)
+#	aix		: IBM AIX 
+#	aixg++		: IBM AIX (g++ comp.)
+#	solaris 	: Solaris
+#	solaris5	: Solaris 5.0
+#	solarisg++	: Solaris (g++ comp.)
+#	solariskcc	: Solaris (kcc comp.)
+#	solarisx86	: Solaris in Intel
+#	sgi		: SGI
+#	sgi6		: SGI 6.x
+#	sgin32		: SGI 6.x for n32 ABI
+#	sgig++		: SGI (g++ comp.)
+#	sgikcc		: SGI (kcc comp.)
+#	alphag++	: Alpha/OSF
+#	alphacxx	: Alpha/OSF (cxx6 comp.)
+#	freebsd		: FreeBSD
+
+OS			:= linux
+
+#Source Code Dir
+SRCDIR 			:= ./src
+
+#Headers Dir
+HEADERSDIR 		:= ./include/Fantasy2C
+
+#Project Settings
+EXPORTMACRO 		:= FANTASY2C_EXPORTS
+OUTLIB		        := Fantasy2C
+OUTDEF		        := libFantasy2C.def
+OUTIMPLIB	        := libFantasy2C.a
+
+#Debug and Release Setting
+DEBUGFLAGS		:= -g
+RELEASEFLAGS		:= -O2 -s
+
+
+#Linux Settings (default)
+CXX      	        := g++
+LD			:= g++
+INCLUDEDIR	        := /usr/include -I/usr/include/freetype2
+LIBDIR		        := /usr/lib
+BUILDDIR 	        := ./$(OS)
+
+SRCSUF      	        := cpp
+OBJSUF			:= o 
+OUTLIBSUF		:= so
+
+#Librarys Flags
+LIBFLAGS	        := -lGL -lGLU -lX11 -lpthread -lXxf86vm -lXrandr -lm -lIL -lILU -lglfw -laudiere -lfreetype
+
+#Comp. Objs
+CXXFLAGS 	        := -Wall -fPIC -D$(EXPORTMACRO) -I$(INCLUDEDIR) -L$(LIBDIR)
+
+#Linker Flags
+LDFLAGS         	:= 
+
+#Shared (dynamic library) Flags
+SOFLAGS			:= -shared
+
+#Out Flag
+OUTFLAG			:= -o
+#Default Flags
+DEFAULTFLAGS		:= -Wall -D$(EXPORTMACRO) -I$(INCLUDEDIR) -L$(LIBDIR)
+
+ifeq ($(OS),hpux)
+# HP-UX with CC
+CXX           := CC
+CXXFLAGS      := +Z
+LD            := CC
+LDFLAGS       := +a1 -z
+SOFLAGS       := -b
+OUTLIBSUF     := sl
+endif
+
+ifeq ($(OS),hpuxacc)
+# HP-UX 10.x with aCC
+CXX           := aCC
+CXXFLAGS      := +Z
+LD            := aCC
+LDFLAGS       := -z
+SOFLAGS       := -b
+endif
+
+ifeq ($(OS),hpuxg++)
+# HP-UX 10.x with g++
+CXXFLAGS      := -fPIC
+CXX           := g++
+LD            := g++
+LDFLAGS       := 
+SOFLAGS       := -fPIC -shared
+endif
+
+ifeq ($(OS),aix)
+# IBM AIX
+CXX           := xlC
+CXXFLAGS      := 
+LD            := xlC
+LDFLAGS       := 
+SOFLAGS       :=
+endif
+
+ifeq ($(OS),aixg++)
+# IBM AIX with GCC
+CXX           := g++
+CXXFLAGS      := 
+LD            := g++
+LDFLAGS       := 
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),solaris)
+# Solaris CC
+CXX           := /opt/SUNWspro/bin/CC
+CXXFLAGS      := -KPIC
+CXXFLAGS      := -KPIC -compat=4
+LD            := /opt/SUNWspro/bin/CC
+LDFLAGS       := 
+LDFLAGS       := -compat=4
+SOFLAGS       := 
+endif
+
+ifeq ($(OS),solaris5)
+# Solaris CC 5.0
+CXX           := CC
+CXXFLAGS      := -KPIC -D__SunOS_5_6 -library=iostream,no%Cstd
+LD            := CC
+LDFLAGS       := -library=iostream,no%Cstd -o
+SOFLAGS       := 
+endif
+
+ifeq ($(OS),solarisg++)
+# Solaris g++
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := 
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),solariskcc)
+# Solaris kcc
+CXX           := KCC
+CXXFLAGS      := -KPIC
+LD            := KCC
+LDFLAGS       := 
+SOFLAGS       :=
+RELEASEFLAGS  := -O4 -s
+endif
+
+ifeq ($(OS),solarisx86)
+# Solaris CC on Intel
+CXX           := CC
+CXXFLAGS      := -KPIC
+LD            := CC
+LDFLAGS       := 
+SOFLAGS       := 
+endif
+
+ifeq ($(OS),sgi)
+# SGI
+CXX           := CC -n32  -I/usr/include/CC.sgi
+CXXFLAGS      := 
+LD            := CC -n32  -I/usr/include/CC.sgi
+LDFLAGS       := 
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),sgi6)
+# SGI 6.x with g++
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := -Wl,-u,__builtin_new -Wl,-u,__builtin_delete -Wl,-u,__nw__FUiPv
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),sgin32)
+# SGI 6.x with g++ for n32 ABI
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := -L/usr/lib32 -Wl,-woff,134
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),sgig++)
+# SGI with g++
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := -Wl,-u,__builtin_new -Wl,-u,__builtin_delete -Wl,-u,__nw__FUiPv
+SOFLAGS       := -shared
+endif
+
+ifeq ($(OS),sgikcc)
+# SGI with KCC
+CXX           := KCC -n32 --no_exceptions
+CXXFLAGS      := 
+LD            := KCC -n32 --no_exceptions
+LDFLAGS       := 
+SOFLAGS       =
+endif
+
+ifeq ($(OS),alphagcc)
+# Alpha/OSF with g++
+CXX           := g++
+CXXFLAGS      := -fPIC
+LD            := g++
+LDFLAGS       := 
+SOFLAGS       := -Wl,-expect_unresolved,* -shared
+endif
+
+ifeq ($(OS),alphacxx6)
+# Alpha/OSF with cxx6
+CXX           := cxx
+CXXFLAGS      := 
+LD            := cxx
+LDFLAGS       := 
+SOFLAGS       := -Wl,-expect_unresolved,* -shared
+endif
+
+ifeq ($(OS),alphacxx)
+# Alpha/OSF with cxx5
+CXX           := cxx
+CXXFLAGS      := 
+LD            := cxx
+LDFLAGS       := 
+SOFLAGS       := -Wl,-expect_unresolved,* -call_shared
+endif
+
+ifeq ($(OS),linuxkcc)
+# Linux with the KAI compiler
+CXX           = KCC
+CXXFLAGS      = -fPIC +K0
+LD            = KCC
+LDFLAGS       = -O
+SOFLAGS       =
+endif
+
+ifeq ($(OS),mklinux)
+# MkLinux with libc5
+CXX           = g++
+CXXFLAGS      = -O -Wall -fPIC
+LD            = g++
+LDFLAGS       = -O
+SOFLAGS       = -shared -Wl,-soname,
+endif
+
+ifeq ($(OS),freebsd)
+# FreeBSD with libc5
+CXX           = g++
+CXXFLAGS      = -O -pipe -W -Wall -fPIC
+LD            = g++
+LDFLAGS       = -O
+SOFLAGS       = -shared -Wl,-x
+endif
+
+

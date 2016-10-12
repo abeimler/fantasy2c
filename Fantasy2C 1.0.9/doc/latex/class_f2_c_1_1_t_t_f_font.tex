@@ -1,0 +1,131 @@
+\hypertarget{class_f2_c_1_1_t_t_f_font}{
+\section{F2C::TTFFont Class Reference}
+\label{class_f2_c_1_1_t_t_f_font}\index{F2C::TTFFont@{F2C::TTFFont}}
+}
+
+
+Loading TTF(True Type Font) file and Creates a BitmapFont.  
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries TTFLibrary}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_a20b84ac1e80b09afe11ee08945f8988a}{
+\hyperlink{class_f2_c_1_1_t_t_f_font_a20b84ac1e80b09afe11ee08945f8988a}{TTFFont} ()}
+\label{class_f2_c_1_1_t_t_f_font_a20b84ac1e80b09afe11ee08945f8988a}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_t_t_f_font_a55de5d906e4a2a79acd2d930f2dd5d80}{TTFFont} (std::string filename, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} size=\hyperlink{class_f2_c_1_1_t_t_f_font_a5431854a6264e3b1fcb7f99cde02f1a8}{TTFFont::defaultSize}, const \hyperlink{class_f2_c_1_1_color}{Color} \&color=\hyperlink{class_f2_c_1_1_t_t_f_font_ab7f6ea26f4fb213a32ab1a2df7b201e8}{TTFFont::defaultColor}, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} charsperwidth=\hyperlink{class_f2_c_1_1_t_t_f_font_afd75a577433ed3f08eafabe9c49718a0}{TTFFont::defaultCharsperW}, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} charsperheight=\hyperlink{class_f2_c_1_1_t_t_f_font_a14b235548ed14123b78d4436956d9639}{TTFFont::defaultCharsperH})
+\begin{DoxyCompactList}\small\item\em Load a true type font file and creates a BitmapFont. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_t_t_f_font_a3f2ea2a2f2d446a0cf9ac58e9e70ae49}{loadFile} (std::string filename, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} size=\hyperlink{class_f2_c_1_1_t_t_f_font_a5431854a6264e3b1fcb7f99cde02f1a8}{TTFFont::defaultSize}, const \hyperlink{class_f2_c_1_1_color}{Color} \&color=\hyperlink{class_f2_c_1_1_t_t_f_font_ab7f6ea26f4fb213a32ab1a2df7b201e8}{TTFFont::defaultColor}, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} charsperwidth=\hyperlink{class_f2_c_1_1_t_t_f_font_afd75a577433ed3f08eafabe9c49718a0}{TTFFont::defaultCharsperW}, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} charsperheight=\hyperlink{class_f2_c_1_1_t_t_f_font_a14b235548ed14123b78d4436956d9639}{TTFFont::defaultCharsperH})
+\begin{DoxyCompactList}\small\item\em Load a true type font file and creates a BitmapFont. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_t_t_f_font_afbbfad00d11e781919bd9b88595220c1}{copyBitmap} (\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&cbitmap) const 
+\begin{DoxyCompactList}\small\item\em Copy BitmapFont into destination bitmap. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_a973eca55478db87c39fb814fcc232ac6}{
+std::string \hyperlink{class_f2_c_1_1_t_t_f_font_a973eca55478db87c39fb814fcc232ac6}{getFilename} () const }
+\label{class_f2_c_1_1_t_t_f_font_a973eca55478db87c39fb814fcc232ac6}
+
+\begin{DoxyCompactList}\small\item\em getMethode: TTF Filename \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_ac16efd7c2834027475a64619e965f544}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_t_t_f_font_ac16efd7c2834027475a64619e965f544}{getSize} () const }
+\label{class_f2_c_1_1_t_t_f_font_ac16efd7c2834027475a64619e965f544}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Fint Size \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_a618029b50e7385611dbe5fba673cd985}{
+\hyperlink{class_f2_c_1_1_color}{Color} \hyperlink{class_f2_c_1_1_t_t_f_font_a618029b50e7385611dbe5fba673cd985}{getColor} () const }
+\label{class_f2_c_1_1_t_t_f_font_a618029b50e7385611dbe5fba673cd985}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Font \hyperlink{class_f2_c_1_1_color}{Color} \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_a70e5eb65c951158ef1515afaed455b16}{
+const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \& \hyperlink{class_f2_c_1_1_t_t_f_font_a70e5eb65c951158ef1515afaed455b16}{getBitmap} () const }
+\label{class_f2_c_1_1_t_t_f_font_a70e5eb65c951158ef1515afaed455b16}
+
+\begin{DoxyCompactList}\small\item\em getMethode: BitmapFont \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_rect}{Rect} \hyperlink{class_f2_c_1_1_t_t_f_font_ae9122df089408bb62dc4cdc99241afc1}{getCharSize} (\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} c) const 
+\begin{DoxyCompactList}\small\item\em getMethode: The size (in pixel) of a Character. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_afd75a577433ed3f08eafabe9c49718a0}{
+static \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_t_t_f_font_afd75a577433ed3f08eafabe9c49718a0}{defaultCharsperW}}
+\label{class_f2_c_1_1_t_t_f_font_afd75a577433ed3f08eafabe9c49718a0}
+
+\begin{DoxyCompactList}\small\item\em Standard characters per column (default: 16). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_a14b235548ed14123b78d4436956d9639}{
+static \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_t_t_f_font_a14b235548ed14123b78d4436956d9639}{defaultCharsperH}}
+\label{class_f2_c_1_1_t_t_f_font_a14b235548ed14123b78d4436956d9639}
+
+\begin{DoxyCompactList}\small\item\em Standard characters per line (default: 16). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_a75376c53471c0950edf5fe4389efa223}{
+static std::string \hyperlink{class_f2_c_1_1_t_t_f_font_a75376c53471c0950edf5fe4389efa223}{defaultName}}
+\label{class_f2_c_1_1_t_t_f_font_a75376c53471c0950edf5fe4389efa223}
+
+\begin{DoxyCompactList}\small\item\em Default filename (default: \char`\"{}Arial.ttf\char`\"{}). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_a5431854a6264e3b1fcb7f99cde02f1a8}{
+static \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_t_t_f_font_a5431854a6264e3b1fcb7f99cde02f1a8}{defaultSize}}
+\label{class_f2_c_1_1_t_t_f_font_a5431854a6264e3b1fcb7f99cde02f1a8}
+
+\begin{DoxyCompactList}\small\item\em Default font size (default: 16). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_t_t_f_font_ab7f6ea26f4fb213a32ab1a2df7b201e8}{
+static \hyperlink{class_f2_c_1_1_color}{Color} \hyperlink{class_f2_c_1_1_t_t_f_font_ab7f6ea26f4fb213a32ab1a2df7b201e8}{defaultColor}}
+\label{class_f2_c_1_1_t_t_f_font_ab7f6ea26f4fb213a32ab1a2df7b201e8}
+
+\begin{DoxyCompactList}\small\item\em Standatd font color (Default: (255,255,255,255)). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loading TTF(True Type Font) file and Creates a BitmapFont. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_t_t_f_font_a55de5d906e4a2a79acd2d930f2dd5d80}{
+\index{F2C::TTFFont@{F2C::TTFFont}!TTFFont@{TTFFont}}
+\index{TTFFont@{TTFFont}!F2C::TTFFont@{F2C::TTFFont}}
+\subsubsection[{TTFFont}]{\setlength{\rightskip}{0pt plus 5cm}F2C::TTFFont::TTFFont (std::string {\em filename}, \/  {\bf uint} {\em size} = {\ttfamily {\bf TTFFont::defaultSize}}, \/  const {\bf Color} \& {\em color} = {\ttfamily {\bf TTFFont::defaultColor}}, \/  {\bf uint} {\em charsperwidth} = {\ttfamily {\bf TTFFont::defaultCharsperW}}, \/  {\bf uint} {\em charsperheight} = {\ttfamily {\bf TTFFont::defaultCharsperH}})}}
+\label{class_f2_c_1_1_t_t_f_font_a55de5d906e4a2a79acd2d930f2dd5d80}
+
+
+Load a true type font file and creates a BitmapFont. 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]TTF filename \item[{\em size}]Font size \item[{\em color}]Font color \item[{\em charsperwidth}]Characters per column \item[{\em charsperheight}]Characters per line \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_t_t_f_font_afbbfad00d11e781919bd9b88595220c1}{
+\index{F2C::TTFFont@{F2C::TTFFont}!copyBitmap@{copyBitmap}}
+\index{copyBitmap@{copyBitmap}!F2C::TTFFont@{F2C::TTFFont}}
+\subsubsection[{copyBitmap}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::TTFFont::copyBitmap ({\bf Bitmap} \& {\em cbitmap}) const}}
+\label{class_f2_c_1_1_t_t_f_font_afbbfad00d11e781919bd9b88595220c1}
+
+
+Copy BitmapFont into destination bitmap. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cbitmap}]Destination bitmap \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_t_t_f_font_ae9122df089408bb62dc4cdc99241afc1}{
+\index{F2C::TTFFont@{F2C::TTFFont}!getCharSize@{getCharSize}}
+\index{getCharSize@{getCharSize}!F2C::TTFFont@{F2C::TTFFont}}
+\subsubsection[{getCharSize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rect} F2C::TTFFont::getCharSize ({\bf uint8} {\em c}) const}}
+\label{class_f2_c_1_1_t_t_f_font_ae9122df089408bb62dc4cdc99241afc1}
+
+
+getMethode: The size (in pixel) of a Character. 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]Character (ASCII: 0-\/255) \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_t_t_f_font_a3f2ea2a2f2d446a0cf9ac58e9e70ae49}{
+\index{F2C::TTFFont@{F2C::TTFFont}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!F2C::TTFFont@{F2C::TTFFont}}
+\subsubsection[{loadFile}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::TTFFont::loadFile (std::string {\em filename}, \/  {\bf uint} {\em size} = {\ttfamily {\bf TTFFont::defaultSize}}, \/  const {\bf Color} \& {\em color} = {\ttfamily {\bf TTFFont::defaultColor}}, \/  {\bf uint} {\em charsperwidth} = {\ttfamily {\bf TTFFont::defaultCharsperW}}, \/  {\bf uint} {\em charsperheight} = {\ttfamily {\bf TTFFont::defaultCharsperH}})}}
+\label{class_f2_c_1_1_t_t_f_font_a3f2ea2a2f2d446a0cf9ac58e9e70ae49}
+
+
+Load a true type font file and creates a BitmapFont. 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]TTF filename \item[{\em size}]Font size \item[{\em color}]Font color \item[{\em charsperwidth}]Characters per column \item[{\em charsperheight}]Characters per line \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}

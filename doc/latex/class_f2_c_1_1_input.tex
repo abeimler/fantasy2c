@@ -1,0 +1,360 @@
+\hypertarget{class_f2_c_1_1_input}{
+\section{F2C::Input Class Reference}
+\label{class_f2_c_1_1_input}\index{F2C::Input@{F2C::Input}}
+}
+
+
+\hyperlink{class_f2_c_1_1_input}{Input} Handle from the keyboard, mouse, joystick and \hyperlink{class_f2_c_1_1_window}{Window}.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_input_a02818fd4fd45404f7731709bf1aba6b8}{
+\hyperlink{class_f2_c_1_1_input_a02818fd4fd45404f7731709bf1aba6b8}{Input} ()}
+\label{class_f2_c_1_1_input_a02818fd4fd45404f7731709bf1aba6b8}
+
+\begin{DoxyCompactList}\small\item\em Initializes the input functions. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_input_ab838e59b463c285559226d2ca99c30ef}{update} (int frame)
+\begin{DoxyCompactList}\small\item\em update Press and Repeat. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_a32e688e7274cd0536c6fb10a85216590}{
+void \hyperlink{class_f2_c_1_1_input_a32e688e7274cd0536c6fb10a85216590}{update} ()}
+\label{class_f2_c_1_1_input_a32e688e7274cd0536c6fb10a85216590}
+
+\begin{DoxyCompactList}\small\item\em update Press and Repeat Handle,this function should only be called once per frame. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_a6f9a88f45293e60c476637f6ffd06430}{
+void \hyperlink{class_f2_c_1_1_input_a6f9a88f45293e60c476637f6ffd06430}{updatePress} ()}
+\label{class_f2_c_1_1_input_a6f9a88f45293e60c476637f6ffd06430}
+
+\begin{DoxyCompactList}\small\item\em update Press Handle \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_input_a95ad2099b6d764658afd714fed48d2cf}{updateRepeat} (int frame)
+\begin{DoxyCompactList}\small\item\em update Repeat Handle,this function should only be called once per frame. \par
+ Exit function, if the current frame is equal to the last frame. \par
+ e.g. (when you use \hyperlink{class_f2_c_1_1_window}{F2C::Window} and UpdateGLScreen()) \par
+ \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_addddf13154ab0e5fd56026f25cfa404b}{
+void \hyperlink{class_f2_c_1_1_input_addddf13154ab0e5fd56026f25cfa404b}{updateRepeat} ()}
+\label{class_f2_c_1_1_input_addddf13154ab0e5fd56026f25cfa404b}
+
+\begin{DoxyCompactList}\small\item\em update Repeat Handle,this function should only be called once per frame. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_input_afe44e50d55a10eac43f4d114d01fcc9e}{getMousePos} (int $\ast$x, int $\ast$y)
+\begin{DoxyCompactList}\small\item\em getMethode: Mouse position \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_f2_c_1_1_input_af3d14b1d81e6198c5e0fb5fccbdd0b5c}{getPressKey} (char ckey)
+\begin{DoxyCompactList}\small\item\em getMethode: Pressed / released (also query for multiple keys simultaneously) \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_f2_c_1_1_input_a5684e139903d71e9a7a0ac6d209895a1}{getPressKey} (\hyperlink{namespace_f2_c_1_1_keyboard_event_a13172bec547dc5eb2eee6c4fcd64c486}{KeyboardEvent::Keyboard} key)
+\begin{DoxyCompactList}\small\item\em getMethode: Pressed / released (also query for multiple keys simultaneously) \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_f2_c_1_1_input_a5fab8a63b42332d5da2c648654a93f82}{getRepeatKey} (char ckey)
+\begin{DoxyCompactList}\small\item\em getMethode: Returns true if the key was pressed once and returns false until the key is released \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_f2_c_1_1_input_aba74013667f7cc0ea8d3b53de03262cd}{getRepeatKey} (\hyperlink{namespace_f2_c_1_1_keyboard_event_a13172bec547dc5eb2eee6c4fcd64c486}{KeyboardEvent::Keyboard} key)
+\begin{DoxyCompactList}\small\item\em getMethode: Returns true if the key was pressed once and returns false until the key is released \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_a033f3bf6ea0c0883b76af3fb9b7f0c05}{
+const bool $\ast$ \hyperlink{class_f2_c_1_1_input_a033f3bf6ea0c0883b76af3fb9b7f0c05}{getRepeatKeyArray} ()}
+\label{class_f2_c_1_1_input_a033f3bf6ea0c0883b76af3fb9b7f0c05}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Array of Repeat Keys (size: 319 = 256 (ASCII Chars) + 63 (Special Keys(ESC,Space,Enter,....)) ) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_a7a4c16d3b99c6c16ca32646db5b24586}{
+const bool $\ast$ \hyperlink{class_f2_c_1_1_input_a7a4c16d3b99c6c16ca32646db5b24586}{getPressKeyArray} ()}
+\label{class_f2_c_1_1_input_a7a4c16d3b99c6c16ca32646db5b24586}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Array of Pressed Keys (size: 319 = 256 (ASCII Chars) + 63 (Special Keys(ESC,Space,Enter,....)) ) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_a378b279161ad643dce3f7c5818343c29}{
+size\_\-t \hyperlink{class_f2_c_1_1_input_a378b279161ad643dce3f7c5818343c29}{getSizeKeyArray} ()}
+\label{class_f2_c_1_1_input_a378b279161ad643dce3f7c5818343c29}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Size of keyarray: 319 = 256 (ASCII Chars) + 63 (Special Keys(ESC,Space,Enter,....)) \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_f2_c_1_1_input_a9f6ddd6c1cb000651956d4778bf5ed11}{getPressMouse} (\hyperlink{namespace_f2_c_1_1_mouse_event_ad51c859ddf42f97a3c31fb60c21821a8}{MouseEvent::Mouse} mousekey)
+\begin{DoxyCompactList}\small\item\em getMethode: Pressed / released \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_f2_c_1_1_input_ad5036f88bc9a4d42042d4d7eb04640ce}{getRepeatMouse} (\hyperlink{namespace_f2_c_1_1_mouse_event_ad51c859ddf42f97a3c31fb60c21821a8}{MouseEvent::Mouse} mousekey)
+\begin{DoxyCompactList}\small\item\em getMethode: Returns true if the button was pressed once and returns false until the button is released \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_acf07cf2b26970d4b7c91ddc320e14bd0}{
+const bool $\ast$ \hyperlink{class_f2_c_1_1_input_acf07cf2b26970d4b7c91ddc320e14bd0}{getRepeatMouseArray} ()}
+\label{class_f2_c_1_1_input_acf07cf2b26970d4b7c91ddc320e14bd0}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Array of Mouse Buttons (size: 8 = 3 (Left,Middle,Right) + 5 (Special Mouse Buttons) ) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_a3c484a5be1a1295a4e6af542512471f5}{
+const bool $\ast$ \hyperlink{class_f2_c_1_1_input_a3c484a5be1a1295a4e6af542512471f5}{getPressMouseArray} ()}
+\label{class_f2_c_1_1_input_a3c484a5be1a1295a4e6af542512471f5}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Array of Mouse Buttons (size: 8 = 3 (Left,Middle,Right) + 5 (Special Mouse Buttons) ) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_a65c3486d1d7c2b97ae9d70ede9c8ba35}{
+size\_\-t \hyperlink{class_f2_c_1_1_input_a65c3486d1d7c2b97ae9d70ede9c8ba35}{getSizeMouseArray} ()}
+\label{class_f2_c_1_1_input_a65c3486d1d7c2b97ae9d70ede9c8ba35}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Size of mousearray: 8 = 3 (Left,Middle,Right) + 5 (Special Mouse Buttons) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_ad5735b5ece3cb4647543261fdca31f25}{
+int \hyperlink{class_f2_c_1_1_input_ad5735b5ece3cb4647543261fdca31f25}{getMouseWheel} ()}
+\label{class_f2_c_1_1_input_ad5735b5ece3cb4647543261fdca31f25}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Mouse wheel position \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_input_ad2b10c018d3a0059dcfc7325de011d45}{getJoystickParam} (\hyperlink{namespace_f2_c_1_1_joystick_event_ada0230f460f765718db17ac021cbfc1f}{JoystickEvent::Joystick} joy, \hyperlink{namespace_f2_c_1_1_joystick_event_ae71fc0f92f6dd24cc1ffe1bd14b6ed82}{JoystickEvent::ParamJoystick} param)
+\begin{DoxyCompactList}\small\item\em getMethode: Value of Joystick Param. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_input_a4638b65b4be2c3c5254531b6e0e54a9b}{getJoystickPos} (\hyperlink{namespace_f2_c_1_1_joystick_event_ada0230f460f765718db17ac021cbfc1f}{JoystickEvent::Joystick} joy, float $\ast$pos, int numaxes)
+\begin{DoxyCompactList}\small\item\em To get the current axis positions of the joystick. The position of an axis can be in the range -\/1.0 to 1.0, where positive values represent right, forward or up directions, while negative values represent left, back or down directions. If a requested axis is not supported by the joystick, the corresponding array element will be set to zero. The same goes for the situation when the joystick is not connected (all axes are treated as unsupported). \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_input_a1049f8515c9466de7635cc230bdd5a27}{getJoystickButtons} (\hyperlink{namespace_f2_c_1_1_joystick_event_ada0230f460f765718db17ac021cbfc1f}{JoystickEvent::Joystick} joy, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} $\ast$buttons, int numbuttons)
+\begin{DoxyCompactList}\small\item\em To get the current buttonsof the joystick. the buttons argument can be either 1 or 0, telling if the corresponding button is currently held down or not. Unsupported buttons will have the value 0. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_input_a04fd09840025c2d60e483a1d0127255b}{setMousePos} (int x, int y)
+\begin{DoxyCompactList}\small\item\em setMethode: Set mouse position. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_input_ab28d56430cadbe95356fd30ca5abead6}{setMouseWheel} (int pos)
+\begin{DoxyCompactList}\small\item\em setMethode: Set mouse wheel position \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_a74a2b9d3acccf2748e51815861a05579}{
+bool \hyperlink{class_f2_c_1_1_input_a74a2b9d3acccf2748e51815861a05579}{getMouseWheelUp} ()}
+\label{class_f2_c_1_1_input_a74a2b9d3acccf2748e51815861a05579}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Is Mouse wheel move Up \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_input_ac190809de1aded129b1780ff1df73043}{
+bool \hyperlink{class_f2_c_1_1_input_ac190809de1aded129b1780ff1df73043}{getMouseWheelDown} ()}
+\label{class_f2_c_1_1_input_ac190809de1aded129b1780ff1df73043}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Is Mouse wheel move Down \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_f2_c_1_1_input}{Input} Handle from the keyboard, mouse, joystick and \hyperlink{class_f2_c_1_1_window}{Window}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_input_a1049f8515c9466de7635cc230bdd5a27}{
+\index{F2C::Input@{F2C::Input}!getJoystickButtons@{getJoystickButtons}}
+\index{getJoystickButtons@{getJoystickButtons}!F2C::Input@{F2C::Input}}
+\subsubsection[{getJoystickButtons}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::Input::getJoystickButtons (
+\begin{DoxyParamCaption}
+\item[{{\bf JoystickEvent::Joystick}}]{ joy, }
+\item[{{\bf uint8} $\ast$}]{ buttons, }
+\item[{int}]{ numbuttons}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_a1049f8515c9466de7635cc230bdd5a27}
+
+
+To get the current buttonsof the joystick. the buttons argument can be either 1 or 0, telling if the corresponding button is currently held down or not. Unsupported buttons will have the value 0. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em joy}]Joystick nummer \item[{\em buttons}]Target reference variable: Array in which all the buttons. \item[{\em numbuttons}]Gibt an, wie viele tasten zurueckgegeben werden. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the state of joystick buttons instead of axis positions. 
+\end{DoxyReturn}
+\hypertarget{class_f2_c_1_1_input_ad2b10c018d3a0059dcfc7325de011d45}{
+\index{F2C::Input@{F2C::Input}!getJoystickParam@{getJoystickParam}}
+\index{getJoystickParam@{getJoystickParam}!F2C::Input@{F2C::Input}}
+\subsubsection[{getJoystickParam}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::Input::getJoystickParam (
+\begin{DoxyParamCaption}
+\item[{{\bf JoystickEvent::Joystick}}]{ joy, }
+\item[{{\bf JoystickEvent::ParamJoystick}}]{ param}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_ad2b10c018d3a0059dcfc7325de011d45}
+
+
+getMethode: Value of Joystick Param. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em joy}]Joystick nummer \item[{\em param}]Joystick Param \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_a4638b65b4be2c3c5254531b6e0e54a9b}{
+\index{F2C::Input@{F2C::Input}!getJoystickPos@{getJoystickPos}}
+\index{getJoystickPos@{getJoystickPos}!F2C::Input@{F2C::Input}}
+\subsubsection[{getJoystickPos}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::Input::getJoystickPos (
+\begin{DoxyParamCaption}
+\item[{{\bf JoystickEvent::Joystick}}]{ joy, }
+\item[{float $\ast$}]{ pos, }
+\item[{int}]{ numaxes}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_a4638b65b4be2c3c5254531b6e0e54a9b}
+
+
+To get the current axis positions of the joystick. The position of an axis can be in the range -\/1.0 to 1.0, where positive values represent right, forward or up directions, while negative values represent left, back or down directions. If a requested axis is not supported by the joystick, the corresponding array element will be set to zero. The same goes for the situation when the joystick is not connected (all axes are treated as unsupported). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em joy}]Joystick nummer \item[{\em pos}]Target reference variable: Array in which all the axis positions. \item[{\em numaxes}]Numbers of axes \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the actual number of axes that were returned, which could be less than numaxes if the joystick does not support all the requested axes, or if the joystick is not connected. 
+\end{DoxyReturn}
+\hypertarget{class_f2_c_1_1_input_afe44e50d55a10eac43f4d114d01fcc9e}{
+\index{F2C::Input@{F2C::Input}!getMousePos@{getMousePos}}
+\index{getMousePos@{getMousePos}!F2C::Input@{F2C::Input}}
+\subsubsection[{getMousePos}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Input::getMousePos (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ x, }
+\item[{int $\ast$}]{ y}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_afe44e50d55a10eac43f4d114d01fcc9e}
+
+
+getMethode: Mouse position 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]Target reference variable: X-\/Coordinate \item[{\em y}]Target reference variable: Y-\/Coordinate \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_a5684e139903d71e9a7a0ac6d209895a1}{
+\index{F2C::Input@{F2C::Input}!getPressKey@{getPressKey}}
+\index{getPressKey@{getPressKey}!F2C::Input@{F2C::Input}}
+\subsubsection[{getPressKey}]{\setlength{\rightskip}{0pt plus 5cm}bool F2C::Input::getPressKey (
+\begin{DoxyParamCaption}
+\item[{{\bf KeyboardEvent::Keyboard}}]{ key}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_a5684e139903d71e9a7a0ac6d209895a1}
+
+
+getMethode: Pressed / released (also query for multiple keys simultaneously) 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em key}]Special Button \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_af3d14b1d81e6198c5e0fb5fccbdd0b5c}{
+\index{F2C::Input@{F2C::Input}!getPressKey@{getPressKey}}
+\index{getPressKey@{getPressKey}!F2C::Input@{F2C::Input}}
+\subsubsection[{getPressKey}]{\setlength{\rightskip}{0pt plus 5cm}bool F2C::Input::getPressKey (
+\begin{DoxyParamCaption}
+\item[{char}]{ ckey}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_af3d14b1d81e6198c5e0fb5fccbdd0b5c}
+
+
+getMethode: Pressed / released (also query for multiple keys simultaneously) 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ckey}]Character \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_a9f6ddd6c1cb000651956d4778bf5ed11}{
+\index{F2C::Input@{F2C::Input}!getPressMouse@{getPressMouse}}
+\index{getPressMouse@{getPressMouse}!F2C::Input@{F2C::Input}}
+\subsubsection[{getPressMouse}]{\setlength{\rightskip}{0pt plus 5cm}bool F2C::Input::getPressMouse (
+\begin{DoxyParamCaption}
+\item[{{\bf MouseEvent::Mouse}}]{ mousekey}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_a9f6ddd6c1cb000651956d4778bf5ed11}
+
+
+getMethode: Pressed / released 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mousekey}]Mouse button \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_a5fab8a63b42332d5da2c648654a93f82}{
+\index{F2C::Input@{F2C::Input}!getRepeatKey@{getRepeatKey}}
+\index{getRepeatKey@{getRepeatKey}!F2C::Input@{F2C::Input}}
+\subsubsection[{getRepeatKey}]{\setlength{\rightskip}{0pt plus 5cm}bool F2C::Input::getRepeatKey (
+\begin{DoxyParamCaption}
+\item[{char}]{ ckey}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_a5fab8a63b42332d5da2c648654a93f82}
+
+
+getMethode: Returns true if the key was pressed once and returns false until the key is released 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ckey}]Character \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_aba74013667f7cc0ea8d3b53de03262cd}{
+\index{F2C::Input@{F2C::Input}!getRepeatKey@{getRepeatKey}}
+\index{getRepeatKey@{getRepeatKey}!F2C::Input@{F2C::Input}}
+\subsubsection[{getRepeatKey}]{\setlength{\rightskip}{0pt plus 5cm}bool F2C::Input::getRepeatKey (
+\begin{DoxyParamCaption}
+\item[{{\bf KeyboardEvent::Keyboard}}]{ key}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_aba74013667f7cc0ea8d3b53de03262cd}
+
+
+getMethode: Returns true if the key was pressed once and returns false until the key is released 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em key}]Special Button \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_ad5036f88bc9a4d42042d4d7eb04640ce}{
+\index{F2C::Input@{F2C::Input}!getRepeatMouse@{getRepeatMouse}}
+\index{getRepeatMouse@{getRepeatMouse}!F2C::Input@{F2C::Input}}
+\subsubsection[{getRepeatMouse}]{\setlength{\rightskip}{0pt plus 5cm}bool F2C::Input::getRepeatMouse (
+\begin{DoxyParamCaption}
+\item[{{\bf MouseEvent::Mouse}}]{ mousekey}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_ad5036f88bc9a4d42042d4d7eb04640ce}
+
+
+getMethode: Returns true if the button was pressed once and returns false until the button is released 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em mousekey}]Mouse button \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_a04fd09840025c2d60e483a1d0127255b}{
+\index{F2C::Input@{F2C::Input}!setMousePos@{setMousePos}}
+\index{setMousePos@{setMousePos}!F2C::Input@{F2C::Input}}
+\subsubsection[{setMousePos}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Input::setMousePos (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_a04fd09840025c2d60e483a1d0127255b}
+
+
+setMethode: Set mouse position. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]X-\/Coordinate \item[{\em y}]X-\/Coordinate \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_ab28d56430cadbe95356fd30ca5abead6}{
+\index{F2C::Input@{F2C::Input}!setMouseWheel@{setMouseWheel}}
+\index{setMouseWheel@{setMouseWheel}!F2C::Input@{F2C::Input}}
+\subsubsection[{setMouseWheel}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Input::setMouseWheel (
+\begin{DoxyParamCaption}
+\item[{int}]{ pos}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_ab28d56430cadbe95356fd30ca5abead6}
+
+
+setMethode: Set mouse wheel position 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pos}]Mouse wheel position \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_ab838e59b463c285559226d2ca99c30ef}{
+\index{F2C::Input@{F2C::Input}!update@{update}}
+\index{update@{update}!F2C::Input@{F2C::Input}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Input::update (
+\begin{DoxyParamCaption}
+\item[{int}]{ frame}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_ab838e59b463c285559226d2ca99c30ef}
+
+
+update Press and Repeat. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em frame}]current frame (\hyperlink{class_f2_c_1_1_input_a95ad2099b6d764658afd714fed48d2cf}{Input::updateRepeat}(...)) \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_input_a95ad2099b6d764658afd714fed48d2cf}{
+\index{F2C::Input@{F2C::Input}!updateRepeat@{updateRepeat}}
+\index{updateRepeat@{updateRepeat}!F2C::Input@{F2C::Input}}
+\subsubsection[{updateRepeat}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Input::updateRepeat (
+\begin{DoxyParamCaption}
+\item[{int}]{ frame}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_input_a95ad2099b6d764658afd714fed48d2cf}
+
+
+update Repeat Handle,this function should only be called once per frame. \par
+ Exit function, if the current frame is equal to the last frame. \par
+ e.g. (when you use \hyperlink{class_f2_c_1_1_window}{F2C::Window} and UpdateGLScreen()) \par
+ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em frame}]current frame 
+\begin{DoxyCode}
+        F2C::Window WinApp;
+        F2C::Input InApp;
+        InApp.updateRepeat(WinApp.getFrame());
+\end{DoxyCode}
+ \end{DoxyParams}

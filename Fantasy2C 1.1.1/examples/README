@@ -1,0 +1,12 @@
+Please set ExampleDIR
+EXAMPLEDIR = directory of Example
+OS = linux or win32 (linux is default value)
+
+if you need SDL
+SDL=1
+
+e.g.
+make -f ./Makefile install EXAMPLEDIR="./Animation"
+make -f ./Makefile install OS=win32 EXAMPLEDIR="./Bitmap_and_SimpleSprite"
+make -f ./Makefile install EXAMPLEDIR="./SDL_and_Fantasy2C" SDL="1"
+

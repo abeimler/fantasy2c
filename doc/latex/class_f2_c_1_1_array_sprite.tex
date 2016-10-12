@@ -1,0 +1,384 @@
+\hypertarget{class_f2_c_1_1_array_sprite}{
+\section{F2C::ArraySprite Class Reference}
+\label{class_f2_c_1_1_array_sprite}\index{F2C::ArraySprite@{F2C::ArraySprite}}
+}
+
+
+Renders a picture(Bitmap), as an array of different values.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a084edc3ab72ab882178673283e2ebb91}{
+\hyperlink{class_f2_c_1_1_array_sprite_a084edc3ab72ab882178673283e2ebb91}{ArraySprite} ()}
+\label{class_f2_c_1_1_array_sprite_a084edc3ab72ab882178673283e2ebb91}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_ae0dbb28d0a85e7de503d704fd22c0451}{
+virtual \hyperlink{class_f2_c_1_1_array_sprite_ae0dbb28d0a85e7de503d704fd22c0451}{$\sim$ArraySprite} ()}
+\label{class_f2_c_1_1_array_sprite_ae0dbb28d0a85e7de503d704fd22c0451}
+
+\begin{DoxyCompactList}\small\item\em Delete the texture from memory. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_array_sprite_a412ffea7593257bb399c109e9f0662f2}{ArraySprite} (\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$\hyperlink{class_f2_c_1_1_array_sprite_acbf1252a3782ba0a09c14b0b52fd48b8}{viewport})
+\begin{DoxyCompactList}\small\item\em Set the pointer of the viewport and the clip\_\-rect. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_array_sprite_a2caa4bd4c8ca99dab916ddb6b9d12666}{ArraySprite} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} $\ast$bitmap)
+\begin{DoxyCompactList}\small\item\em Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a6a647fab4e8b1ea85911f339085a3ac2}{
+\hyperlink{class_f2_c_1_1_array_sprite_a6a647fab4e8b1ea85911f339085a3ac2}{ArraySprite} (const \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite} \&copy)}
+\label{class_f2_c_1_1_array_sprite_a6a647fab4e8b1ea85911f339085a3ac2}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_afdf5f7d8a5255e25b1e9536c55344e09}{
+\hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite} \& \hyperlink{class_f2_c_1_1_array_sprite_afdf5f7d8a5255e25b1e9536c55344e09}{operator=} (const \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite} \&copy)}
+\label{class_f2_c_1_1_array_sprite_afdf5f7d8a5255e25b1e9536c55344e09}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator with deep copy. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_array_sprite_a3dc5b27cc09b3ee7b2817e5503ab0678}{render} () const 
+\begin{DoxyCompactList}\small\item\em Renders all elements on the screen. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_array_sprite_a7324125437c987b7fe0965f76deca762}{render} (size\_\-t starteid) const 
+\begin{DoxyCompactList}\small\item\em Renders a particular area (from the starteid until the end of the array elements) of the elements on the screen. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_f2_c_1_1_array_sprite_a76b3b457b6fdabffc841b718d52078af}{render} (size\_\-t starteid, size\_\-t endeid) const 
+\begin{DoxyCompactList}\small\item\em Renders a particular area (from the starteid to endeid) the elements on the screen. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a427b2c19fa1f6869fee1468644789bec}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_array_sprite_a427b2c19fa1f6869fee1468644789bec}{getTexture} () const }
+\label{class_f2_c_1_1_array_sprite_a427b2c19fa1f6869fee1468644789bec}
+
+\begin{DoxyCompactList}\small\item\em getMethode: OpenGL Texture Name(ID) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a2f9d459bba7bb2f5fe107d21bcb46b8c}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_array_sprite_a2f9d459bba7bb2f5fe107d21bcb46b8c}{getTexWidth} () const }
+\label{class_f2_c_1_1_array_sprite_a2f9d459bba7bb2f5fe107d21bcb46b8c}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Width of the bitmap. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_aace99516cdae8775d60a640dae61a716}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_array_sprite_aace99516cdae8775d60a640dae61a716}{getTexHeight} () const }
+\label{class_f2_c_1_1_array_sprite_aace99516cdae8775d60a640dae61a716}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Height of the bitmap. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_ae11b4602e317a4ce83be9478315eb7f6}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_array_sprite_ae11b4602e317a4ce83be9478315eb7f6}{getTexBits} () const }
+\label{class_f2_c_1_1_array_sprite_ae11b4602e317a4ce83be9478315eb7f6}
+
+\begin{DoxyCompactList}\small\item\em getMethode: \hyperlink{class_f2_c_1_1_color}{Color} depth (in bits) of the texture. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a120f6186587c38e0a4132aef69aedc49}{
+Image::DataFormat \hyperlink{class_f2_c_1_1_array_sprite_a120f6186587c38e0a4132aef69aedc49}{getTexDataFormat} () const }
+\label{class_f2_c_1_1_array_sprite_a120f6186587c38e0a4132aef69aedc49}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Pixel format of the texture. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_array_sprite_af4812f3e122823e29d8d6f82d64799ac}{setBitmap} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} $\ast$bitmap)
+\begin{DoxyCompactList}\small\item\em Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_array_sprite_a960ba03bf1797621f00aaad269776dd2}{setViewport} (\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$\hyperlink{class_f2_c_1_1_array_sprite_acbf1252a3782ba0a09c14b0b52fd48b8}{viewport})
+\begin{DoxyCompactList}\small\item\em setMethode: Set the pointer of the viewport and the clip\_\-rect. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_f2_c_1_1_array_sprite_accd803dbbff19b7bfa6ba710699dfaf5}{enableGLDrawArray} (bool enable)
+\begin{DoxyCompactList}\small\item\em if enable then use glDrawArrays,glEnableClientState,... , if disable then use glBegin(),glVertex(),...,glEnd(). \par
+ Is automatically enable when VBO is supported. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a5e8fce595952f80096b70a4f5fee9b2e}{
+static bool \hyperlink{class_f2_c_1_1_array_sprite_a5e8fce595952f80096b70a4f5fee9b2e}{isEnableGLDrawArray} ()}
+\label{class_f2_c_1_1_array_sprite_a5e8fce595952f80096b70a4f5fee9b2e}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Is glDrawArrays,glEnableClientState,... used when rendering. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_array_sprite_acbf1252a3782ba0a09c14b0b52fd48b8}{
+\hyperlink{class_f2_c_1_1_viewport}{Viewport} $\ast$ \hyperlink{class_f2_c_1_1_array_sprite_acbf1252a3782ba0a09c14b0b52fd48b8}{viewport}}
+\label{class_f2_c_1_1_array_sprite_acbf1252a3782ba0a09c14b0b52fd48b8}
+
+\begin{DoxyCompactList}\small\item\em Additional Z-\/coordinate and \hyperlink{class_f2_c_1_1_color_tone}{ColorTone}. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a82f6e110d53af9dda0420cc8ef9488ef}{
+\hyperlink{class_f2_c_1_1_rect}{Rect} $\ast$ \hyperlink{class_f2_c_1_1_array_sprite_a82f6e110d53af9dda0420cc8ef9488ef}{clip\_\-rect}}
+\label{class_f2_c_1_1_array_sprite_a82f6e110d53af9dda0420cc8ef9488ef}
+
+\begin{DoxyCompactList}\small\item\em Clipping \hyperlink{class_f2_c_1_1_rect}{Rect}, Cutting the sprites on the screen the desired section or window. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a210abd1c6161772e587ba25007e6291c}{
+int \hyperlink{class_f2_c_1_1_array_sprite_a210abd1c6161772e587ba25007e6291c}{x}}
+\label{class_f2_c_1_1_array_sprite_a210abd1c6161772e587ba25007e6291c}
+
+\begin{DoxyCompactList}\small\item\em X-\/coordinate. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a7289484d1e5e4806ec6c7116464c79f8}{
+int \hyperlink{class_f2_c_1_1_array_sprite_a7289484d1e5e4806ec6c7116464c79f8}{y}}
+\label{class_f2_c_1_1_array_sprite_a7289484d1e5e4806ec6c7116464c79f8}
+
+\begin{DoxyCompactList}\small\item\em Y-\/coordinate. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a35e4fa5f409c3a8c333a992f7d0eea1c}{
+int \hyperlink{class_f2_c_1_1_array_sprite_a35e4fa5f409c3a8c333a992f7d0eea1c}{z}}
+\label{class_f2_c_1_1_array_sprite_a35e4fa5f409c3a8c333a992f7d0eea1c}
+
+\begin{DoxyCompactList}\small\item\em Z-\/coordinate. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a9a7ef665a555b54bd0c5d835748f8421}{
+double \hyperlink{class_f2_c_1_1_array_sprite_a9a7ef665a555b54bd0c5d835748f8421}{zoom\_\-x}}
+\label{class_f2_c_1_1_array_sprite_a9a7ef665a555b54bd0c5d835748f8421}
+
+\begin{DoxyCompactList}\small\item\em Zoom factor of the X-\/axis. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a5682f0db798435cb27a7951c0d2eeba5}{
+double \hyperlink{class_f2_c_1_1_array_sprite_a5682f0db798435cb27a7951c0d2eeba5}{zoom\_\-y}}
+\label{class_f2_c_1_1_array_sprite_a5682f0db798435cb27a7951c0d2eeba5}
+
+\begin{DoxyCompactList}\small\item\em Zoom factor of the Y-\/axis. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_af2728f640e692099b4abfa152c8b1ed1}{
+\hyperlink{class_f2_c_1_1_color_tone}{ColorTone} \hyperlink{class_f2_c_1_1_array_sprite_af2728f640e692099b4abfa152c8b1ed1}{tone}}
+\label{class_f2_c_1_1_array_sprite_af2728f640e692099b4abfa152c8b1ed1}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_color}{Color} tone. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a16c41e4b2f813b1000c91f3394d875eb}{
+\hyperlink{namespace_f2_c_1_1_blend_type_a582fe2d83fb813041785794568e5a414}{BlendType::Blend\_\-Type} \hyperlink{class_f2_c_1_1_array_sprite_a16c41e4b2f813b1000c91f3394d875eb}{blend\_\-type}}
+\label{class_f2_c_1_1_array_sprite_a16c41e4b2f813b1000c91f3394d875eb}
+
+\begin{DoxyCompactList}\small\item\em Blending type. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a41f5e660b3f307a765b34aea5fd70456}{
+std::vector$<$ \hyperlink{class_f2_c_1_1_sprite_element}{SpriteElement} $>$ \hyperlink{class_f2_c_1_1_array_sprite_a41f5e660b3f307a765b34aea5fd70456}{elements}}
+\label{class_f2_c_1_1_array_sprite_a41f5e660b3f307a765b34aea5fd70456}
+
+\begin{DoxyCompactList}\small\item\em Array with the SpriteElemets. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_array_sprite_ab8832ebf9d9d32ddb93801322b4d70b5}{
+static GLhandleARB \hyperlink{class_f2_c_1_1_array_sprite_ab8832ebf9d9d32ddb93801322b4d70b5}{ShaderProgramObj}}
+\label{class_f2_c_1_1_array_sprite_ab8832ebf9d9d32ddb93801322b4d70b5}
+
+\begin{DoxyCompactList}\small\item\em Handle by the ARB program object for the \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite}. (Default: NULL) \par
+ The Tranzperenz(Alpha Color) of the generated shader image (with the ARB program object) can be determined by the grayscale. \par
+ Optimal: Post-\/Processing-\/Shader Program. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_array_sprite_a75dbddbac91e1fc643007d165a302ef5}{
+static \hyperlink{namespace_f2_c_1_1_tex_param_a64299c3972944468af4e8b0394c936c6}{TexParam::Tex\_\-Param} \hyperlink{class_f2_c_1_1_array_sprite_a75dbddbac91e1fc643007d165a302ef5}{filter}}
+\label{class_f2_c_1_1_array_sprite_a75dbddbac91e1fc643007d165a302ef5}
+
+\begin{DoxyCompactList}\small\item\em Set the texture filtering of the \hyperlink{class_f2_c_1_1_sprite}{Sprite}. (Default: Linear). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{class_f2_c_1_1_array_sprite_a9d3c1de2e2f4923b597738ed1c87359b}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write the Texture Name). \item\end{DoxyCompactList}\item 
+std::istream \& \hyperlink{class_f2_c_1_1_array_sprite_acc43469ad9fd0d0e2e47ea2155109ffb}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_array_sprite}{ArraySprite} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (use old(or create new) Texture Name). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Renders a picture(Bitmap), as an array of different values. Please note the following OpenGL capability are enabled when rendering and at the end disable: \par
+ GL\_\-SCISSOR\_\-TEST (if necessary) \par
+ GL\_\-STENCIL\_\-TEST \par
+ GL\_\-TEXTURE\_\-2D \par
+ GL\_\-DEPTH\_\-TEST \par
+ GL\_\-ALPHA\_\-TEST \par
+ GL\_\-BLEND \par
+ and use glShadeModel(GL\_\-SMOOTH) \par
+ \par
+ Dont forget to set the depth and alpha test function, e.g.: \par
+ glAlphaFunc(GL\_\-GREATER, 0.0f) \par
+ glDepthFunc(GL\_\-LEQUAL) \par
+ \par
+ Used OpenGL Buffers \par
+ -\/GL\_\-COLOR\_\-BUFFER\_\-BIT \par
+ -\/GL\_\-DEPTH\_\-BUFFER\_\-BIT \par
+ -\/GL\_\-STENCIL\_\-BUFFER\_\-BIT \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_array_sprite_a412ffea7593257bb399c109e9f0662f2}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!ArraySprite@{ArraySprite}}
+\index{ArraySprite@{ArraySprite}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{ArraySprite}]{\setlength{\rightskip}{0pt plus 5cm}F2C::ArraySprite::ArraySprite (
+\begin{DoxyParamCaption}
+\item[{{\bf Viewport} $\ast$}]{ viewport}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_array_sprite_a412ffea7593257bb399c109e9f0662f2}
+
+
+Set the pointer of the viewport and the clip\_\-rect. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em viewport}]Pointer of \hyperlink{class_f2_c_1_1_viewport}{Viewport} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_array_sprite_a2caa4bd4c8ca99dab916ddb6b9d12666}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!ArraySprite@{ArraySprite}}
+\index{ArraySprite@{ArraySprite}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{ArraySprite}]{\setlength{\rightskip}{0pt plus 5cm}F2C::ArraySprite::ArraySprite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} $\ast$}]{ bitmap}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_array_sprite_a2caa4bd4c8ca99dab916ddb6b9d12666}
+
+
+Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bitmap}]Pointer of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_array_sprite_accd803dbbff19b7bfa6ba710699dfaf5}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!enableGLDrawArray@{enableGLDrawArray}}
+\index{enableGLDrawArray@{enableGLDrawArray}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{enableGLDrawArray}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::ArraySprite::enableGLDrawArray (
+\begin{DoxyParamCaption}
+\item[{bool}]{ enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_array_sprite_accd803dbbff19b7bfa6ba710699dfaf5}
+
+
+if enable then use glDrawArrays,glEnableClientState,... , if disable then use glBegin(),glVertex(),...,glEnd(). \par
+ Is automatically enable when VBO is supported. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em enable}]Enable/Disable \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_array_sprite_a3dc5b27cc09b3ee7b2817e5503ab0678}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!render@{render}}
+\index{render@{render}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::ArraySprite::render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_f2_c_1_1_array_sprite_a3dc5b27cc09b3ee7b2817e5503ab0678}
+
+
+Renders all elements on the screen. 
+
+\begin{DoxyReturn}{Returns}
+-\/1, show from viewport is false. 
+
+-\/2, The width or height of the bitmap is 0. 
+
+-\/3, zoom\_\-x or zoom\_\-y is exactly 0. 
+
+-\/4, Empty array. 
+
+1, Elements has been successfully rendered. 
+\end{DoxyReturn}
+\hypertarget{class_f2_c_1_1_array_sprite_a7324125437c987b7fe0965f76deca762}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!render@{render}}
+\index{render@{render}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::ArraySprite::render (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ starteid}
+\end{DoxyParamCaption}
+) const}}
+\label{class_f2_c_1_1_array_sprite_a7324125437c987b7fe0965f76deca762}
+
+
+Renders a particular area (from the starteid until the end of the array elements) of the elements on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em starteid}]Start index of the sprite elements. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1, show is false (or from viewport). 
+
+-\/2, The width or height of the bitmap is 0. 
+
+-\/3, zoom\_\-x or zoom\_\-y is exactly 0 
+
+-\/4, Empty array. 
+
+-\/5, starteid is outside the array elements. 
+
+1, Elements has been rendered. 
+\end{DoxyReturn}
+\hypertarget{class_f2_c_1_1_array_sprite_a76b3b457b6fdabffc841b718d52078af}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!render@{render}}
+\index{render@{render}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}int F2C::ArraySprite::render (
+\begin{DoxyParamCaption}
+\item[{size\_\-t}]{ starteid, }
+\item[{size\_\-t}]{ endeid}
+\end{DoxyParamCaption}
+) const}}
+\label{class_f2_c_1_1_array_sprite_a76b3b457b6fdabffc841b718d52078af}
+
+
+Renders a particular area (from the starteid to endeid) the elements on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em starteid}]Start index of the array elements. \item[{\em endeid}]End index of the array elements \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1, show from viewport is false. 
+
+-\/2, The width or height of the bitmap is 0. 
+
+-\/3, zoom\_\-x or zoom\_\-y is exactly 0 
+
+-\/4, Empty array. 
+
+-\/5, starteid is outside the array elements. 
+
+1, Elements has been rendered. 
+\end{DoxyReturn}
+\hypertarget{class_f2_c_1_1_array_sprite_af4812f3e122823e29d8d6f82d64799ac}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!setBitmap@{setBitmap}}
+\index{setBitmap@{setBitmap}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{setBitmap}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ArraySprite::setBitmap (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} $\ast$}]{ bitmap}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_array_sprite_af4812f3e122823e29d8d6f82d64799ac}
+
+
+Load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bitmap}]Pointer of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_array_sprite_a960ba03bf1797621f00aaad269776dd2}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!setViewport@{setViewport}}
+\index{setViewport@{setViewport}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{setViewport}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::ArraySprite::setViewport (
+\begin{DoxyParamCaption}
+\item[{{\bf Viewport} $\ast$}]{ viewport}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_array_sprite_a960ba03bf1797621f00aaad269776dd2}
+
+
+setMethode: Set the pointer of the viewport and the clip\_\-rect. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em viewport}]Pointer of \hyperlink{class_f2_c_1_1_viewport}{Viewport} \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_f2_c_1_1_array_sprite_a9d3c1de2e2f4923b597738ed1c87359b}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const {\bf ArraySprite} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_array_sprite_a9d3c1de2e2f4923b597738ed1c87359b}
+
+
+Write the Object into output stream. (dont write the Texture Name). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_array_sprite_acc43469ad9fd0d0e2e47ea2155109ffb}{
+\index{F2C::ArraySprite@{F2C::ArraySprite}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C::ArraySprite@{F2C::ArraySprite}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{{\bf ArraySprite} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_array_sprite_acc43469ad9fd0d0e2e47ea2155109ffb}
+
+
+Read the Object from input stream. (use old(or create new) Texture Name). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}

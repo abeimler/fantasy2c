@@ -1,0 +1,125 @@
+#!/usr/bin/make
+
+#OS			:= linux
+
+ifeq ($(OS),)
+	OS		:= linux
+endif
+
+#Source and Project Dir
+ifeq ($(EXAMPLEDIR),)
+	EXAMPLEDIR	:= ./
+endif
+
+#if you need SDL
+ifeq ($(SDL),)
+	SDL	:= 0
+endif
+
+#Source Code Dir
+SRCDIR 			:= $(EXAMPLEDIR)
+
+#Headers Dir
+HEADERSDIR 		:= $(EXAMPLEDIR)
+
+#Headers and Libs for Win
+ifeq ($(WIN32DIR),)
+	WIN32DIR		:= windows
+endif
+
+#Project Settings
+OUTAPP		        := simple
+
+#Debug and Release Setting
+RELEASEFLAGS		:= -O2 -s
+
+#Out Dirs
+OUTDIR		        := bin
+OBJDIR		        := obj
+BUILDDIR 	        := $(EXAMPLEDIR)/$(OS)
+
+#Compiler and linker
+CXX      	        := g++
+LD			:= g++
+
+#Linux include and lib dirs
+INCLUDEDIR	        := /usr/include/freetype2/
+LIBDIR		        := 
+
+#File type
+SRCSUF      	        := cpp
+OBJSUF			:= o 
+OUTSUF			:= 
+
+#Librarys Flags
+ifeq ($(SDL),1)
+	LIBFLAGS	        := -lFantasy2C -lSDL -lSDLmain
+else
+	LIBFLAGS	        := -lFantasy2C
+endif
+
+#Sourcecode,include,lib,Macros,out and warning Flag
+SRCFLAG			:= -c
+INCLUDEDIRFLAG		:= -I
+LIBDIRFLAG		:= -L
+MACROFLAG		:= -D
+OUTFLAG			:= -o
+WARNINGFLAG		:= -Wall
+
+ifeq ($(OS),win32)
+# Windows with mingw32
+SRCDIR 		:= $(EXAMPLEDIR)
+HEADERSDIR 	:= $(EXAMPLEDIR)
+INCLUDEDIR    	:= $(WIN32DIR)/include 
+LIBDIR		:= $(WIN32DIR)/lib 
+BUILDDIR 	:= $(EXAMPLEDIR)/$(OS)
+OUTSUF		:= .exe
+
+CXX           	:= mingw32-g++.exe
+CXXFLAGS      	:= 
+LD            	:= mingw32-g++.exe
+ifeq ($(SDL),1)
+	LIBFLAGS	        := libFantasy2C.a SDL.lib SDLmain.lib
+else
+	LIBFLAGS	        := libFantasy2C.a
+endif
+EXPORTMACRO 	:= -D"_WIN32" -D"_Windows"
+endif
+
+ifeq ($(OS),win32vc++)
+# Windows with Visual Studio c++
+SRCDIR 		:= $(EXAMPLEDIR)
+HEADERSDIR 	:= $(EXAMPLEDIR)
+INCLUDEDIR    	:= $(WIN32DIR)/include 
+LIBDIR		:= $(WIN32DIR)/lib 
+BUILDDIR 	:= $(EXAMPLEDIR)/$(OS)
+OUTSUF		:= .exe
+
+SRCFLAG		:= /c
+INCLUDEDIRFLAG	:= /I
+LIBDIRFLAG	:= /LIBPATH:
+MACROFLAG	:= /D
+OUTFLAG		:= /OUT:
+WARNINGFLAG	:= /W3
+
+CXX           	:= cl.exe
+CXXFLAGS      	:= /NOLOGO /EHsc /ZI /TP
+LD            	:= link.exe
+LDFLAGS       	:= /INCREMENTAL /NOLOGO /MANIFEST:NO /DYNAMICBASE /NXCOMPAT
+SRCSUF      	:= cpp
+OBJSUF		:= obj 
+ifeq ($(SDL),1)
+	LIBFLAGS	        := libFantasy2C.a SDL.lib SDLmain.lib
+else
+	LIBFLAGS	        := libFantasy2C.a
+endif
+DEBUGFLAGS	:= /Od /Oi /MDd /D"_DEBUG" /DEBUG /RTC1
+RELEASEFLAGS	:= /O2 /MD /D"NDEBUG" /FD /Gy
+EXPORTMACRO 	:= -D"_WIN32" -D"_Windows"
+endif
+
+#Debug and Release Dir
+RELEASEDIR	        := $(BUILDDIR)
+
+#Default Flags
+DEFAULTFLAGS		:= $(WARNINGFLAG) $(INCLUDEDIRFLAG)"$(INCLUDEDIR)" $(LIBDIRFLAG)"$(LIBDIR)" $(INCLUDEDIRFLAG)"include" $(LIBDIRFLAG)"lib"

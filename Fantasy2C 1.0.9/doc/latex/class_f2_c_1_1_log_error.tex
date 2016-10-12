@@ -1,0 +1,120 @@
+\hypertarget{class_f2_c_1_1_log_error}{
+\section{F2C::LogError Class Reference}
+\label{class_f2_c_1_1_log_error}\index{F2C::LogError@{F2C::LogError}}
+}
+
+
+Writing log files and exception handler.  
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries LEError}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_log_error_a119ab8a21960a4b7a6dbd4ddce334e5f}{
+void \hyperlink{class_f2_c_1_1_log_error_a119ab8a21960a4b7a6dbd4ddce334e5f}{writeError} ()}
+\label{class_f2_c_1_1_log_error_a119ab8a21960a4b7a6dbd4ddce334e5f}
+
+\begin{DoxyCompactList}\small\item\em Creates and writes the log file. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_log_error_abce3f1efd9a5b93e1bd400f743ba398e}{setError} (std::string file, std::string func, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} line, std::string string)
+\begin{DoxyCompactList}\small\item\em Sets the filename, line, function, and the Log text. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_log_error_a37013f16d6418b8881c8df0be43909c6}{setError} (std::string file, std::string func, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} line, void $\ast$ptr, std::string string)
+\begin{DoxyCompactList}\small\item\em Sets the file name, line, function, and the Log text and the adress. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_log_error_a48e68471f785fe0a6482c825dcfa15d0}{
+std::string \hyperlink{class_f2_c_1_1_log_error_a48e68471f785fe0a6482c825dcfa15d0}{getError} () const }
+\label{class_f2_c_1_1_log_error_a48e68471f785fe0a6482c825dcfa15d0}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Log text \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_log_error_ac571b7a599761f5ed869832b023a3d92}{setError} (std::string string)
+\begin{DoxyCompactList}\small\item\em setMethode: Set the Log text \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_log_error_a37fe6ce832fff15978a84a923b081b1b}{
+static void \hyperlink{class_f2_c_1_1_log_error_a37fe6ce832fff15978a84a923b081b1b}{ClearLog} ()}
+\label{class_f2_c_1_1_log_error_a37fe6ce832fff15978a84a923b081b1b}
+
+\begin{DoxyCompactList}\small\item\em Clears the text in the Log file. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_log_error_a7821ec372e85a3d2c7095c4902525908}{writeString} (std::string string)
+\begin{DoxyCompactList}\small\item\em Writes a text into the Log text. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std::string \hyperlink{class_f2_c_1_1_log_error_aa5dc474b29884812c02be68e1c45c56e}{filename}
+\begin{DoxyCompactList}\small\item\em Default destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_log_error_a40a853a8ce671575d7b57433b14d2789}{
+static bool \hyperlink{class_f2_c_1_1_log_error_a40a853a8ce671575d7b57433b14d2789}{writelog}}
+\label{class_f2_c_1_1_log_error_a40a853a8ce671575d7b57433b14d2789}
+
+\begin{DoxyCompactList}\small\item\em Logfile write allowed/forbidden (default: true). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Writing log files and exception handler. \par
+ 
+\begin{DoxyCode}
+ #define SETLOGERROR(error,string) error.setError(__FILE__,__FUNCTION__,__LINE__,
+      string) 
+\end{DoxyCode}
+ Sets the filename, line, and the function name. \par
+ 
+\begin{DoxyCode}
+ #define P_SETLOGERROR(error,pointer,string) error.setError(__FILE__,__FUNCTION__
+      ,__LINE__,pointer,string) 
+\end{DoxyCode}
+ Sets the filename, line, function name, and the address. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_log_error_ac571b7a599761f5ed869832b023a3d92}{
+\index{F2C::LogError@{F2C::LogError}!setError@{setError}}
+\index{setError@{setError}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{setError}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::LogError::setError (std::string {\em string})}}
+\label{class_f2_c_1_1_log_error_ac571b7a599761f5ed869832b023a3d92}
+
+
+setMethode: Set the Log text 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]LogFile Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_log_error_a37013f16d6418b8881c8df0be43909c6}{
+\index{F2C::LogError@{F2C::LogError}!setError@{setError}}
+\index{setError@{setError}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{setError}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::LogError::setError (std::string {\em file}, \/  std::string {\em func}, \/  {\bf uint} {\em line}, \/  void $\ast$ {\em ptr}, \/  std::string {\em string})}}
+\label{class_f2_c_1_1_log_error_a37013f16d6418b8881c8df0be43909c6}
+
+
+Sets the file name, line, function, and the Log text and the adress. 
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]Filename \item[{\em func}]Function name \item[{\em line}]line \item[{\em ptr}]Adress \item[{\em string}]Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_log_error_abce3f1efd9a5b93e1bd400f743ba398e}{
+\index{F2C::LogError@{F2C::LogError}!setError@{setError}}
+\index{setError@{setError}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{setError}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::LogError::setError (std::string {\em file}, \/  std::string {\em func}, \/  {\bf uint} {\em line}, \/  std::string {\em string})}}
+\label{class_f2_c_1_1_log_error_abce3f1efd9a5b93e1bd400f743ba398e}
+
+
+Sets the filename, line, function, and the Log text. 
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]Filename \item[{\em func}]Function name \item[{\em line}]Line \item[{\em string}]Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_log_error_a7821ec372e85a3d2c7095c4902525908}{
+\index{F2C::LogError@{F2C::LogError}!writeString@{writeString}}
+\index{writeString@{writeString}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{writeString}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::LogError::writeString (std::string {\em string})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_log_error_a7821ec372e85a3d2c7095c4902525908}
+
+
+Writes a text into the Log text. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]Text \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_f2_c_1_1_log_error_aa5dc474b29884812c02be68e1c45c56e}{
+\index{F2C::LogError@{F2C::LogError}!filename@{filename}}
+\index{filename@{filename}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{filename}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf F2C::LogError::filename}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_log_error_aa5dc474b29884812c02be68e1c45c56e}
+
+
+Default destructor. Log file name (default: \char`\"{}logfile.txt\char`\"{}) 

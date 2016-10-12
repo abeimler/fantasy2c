@@ -1,0 +1,204 @@
+\hypertarget{class_f2_c_1_1_log_error}{
+\section{F2C::LogError Class Reference}
+\label{class_f2_c_1_1_log_error}\index{F2C::LogError@{F2C::LogError}}
+}
+
+
+Writing log files and exception handler.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries LEError}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_log_error_a119ab8a21960a4b7a6dbd4ddce334e5f}{
+void \hyperlink{class_f2_c_1_1_log_error_a119ab8a21960a4b7a6dbd4ddce334e5f}{writeError} ()}
+\label{class_f2_c_1_1_log_error_a119ab8a21960a4b7a6dbd4ddce334e5f}
+
+\begin{DoxyCompactList}\small\item\em Creates and writes the log file. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_log_error_abce3f1efd9a5b93e1bd400f743ba398e}{setError} (std::string file, std::string func, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} line, std::string string)
+\begin{DoxyCompactList}\small\item\em Sets the filename, line, function, and the Log text. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_log_error_a37013f16d6418b8881c8df0be43909c6}{setError} (std::string file, std::string func, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} line, void $\ast$ptr, std::string string)
+\begin{DoxyCompactList}\small\item\em Sets the file name, line, function, and the Log text and the adress. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_log_error_a48e68471f785fe0a6482c825dcfa15d0}{
+std::string \hyperlink{class_f2_c_1_1_log_error_a48e68471f785fe0a6482c825dcfa15d0}{getError} () const }
+\label{class_f2_c_1_1_log_error_a48e68471f785fe0a6482c825dcfa15d0}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Log text \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_log_error_ac571b7a599761f5ed869832b023a3d92}{setError} (std::string string)
+\begin{DoxyCompactList}\small\item\em setMethode: Set the Log text \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_log_error_a37fe6ce832fff15978a84a923b081b1b}{
+static void \hyperlink{class_f2_c_1_1_log_error_a37fe6ce832fff15978a84a923b081b1b}{ClearLog} ()}
+\label{class_f2_c_1_1_log_error_a37fe6ce832fff15978a84a923b081b1b}
+
+\begin{DoxyCompactList}\small\item\em Clears the text in the Log file. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_f2_c_1_1_log_error_a7821ec372e85a3d2c7095c4902525908}{writeString} (std::string string)
+\begin{DoxyCompactList}\small\item\em Writes a text into the Log text. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_log_error_ac1645d431457463e0396b46d556ab88c}{
+static std::string \hyperlink{class_f2_c_1_1_log_error_ac1645d431457463e0396b46d556ab88c}{getOpenGLError} ()}
+\label{class_f2_c_1_1_log_error_ac1645d431457463e0396b46d556ab88c}
+
+\begin{DoxyCompactList}\small\item\em getMethode: OpenGL Error \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std::string \hyperlink{class_f2_c_1_1_log_error_aa5dc474b29884812c02be68e1c45c56e}{filename}
+\begin{DoxyCompactList}\small\item\em Default destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_log_error_a40a853a8ce671575d7b57433b14d2789}{
+static bool \hyperlink{class_f2_c_1_1_log_error_a40a853a8ce671575d7b57433b14d2789}{writelog}}
+\label{class_f2_c_1_1_log_error_a40a853a8ce671575d7b57433b14d2789}
+
+\begin{DoxyCompactList}\small\item\em Logfile write allowed/forbidden (default: true). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{class_f2_c_1_1_log_error_a572bf2fc9d5712eecbab42ba4f0fe3b3}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_log_error}{LogError} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\item 
+std::istream \& \hyperlink{class_f2_c_1_1_log_error_a6fcf2a3199b92518fa70d937aea78aed}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_log_error}{LogError} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Writing log files and exception handler. \par
+ 
+\begin{DoxyCode}
+ #define SETLOGERROR(error,string) error.setError(__FILE__,__FUNCTION__,__LINE__,
+      string) 
+\end{DoxyCode}
+ Sets the filename, line, and the function name. \par
+ 
+\begin{DoxyCode}
+ #define P_SETLOGERROR(error,pointer,string) error.setError(__FILE__,__FUNCTION__
+      ,__LINE__,pointer,string) 
+\end{DoxyCode}
+ Sets the filename, line, function name, and the address. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_log_error_abce3f1efd9a5b93e1bd400f743ba398e}{
+\index{F2C::LogError@{F2C::LogError}!setError@{setError}}
+\index{setError@{setError}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{setError}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::LogError::setError (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ file, }
+\item[{std::string}]{ func, }
+\item[{{\bf uint}}]{ line, }
+\item[{std::string}]{ string}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_log_error_abce3f1efd9a5b93e1bd400f743ba398e}
+
+
+Sets the filename, line, function, and the Log text. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]Filename \item[{\em func}]Function name \item[{\em line}]Line \item[{\em string}]Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_log_error_ac571b7a599761f5ed869832b023a3d92}{
+\index{F2C::LogError@{F2C::LogError}!setError@{setError}}
+\index{setError@{setError}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{setError}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::LogError::setError (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ string}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_log_error_ac571b7a599761f5ed869832b023a3d92}
+
+
+setMethode: Set the Log text 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]LogFile Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_log_error_a37013f16d6418b8881c8df0be43909c6}{
+\index{F2C::LogError@{F2C::LogError}!setError@{setError}}
+\index{setError@{setError}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{setError}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::LogError::setError (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ file, }
+\item[{std::string}]{ func, }
+\item[{{\bf uint}}]{ line, }
+\item[{void $\ast$}]{ ptr, }
+\item[{std::string}]{ string}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_log_error_a37013f16d6418b8881c8df0be43909c6}
+
+
+Sets the file name, line, function, and the Log text and the adress. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]Filename \item[{\em func}]Function name \item[{\em line}]line \item[{\em ptr}]Adress \item[{\em string}]Text \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_log_error_a7821ec372e85a3d2c7095c4902525908}{
+\index{F2C::LogError@{F2C::LogError}!writeString@{writeString}}
+\index{writeString@{writeString}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{writeString}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::LogError::writeString (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_log_error_a7821ec372e85a3d2c7095c4902525908}
+
+
+Writes a text into the Log text. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]Text \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_f2_c_1_1_log_error_a572bf2fc9d5712eecbab42ba4f0fe3b3}{
+\index{F2C::LogError@{F2C::LogError}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const {\bf LogError} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_log_error_a572bf2fc9d5712eecbab42ba4f0fe3b3}
+
+
+Write the Object into output stream. (dont write pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_log_error_a6fcf2a3199b92518fa70d937aea78aed}{
+\index{F2C::LogError@{F2C::LogError}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{{\bf LogError} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_log_error_a6fcf2a3199b92518fa70d937aea78aed}
+
+
+Read the Object from input stream. (dont read pointer (\hyperlink{class_f2_c_1_1_viewport}{Viewport},clip\_\-rect)). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_f2_c_1_1_log_error_aa5dc474b29884812c02be68e1c45c56e}{
+\index{F2C::LogError@{F2C::LogError}!filename@{filename}}
+\index{filename@{filename}!F2C::LogError@{F2C::LogError}}
+\subsubsection[{filename}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf F2C::LogError::filename}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_log_error_aa5dc474b29884812c02be68e1c45c56e}
+
+
+Default destructor. 
+
+Log file name (default: logfile) 

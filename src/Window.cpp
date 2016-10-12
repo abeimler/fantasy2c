@@ -1,0 +1,279 @@
+#include <Fantasy2C/Window.hpp>
+
+namespace F2C{
+
+Window::Window():
+    FPS(0.0f),
+	startTime(0.0f),
+	startTick(0.0f),
+	activTime(0.0f),
+	frames(0)
+{}
+
+Window::Window(std::string title,uint width,uint height, int bits, bool fullscreen):
+    FPS(0.0f),
+	startTime(0.0f),
+	startTick(0.0f),
+	activTime(0.0f),
+	frames(0)
+{
+    this->CreateGLWindow(title,width,height,bits,fullscreen);
+    this->InitGL();
+}
+
+void Window::UpdateGLScreen(){
+   this->frames++;
+   glfwSwapBuffers();
+   this->activTime = glfwGetTime();
+   if( (this->activTime-this->startTime) > 1.0 || this->frames == 0 ){
+      this->FPS = static_cast<double>(this->frames) / (this->activTime-this->startTime);
+      this->startTime = this->activTime;
+      this->frames = 0;
+   }
+}
+
+void Window::ReSize(uint wndwidth, uint wndheight,uint screenwidth,uint screenheight){
+	if(wndheight < 1)
+		wndheight = 1;
+    if(screenheight < 1)
+         screenheight = 1;
+
+    glfwSetWindowSize(wndwidth,wndheight);
+	glViewport(0,wndheight-screenheight,screenwidth,screenheight);
+
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+
+	glOrtho(0,screenwidth,screenheight,0,INT_MIN,INT_MAX);
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+}
+
+void Window::InitGL(){
+	glAlphaFunc(GL_GREATER, 0.000f);
+	glDepthFunc(GL_LEQUAL);
+    glHint(GL_PERSPECTIVE_CORRECTION_HINT,GL_NICEST);
+    glHint(GL_POINT_SMOOTH_HINT,GL_NICEST);
+}
+
+void Window::ClearGLScene(){
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+	glLoadIdentity();
+}
+
+void Window::ShutdownGLWindow(){
+	glfwTerminate();
+}
+
+
+bool Window::CreateGLWindow(std::string title,uint width,uint height, int bits, bool fullscreen){
+   if(! (glfwInit()))
+      return false;
+
+   if (height == 0) height = 1;
+
+	this->frames = 0;
+	this->FPS = 0.0f;
+	this->activTime = 0.0f;
+	this->startTime = glfwGetTime();
+	this->startTick = 0.0f;
+
+    this->showmouse = false;
+
+	int rgba[4] = {0,0,0,0};
+	if(bits == 8){
+	   rgba[0] = 3;
+	   rgba[1] = 3;
+	   rgba[2] = 2;
+   }else if(bits == 12){
+	   rgba[0] = 4;
+	   rgba[1] = 4;
+	   rgba[2] = 4;
+   }else if(bits == 16){
+	   rgba[0] = 5;
+	   rgba[1] = 6;
+	   rgba[2] = 5;
+   }else if(bits == 24){
+      rgba[0] = 8;
+      rgba[1] = 8;
+      rgba[2] = 8;
+   }else if(bits == 36){
+      rgba[0] = 12;
+      rgba[1] = 12;
+      rgba[2] = 12;
+   }else if(bits == 42){
+      rgba[0] = 14;
+      rgba[1] = 14;
+      rgba[2] = 14;
+   }else if(bits == 48){
+      rgba[0] = 16;
+      rgba[1] = 16;
+      rgba[2] = 16;
+   }else{
+      rgba[0] = 8;
+      rgba[1] = 8;
+      rgba[2] = 8;
+      rgba[3] = 8;
+   }
+
+	int mode = (fullscreen)? GLFW_FULLSCREEN : GLFW_WINDOW;
+	this->showmouse = (fullscreen)? false : true;
+
+	int sbits = std::max<int>(16,bits);
+	if(sbits <= 32)
+        sbits = std::min<int>(24,sbits);
+    else
+        sbits = 32;
+
+    int zbits = sizeof(int)*8;
+
+   if(! (glfwOpenWindow(
+           width, height,     // Width and height of window
+           rgba[0], rgba[1], rgba[2],           // Number of red, green, and blue bits for color buffer
+           rgba[3],                 // Number of bits for alpha buffer
+           zbits,              // Number of bits for depth buffer (Z-buffer)
+           sbits,              // Number of bits for stencil buffer
+           mode        // Window or Fullscreen mode
+         )
+         )
+      ){
+      glfwTerminate();
+      return false;
+   }
+
+   glfwSetWindowTitle(title.c_str());
+
+   this->ReSize(width,height,width,height);
+
+	return true;
+}
+
+void Window::setWindowPosition(int x,int y){glfwSetWindowPos(x,y);}
+void Window::setWindowSize(uint wndwidth, uint wndheight){glfwSetWindowSize(wndwidth,wndheight);}
+void Window::setWindowTitle(std::string title){glfwSetWindowTitle(title.c_str());}
+
+void Window::setWindowHint(WindowProperty::ParamWindow paramwindow,int value){
+   glfwOpenWindowHint(paramwindow,value);
+}
+
+int Window::getWindowParam(WindowProperty::ParamWindow param){
+   return glfwGetWindowParam(param);
+}
+
+void Window::getWindowSize(int* width,int* height){glfwGetWindowSize( width, height );}
+
+void Window::setTime(double time){glfwSetTime(time);}
+double Window::getTime(){return glfwGetTime();}
+void Window::Sleep(double time){glfwSleep(time);}
+
+void Window::startTicks(){this->startTick = glfwGetTime();}
+double Window::getTicks(){return glfwGetTime()-this->startTick;}
+
+void Window::getSize(int* wndwidth, int* wndheight,uint* screenwidth,uint* screenheight){
+   GLint params[4];
+   glGetIntegerv(GL_VIEWPORT,params);
+   if(screenwidth)
+        *screenwidth = params[2];
+   if(screenheight)
+        *screenheight = params[3];
+   glfwGetWindowSize(wndwidth,wndheight);
+}
+
+void Window::getScreenSize(uint* screenwidth,uint* screenheight){
+   GLint params[4];
+   glGetIntegerv(GL_VIEWPORT,params);
+   if(screenwidth)
+        *screenwidth = params[2];
+   if(screenheight)
+        *screenheight = params[3];
+}
+Rect Window::getWindowSize(){
+    Rect rect;
+    this->getWindowSize((int*)&rect.width,(int*)&rect.height);
+    return rect;
+}
+Rect Window::getScreenSize(){
+    Rect rect;
+    this->getScreenSize(&rect.width,&rect.height);
+    return rect;
+}
+
+double Window::getFPS(){return this->FPS;}
+uint Window::getFrame(){return this->frames;}
+
+void Window::showMouseCursor(bool show){
+    if(show)
+        glfwEnable(GLFW_MOUSE_CURSOR);
+    else
+        glfwDisable(GLFW_MOUSE_CURSOR);
+    this->showmouse = show;
+}
+
+bool Window::getShowMouseCursor(){
+    return this->showmouse;
+}
+
+Timer::Timer():
+    starttime(0.0f),
+    pausetime(0.0f),
+    isStart(false),
+    isPause(false)
+{
+    this->start();
+}
+
+void Timer::start(){
+    this->isStart = true;
+    this->isPause = false;
+
+    this->starttime = glfwGetTime();
+}
+void Timer::pause(){
+    //If the timer is running and isn't already paused
+    if(this->isStart && !this->isPause){
+        this->isPause = true;
+        //Calculate the paused time
+        this->pausetime = glfwGetTime() - this->starttime;
+    }
+}
+void Timer::unpause(){
+    //If the timer is paused
+    if(this->isPause){
+        this->isPause = false;
+        //Reset the starting ticks
+        this->starttime = glfwGetTime() - this->pausetime;
+        this->pausetime = 0.0f; //Reset the paused time
+    }
+}
+void Timer::reset(){
+    this->stop();
+    this->start();
+}
+void Timer::stop(){
+    this->isPause = false;
+    this->isStart = false;
+}
+
+bool Timer::isStarted() const { return this->isStart; }
+bool Timer::isPaused() const { return this->isPause; }
+
+double Timer::getTime() const {
+    if(this->isStart){ //timer is running
+        if(this->isPause) //timer is paused
+            //Return the time when the timer was paused
+            return this->pausetime;
+        else
+            //Return the current time - the start time
+            return glfwGetTime() - this->starttime;
+    }
+
+    //If the timer isn't running
+    return 0.0f;
+
+}
+double Timer::getTimeMilisec() const { return this->getTime()*1000.0f;}
+
+};
+
+

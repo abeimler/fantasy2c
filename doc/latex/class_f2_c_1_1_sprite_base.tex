@@ -1,0 +1,427 @@
+\hypertarget{class_f2_c_1_1_sprite_base}{
+\section{F2C::SpriteBase Class Reference}
+\label{class_f2_c_1_1_sprite_base}\index{F2C::SpriteBase@{F2C::SpriteBase}}
+}
+
+
+Basis Class of \hyperlink{class_f2_c_1_1_sprite}{Sprite}.  
+
+
+Inheritance diagram for F2C::SpriteBase:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_f2_c_1_1_sprite_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_sprite_base_afbb00eac253f057d3ad63a2ac5cec749}{
+\hyperlink{class_f2_c_1_1_sprite_base_afbb00eac253f057d3ad63a2ac5cec749}{SpriteBase} ()}
+\label{class_f2_c_1_1_sprite_base_afbb00eac253f057d3ad63a2ac5cec749}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a283941cc4bae11af8819212baedbc73d}{
+virtual \hyperlink{class_f2_c_1_1_sprite_base_a283941cc4bae11af8819212baedbc73d}{$\sim$SpriteBase} ()}
+\label{class_f2_c_1_1_sprite_base_a283941cc4bae11af8819212baedbc73d}
+
+\begin{DoxyCompactList}\small\item\em Default destructor (delete texture). \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_sprite_base_aa00534841b3adc48e992e2282ec6963f}{SpriteBase} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} $\ast$bitmap)
+\begin{DoxyCompactList}\small\item\em Generate texture and load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a67e2731423751d23e05db92457ab7afe}{
+\hyperlink{class_f2_c_1_1_sprite_base_a67e2731423751d23e05db92457ab7afe}{SpriteBase} (const \hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase} \&copy)}
+\label{class_f2_c_1_1_sprite_base_a67e2731423751d23e05db92457ab7afe}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_af56c5ea473d444f4c8b65bd51d7fd724}{
+\hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase} \& \hyperlink{class_f2_c_1_1_sprite_base_af56c5ea473d444f4c8b65bd51d7fd724}{operator=} (const \hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase} \&copy)}
+\label{class_f2_c_1_1_sprite_base_af56c5ea473d444f4c8b65bd51d7fd724}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator with deep copy. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_base_a8f7ea8a95a07688bfb2e6268a52b9215}{copyProperties} (const \hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase} \&copy)
+\begin{DoxyCompactList}\small\item\em Copies all properties(x,y,z-\/Coord.,vColor,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_af9dfc70083ca5a774d3874b61a6f9abc}{
+virtual int \hyperlink{class_f2_c_1_1_sprite_base_af9dfc70083ca5a774d3874b61a6f9abc}{render} () const =0}
+\label{class_f2_c_1_1_sprite_base_af9dfc70083ca5a774d3874b61a6f9abc}
+
+\begin{DoxyCompactList}\small\item\em Render the bitmap on screen. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_base_a4a931a54423a0aae08eacc30e96d485f}{setRed} (\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} red)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets the color red of all 4 Vertices. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_base_a22cb562ef6c8e857cf78cd3037dbfe48}{setGreen} (\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} green)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets the color green of all 4 Vertices. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_base_ae08702a286ecfde0cf4ef8aacc8c9656}{setBlue} (\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} blue)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets the color blue of all 4 Vertices. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_base_a476e1be82005a18cce5989a478d3f5a4}{setAlpha} (\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} alpha)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets the color alpha of all 4 Vertices. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_base_a8dea109774f2021855921952a55dad34}{setColor} (const \hyperlink{class_f2_c_1_1_color}{Color} \&color)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets all colors of the 4 Vertices. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_base_a70ecaf3b26c6a7e1490d276895a82694}{setColor} (\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} red, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} green, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} blue, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} alpha)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets all colors of the 4 Vertices. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_base_ad28077e5723498e1257b461abd805395}{setColor} (\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} red, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} green, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} blue)
+\begin{DoxyCompactList}\small\item\em setMethode: Sets all colors of the 4 Vertices. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a668a15b3c93514f7dffd7576b0ad71aa}{
+GLuint \hyperlink{class_f2_c_1_1_sprite_base_a668a15b3c93514f7dffd7576b0ad71aa}{getTexture} () const }
+\label{class_f2_c_1_1_sprite_base_a668a15b3c93514f7dffd7576b0ad71aa}
+
+\begin{DoxyCompactList}\small\item\em getMethode: OpenGL Texture Name(ID) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a38e5444bfd4600d0d32b5bfe7c5661d4}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_sprite_base_a38e5444bfd4600d0d32b5bfe7c5661d4}{getTexWidth} () const }
+\label{class_f2_c_1_1_sprite_base_a38e5444bfd4600d0d32b5bfe7c5661d4}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Width of the bitmap. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a12c777b014bd94631e0d232e97b069c6}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_sprite_base_a12c777b014bd94631e0d232e97b069c6}{getTexHeight} () const }
+\label{class_f2_c_1_1_sprite_base_a12c777b014bd94631e0d232e97b069c6}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Height of the bitmap. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a1c2bcccea45cbe282628b7c7e43cd93c}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_sprite_base_a1c2bcccea45cbe282628b7c7e43cd93c}{getTexBits} () const }
+\label{class_f2_c_1_1_sprite_base_a1c2bcccea45cbe282628b7c7e43cd93c}
+
+\begin{DoxyCompactList}\small\item\em getMethode: \hyperlink{class_f2_c_1_1_color}{Color} depth (in bits) of the texture. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_ab5746d99d97e67289b493a6c022fdb58}{
+Image::DataFormat \hyperlink{class_f2_c_1_1_sprite_base_ab5746d99d97e67289b493a6c022fdb58}{getTexDataFormat} () const }
+\label{class_f2_c_1_1_sprite_base_ab5746d99d97e67289b493a6c022fdb58}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Pixel format of the texture. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_sprite_base_a94df734d094880352b1dc517a9332faa}{setBitmap} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} $\ast$bitmap)
+\begin{DoxyCompactList}\small\item\em Generate texture and load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a23497fb7cb08ffa9ac5c34ec7cf88ffd}{
+\hyperlink{class_f2_c_1_1_rect}{Rect} \hyperlink{class_f2_c_1_1_sprite_base_a23497fb7cb08ffa9ac5c34ec7cf88ffd}{src\_\-rect}}
+\label{class_f2_c_1_1_sprite_base_a23497fb7cb08ffa9ac5c34ec7cf88ffd}
+
+\begin{DoxyCompactList}\small\item\em Show rect of \hyperlink{class_f2_c_1_1_sprite}{Sprite}. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a41d8b0b48cdd4a066cf6af3f806ce900}{
+bool \hyperlink{class_f2_c_1_1_sprite_base_a41d8b0b48cdd4a066cf6af3f806ce900}{show}}
+\label{class_f2_c_1_1_sprite_base_a41d8b0b48cdd4a066cf6af3f806ce900}
+
+\begin{DoxyCompactList}\small\item\em Show \hyperlink{class_f2_c_1_1_sprite}{Sprite} On/Off. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a552f88034a04e6ac41f22519ac53076c}{
+int \hyperlink{class_f2_c_1_1_sprite_base_a552f88034a04e6ac41f22519ac53076c}{x}}
+\label{class_f2_c_1_1_sprite_base_a552f88034a04e6ac41f22519ac53076c}
+
+\begin{DoxyCompactList}\small\item\em X-\/coordinate. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a33a3d48628d9a3130c603eaf902f209f}{
+int \hyperlink{class_f2_c_1_1_sprite_base_a33a3d48628d9a3130c603eaf902f209f}{y}}
+\label{class_f2_c_1_1_sprite_base_a33a3d48628d9a3130c603eaf902f209f}
+
+\begin{DoxyCompactList}\small\item\em Y-\/coordinate. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a9895daf6ea9ca00da376e8fed3f35f74}{
+int \hyperlink{class_f2_c_1_1_sprite_base_a9895daf6ea9ca00da376e8fed3f35f74}{z}}
+\label{class_f2_c_1_1_sprite_base_a9895daf6ea9ca00da376e8fed3f35f74}
+
+\begin{DoxyCompactList}\small\item\em Z-\/coordinate. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a9235af48d901047bec58ff47967a0448}{
+double \hyperlink{class_f2_c_1_1_sprite_base_a9235af48d901047bec58ff47967a0448}{zoom\_\-x}}
+\label{class_f2_c_1_1_sprite_base_a9235af48d901047bec58ff47967a0448}
+
+\begin{DoxyCompactList}\small\item\em Zoom factor of the X-\/axis. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a477efe5d34ffd44a7efa53886d4e6c5b}{
+double \hyperlink{class_f2_c_1_1_sprite_base_a477efe5d34ffd44a7efa53886d4e6c5b}{zoom\_\-y}}
+\label{class_f2_c_1_1_sprite_base_a477efe5d34ffd44a7efa53886d4e6c5b}
+
+\begin{DoxyCompactList}\small\item\em Zoom factor of the Y-\/axis. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_abf960116205e3bfdd3931f1425573983}{
+int \hyperlink{class_f2_c_1_1_sprite_base_abf960116205e3bfdd3931f1425573983}{angle\_\-x}}
+\label{class_f2_c_1_1_sprite_base_abf960116205e3bfdd3931f1425573983}
+
+\begin{DoxyCompactList}\small\item\em Rotation angle (in degrees) of the X-\/axis. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a457087831441f94ca1bde73e7b1f9807}{
+int \hyperlink{class_f2_c_1_1_sprite_base_a457087831441f94ca1bde73e7b1f9807}{angle\_\-y}}
+\label{class_f2_c_1_1_sprite_base_a457087831441f94ca1bde73e7b1f9807}
+
+\begin{DoxyCompactList}\small\item\em Rotation angle (in degrees) of the Y-\/axis. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a5b407a83fd63a06e4fd6ab27f2086bd0}{
+int \hyperlink{class_f2_c_1_1_sprite_base_a5b407a83fd63a06e4fd6ab27f2086bd0}{angle\_\-z}}
+\label{class_f2_c_1_1_sprite_base_a5b407a83fd63a06e4fd6ab27f2086bd0}
+
+\begin{DoxyCompactList}\small\item\em Rotation angle (in degrees) of the Z-\/axis. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a24e4acd632808884f0c5e573afbdbb4a}{
+\hyperlink{namespace_f2_c_1_1_blend_type_a582fe2d83fb813041785794568e5a414}{BlendType::Blend\_\-Type} \hyperlink{class_f2_c_1_1_sprite_base_a24e4acd632808884f0c5e573afbdbb4a}{blend\_\-type}}
+\label{class_f2_c_1_1_sprite_base_a24e4acd632808884f0c5e573afbdbb4a}
+
+\begin{DoxyCompactList}\small\item\em Blending type. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_color}{Color} \hyperlink{class_f2_c_1_1_sprite_base_ae05d180666e3750a5d5f909f04e686c4}{vColor} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em Colors of the 4 Vertices. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a1360a92b9ab1b65e77bf21ffab082be7}{
+bool \hyperlink{class_f2_c_1_1_sprite_base_a1360a92b9ab1b65e77bf21ffab082be7}{flippedH}}
+\label{class_f2_c_1_1_sprite_base_a1360a92b9ab1b65e77bf21ffab082be7}
+
+\begin{DoxyCompactList}\small\item\em flipped horizontally (Y-\/axis 180 degree turn) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a4ee02d18d2d3637c176d0f32dcdfaf32}{
+bool \hyperlink{class_f2_c_1_1_sprite_base_a4ee02d18d2d3637c176d0f32dcdfaf32}{flippedV}}
+\label{class_f2_c_1_1_sprite_base_a4ee02d18d2d3637c176d0f32dcdfaf32}
+
+\begin{DoxyCompactList}\small\item\em flipped vertically (X-\/axis 180 degree turn) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_sprite_base_aa85f4d27f67d076a0fcbd90ff2786be4}{
+GLuint \hyperlink{class_f2_c_1_1_sprite_base_aa85f4d27f67d076a0fcbd90ff2786be4}{texture}}
+\label{class_f2_c_1_1_sprite_base_aa85f4d27f67d076a0fcbd90ff2786be4}
+
+\begin{DoxyCompactList}\small\item\em OpenGL Texture Name(ID). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a3beb2a38c8b3bb83de7c6c9815b3380e}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_sprite_base_a3beb2a38c8b3bb83de7c6c9815b3380e}{bitmapWidth}}
+\label{class_f2_c_1_1_sprite_base_a3beb2a38c8b3bb83de7c6c9815b3380e}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} width. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a6b8f515cbb9260887b6be67b9787f9d9}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_sprite_base_a6b8f515cbb9260887b6be67b9787f9d9}{bitmapHeight}}
+\label{class_f2_c_1_1_sprite_base_a6b8f515cbb9260887b6be67b9787f9d9}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} height. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_ac14c1c3f97eafdcc312c92f7ceb1a144}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_sprite_base_ac14c1c3f97eafdcc312c92f7ceb1a144}{pixelsWidth}}
+\label{class_f2_c_1_1_sprite_base_ac14c1c3f97eafdcc312c92f7ceb1a144}
+
+\begin{DoxyCompactList}\small\item\em Width (or height) of the pixel array. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a8e67797533a19e21ba9195b9679566b8}{
+\hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte} $\ast$ \hyperlink{class_f2_c_1_1_sprite_base_a8e67797533a19e21ba9195b9679566b8}{pixels}}
+\label{class_f2_c_1_1_sprite_base_a8e67797533a19e21ba9195b9679566b8}
+
+\begin{DoxyCompactList}\small\item\em Copy of pixels. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_a3f77c0311c6528deddc24e09bd132011}{
+Image::DataFormat \hyperlink{class_f2_c_1_1_sprite_base_a3f77c0311c6528deddc24e09bd132011}{bitmapFormat}}
+\label{class_f2_c_1_1_sprite_base_a3f77c0311c6528deddc24e09bd132011}
+
+\begin{DoxyCompactList}\small\item\em Pixel data format. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_sprite_base_aace539201a27ea859def56d690cc47f9}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_sprite_base_aace539201a27ea859def56d690cc47f9}{bitmapBits}}
+\label{class_f2_c_1_1_sprite_base_aace539201a27ea859def56d690cc47f9}
+
+\begin{DoxyCompactList}\small\item\em Bits per pixel (color depth (in bits)). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{class_f2_c_1_1_sprite_base_a433229722dd7051ac692e97ea6615ff1}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. (dont write the Texture Name). \item\end{DoxyCompactList}\item 
+std::istream \& \hyperlink{class_f2_c_1_1_sprite_base_a43308fc1b7b7558a8c58151bc5dd43fb}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_sprite_base}{SpriteBase} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. (use old(or create new) Texture Name). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basis Class of \hyperlink{class_f2_c_1_1_sprite}{Sprite}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_sprite_base_aa00534841b3adc48e992e2282ec6963f}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!SpriteBase@{SpriteBase}}
+\index{SpriteBase@{SpriteBase}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{SpriteBase}]{\setlength{\rightskip}{0pt plus 5cm}F2C::SpriteBase::SpriteBase (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} $\ast$}]{ bitmap}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_aa00534841b3adc48e992e2282ec6963f}
+
+
+Generate texture and load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bitmap}]Pointer of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_sprite_base_a8f7ea8a95a07688bfb2e6268a52b9215}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!copyProperties@{copyProperties}}
+\index{copyProperties@{copyProperties}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{copyProperties}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SpriteBase::copyProperties (
+\begin{DoxyParamCaption}
+\item[{const {\bf SpriteBase} \&}]{ copy}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_a8f7ea8a95a07688bfb2e6268a52b9215}
+
+
+Copies all properties(x,y,z-\/Coord.,vColor,...), except the texture(\hyperlink{class_f2_c_1_1_bitmap}{Bitmap},bitmapWidth,Height,...). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]Source copy \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_base_a476e1be82005a18cce5989a478d3f5a4}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!setAlpha@{setAlpha}}
+\index{setAlpha@{setAlpha}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{setAlpha}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SpriteBase::setAlpha (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{ alpha}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_a476e1be82005a18cce5989a478d3f5a4}
+
+
+setMethode: Sets the color alpha of all 4 Vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em alpha}]Alpha \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_base_a94df734d094880352b1dc517a9332faa}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!setBitmap@{setBitmap}}
+\index{setBitmap@{setBitmap}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{setBitmap}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SpriteBase::setBitmap (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} $\ast$}]{ bitmap}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_a94df734d094880352b1dc517a9332faa}
+
+
+Generate texture and load the pixels from the bitmap into the texture. If NULL, is equivalent to the behavior as a disabled texturing. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bitmap}]Pointer of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_base_ae08702a286ecfde0cf4ef8aacc8c9656}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!setBlue@{setBlue}}
+\index{setBlue@{setBlue}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{setBlue}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SpriteBase::setBlue (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{ blue}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_ae08702a286ecfde0cf4ef8aacc8c9656}
+
+
+setMethode: Sets the color blue of all 4 Vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em blue}]Blue \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_base_a8dea109774f2021855921952a55dad34}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!setColor@{setColor}}
+\index{setColor@{setColor}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{setColor}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SpriteBase::setColor (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color} \&}]{ color}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_a8dea109774f2021855921952a55dad34}
+
+
+setMethode: Sets all colors of the 4 Vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em color}]\hyperlink{class_f2_c_1_1_color}{Color} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_base_ad28077e5723498e1257b461abd805395}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!setColor@{setColor}}
+\index{setColor@{setColor}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{setColor}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SpriteBase::setColor (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{ red, }
+\item[{{\bf uint8}}]{ green, }
+\item[{{\bf uint8}}]{ blue}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_ad28077e5723498e1257b461abd805395}
+
+
+setMethode: Sets all colors of the 4 Vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em red}]Red \item[{\em green}]Green \item[{\em blue}]Blue \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_base_a70ecaf3b26c6a7e1490d276895a82694}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!setColor@{setColor}}
+\index{setColor@{setColor}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{setColor}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SpriteBase::setColor (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{ red, }
+\item[{{\bf uint8}}]{ green, }
+\item[{{\bf uint8}}]{ blue, }
+\item[{{\bf uint8}}]{ alpha}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_a70ecaf3b26c6a7e1490d276895a82694}
+
+
+setMethode: Sets all colors of the 4 Vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em red}]Red \item[{\em green}]Green \item[{\em blue}]Blue \item[{\em alpha}]Alpha \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_base_a22cb562ef6c8e857cf78cd3037dbfe48}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!setGreen@{setGreen}}
+\index{setGreen@{setGreen}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{setGreen}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SpriteBase::setGreen (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{ green}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_a22cb562ef6c8e857cf78cd3037dbfe48}
+
+
+setMethode: Sets the color green of all 4 Vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em green}]Green \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_base_a4a931a54423a0aae08eacc30e96d485f}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!setRed@{setRed}}
+\index{setRed@{setRed}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{setRed}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::SpriteBase::setRed (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{ red}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_sprite_base_a4a931a54423a0aae08eacc30e96d485f}
+
+
+setMethode: Sets the color red of all 4 Vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em red}]Red \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_f2_c_1_1_sprite_base_a433229722dd7051ac692e97ea6615ff1}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const {\bf SpriteBase} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_sprite_base_a433229722dd7051ac692e97ea6615ff1}
+
+
+Write the Object into output stream. (dont write the Texture Name). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_sprite_base_a43308fc1b7b7558a8c58151bc5dd43fb}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{{\bf SpriteBase} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_sprite_base_a43308fc1b7b7558a8c58151bc5dd43fb}
+
+
+Read the Object from input stream. (use old(or create new) Texture Name). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_f2_c_1_1_sprite_base_ae05d180666e3750a5d5f909f04e686c4}{
+\index{F2C::SpriteBase@{F2C::SpriteBase}!vColor@{vColor}}
+\index{vColor@{vColor}!F2C::SpriteBase@{F2C::SpriteBase}}
+\subsubsection[{vColor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} {\bf F2C::SpriteBase::vColor}\mbox{[}4\mbox{]}}}
+\label{class_f2_c_1_1_sprite_base_ae05d180666e3750a5d5f909f04e686c4}
+
+
+Colors of the 4 Vertices. 
+
+ 

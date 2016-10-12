@@ -1,0 +1,1006 @@
+\hypertarget{class_f2_c_1_1_bitmap}{
+\section{F2C::Bitmap Class Reference}
+\label{class_f2_c_1_1_bitmap}\index{F2C::Bitmap@{F2C::Bitmap}}
+}
+
+
+Loading image files. \par
+ Automatically creates a pixel array with a quadratic power of 2 (32x32, 64x64 ,..., 512x512 ,...) \par
+ and paste the loaded image into the pixel array. \par
+ DevIL Supported Formats: \par
+ Load: \par
+.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f2_c_1_1_bitmap_ac18e6a899ac76bb1fb436f10c687c8ac}{
+\hyperlink{class_f2_c_1_1_bitmap_ac18e6a899ac76bb1fb436f10c687c8ac}{Bitmap} ()}
+\label{class_f2_c_1_1_bitmap_ac18e6a899ac76bb1fb436f10c687c8ac}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_adaf52fdbe54a022c38ff29d08c4cf378}{
+virtual \hyperlink{class_f2_c_1_1_bitmap_adaf52fdbe54a022c38ff29d08c4cf378}{$\sim$Bitmap} ()}
+\label{class_f2_c_1_1_bitmap_adaf52fdbe54a022c38ff29d08c4cf378}
+
+\begin{DoxyCompactList}\small\item\em Delete the pixels from memory. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_aee12ee2811fa7b91cc0319b726ac0561}{
+\hyperlink{class_f2_c_1_1_bitmap_aee12ee2811fa7b91cc0319b726ac0561}{Bitmap} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&copy)}
+\label{class_f2_c_1_1_bitmap_aee12ee2811fa7b91cc0319b726ac0561}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a131077faaedc8f4893e461137f4e7a5b}{
+\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \& \hyperlink{class_f2_c_1_1_bitmap_a131077faaedc8f4893e461137f4e7a5b}{operator=} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&copy)}
+\label{class_f2_c_1_1_bitmap_a131077faaedc8f4893e461137f4e7a5b}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator with deep copy. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_bitmap_a8e61f5101f6303564a679fd582051fe9}{Bitmap} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height)
+\begin{DoxyCompactList}\small\item\em Creates an empty bitmap with the specified height and width. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_bitmap_a2fc3db9e8487a8826b5e2105963aad14}{Bitmap} (std::string filename)
+\begin{DoxyCompactList}\small\item\em Load an Image File. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_bitmap_a89985844df7be6208ab82f479d7f0957}{Bitmap} (std::string filename, Image::ImageType type)
+\begin{DoxyCompactList}\small\item\em Load an Image File. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_bitmap_a16a53001931f175f10408c42f395b066}{Bitmap} (FILE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Load an Image from Memory. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_bitmap_a07b8097aee6bc62f28f6b8305d83ce96}{Bitmap} (FILE $\ast$stream, Image::ImageType type)
+\begin{DoxyCompactList}\small\item\em Load an Image from Memory. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_bitmap_ae6dae98f50692de31b73e4f918cdc6d3}{Bitmap} (std::istream \&stream)
+\begin{DoxyCompactList}\small\item\em Load an Image from Memory. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_bitmap_ad9ff1a578651fe915b28455c39daef4d}{Bitmap} (std::istream \&stream, Image::ImageType type)
+\begin{DoxyCompactList}\small\item\em Load an Image from Memory. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_bitmap_a073dc6afa7a1f97907f60359210b1d6b}{Bitmap} (const \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte} $\ast$pixels, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} bpp, Image::DataFormat format)
+\begin{DoxyCompactList}\small\item\em Load an pixelarray into \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_bitmap_a06332b232319d4b47679ac58a37b7c2e}{Bitmap} (const std::vector$<$ \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte} $>$ \&pixels, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} bpp, Image::DataFormat format)
+\begin{DoxyCompactList}\small\item\em Load an pixelarray into \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_a79af8ccf66ef1b105ae696978735d465}{loadFile} (FILE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Load an Image from Memory. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_a0f37fbc47d787ad2dbc9463cab135a44}{loadFile} (FILE $\ast$stream, Image::ImageType type)
+\begin{DoxyCompactList}\small\item\em Load an Image from Memory. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_a1b7095b2eea63245aad49929b2f7303c}{loadFile} (std::istream \&stream)
+\begin{DoxyCompactList}\small\item\em Load an Image from Memory. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_a9e51707f78fa8e1732c0b082fff16c34}{loadFile} (std::istream \&stream, Image::ImageType type)
+\begin{DoxyCompactList}\small\item\em Load an Image from Memory. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_a9f318b926d8175b19038aef999d24ce4}{loadFile} (std::string filename)
+\begin{DoxyCompactList}\small\item\em Load an Image File. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_a7de46ee1b228de65b7ef22021ccff4d5}{loadFile} (std::string filename, Image::ImageType type)
+\begin{DoxyCompactList}\small\item\em Load an Image File. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_aaec3a71bd846e0570c62d34bd2d4b80c}{newBitmap} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height)
+\begin{DoxyCompactList}\small\item\em Creates an empty bitmap with the specified height and width. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_ad8854f706211292b72ee7ab29f50367f}{loadPixelArray} (const \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte} $\ast$pixels, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} bpp, Image::DataFormat format)
+\begin{DoxyCompactList}\small\item\em Load an pixelarray into \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_ae707e2e499d1bc72465be4ac739bccfa}{loadPixelArray} (const std::vector$<$ \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte} $>$ \&pixels, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} bpp, Image::DataFormat format)
+\begin{DoxyCompactList}\small\item\em Load an pixelarray into \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a813d77416c70e0030659a67d490d29e0}{
+void \hyperlink{class_f2_c_1_1_bitmap_a813d77416c70e0030659a67d490d29e0}{clear} ()}
+\label{class_f2_c_1_1_bitmap_a813d77416c70e0030659a67d490d29e0}
+
+\begin{DoxyCompactList}\small\item\em Set all pixels on 0. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_a4fc2795eb440a68d9409db64669e8ef1}{blt} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&Src, int destX, int destY, int srcX, int srcY, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height)
+\begin{DoxyCompactList}\small\item\em Copy a specific area of an image(Bitmap) in the \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_ad2ed409040de1fd555e25c04b89062b6}{blt} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&Src, int destX, int destY, int srcX, int srcY, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} alpha)
+\begin{DoxyCompactList}\small\item\em Copy a specific area of an image(Bitmap) in the \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_a331c8fd3b1991c248adc464b8082f091}{bltFull} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&Src, int destX, int destY)
+\begin{DoxyCompactList}\small\item\em Copies an entire image(Bitmap) in the \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_aa3cd20c474704adcaf89bcd48d0aa00b}{bltFull} (const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&Src, int destX, int destY, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} alpha)
+\begin{DoxyCompactList}\small\item\em Copies an entire image(Bitmap) in the \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_ad91aa72b9159925e6b09a13f408a603d}{setPixel} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} x, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} y, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} r, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} g, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} b, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} a)
+\begin{DoxyCompactList}\small\item\em setMethode: set a pixel. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_ada18c311c9e0cd0ba4c413b7cce2fb62}{setPixel} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} x, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} y, \hyperlink{class_f2_c_1_1_color}{Color} color)
+\begin{DoxyCompactList}\small\item\em setMethode: set a pixel. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_aaa06d532deca94bc4c655951a137c49a}{setHue} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} hue)
+\begin{DoxyCompactList}\small\item\em setMethode: Hue. (HSV-\/Color Models) \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_aa97d0cc8fb9421dff34cf5033becd3cc}{setSaturation} (\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} s)
+\begin{DoxyCompactList}\small\item\em setMethode: Saturation. (HSV-\/Color Models) \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_ae7292dbd7e0c1230eb7832c536327126}{setValue} (\hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} v)
+\begin{DoxyCompactList}\small\item\em setMethode: Value. (HSV-\/Color Models) \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_af2961f38837be847f9e6a283ea90ba9b}{fillRect} (int x, int y, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} r, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} g, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} b, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} a)
+\begin{DoxyCompactList}\small\item\em Fill an area with color. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_abe81c235fd6bdd3a4300a20395425039}{fillRect} (const \hyperlink{class_f2_c_1_1_rect}{Rect} \&rect, const \hyperlink{class_f2_c_1_1_color}{Color} \&color)
+\begin{DoxyCompactList}\small\item\em Fill an area with color. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_a50d157cc79797d368566bc7f9e41323a}{clearRect} (int x, int y, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} r, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} g, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} b, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} a)
+\begin{DoxyCompactList}\small\item\em Clear an area (Set pixels on 0). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_ab2388a8c3d0dbe0cb2b3313b53c142ca}{clearRect} (const \hyperlink{class_f2_c_1_1_rect}{Rect} \&rect, const \hyperlink{class_f2_c_1_1_color}{Color} \&color)
+\begin{DoxyCompactList}\small\item\em Clear an area (Set pixels on 0). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_aad1cdb8e6ce4ba8d5bc75123f7fee59a}{scale} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height)
+\begin{DoxyCompactList}\small\item\em Scales the bitmap. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_af298fcc1f31a045503a0fa8ac6ff9b8b}{save} (std::string filename) const 
+\begin{DoxyCompactList}\small\item\em Save as image File. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_f2_c_1_1_bitmap_aa31db41325bf9cf8e82c72bf407f1026}{save} (std::string filename, Image::ImageType type) const 
+\begin{DoxyCompactList}\small\item\em Save as image File. \item\end{DoxyCompactList}\item 
+\hyperlink{class_f2_c_1_1_color}{Color} \hyperlink{class_f2_c_1_1_bitmap_ad874bb351e5e102f2ed33deba702101f}{getPixel} (\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} x, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} y) const 
+\begin{DoxyCompactList}\small\item\em getMethode: \hyperlink{class_f2_c_1_1_color}{Color} of Pixel \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a806f3f328dd852dfba680668ca447f42}{
+const \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte} $\ast$ \hyperlink{class_f2_c_1_1_bitmap_a806f3f328dd852dfba680668ca447f42}{getPixels} () const }
+\label{class_f2_c_1_1_bitmap_a806f3f328dd852dfba680668ca447f42}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Pointer from the pixel buffer, pixels \mbox{[}F2C::nextPowerof2(std::max$<$uint$>$(width, height)) $\ast$ F2C::nextPowerof2(std::max$<$uint$>$(width, height)) $\ast$ color depth (in bytes)\mbox{]}. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a2910bbe2b22ed45bacf4429a141a756a}{
+\hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte} $\ast$ \hyperlink{class_f2_c_1_1_bitmap_a2910bbe2b22ed45bacf4429a141a756a}{getPixels} ()}
+\label{class_f2_c_1_1_bitmap_a2910bbe2b22ed45bacf4429a141a756a}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Pointer from the pixel buffer, pixels \mbox{[}F2C::nextPowerof2(std::max$<$uint$>$(width, height)) $\ast$ F2C::nextPowerof2(std::max$<$uint$>$(width, height)) $\ast$ color depth (in bytes)\mbox{]}. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a8d488e4029c06490e5b1b101a92b21b4}{
+std::string \hyperlink{class_f2_c_1_1_bitmap_a8d488e4029c06490e5b1b101a92b21b4}{getFilename} () const }
+\label{class_f2_c_1_1_bitmap_a8d488e4029c06490e5b1b101a92b21b4}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Image filename \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a456817554a26f545c06dd371841d9ac7}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_bitmap_a456817554a26f545c06dd371841d9ac7}{getWidth} () const }
+\label{class_f2_c_1_1_bitmap_a456817554a26f545c06dd371841d9ac7}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Width of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_aeb4fad0eefc40bc1ad59a94fa1496353}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_bitmap_aeb4fad0eefc40bc1ad59a94fa1496353}{getHeight} () const }
+\label{class_f2_c_1_1_bitmap_aeb4fad0eefc40bc1ad59a94fa1496353}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Height of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a7cf28e3c9441ec8d593997eb325b884d}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_bitmap_a7cf28e3c9441ec8d593997eb325b884d}{getCreateWidth} () const }
+\label{class_f2_c_1_1_bitmap_a7cf28e3c9441ec8d593997eb325b884d}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Width of the loaded image or originally created bitmap. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a05b176d9fe609a4d9678cb1e20ca65e2}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_bitmap_a05b176d9fe609a4d9678cb1e20ca65e2}{getCreateHeight} () const }
+\label{class_f2_c_1_1_bitmap_a05b176d9fe609a4d9678cb1e20ca65e2}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Height of the loaded image or originally created bitmap. \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_ad51ff5cc348345114a1aa4ab5a368945}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_bitmap_ad51ff5cc348345114a1aa4ab5a368945}{getPixelsWidth} () const }
+\label{class_f2_c_1_1_bitmap_ad51ff5cc348345114a1aa4ab5a368945}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Width (or height) of the pixel array: F2C::nextPowerof2(std::max$<$uint$>$(width, height)). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a49e44e01102035e194c95becff0778f5}{
+Image::ImageType \hyperlink{class_f2_c_1_1_bitmap_a49e44e01102035e194c95becff0778f5}{getImageType} () const }
+\label{class_f2_c_1_1_bitmap_a49e44e01102035e194c95becff0778f5}
+
+\begin{DoxyCompactList}\small\item\em getMethode: File Format \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a7ab273e73d0b9563fb9d3ea358fdbf05}{
+Image::DataFormat \hyperlink{class_f2_c_1_1_bitmap_a7ab273e73d0b9563fb9d3ea358fdbf05}{getDataFormat} () const }
+\label{class_f2_c_1_1_bitmap_a7ab273e73d0b9563fb9d3ea358fdbf05}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Pixel data format \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_abb09e143c164a7e137d720c10ec66457}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_bitmap_abb09e143c164a7e137d720c10ec66457}{getBits} () const }
+\label{class_f2_c_1_1_bitmap_abb09e143c164a7e137d720c10ec66457}
+
+\begin{DoxyCompactList}\small\item\em getMethode: \hyperlink{class_f2_c_1_1_color}{Color} depth (in bits) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a11da241283891c3b8a35c441311d05b0}{
+\hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} \hyperlink{class_f2_c_1_1_bitmap_a11da241283891c3b8a35c441311d05b0}{getBytes} () const }
+\label{class_f2_c_1_1_bitmap_a11da241283891c3b8a35c441311d05b0}
+
+\begin{DoxyCompactList}\small\item\em getMethode: \hyperlink{class_f2_c_1_1_color}{Color} depth (in Byte) \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_aad73aad4b46f5f6f95815a734a8a1282}{
+\hyperlink{class_f2_c_1_1_rect}{Rect} \hyperlink{class_f2_c_1_1_bitmap_aad73aad4b46f5f6f95815a734a8a1282}{getRect} () const }
+\label{class_f2_c_1_1_bitmap_aad73aad4b46f5f6f95815a734a8a1282}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Size of bitmap, (0,0, width, height). \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a6767ef2d9f9f92a990737b7661161bfb}{
+size\_\-t \hyperlink{class_f2_c_1_1_bitmap_a6767ef2d9f9f92a990737b7661161bfb}{getPixelsSize} () const }
+\label{class_f2_c_1_1_bitmap_a6767ef2d9f9f92a990737b7661161bfb}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Size of pixel array \item\end{DoxyCompactList}\item 
+\hypertarget{class_f2_c_1_1_bitmap_a0753df19a85755b2fafaffb26b577968}{
+bool \hyperlink{class_f2_c_1_1_bitmap_a0753df19a85755b2fafaffb26b577968}{isChanged} () const }
+\label{class_f2_c_1_1_bitmap_a0753df19a85755b2fafaffb26b577968}
+
+\begin{DoxyCompactList}\small\item\em getMethode: Is \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} changed, like setPixel,scale,blt,fillRect,... \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_f2_c_1_1_bitmap_a105376f621818668ac174d4a217155dd}{bltPixels} (const \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte} $\ast$src\_\-data, int src\_\-xstart, int src\_\-ystart, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} src\_\-bitmapwidth, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} src\_\-bitmapheight, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} src\_\-bytepp, \hyperlink{namespace_f2_c_a74fad364688add30796d711e5635ac77}{ubyte} $\ast$dst\_\-data, int dst\_\-xstart, int dst\_\-ystart, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} dst\_\-bitmapwidth, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} dst\_\-bitmapheight, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} dst\_\-bytepp, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} width, \hyperlink{namespace_f2_c_a58be2bac9eb3e3c99cb41b6008bf4fae}{uint} height, bool blend, \hyperlink{namespace_f2_c_a711deb33697d145669b9c0c4fe87c7ca}{uint8} alpha)
+\begin{DoxyCompactList}\small\item\em Copy a specific area of source array into destination array.(array\mbox{[}bitmapwidth $\ast$ bitmapheight $\ast$ bytepp\mbox{]}). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{class_f2_c_1_1_bitmap_af27b9e1567e729dcb9dd43429b448ffd}{operator$<$$<$} (std::ostream \&out, const \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&obj)
+\begin{DoxyCompactList}\small\item\em Write the Object into output stream. \item\end{DoxyCompactList}\item 
+std::istream \& \hyperlink{class_f2_c_1_1_bitmap_a7f4289174b7c1d16eec43e395922505c}{operator$>$$>$} (std::istream \&in, \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \&obj)
+\begin{DoxyCompactList}\small\item\em Read the Object from input stream. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loading image files. \par
+ Automatically creates a pixel array with a quadratic power of 2 (32x32, 64x64 ,..., 512x512 ,...) \par
+ and paste the loaded image into the pixel array. \par
+ DevIL Supported Formats: \par
+ Load: \par
+. $\ast$Windows \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} -\/ .bmp \par
+ $\ast$Dr. Halo -\/ .cut \par
+ $\ast$Multi-\/PCX -\/ .dcx \par
+ $\ast$Dicom -\/ .dicom, .dcm \par
+ $\ast$DirectDraw Surface -\/ .dds \par
+ $\ast$OpenEXR -\/ .exr \par
+ $\ast$Flexible Image Transport System -\/ .fits, .fit \par
+ $\ast$Heavy Metal: FAKK 2 -\/ .ftx \par
+ $\ast$Radiance High Dynamic -\/ .hdr \par
+ $\ast$Macintosh icon -\/ .icns \par
+ $\ast$Windows icon/cursor -\/ .ico, .cur \par
+ $\ast$Interchange File Format -\/ .iff \par
+ $\ast$Infinity Ward Image -\/ .iwi \par
+ $\ast$Graphics Interchange Format -\/ .gif \par
+ $\ast$Jpeg -\/ .jpg, .jpe, .jpeg \par
+ $\ast$Jpeg 2000 -\/ .jp2 \par
+ $\ast$Interlaced \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} -\/ .lbm \par
+ $\ast$Homeworld texture -\/ .lif \par
+ $\ast$Half-\/Life Model -\/ .mdl \par
+ $\ast$Palette -\/ .pal \par
+ $\ast$Kodak PhotoCD -\/ .pcd \par
+ $\ast$ZSoft PCX -\/ .pcx \par
+ $\ast$Softimage PIC -\/ .pic \par
+ $\ast$Portable Network Graphics -\/ .png \par
+ $\ast$Portable Anymap -\/ .pbm, .pgm, .pnm, .pnm \par
+ $\ast$Alias $|$ Wavefront -\/ .pix \par
+ $\ast$Adobe PhotoShop -\/ .psd \par
+ $\ast$PaintShop Pro -\/ .psp \par
+ $\ast$Pixar -\/ .pxr \par
+ $\ast$Raw data -\/ .raw \par
+ $\ast$Homeworld 2 Texture -\/ .rot \par
+ $\ast$Silicon Graphics -\/ .sgi, .bw, .rgb, .rgba \par
+ $\ast$Creative Assembly Texture -\/ .texture \par
+ $\ast$Truevision Targa -\/ .tga \par
+ $\ast$Tagged Image File Format -\/ .tif \par
+ $\ast$Gamecube Texture -\/ .tpl \par
+ $\ast$Unreal Texture -\/ .utx \par
+ $\ast$Quake 2 Texture -\/ .wal \par
+ $\ast$Valve Texture Format -\/ .vtf \par
+ $\ast$HD Photo -\/ .wdp, .hdp \par
+ $\ast$X Pixel Map -\/ .xpm \par
+ $\ast$Doom graphics \par
+ \par
+ Save: \par
+ $\ast$Windows \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} -\/ .bmp \par
+ $\ast$DirectDraw Surface -\/ .dds \par
+ $\ast$OpenEXR -\/ .exr \par
+ $\ast$C-\/style Header -\/ .h \par
+ $\ast$Radiance High Dynamic -\/ .hdr \par
+ $\ast$Jpeg -\/ .jpg \par
+ $\ast$Jpeg 2000 -\/ .jp2 \par
+ $\ast$Palette -\/ .pal \par
+ $\ast$ZSoft PCX -\/ .pcx \par
+ $\ast$Portable Network Graphics -\/ .png \par
+ $\ast$Portable Anymap -\/ .pbm, .pgm, .pnm, .pnm \par
+ $\ast$Adobe PhotoShop -\/ .psd \par
+ $\ast$Raw data -\/ .raw \par
+ $\ast$Silicon Graphics -\/ .sgi, .bw, .rgb, .rgba \par
+ $\ast$Truevision Targa -\/ .tga \par
+ $\ast$Tagged Image File Format -\/ .tif \par
+ $\ast$Valve Texture Format -\/ .vtf \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f2_c_1_1_bitmap_a8e61f5101f6303564a679fd582051fe9}{
+\index{F2C::Bitmap@{F2C::Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Bitmap::Bitmap (
+\begin{DoxyParamCaption}
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a8e61f5101f6303564a679fd582051fe9}
+
+
+Creates an empty bitmap with the specified height and width. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em width}]Width of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \item[{\em height}]Height of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_a2fc3db9e8487a8826b5e2105963aad14}{
+\index{F2C::Bitmap@{F2C::Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Bitmap::Bitmap (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a2fc3db9e8487a8826b5e2105963aad14}
+
+
+Load an Image File. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Image filename \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_a89985844df7be6208ab82f479d7f0957}{
+\index{F2C::Bitmap@{F2C::Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Bitmap::Bitmap (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename, }
+\item[{Image::ImageType}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a89985844df7be6208ab82f479d7f0957}
+
+
+Load an Image File. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Image filename \item[{\em type}]Image Datatype \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_a16a53001931f175f10408c42f395b066}{
+\index{F2C::Bitmap@{F2C::Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Bitmap::Bitmap (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{ stream}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a16a53001931f175f10408c42f395b066}
+
+
+Load an Image from Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stream}]File Stream \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_a07b8097aee6bc62f28f6b8305d83ce96}{
+\index{F2C::Bitmap@{F2C::Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Bitmap::Bitmap (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{ stream, }
+\item[{Image::ImageType}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a07b8097aee6bc62f28f6b8305d83ce96}
+
+
+Load an Image from Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stream}]File Stream \item[{\em type}]Image Datatype \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_ae6dae98f50692de31b73e4f918cdc6d3}{
+\index{F2C::Bitmap@{F2C::Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Bitmap::Bitmap (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ stream}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_ae6dae98f50692de31b73e4f918cdc6d3}
+
+
+Load an Image from Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stream}]File Stream \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_ad9ff1a578651fe915b28455c39daef4d}{
+\index{F2C::Bitmap@{F2C::Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Bitmap::Bitmap (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ stream, }
+\item[{Image::ImageType}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_ad9ff1a578651fe915b28455c39daef4d}
+
+
+Load an Image from Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stream}]File Stream \item[{\em type}]Image Datatype \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_a073dc6afa7a1f97907f60359210b1d6b}{
+\index{F2C::Bitmap@{F2C::Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Bitmap::Bitmap (
+\begin{DoxyParamCaption}
+\item[{const {\bf ubyte} $\ast$}]{ pixels, }
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height, }
+\item[{{\bf uint}}]{ bpp, }
+\item[{Image::DataFormat}]{ format}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a073dc6afa7a1f97907f60359210b1d6b}
+
+
+Load an pixelarray into \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pixels}]Pixelarray \item[{\em width}]Image width \item[{\em height}]Image height \item[{\em bpp}]Bytes per Pixel \item[{\em format}]Pixel Data Format \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_a06332b232319d4b47679ac58a37b7c2e}{
+\index{F2C::Bitmap@{F2C::Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}F2C::Bitmap::Bitmap (
+\begin{DoxyParamCaption}
+\item[{const std::vector$<$ {\bf ubyte} $>$ \&}]{ pixels, }
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height, }
+\item[{{\bf uint}}]{ bpp, }
+\item[{Image::DataFormat}]{ format}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a06332b232319d4b47679ac58a37b7c2e}
+
+
+Load an pixelarray into \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pixels}]Pixelarray \item[{\em width}]Image width \item[{\em height}]Image height \item[{\em bpp}]Bytes per Pixel \item[{\em format}]Pixel Data Format \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f2_c_1_1_bitmap_a4fc2795eb440a68d9409db64669e8ef1}{
+\index{F2C::Bitmap@{F2C::Bitmap}!blt@{blt}}
+\index{blt@{blt}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{blt}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::blt (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} \&}]{ Src, }
+\item[{int}]{ destX, }
+\item[{int}]{ destY, }
+\item[{int}]{ srcX, }
+\item[{int}]{ srcY, }
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a4fc2795eb440a68d9409db64669e8ef1}
+
+
+Copy a specific area of an image(Bitmap) in the \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em Src}]\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} source \item[{\em destX}]Destination X coordinate \item[{\em destY}]Destination Y coordinate \item[{\em srcX}]Source X coordinate \item[{\em srcY}]Source Y coordinate \item[{\em width}]Width of the copy area. \item[{\em height}]Height of the copy area. \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_ad2ed409040de1fd555e25c04b89062b6}{
+\index{F2C::Bitmap@{F2C::Bitmap}!blt@{blt}}
+\index{blt@{blt}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{blt}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::blt (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} \&}]{ Src, }
+\item[{int}]{ destX, }
+\item[{int}]{ destY, }
+\item[{int}]{ srcX, }
+\item[{int}]{ srcY, }
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height, }
+\item[{{\bf uint8}}]{ alpha}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_ad2ed409040de1fd555e25c04b89062b6}
+
+
+Copy a specific area of an image(Bitmap) in the \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em Src}]\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} source \item[{\em destX}]Destination X coordinate \item[{\em destY}]Destination Y coordinate \item[{\em srcX}]Source X coordinate \item[{\em srcY}]Source Y coordinate \item[{\em width}]Width of the copy area. \item[{\em height}]Height of the copy area. \item[{\em alpha}]Alpha value of the inserted image. \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_aa3cd20c474704adcaf89bcd48d0aa00b}{
+\index{F2C::Bitmap@{F2C::Bitmap}!bltFull@{bltFull}}
+\index{bltFull@{bltFull}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{bltFull}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::bltFull (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} \&}]{ Src, }
+\item[{int}]{ destX, }
+\item[{int}]{ destY, }
+\item[{{\bf uint8}}]{ alpha}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_aa3cd20c474704adcaf89bcd48d0aa00b}
+
+
+Copies an entire image(Bitmap) in the \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em Src}]\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} source \item[{\em destX}]Destination X coordinate \item[{\em destY}]Destination Y coordinate \item[{\em alpha}]Alpha value of the inserted image. \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_a331c8fd3b1991c248adc464b8082f091}{
+\index{F2C::Bitmap@{F2C::Bitmap}!bltFull@{bltFull}}
+\index{bltFull@{bltFull}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{bltFull}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::bltFull (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} \&}]{ Src, }
+\item[{int}]{ destX, }
+\item[{int}]{ destY}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a331c8fd3b1991c248adc464b8082f091}
+
+
+Copies an entire image(Bitmap) in the \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em Src}]\hyperlink{class_f2_c_1_1_bitmap}{Bitmap} source \item[{\em destX}]Destination X coordinate \item[{\em destY}]Destination Y coordinate \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_a105376f621818668ac174d4a217155dd}{
+\index{F2C::Bitmap@{F2C::Bitmap}!bltPixels@{bltPixels}}
+\index{bltPixels@{bltPixels}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{bltPixels}]{\setlength{\rightskip}{0pt plus 5cm}static void F2C::Bitmap::bltPixels (
+\begin{DoxyParamCaption}
+\item[{const {\bf ubyte} $\ast$}]{ src\_\-data, }
+\item[{int}]{ src\_\-xstart, }
+\item[{int}]{ src\_\-ystart, }
+\item[{{\bf uint}}]{ src\_\-bitmapwidth, }
+\item[{{\bf uint}}]{ src\_\-bitmapheight, }
+\item[{{\bf uint}}]{ src\_\-bytepp, }
+\item[{{\bf ubyte} $\ast$}]{ dst\_\-data, }
+\item[{int}]{ dst\_\-xstart, }
+\item[{int}]{ dst\_\-ystart, }
+\item[{{\bf uint}}]{ dst\_\-bitmapwidth, }
+\item[{{\bf uint}}]{ dst\_\-bitmapheight, }
+\item[{{\bf uint}}]{ dst\_\-bytepp, }
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height, }
+\item[{bool}]{ blend, }
+\item[{{\bf uint8}}]{ alpha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_f2_c_1_1_bitmap_a105376f621818668ac174d4a217155dd}
+
+
+Copy a specific area of source array into destination array.(array\mbox{[}bitmapwidth $\ast$ bitmapheight $\ast$ bytepp\mbox{]}). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em src\_\-data}]Pixles source array \item[{\em src\_\-xstart}]Source X coordinate \item[{\em src\_\-ystart}]Source Y coordinate \item[{\em src\_\-bitmapwidth}]Width of source array \item[{\em src\_\-bitmapheight}]Height of source array \item[{\em src\_\-bytepp}]Byte per pixels of source array \item[{\em dst\_\-data}]Pixles destination array \item[{\em dst\_\-xstart}]Destination X coordinate \item[{\em dst\_\-ystart}]Destination Y coordinate \item[{\em dst\_\-bitmapwidth}]Width of destination array \item[{\em dst\_\-bitmapheight}]Height of destinationarray \item[{\em dst\_\-bytepp}]Byte per pixels of destination array \item[{\em width}]Width of the copy area. \item[{\em height}]Height of the copy area. \item[{\em blend}]use Alphablending \item[{\em alpha}]Alpha value of the inserted image.(Alphablending) \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_a50d157cc79797d368566bc7f9e41323a}{
+\index{F2C::Bitmap@{F2C::Bitmap}!clearRect@{clearRect}}
+\index{clearRect@{clearRect}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{clearRect}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::clearRect (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y, }
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height, }
+\item[{{\bf uint8}}]{ r, }
+\item[{{\bf uint8}}]{ g, }
+\item[{{\bf uint8}}]{ b, }
+\item[{{\bf uint8}}]{ a}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a50d157cc79797d368566bc7f9e41323a}
+
+
+Clear an area (Set pixels on 0). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]X coordinate \item[{\em y}]Y coordinate \item[{\em width}]Width \item[{\em height}]Height \item[{\em r}]Red \item[{\em g}]Green \item[{\em b}]Blue \item[{\em a}]Alpha \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_ab2388a8c3d0dbe0cb2b3313b53c142ca}{
+\index{F2C::Bitmap@{F2C::Bitmap}!clearRect@{clearRect}}
+\index{clearRect@{clearRect}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{clearRect}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::clearRect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rect} \&}]{ rect, }
+\item[{const {\bf Color} \&}]{ color}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_ab2388a8c3d0dbe0cb2b3313b53c142ca}
+
+
+Clear an area (Set pixels on 0). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rect}]Area \item[{\em color}]\hyperlink{class_f2_c_1_1_color}{Color} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_af2961f38837be847f9e6a283ea90ba9b}{
+\index{F2C::Bitmap@{F2C::Bitmap}!fillRect@{fillRect}}
+\index{fillRect@{fillRect}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{fillRect}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::fillRect (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y, }
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height, }
+\item[{{\bf uint8}}]{ r, }
+\item[{{\bf uint8}}]{ g, }
+\item[{{\bf uint8}}]{ b, }
+\item[{{\bf uint8}}]{ a}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_af2961f38837be847f9e6a283ea90ba9b}
+
+
+Fill an area with color. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]X coordinate \item[{\em y}]Y coordinate \item[{\em width}]Width \item[{\em height}]Height \item[{\em r}]Red \item[{\em g}]Green \item[{\em b}]Blue \item[{\em a}]Alpha \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_abe81c235fd6bdd3a4300a20395425039}{
+\index{F2C::Bitmap@{F2C::Bitmap}!fillRect@{fillRect}}
+\index{fillRect@{fillRect}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{fillRect}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::fillRect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rect} \&}]{ rect, }
+\item[{const {\bf Color} \&}]{ color}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_abe81c235fd6bdd3a4300a20395425039}
+
+
+Fill an area with color. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rect}]Area \item[{\em color}]\hyperlink{class_f2_c_1_1_color}{Color} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_ad874bb351e5e102f2ed33deba702101f}{
+\index{F2C::Bitmap@{F2C::Bitmap}!getPixel@{getPixel}}
+\index{getPixel@{getPixel}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{getPixel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} F2C::Bitmap::getPixel (
+\begin{DoxyParamCaption}
+\item[{{\bf uint}}]{ x, }
+\item[{{\bf uint}}]{ y}
+\end{DoxyParamCaption}
+) const}}
+\label{class_f2_c_1_1_bitmap_ad874bb351e5e102f2ed33deba702101f}
+
+
+getMethode: \hyperlink{class_f2_c_1_1_color}{Color} of Pixel 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]X coordinate \item[{\em y}]Y coordinate \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_a0f37fbc47d787ad2dbc9463cab135a44}{
+\index{F2C::Bitmap@{F2C::Bitmap}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{loadFile}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::loadFile (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{ stream, }
+\item[{Image::ImageType}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a0f37fbc47d787ad2dbc9463cab135a44}
+
+
+Load an Image from Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stream}]File Stream \item[{\em type}]Image Datatype \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_a7de46ee1b228de65b7ef22021ccff4d5}{
+\index{F2C::Bitmap@{F2C::Bitmap}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{loadFile}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::loadFile (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename, }
+\item[{Image::ImageType}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a7de46ee1b228de65b7ef22021ccff4d5}
+
+
+Load an Image File. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Image filename \item[{\em type}]Image Datatype \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_a1b7095b2eea63245aad49929b2f7303c}{
+\index{F2C::Bitmap@{F2C::Bitmap}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{loadFile}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::loadFile (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ stream}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a1b7095b2eea63245aad49929b2f7303c}
+
+
+Load an Image from Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stream}]File Stream \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_a9e51707f78fa8e1732c0b082fff16c34}{
+\index{F2C::Bitmap@{F2C::Bitmap}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{loadFile}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::loadFile (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ stream, }
+\item[{Image::ImageType}]{ type}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a9e51707f78fa8e1732c0b082fff16c34}
+
+
+Load an Image from Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stream}]File Stream \item[{\em type}]Image Datatype \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_a79af8ccf66ef1b105ae696978735d465}{
+\index{F2C::Bitmap@{F2C::Bitmap}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{loadFile}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::loadFile (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{ stream}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a79af8ccf66ef1b105ae696978735d465}
+
+
+Load an Image from Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stream}]File Stream \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_a9f318b926d8175b19038aef999d24ce4}{
+\index{F2C::Bitmap@{F2C::Bitmap}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{loadFile}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::loadFile (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_a9f318b926d8175b19038aef999d24ce4}
+
+
+Load an Image File. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Image filename \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{class_f2_c_1_1_log_error}{LogError},If}]the file can not be loaded. \end{DoxyExceptions}
+\hypertarget{class_f2_c_1_1_bitmap_ae707e2e499d1bc72465be4ac739bccfa}{
+\index{F2C::Bitmap@{F2C::Bitmap}!loadPixelArray@{loadPixelArray}}
+\index{loadPixelArray@{loadPixelArray}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{loadPixelArray}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::loadPixelArray (
+\begin{DoxyParamCaption}
+\item[{const std::vector$<$ {\bf ubyte} $>$ \&}]{ pixels, }
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height, }
+\item[{{\bf uint}}]{ bpp, }
+\item[{Image::DataFormat}]{ format}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_ae707e2e499d1bc72465be4ac739bccfa}
+
+
+Load an pixelarray into \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pixels}]Pixelarray \item[{\em width}]Image width \item[{\em height}]Image height \item[{\em bpp}]Bytes per Pixel \item[{\em format}]Pixel Data Format \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_ad8854f706211292b72ee7ab29f50367f}{
+\index{F2C::Bitmap@{F2C::Bitmap}!loadPixelArray@{loadPixelArray}}
+\index{loadPixelArray@{loadPixelArray}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{loadPixelArray}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::loadPixelArray (
+\begin{DoxyParamCaption}
+\item[{const {\bf ubyte} $\ast$}]{ pixels, }
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height, }
+\item[{{\bf uint}}]{ bpp, }
+\item[{Image::DataFormat}]{ format}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_ad8854f706211292b72ee7ab29f50367f}
+
+
+Load an pixelarray into \hyperlink{class_f2_c_1_1_bitmap}{Bitmap}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pixels}]Pixelarray \item[{\em width}]Image width \item[{\em height}]Image height \item[{\em bpp}]Bytes per Pixel \item[{\em format}]Pixel Data Format \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_aaec3a71bd846e0570c62d34bd2d4b80c}{
+\index{F2C::Bitmap@{F2C::Bitmap}!newBitmap@{newBitmap}}
+\index{newBitmap@{newBitmap}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{newBitmap}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::newBitmap (
+\begin{DoxyParamCaption}
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_aaec3a71bd846e0570c62d34bd2d4b80c}
+
+
+Creates an empty bitmap with the specified height and width. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em width}]Width of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \item[{\em height}]Height of \hyperlink{class_f2_c_1_1_bitmap}{Bitmap} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_af298fcc1f31a045503a0fa8ac6ff9b8b}{
+\index{F2C::Bitmap@{F2C::Bitmap}!save@{save}}
+\index{save@{save}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::save (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename}
+\end{DoxyParamCaption}
+) const}}
+\label{class_f2_c_1_1_bitmap_af298fcc1f31a045503a0fa8ac6ff9b8b}
+
+
+Save as image File. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Image Filename \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_aa31db41325bf9cf8e82c72bf407f1026}{
+\index{F2C::Bitmap@{F2C::Bitmap}!save@{save}}
+\index{save@{save}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::save (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ filename, }
+\item[{Image::ImageType}]{ type}
+\end{DoxyParamCaption}
+) const}}
+\label{class_f2_c_1_1_bitmap_aa31db41325bf9cf8e82c72bf407f1026}
+
+
+Save as image File. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]Image Filename \item[{\em type}]Datatype \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_aad1cdb8e6ce4ba8d5bc75123f7fee59a}{
+\index{F2C::Bitmap@{F2C::Bitmap}!scale@{scale}}
+\index{scale@{scale}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::scale (
+\begin{DoxyParamCaption}
+\item[{{\bf uint}}]{ width, }
+\item[{{\bf uint}}]{ height}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_aad1cdb8e6ce4ba8d5bc75123f7fee59a}
+
+
+Scales the bitmap. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em width}]new Width \item[{\em height}]new Height \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_aaa06d532deca94bc4c655951a137c49a}{
+\index{F2C::Bitmap@{F2C::Bitmap}!setHue@{setHue}}
+\index{setHue@{setHue}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{setHue}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::setHue (
+\begin{DoxyParamCaption}
+\item[{{\bf uint}}]{ hue}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_aaa06d532deca94bc4c655951a137c49a}
+
+
+setMethode: Hue. (HSV-\/Color Models) 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em hue}]Hue (0-\/360) \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_ada18c311c9e0cd0ba4c413b7cce2fb62}{
+\index{F2C::Bitmap@{F2C::Bitmap}!setPixel@{setPixel}}
+\index{setPixel@{setPixel}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{setPixel}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::setPixel (
+\begin{DoxyParamCaption}
+\item[{{\bf uint}}]{ x, }
+\item[{{\bf uint}}]{ y, }
+\item[{{\bf Color}}]{ color}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_ada18c311c9e0cd0ba4c413b7cce2fb62}
+
+
+setMethode: set a pixel. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]X coordinate \item[{\em y}]Y coordinate \item[{\em color}]\hyperlink{class_f2_c_1_1_color}{Color} \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_ad91aa72b9159925e6b09a13f408a603d}{
+\index{F2C::Bitmap@{F2C::Bitmap}!setPixel@{setPixel}}
+\index{setPixel@{setPixel}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{setPixel}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::setPixel (
+\begin{DoxyParamCaption}
+\item[{{\bf uint}}]{ x, }
+\item[{{\bf uint}}]{ y, }
+\item[{{\bf uint8}}]{ r, }
+\item[{{\bf uint8}}]{ g, }
+\item[{{\bf uint8}}]{ b, }
+\item[{{\bf uint8}}]{ a}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_ad91aa72b9159925e6b09a13f408a603d}
+
+
+setMethode: set a pixel. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]X coordinate \item[{\em y}]Y coordinate \item[{\em r}]Red \item[{\em g}]Green \item[{\em b}]Blue \item[{\em a}]Alpha \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_aa97d0cc8fb9421dff34cf5033becd3cc}{
+\index{F2C::Bitmap@{F2C::Bitmap}!setSaturation@{setSaturation}}
+\index{setSaturation@{setSaturation}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{setSaturation}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::setSaturation (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{ s}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_aa97d0cc8fb9421dff34cf5033becd3cc}
+
+
+setMethode: Saturation. (HSV-\/Color Models) 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]Saturation \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_ae7292dbd7e0c1230eb7832c536327126}{
+\index{F2C::Bitmap@{F2C::Bitmap}!setValue@{setValue}}
+\index{setValue@{setValue}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{setValue}]{\setlength{\rightskip}{0pt plus 5cm}void F2C::Bitmap::setValue (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{ v}
+\end{DoxyParamCaption}
+)}}
+\label{class_f2_c_1_1_bitmap_ae7292dbd7e0c1230eb7832c536327126}
+
+
+setMethode: Value. (HSV-\/Color Models) 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]Value \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_f2_c_1_1_bitmap_af27b9e1567e729dcb9dd43429b448ffd}{
+\index{F2C::Bitmap@{F2C::Bitmap}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ out, }
+\item[{const {\bf Bitmap} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_bitmap_af27b9e1567e729dcb9dd43429b448ffd}
+
+
+Write the Object into output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]Output stream \item[{\em obj}]Object \end{DoxyParams}
+\hypertarget{class_f2_c_1_1_bitmap_a7f4289174b7c1d16eec43e395922505c}{
+\index{F2C::Bitmap@{F2C::Bitmap}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!F2C::Bitmap@{F2C::Bitmap}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ in, }
+\item[{{\bf Bitmap} \&}]{ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_f2_c_1_1_bitmap_a7f4289174b7c1d16eec43e395922505c}
+
+
+Read the Object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em in}]\hyperlink{class_f2_c_1_1_input}{Input} stream \item[{\em obj}]Object \end{DoxyParams}

@@ -1,0 +1,69 @@
+#!/usr/bin/make
+
+SOURCES		:= $(wildcard $(SRCDIR)/*.$(SRCSUF))
+OBJECTSDEBUG    := $(patsubst $(SRCDIR)/%.$(SRCSUF), $(DEBUGOBJDIR)/%.$(OBJSUF), $(SOURCES))
+OBJECTSRELEASE  := $(patsubst $(SRCDIR)/%.$(SRCSUF), $(RELEASEOBJDIR)/%.$(OBJSUF), $(SOURCES))
+
+debugdirs:
+	if not exist "$(DEBUGOBJDIR)" md "$(DEBUGOBJDIR)"
+	if not exist "$(OUTLIBDIR)" md "$(OUTLIBDIR)"
+	if not exist "$(DEBUGDIR)" md "$(DEBUGDIR)"
+
+releasedirs:
+	if not exist "$(RELEASEOBJDIR)" md "$(RELEASEOBJDIR)"
+	if not exist "$(OUTLIBDIR)" md "$(OUTLIBDIR)"
+	if not exist "$(RELEASEDIR)" md "$(RELEASEDIR)"
+
+$(OBJECTSDEBUG): $(DEBUGOBJDIR)/%.$(OBJSUF): $(SRCDIR)/%.$(SRCSUF)
+	$(CXX) $(DEBUGFLAGS) $(MACROFLAGS) $(CXXFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)$(HEADERSDIR) $(SRCFLAG) $< $(OUTFLAG) $@
+
+
+$(OBJECTSRELEASE): $(RELEASEOBJDIR)/%.$(OBJSUF): $(SRCDIR)/%.$(SRCSUF)
+	$(CXX) $(RELEASEFLAGS) $(MACROFLAGS) $(CXXFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)$(HEADERSDIR) $(SRCFLAG) $< $(OUTFLAG) $@
+
+outDebug:  debugdirs $(OBJECTSDEBUG)
+	$(LD) $(DEFAULTFLAGS) $(LDFLAGS) $(SOFLAGS) $(DEBUGLDFLAGS) $(OBJECTSDEBUG) $(OUTFLAG) $(DEBUGDIR)/$(OUTDLL).$(OUTLIBSUF) $(LIBFLAGS)
+
+outRelease: releasedirs $(OBJECTSRELEASE)
+	$(LD) $(DEFAULTFLAGS) $(LDFLAGS) $(SOFLAGS) $(RELEASELDFLAGS) $(OBJECTSRELEASE) $(OUTFLAG) $(RELEASEDIR)/$(OUTDLL).$(OUTLIBSUF) $(LIBFLAGS)
+
+.PHONY: all
+
+all: Debug Release
+
+Debug: outDebug cleanObjDebug
+Release: outRelease cleanObjRelease
+
+.PHONY: clean
+
+clean: cleanDebug cleanRelease
+
+cleanObjDebug:
+	if exist "$(DEBUGOBJDIR)" del /F /S /Q "$(DEBUGOBJDIR)"
+	if exist "$(DEBUGOBJDIR)" rd /S /Q "$(DEBUGOBJDIR)"
+	if exist "$(OBJDIR)" del /F /S /Q "$(OBJDIR)"
+	if exist "$(OBJDIR)" rd /S /Q "$(OBJDIR)"
+
+cleanObjRelease:
+	if exist "$(RELEASEOBJDIR)" del /F /S /Q "$(RELEASEOBJDIR)"
+	if exist "$(RELEASEOBJDIR)" rd /S /Q "$(RELEASEOBJDIR)"
+	if exist "$(OBJDIR)" del /F /S /Q "$(OBJDIR)"
+	if exist "$(OBJDIR)" rd /S /Q "$(OBJDIR)"
+
+
+cleanDebug: cleanObjDebug
+	if exist "$(OUTLIB)" del /F /S /Q "$(OUTLIBDIR)"
+	if exist "$(OUTLIBDIR)" rd /S /Q "$(OUTLIBDIR)"
+	if exist "$(DEBUGDIR)" del /F /S /Q "$(DEBUGDIR)"
+	if exist "$(DEBUGDIR)" rd /S /Q "$(DEBUGDIR)"
+	if exist "$(OUTBINDIR)" del /F /S /Q "$(OUTBINDIR)"
+	if exist "$(OUTBINDIR)" rd /S /Q "$(OUTBINDIR)"
+
+cleanRelease: cleanObjRelease
+	if exist "$(OUTLIB)" del /F /S /Q "$(OUTLIBDIR)"
+	if exist "$(OUTLIBDIR)" rd /S /Q "$(OUTLIBDIR)"
+	if exist "$(RELEASEDIR)" del /F /S /Q "$(RELEASEDIR)"
+	if exist "$(RELEASEDIR)" rd /S /Q "$(RELEASEDIR)"
+	if exist "$(OUTBINDIR)" del /F /S /Q "$(OUTBINDIR)"
+	if exist "$(OUTBINDIR)" rd /S /Q "$(OUTBINDIR)"
+

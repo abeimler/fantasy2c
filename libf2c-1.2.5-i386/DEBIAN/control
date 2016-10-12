@@ -1,0 +1,30 @@
+Package: libf2c-1.2.5-i386
+Version: 1.2.5
+Section: devel
+Priority: extra
+Architecture: i386
+Depends: libgl1-mesa-dev, libglu1-mesa-dev, libdevil-dev, libx11-dev, libpthread-stubs0-dev, libxxf86vm-dev, libxrandr-dev, libglfw-dev, libaudiere-dev, libfreetype6-dev
+Installed-Size: 1300
+Maintainer: Alex Beimler
+Description: C++ 2D-Multimedia Library
+ Fantasy2C is an object oriented multimedia library, supported with OpenGL. 
+ Fantasy2C uses hardware acceleration. 
+ With additional libraries like DevIL,GLFW or Audiere. 
+ Let yourself quickly and easily load Images, create window or play music   and sound.
+ In Fantasy2C everything is in there what you need for a 2D game. 
+ 
+ Copyright (C) 2008-2010 Alex Beimler
+ 
+ This library is free software; 
+ you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; 
+ either version 2.1 of the License, or (at your option) any later version.
+ 
+ This library is distributed in the hope that it will be useful, 
+ but WITHOUT ANY WARRANTY; without even the implied warranty of  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+ See the GNU Lesser General Public License for more details.
+ 
+ You should have received a copy of the GNU Lesser General Public License  along with this library; 
+ if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth  Floor, Boston, MA 02110, USA 
+ 
+ Homepage:
+ http://fantasy2c.bplaced.net/

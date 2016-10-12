@@ -1,0 +1,20 @@
+#!/usr/bin/make
+
+$(OBJECTSRELEASE): $(RELEASEDIR)/$(OBJDIR)/%.$(OBJSUF): $(SRCDIR)/%.$(SRCSUF) $(RELEASEDIR)/$(OBJDIR)/.tag
+	$(CXX) $(RELEASEFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)$(HEADERSDIR) $(SRCFLAG) "$<" $(OUTFLAG)"$@" 
+                
+releasedirs:
+	mkdir -p "$(RELEASEDIR)/$(OBJDIR)"
+	mkdir -p "$(RELEASEDIR)/$(OUTDIR)"
+
+%.tag:
+	mkdir -p "$(dir $(@))"
+ 
+Release : releasedirs $(OBJECTSRELEASE)
+	$(LD) $(RELEASEFLAGS) $(DEFAULTFLAGS) $(INCLUDEDIRFLAG)"$(HEADERSDIR)" $(OBJECTSRELEASE) $(OUTFLAG)"$(RELEASEDIR)/$(OUTDIR)/$(OUTAPP)$(OUTSUF)" $(LIBFLAGS)
+
+clean: cleanRelease
+
+cleanRelease:
+	rm -rf "$(RELEASEDIR)/$(OBJDIR)"
+	rmdir -p "$(RELEASEDIR)/$(OBJDIR)"
